@@ -68,13 +68,32 @@ def build_article_list(articles: list[Article]) -> str:
     return "\n".join(lines)
 
 
-def analyze(articles: list[Article], today: datetime) -> dict:
+KIRI_SPEC = """
+추가로 "kiri" 항목을 JSON에 넣으세요. 아래 '보험연구원 새 보고서'의 글마다 하나씩 (본문 발췌가 있는 글만):
+  "kiri": [{"id": "K0", "summary": "핵심 요약 2문장", "actuarial_view": "계리 관점 1~2문장", "takeaway": "생각해볼 점 1문장"}]
+보고서 요약은 주어진 발췌 내용만 근거로 쓰고, 발췌에 없는 수치는 쓰지 않습니다."""
+
+
+def build_kiri_list(kiri_items: list[dict]) -> str:
+    blocks = []
+    for n, k in enumerate(kiri_items):
+        if not k.get("text"):
+            continue
+        head = f"[K{n}] {k['publication']} {k.get('issue', '')} · {k['category']} · {k['title']} ({k.get('author', '')})"
+        blocks.append(f"{head}\n발췌:\n{k['text']}")
+    return "\n\n".join(blocks)
+
+
+def analyze(articles: list[Article], today: datetime, kiri_items: list[dict] | None = None) -> dict:
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    kiri_block = build_kiri_list(kiri_items or [])
     user_msg = (
         f"오늘은 {today:%Y년 %m월 %d일}입니다.\n"
         f"관심 회사(회사별 소식에 빠짐없이 포함): {', '.join(config.WATCH_COMPANIES)}\n"
         f"기사 앞 괄호는 검색 주제 힌트입니다. 주제가 한쪽에 몰리지 않게 제도·계리·손해율·상품을 고루 살피세요.\n\n"
-        f"최근 24시간 기사 목록:\n{build_article_list(articles)}\n\n{OUTPUT_SPEC}"
+        f"최근 24시간 기사 목록:\n{build_article_list(articles)}\n\n"
+        + (f"보험연구원 새 보고서:\n{kiri_block}\n\n" if kiri_block else "")
+        + OUTPUT_SPEC + (KIRI_SPEC if kiri_block else "")
     )
     last_error = None
     for attempt in range(2):  # JSON이 깨져서 오면 한 번 더 시도
@@ -124,4 +143,22 @@ def attach_links(result: dict, articles: list[Article]) -> dict:
         issue["links"] = links(issue.pop("article_ids", []))
     for c in result.get("companies", []):
         c["links"] = links(c.pop("article_ids", []))
+    return result
+
+
+def attach_kiri(result: dict, kiri_items: list[dict]) -> dict:
+    """AI 정리(kiri)를 보고서 정보와 합친다. PDF 발췌 원문은 페이지에 싣지 않는다."""
+    notes = {k.get("id"): k for k in result.pop("kiri", []) or []}
+    merged = []
+    for n, item in enumerate(kiri_items):
+        ai = notes.get(f"K{n}", {})
+        merged.append({
+            "publication": item["publication"], "issue": item.get("issue", ""), "category": item["category"],
+            "title": item["title"], "author": item.get("author", ""), "date": item.get("date", ""),
+            "url": item.get("url", ""), "pdf_url": item.get("pdf_url", ""),
+            "summary": ai.get("summary", ""), "actuarial_view": ai.get("actuarial_view", ""),
+            "takeaway": ai.get("takeaway", ""),
+        })
+    if merged:
+        result["kiri_items"] = merged
     return result

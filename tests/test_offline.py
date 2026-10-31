@@ -121,6 +121,69 @@ def test_toc_and_merged_companies():
     assert "관심 회사" not in page and page.count("<h3") == 2      # 회사 소식은 한 섹션으로 합쳐짐
     assert page.index("한화생명") < page.index("ABL생명")
 
+KIRI_HTML = """<html><body>
+<div class="issue"><span>제656호</span> 발간일 2026-10-26
+ <ul>
+  <li><a href="/publication/list.do?catId=28&docId=891439">소비자를 대리하는 AI 에이전트 확산과 과제</a></li>
+  <li><a href="/publication/list.do?catId=31&docId=885589">금융시장 주요지표</a></li>
+ </ul></div>
+<div class="item"><a href="/publication/list.do?docId=891439&parentCatId=13&catId=28">[권호 : 제656호] 소비자를 대리하는 AI 에이전트 확산과 과제</a>
+ <p>저자 : 조영현</p><p>2026-10</p><a href="/report/downloadFile.do?docId=891439">전문</a></div>
+<div class="item"><a href="/publication/list.do?docId=889639&parentCatId=13&catId=29">[권호 : 제656호] 항생제 내성의 위험과 대응과제</a>
+ <p>저자 : 김경선</p><p>2026-10</p></div>
+<div class="item"><a href="/publication/list.do?docId=880001&parentCatId=13&catId=29">[권호 : 제655호] 연금세제 개편</a>
+ <p>저자 : 홍길동</p><p>2026-10</p></div>
+<div class="item"><a href="/publication/list.do?docId=885589&parentCatId=13&catId=31">[권호 : 제656호] 금융시장 주요지표</a><p>저자 : 홍예림</p></div>
+</body></html>"""
+
+def test_kiri_parse_and_first_run_latest_only():
+    from brief import kiri
+    items = kiri.parse_listing(KIRI_HTML, "KIRI 리포트", kiri.SOURCES[0][2], kiri.SOURCES[0][1])
+    by = {i.doc_id: i for i in items}
+    assert set(by) == {"891439", "889639", "880001", "885589"}          # 같은 글 중복 링크는 하나로
+    a = by["891439"]
+    assert a.title == "소비자를 대리하는 AI 에이전트 확산과 과제" and a.issue == "제656호"
+    assert a.category == "포커스" and a.author == "조영현" and a.pdf_url.endswith("docId=891439")
+    latest = kiri.latest_only(items)
+    assert {i.doc_id for i in latest} == {"891439", "889639", "885589"}  # 제655호는 첫 실행에서 제외
+
+def test_kiri_check_new_uses_seen_and_skips_table(tmp_path=None):
+    import tempfile
+    from unittest import mock
+    from brief import kiri
+    tmp = Path(tempfile.mkdtemp())
+    resp = mock.Mock(text=KIRI_HTML); resp.raise_for_status = lambda: None
+    with mock.patch.object(kiri, "SEEN_FILE", tmp / "seen.json"), \
+         mock.patch.object(kiri, "SOURCES", kiri.SOURCES[:1]), \
+         mock.patch("brief.kiri._fetch", return_value=resp), \
+         mock.patch("brief.kiri.pdf_front_text", return_value="요약 " * 300):
+        kiri.save_seen({"891439", "880001"})
+        new, all_ids = kiri.check_new()
+    ids = {i.doc_id for i in new}
+    assert ids == {"889639", "885589"}
+    table = [i for i in new if i.category == "금융시장 주요지표"][0]
+    assert table.text == "" and "제목" in table.note
+    assert "891439" in all_ids and "889639" in all_ids
+
+def test_kiri_prompt_attach_render_kakao():
+    from brief.analyze import build_kiri_list, attach_kiri
+    items = [
+        {"publication": "KIRI 리포트", "issue": "제656호", "category": "포커스", "title": "AI 에이전트",
+         "author": "조영현", "date": "2026-10", "url": "u", "pdf_url": "p", "text": "발췌 내용"},
+        {"publication": "KIRI 리포트", "issue": "제656호", "category": "금융시장 주요지표", "title": "주요지표",
+         "author": "", "date": "", "url": "u2", "pdf_url": "p2", "text": ""},
+    ]
+    block = build_kiri_list(items)
+    assert "[K0]" in block and "발췌 내용" in block and "[K1]" not in block
+    result = attach_kiri({"headline": "h", "kiri": [{"id": "K0", "summary": "요약", "actuarial_view": "관점", "takeaway": "생각"}],
+                          "kakao_lines": ["a", "b", "c"]}, items)
+    assert "kiri" not in result and result["kiri_items"][0]["summary"] == "요약"
+    assert "text" not in result["kiri_items"][0]                       # PDF 발췌는 페이지에 싣지 않음
+    page = pub.render_day(result, now)
+    assert 'href="#kiri"' in page and "KIRI 리포트 제656호" in page and "<details" in page and "2편" in page
+    text = build_text(result, "10/31")
+    assert "보험연구원 새 보고서 2편" in text and len(text) <= KAKAO_TEXT_LIMIT
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

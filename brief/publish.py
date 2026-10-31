@@ -36,6 +36,11 @@ nav.toc li{margin:3px 0}nav.toc a{text-decoration:none}nav.toc a:hover{text-deco
 nav.toc .sub{color:var(--muted);font-size:.8rem}
 nav.toc a.it{display:flex;gap:8px;align-items:baseline}
 nav.toc .tcat{flex:0 0 6.4em;color:var(--accent);font-size:.8rem;font-weight:600;white-space:nowrap}
+.kiri h4{margin:14px 0 6px;font-size:.95rem}
+details.kr{border-top:1px solid var(--line);padding:8px 0}details.kr:first-of-type{border-top:none}
+details.kr summary{cursor:pointer;list-style:none;font-weight:600}details.kr summary::-webkit-details-marker{display:none}
+details.kr summary::before{content:"▸ ";color:var(--muted)}details.kr[open] summary::before{content:"▾ "}
+.kcat{color:var(--accent);font-size:.8rem;font-weight:600;margin-right:4px}.kby{color:var(--muted);font-size:.8rem;font-weight:400}
 .top{display:block;text-align:right;font-size:.8rem;color:var(--muted);margin-top:8px;text-decoration:none}h3{margin-top:32px;font-size:1rem}.foot{color:var(--muted);font-size:.8rem;margin-top:40px}
 """
 
@@ -63,6 +68,30 @@ def companies(result: dict) -> list[dict]:
     return list(result.get("industry") or []) + list(result.get("watch") or [])
 
 
+def _kiri_section(items: list[dict], top: str) -> str:
+    """보험연구원 새 보고서: 간행물·호별로 묶고, 글마다 접었다 펼 수 있게."""
+    groups: dict[tuple, list] = {}
+    for k in items:
+        groups.setdefault((k["publication"], k.get("issue", "")), []).append(k)
+    html_out = ""
+    for (pub, issue), ks in groups.items():
+        html_out += f'<h4>{_e(pub)} {_e(issue)}</h4>'
+        for k in ks:
+            link = k.get("pdf_url") or k.get("url")
+            body = ""
+            if k.get("summary"):
+                body += f'<p>{_e(k["summary"])}</p>'
+            if k.get("actuarial_view"):
+                body += f'<div class="view"><b>계리 관점</b> · {_e(k["actuarial_view"])}</div>'
+            if k.get("takeaway"):
+                body += f'<div class="view tip"><b>생각해볼 점</b> · {_e(k["takeaway"])}</div>'
+            body += f'<ul class="links"><li><a href="{_e(link)}" target="_blank" rel="noopener">원문 보기</a></li></ul>'
+            by = f' <span class="kby">· {_e(k.get("author"))}</span>' if k.get("author") else ""
+            html_out += (f'<details class="kr"><summary><span class="kcat">[{_e(k["category"])}]</span>'
+                         f'{_e(k["title"])}{by}</summary>{body}</details>')
+    return f'<h3 id="kiri">보험연구원 새 보고서</h3><section class="issue kiri">{html_out}{top}</section>'
+
+
 def render_day(result: dict, today: datetime) -> str:
     issues = result.get("issues", [])
     cos = companies(result)
@@ -76,6 +105,9 @@ def render_day(result: dict, today: datetime) -> str:
     )
     if cos:
         toc += f'<li><a href="#companies">회사별 소식</a> <span class="sub">{len(cos)}곳</span></li>'
+    kiri = result.get("kiri_items") or []
+    if kiri:
+        toc += f'<li><a href="#kiri">보험연구원 새 보고서</a> <span class="sub">{len(kiri)}편</span></li>'
     if term.get("word"):
         toc += f'<li><a href="#term">오늘의 계리 용어</a> <span class="sub">{_e(term["word"])}</span></li>'
 
@@ -90,6 +122,8 @@ def render_day(result: dict, today: datetime) -> str:
             f'<li><b>{_e(c.get("company"))}</b> · {_e(c.get("note"))}{_links(c.get("links"))}</li>' for c in cos
         )
         body += f'<h3 id="companies">회사별 소식</h3><section class="issue"><ul class="co">{rows}</ul>{top}</section>'
+    if kiri:
+        body += _kiri_section(kiri, top)
     if term.get("word"):
         body += (f'<h3 id="term">오늘의 계리 용어</h3><section class="issue"><h2>{_e(term["word"])}</h2>'
                  f'<p>{_e(term.get("explain"))}</p>{top}</section>')

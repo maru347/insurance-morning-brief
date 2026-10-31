@@ -41,6 +41,10 @@ def _check(resp, step: str) -> None:
 def build_text(result: dict, date_label: str) -> str:
     lines = [f"[보험 아침 브리핑 {date_label}]"]
     lines += [f"· {l}" for l in result.get("kakao_lines", [])[:3]]
+    kiri = result.get("kiri_items") or []
+    if kiri:
+        pubs = sorted({f'{k["publication"]} {k.get("issue", "")}'.strip() for k in kiri})
+        lines.append(f"· 보험연구원 새 보고서 {len(kiri)}편 ({', '.join(pubs)})"[:60])
     text = "\n".join(lines)
     return text if len(text) <= KAKAO_TEXT_LIMIT else text[: KAKAO_TEXT_LIMIT - 1] + "…"
 
