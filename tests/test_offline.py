@@ -59,13 +59,13 @@ def test_parse_json_with_extra_text():
     from brief.analyze import parse_json
     assert parse_json('여기 결과입니다\n```json\n{"headline": "x"}\n```')["headline"] == "x"
 
-def test_interview_and_term_render():
+def test_takeaway_and_term_render():
     r = {"headline": "h", "issues": [{"title": "t", "category": "기타", "summary": "s",
-          "actuarial_view": "v", "interview_point": "면접에서 말할 문장", "links": []}],
+          "actuarial_view": "v", "takeaway": "짚어볼 점", "links": []}],
          "industry": [{"company": "삼성화재", "note": "3분기 실적 발표"}],
          "term": {"word": "CSM", "explain": "계약서비스마진입니다."}}
     page = pub.render_day(r, now)
-    assert "면접 활용" in page and "오늘의 계리 용어" in page and "CSM" in page
+    assert "생각해볼 점" in page and "면접" not in page and "오늘의 계리 용어" in page and "CSM" in page
     assert "업계 회사별 소식" in page and "삼성화재" in page
 
 def test_dedupe_speed_many_articles():
