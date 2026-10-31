@@ -29,7 +29,7 @@ h1{font-size:1.4rem;margin:0 0 4px}.date{color:var(--muted);font-size:.9rem}
 .view b{color:var(--accent)}
 ul.links{margin:10px 0 0;padding-left:18px;font-size:.85rem}a{color:inherit}
 ul.co{margin:0;padding-left:18px}ul.co li{margin:8px 0}ul.co ul.links{margin-top:4px}
-section,h3{scroll-margin-top:16px}
+section,h3,nav.toc{scroll-margin-top:72px}
 nav.toc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:0 0 20px}
 nav.toc b{font-size:.85rem;color:var(--muted)}nav.toc ol{margin:6px 0 0;padding-left:20px}
 nav.toc li{margin:3px 0}nav.toc a{text-decoration:none}nav.toc a:hover{text-decoration:underline}
@@ -41,7 +41,8 @@ details.kr{border-top:1px solid var(--line);padding:8px 0}details.kr:first-of-ty
 details.kr summary{cursor:pointer;list-style:none;font-weight:600}details.kr summary::-webkit-details-marker{display:none}
 details.kr summary::before{content:"▸ ";color:var(--muted)}details.kr[open] summary::before{content:"▾ "}
 .kcat{color:var(--accent);font-size:.8rem;font-weight:600;margin-right:4px}.kby{color:var(--muted);font-size:.8rem;font-weight:400}
-nav.bar{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 0 16px;font-size:.85rem}
+nav.bar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:8px;margin:-24px -16px 16px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line);font-size:.9rem}
+nav.bar a.home{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
 nav.bar a{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);text-decoration:none}
 nav.bar a:hover{border-color:var(--accent)}nav.bar .off{visibility:hidden}nav.bar .pn{display:flex;gap:6px}
 .month{margin:28px 0 8px;font-size:1rem;color:var(--muted)}
@@ -116,7 +117,7 @@ def _nav(name: str) -> str:
     i = days.index(name)
     prev = f'<a href="{days[i-1]}.html">‹ 이전</a>' if i > 0 else '<a class="off">‹ 이전</a>'
     nxt = f'<a href="{days[i+1]}.html">다음 ›</a>' if i < len(days) - 1 else '<a class="off">다음 ›</a>'
-    return f'<nav class="bar"><a href="index.html">☰ 전체 브리핑 목록</a><span class="pn">{prev}{nxt}</span></nav>'
+    return f'<nav class="bar"><a class="home" href="index.html">← 목록으로</a><span class="pn">{prev}{nxt}</span></nav>'
 
 
 def render_day(result: dict, today: datetime) -> str:
