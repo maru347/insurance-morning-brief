@@ -126,6 +126,17 @@ def collect(now: datetime | None = None) -> list[Article]:
             print(f"[경고] 구글뉴스 '{q}' 수집 실패: {e}")
 
     recent = [a for a in raw if a.published >= since]
-    articles = dedupe(recent)
-    print(f"수집 {len(raw)}건 → 최근 {len(recent)}건 → 중복 제거 {len(articles)}건")
+    articles = rank(dedupe(recent))
+    print(f"수집 {len(raw)}건 → 최근 {len(recent)}건 → 중복 제거·정렬 {len(articles)}건")
     return articles
+
+
+def rank(articles: list[Article]) -> list[Article]:
+    """AI에 넘길 순서를 정한다: 광고성 제거 → 관심 회사 → 여러 키워드에 걸린(=중요한) 기사 → 최신."""
+    clean = [a for a in articles if not any(w in a.title for w in config.NOISE_WORDS)]
+
+    def score(a: Article):
+        watch = any(c in a.title or c in a.summary for c in config.WATCH_COMPANIES)
+        return (watch, len(a.keywords), a.published)
+
+    return sorted(clean, key=score, reverse=True)

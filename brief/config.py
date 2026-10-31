@@ -18,19 +18,30 @@ NEWS_KEYWORDS = [
     "손해율",
     "보험료 인상",
     "실손보험",
+    "보험 계리가정",
+    "보험 해지율",
+    "보험 수수료 규제",
+    "보험 배타적사용권",
+    "기후 보험",
+    "보험 신상품",
+    "보험사 지급여력",
+    "수협 공제",
 ]
 
 # 따로 챙겨볼 관심 회사 (지원 회사)
 WATCH_COMPANIES = ["KB손해보험", "수협", "ABL생명"]
 
 # 구글 뉴스 RSS 검색어 (when:1d = 최근 하루)
-GOOGLE_NEWS_QUERIES = ["보험사", "보험연구원"]
+GOOGLE_NEWS_QUERIES = ["보험사", "보험연구원", "보험 계리"]
 
 # 최근 몇 시간 안의 기사만 볼지
 LOOKBACK_HOURS = 24
 
 # AI 분석에 넘길 최대 기사 수 (비용 관리)
-MAX_ARTICLES_FOR_AI = 60
+MAX_ARTICLES_FOR_AI = 80
+
+# 광고·홍보성 기사로 보고 AI에 넘기기 전에 거르는 제목 단어
+NOISE_WORDS = ["설계사 모집", "고객센터", "이벤트", "할인 행사", "보험 추천", "비교사이트", "[포토]", "[인사]", "[부고]"]
 
 # Claude 모델 (환경변수로 바꿀 수 있음)
 CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-5-5")

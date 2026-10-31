@@ -41,13 +41,22 @@ def _links(links) -> str:
     return f'<ul class="links">{items}</ul>'
 
 
+def _interview(issue) -> str:
+    tip = issue.get("interview_point")
+    return f'<div class="view tip"><b>면접 활용</b> · {_e(tip)}</div>' if tip else ""
+
+
 def render_day(result: dict, today: datetime) -> str:
     issues = "".join(
         f"""<section class="issue"><div class="cat">{_e(i.get('category'))}</div>
 <h2>{n}. {_e(i.get('title'))}</h2><p>{_e(i.get('summary'))}</p>
-<div class="view"><b>계리 관점</b> · {_e(i.get('actuarial_view'))}</div>{_links(i.get('links'))}</section>"""
+<div class="view"><b>계리 관점</b> · {_e(i.get('actuarial_view'))}</div>{_interview(i)}{_links(i.get('links'))}</section>"""
         for n, i in enumerate(result.get("issues", []), 1)
     )
+    term = result.get("term") or {}
+    if term.get("word"):
+        issues += (f'<h3>오늘의 계리 용어</h3><section class="issue"><h2>{_e(term["word"])}</h2>'
+                   f'<p>{_e(term.get("explain"))}</p></section>')
     watch = ""
     if result.get("watch"):
         watch = "<h3>관심 회사 소식</h3>" + "".join(

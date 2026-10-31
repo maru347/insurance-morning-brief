@@ -24,6 +24,11 @@ SYSTEM_PROMPT = """당신은 한국 보험사 상품계리 부서의 시니어 �
 - 광고성 기사, 보험설계사 개인 홍보, 단순 상품 판매 기사는 제외합니다.
 - '계리 관점'은 이 이슈가 위험률, 손해율, CSM, K-ICS, 준비금, 상품 설계, 제도 중
   무엇에 어떤 영향을 줄 수 있는지 한두 문장으로 씁니다. 추정이면 '~할 수 있다'로 씁니다.
+  "영향이 있을 수 있다" 같은 뻔한 말 대신, 어떤 가정·지표가 어느 방향으로 움직이는지 구체적으로 씁니다.
+- 브리핑을 받는 사람은 보험사 상품계리 직무 취업을 준비 중입니다. '면접 활용'에는 이 이슈를
+  면접에서 지원자가 직접 말할 수 있는 한 문장(지원자 시점, '~라고 생각합니다' 형태)으로 씁니다.
+- '오늘의 계리 용어'는 오늘 기사에 등장했거나 이슈와 밀접한 계리·감독 용어 하나를 골라
+  신입도 이해할 수 있게 2문장으로 설명합니다.
 """
 
 OUTPUT_SPEC = """다음 JSON 형식으로만 답하세요 (코드블록 없이):
@@ -35,12 +40,14 @@ OUTPUT_SPEC = """다음 JSON 형식으로만 답하세요 (코드블록 없이):
       "category": "제도·감독 | 실적·재무 | 상품·시장 | 손해율·보험금 | 디지털·AI | 기타 중 하나",
       "summary": "무슨 일인지 2~3문장",
       "actuarial_view": "계리 관점 1~2문장",
+      "interview_point": "면접 활용 1문장 (지원자 시점)",
       "article_ids": [기사 번호들]
     }
   ],
   "watch": [
     {"company": "관심 회사명", "note": "오늘 나온 소식 1문장", "article_ids": [기사 번호]}
   ],
+  "term": {"word": "오늘의 계리 용어", "explain": "2문장 설명"},
   "kakao_lines": ["카톡용 핵심 3줄, 각 40자 이내"]
 }
 issues는 중요도 순으로 최대 5개, watch는 관심 회사 소식이 있을 때만 넣습니다."""
@@ -60,20 +67,31 @@ def analyze(articles: list[Article], today: datetime) -> dict:
         f"관심 회사: {', '.join(config.WATCH_COMPANIES)}\n\n"
         f"최근 24시간 기사 목록:\n{build_article_list(articles)}\n\n{OUTPUT_SPEC}"
     )
-    resp = client.messages.create(
-        model=config.CLAUDE_MODEL,
-        max_tokens=3000,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": user_msg}],
-    )
-    text = resp.content[0].text.strip()
-    # 혹시 코드블록으로 감싸서 오면 벗겨낸다
-    if text.startswith("```"):
-        text = text.split("\n", 1)[1].rsplit("```", 1)[0]
-    result = json.loads(text)
-    print(f"AI 분석 완료: 이슈 {len(result.get('issues', []))}개 "
-          f"(입력 {resp.usage.input_tokens} / 출력 {resp.usage.output_tokens} 토큰)")
-    return result
+    last_error = None
+    for attempt in range(2):  # JSON이 깨져서 오면 한 번 더 시도
+        resp = client.messages.create(
+            model=config.CLAUDE_MODEL,
+            max_tokens=4000,
+            system=SYSTEM_PROMPT,
+            messages=[{"role": "user", "content": user_msg}],
+        )
+        try:
+            result = parse_json(resp.content[0].text)
+        except json.JSONDecodeError as e:
+            last_error = e
+            print(f"[경고] AI 응답 JSON 오류 (시도 {attempt + 1}): {e}")
+            continue
+        print(f"AI 분석 완료: 이슈 {len(result.get('issues', []))}개 "
+              f"(입력 {resp.usage.input_tokens} / 출력 {resp.usage.output_tokens} 토큰)")
+        return result
+    raise last_error
+
+
+def parse_json(text: str) -> dict:
+    """응답에서 JSON 부분만 꺼낸다 (코드블록이나 앞뒤 설명이 붙어 와도 처리)."""
+    text = text.strip()
+    start, end = text.find("{"), text.rfind("}")
+    return json.loads(text[start : end + 1] if start != -1 else text)
 
 
 def attach_links(result: dict, articles: list[Article]) -> dict:

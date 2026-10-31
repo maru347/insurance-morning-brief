@@ -45,6 +45,27 @@ def test_kakao_text_limit():
 def test_article_list_format():
     assert build_article_list(arts).startswith("[0] ")
 
+def test_rank_watch_first_and_noise_removed():
+    from brief.collect import rank
+    items = [
+        Article("보험업계 일반 소식", "", "a", "네이버뉴스", now, ["보험업계", "손해보험", "손해율"]),
+        Article("ABL생명, 신상품 출시", "", "b", "네이버뉴스", now - timedelta(hours=3), ["ABL생명"]),
+        Article("[인사] 某보험사 임원 인사", "", "c", "네이버뉴스", now, ["보험업계"]),
+    ]
+    out = rank(items)
+    assert [a.url for a in out] == ["b", "a"]
+
+def test_parse_json_with_extra_text():
+    from brief.analyze import parse_json
+    assert parse_json('여기 결과입니다\n```json\n{"headline": "x"}\n```')["headline"] == "x"
+
+def test_interview_and_term_render():
+    r = {"headline": "h", "issues": [{"title": "t", "category": "기타", "summary": "s",
+          "actuarial_view": "v", "interview_point": "면접에서 말할 문장", "links": []}],
+         "term": {"word": "CSM", "explain": "계약서비스마진입니다."}}
+    page = pub.render_day(r, now)
+    assert "면접 활용" in page and "오늘의 계리 용어" in page and "CSM" in page
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
