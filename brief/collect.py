@@ -171,7 +171,7 @@ def watch_hits(a: Article) -> list[str]:
 def rank(articles: list[Article]) -> list[Article]:
     """AI에 넘길 순서: 광고성 제거 → 관심 회사 → 계리 핵심 주제 → 여러 키워드·주제에 걸린 기사 → 전문지 → 최신."""
     clean = [a for a in articles if not any(w in a.title for w in config.NOISE_WORDS)]
-    core = {"제도·감독", "계리·재무건전성", "손해율·보험금"}
+    core = {"제도·감독", "계리·재무건전성", "손해율·보험금", "신위험"}
 
     def score(a: Article):
         t = topics(a)
