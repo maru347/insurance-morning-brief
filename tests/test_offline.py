@@ -66,6 +66,19 @@ def test_interview_and_term_render():
     page = pub.render_day(r, now)
     assert "면접 활용" in page and "오늘의 계리 용어" in page and "CSM" in page
 
+def test_fetch_rss_and_collect_without_network():
+    from unittest import mock
+    from brief import collect as col
+    xml = ("<?xml version='1.0'?><rss><channel><item><title>KB손해보험 &lt;b&gt;신상품&lt;/b&gt;</title>"
+           "<link>http://x/1</link><description>요약</description>"
+           "<pubDate>Fri, 30 Oct 2026 22:00:00 GMT</pubDate></item></channel></rss>").encode("utf-8")
+    resp = mock.Mock(content=xml); resp.raise_for_status = lambda: None
+    with mock.patch("brief.collect.requests.get", return_value=resp):
+        items = col.fetch_rss("u", "보험신문", "보험전문지")
+        assert items[0].title == "KB손해보험 신상품" and items[0].source == "보험신문"
+        out = col.collect(datetime(2026, 10, 31, 0, tzinfo=timezone.utc))
+        assert len(out) == 1   # 모든 검색어가 같은 기사를 돌려줘도 하나로 합쳐짐
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

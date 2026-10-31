@@ -4,7 +4,8 @@
 """
 import os
 
-# 네이버 뉴스에서 검색할 키워드 (업계 전반 + 계리 관련 제도 용어)
+# 구글 뉴스에서 검색할 키워드 (업계 전반 + 계리 관련 제도 용어)
+# (네이버 검색 API는 신규 발급 중단 + AI 요약 금지 약관이라 사용하지 않음)
 NEWS_KEYWORDS = [
     "보험업계",
     "손해보험",
@@ -26,13 +27,18 @@ NEWS_KEYWORDS = [
     "보험 신상품",
     "보험사 지급여력",
     "수협 공제",
+    "보험 계리",
 ]
 
 # 따로 챙겨볼 관심 회사 (지원 회사)
 WATCH_COMPANIES = ["KB손해보험", "수협", "ABL생명"]
 
-# 구글 뉴스 RSS 검색어 (when:1d = 최근 하루)
-GOOGLE_NEWS_QUERIES = ["보험사", "보험연구원", "보험 계리"]
+# 보험 전문지 등 직접 받아볼 RSS 주소 (주소가 바뀌거나 막히면 경고만 남기고 건너뜀)
+EXTRA_RSS_FEEDS = {
+    "보험신문": "https://www.insweek.co.kr/rss/allArticle.xml",
+    "보험매일": "https://www.fins.co.kr/rss/allArticle.xml",
+    "한국보험신문": "https://www.insnews.co.kr/rss/allArticle.xml",
+}
 
 # 최근 몇 시간 안의 기사만 볼지
 LOOKBACK_HOURS = 24

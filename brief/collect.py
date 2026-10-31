@@ -1,17 +1,15 @@
 """1단계: 뉴스 수집.
 
-네이버 뉴스 검색 API와 구글 뉴스 RSS에서 최근 24시간 보험 관련 기사를 모으고,
+구글 뉴스 RSS(키워드 검색)와 보험 전문지 RSS에서 최근 24시간 보험 관련 기사를 모으고,
 같은 기사(제목이 거의 같은 것)는 하나로 합친다.
 """
 from __future__ import annotations
 
 import html
-import os
 import re
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from difflib import SequenceMatcher
-from email.utils import parsedate_to_datetime
 from urllib.parse import quote
 
 import feedparser
@@ -33,36 +31,9 @@ class Article:
 
 
 def _clean(text: str) -> str:
-    """네이버 결과의 <b> 태그와 HTML 특수문자를 지운다."""
+    """RSS 결과의 <b> 태그와 HTML 특수문자를 지운다."""
     text = re.sub(r"<[^>]+>", "", text or "")
     return html.unescape(text).strip()
-
-
-def fetch_naver(keyword: str, display: int = 30) -> list[Article]:
-    client_id = os.environ.get("NAVER_CLIENT_ID")
-    client_secret = os.environ.get("NAVER_CLIENT_SECRET")
-    if not client_id or not client_secret:
-        return []
-    resp = requests.get(
-        "https://openapi.naver.com/v1/search/news.json",
-        params={"query": keyword, "display": display, "sort": "date"},
-        headers={"X-Naver-Client-Id": client_id, "X-Naver-Client-Secret": client_secret},
-        timeout=15,
-    )
-    resp.raise_for_status()
-    articles = []
-    for item in resp.json().get("items", []):
-        articles.append(
-            Article(
-                title=_clean(item["title"]),
-                summary=_clean(item.get("description", "")),
-                url=item.get("originallink") or item["link"],
-                source="네이버뉴스",
-                published=parsedate_to_datetime(item["pubDate"]),
-                keywords=[keyword],
-            )
-        )
-    return articles
 
 
 def fetch_google_news(query: str) -> list[Article]:
@@ -71,7 +42,13 @@ def fetch_google_news(query: str) -> list[Article]:
         + quote(f"{query} when:1d")
         + "&hl=ko&gl=KR&ceid=KR:ko"
     )
-    feed = feedparser.parse(url)
+    return fetch_rss(url, source="구글뉴스", keyword=query)
+
+
+def fetch_rss(url: str, source: str, keyword: str) -> list[Article]:
+    resp = requests.get(url, timeout=20, headers={"User-Agent": "Mozilla/5.0 (insurance-morning-brief)"})
+    resp.raise_for_status()
+    feed = feedparser.parse(resp.content)
     articles = []
     for entry in feed.entries:
         published = (
@@ -84,9 +61,9 @@ def fetch_google_news(query: str) -> list[Article]:
                 title=_clean(entry.title),
                 summary=_clean(getattr(entry, "summary", "")),
                 url=entry.link,
-                source="구글뉴스",
+                source=source,
                 published=published,
-                keywords=[query],
+                keywords=[keyword],
             )
         )
     return articles
@@ -116,14 +93,16 @@ def collect(now: datetime | None = None) -> list[Article]:
     raw: list[Article] = []
     for kw in config.NEWS_KEYWORDS + config.WATCH_COMPANIES:
         try:
-            raw += fetch_naver(kw)
-        except requests.RequestException as e:
-            print(f"[경고] 네이버 '{kw}' 수집 실패: {e}")
-    for q in config.GOOGLE_NEWS_QUERIES:
+            raw += fetch_google_news(kw)
+        except Exception as e:  # 한 검색어가 실패해도 전체를 멈추지 않도록
+            print(f"[경고] 구글뉴스 '{kw}' 수집 실패: {e}")
+    for name, url in config.EXTRA_RSS_FEEDS.items():
         try:
-            raw += fetch_google_news(q)
-        except Exception as e:  # RSS 파싱 오류가 전체를 멈추지 않도록
-            print(f"[경고] 구글뉴스 '{q}' 수집 실패: {e}")
+            items = fetch_rss(url, source=name, keyword="보험전문지")
+            raw += items
+            print(f"{name} RSS {len(items)}건")
+        except Exception as e:
+            print(f"[경고] {name} RSS 수집 실패: {e}")
 
     recent = [a for a in raw if a.published >= since]
     articles = rank(dedupe(recent))
