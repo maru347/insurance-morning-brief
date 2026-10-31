@@ -41,6 +41,13 @@ details.kr{border-top:1px solid var(--line);padding:8px 0}details.kr:first-of-ty
 details.kr summary{cursor:pointer;list-style:none;font-weight:600}details.kr summary::-webkit-details-marker{display:none}
 details.kr summary::before{content:"▸ ";color:var(--muted)}details.kr[open] summary::before{content:"▾ "}
 .kcat{color:var(--accent);font-size:.8rem;font-weight:600;margin-right:4px}.kby{color:var(--muted);font-size:.8rem;font-weight:400}
+nav.bar{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 0 16px;font-size:.85rem}
+nav.bar a{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);text-decoration:none}
+nav.bar a:hover{border-color:var(--accent)}nav.bar .off{visibility:hidden}nav.bar .pn{display:flex;gap:6px}
+.month{margin:28px 0 8px;font-size:1rem;color:var(--muted)}
+a.day{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:8px 0}
+a.day:hover{border-color:var(--accent)}a.day .d{font-weight:700}a.day .d small{color:var(--muted);font-weight:400;margin-left:4px}
+a.day .h{display:block;margin-top:2px}a.day .chips{display:block;margin-top:4px;color:var(--muted);font-size:.78rem}
 .top{display:block;text-align:right;font-size:.8rem;color:var(--muted);margin-top:8px;text-decoration:none}h3{margin-top:32px;font-size:1rem}.foot{color:var(--muted);font-size:.8rem;margin-top:40px}
 """
 
@@ -96,6 +103,22 @@ def _kiri_section(items: list[dict], top: str) -> str:
     return f'<h3 id="kiri">보험연구원 새 보고서</h3><section class="issue kiri">{html_out}{top}</section>'
 
 
+WEEKDAYS = "월화수목금토일"
+
+
+def _day_names() -> list[str]:
+    return sorted(p.stem for p in DOCS.glob("20*.html"))
+
+
+def _nav(name: str) -> str:
+    """페이지 맨 위: 전체 목록 버튼 + 이전/다음 날 이동."""
+    days = sorted(set(_day_names()) | {name})
+    i = days.index(name)
+    prev = f'<a href="{days[i-1]}.html">‹ 이전</a>' if i > 0 else '<a class="off">‹ 이전</a>'
+    nxt = f'<a href="{days[i+1]}.html">다음 ›</a>' if i < len(days) - 1 else '<a class="off">다음 ›</a>'
+    return f'<nav class="bar"><a href="index.html">☰ 전체 브리핑 목록</a><span class="pn">{prev}{nxt}</span></nav>'
+
+
 def render_day(result: dict, today: datetime) -> str:
     issues = result.get("issues", [])
     cos = companies(result)
@@ -134,7 +157,8 @@ def render_day(result: dict, today: datetime) -> str:
     return f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>보험 아침 브리핑 {today:%m/%d}</title><style>{STYLE}</style></head><body><main>
-<h1>보험 아침 브리핑</h1><div class="date">{today:%Y년 %m월 %d일} · 계리 관점 데일리</div>
+{_nav(f"{today:%Y-%m-%d}")}
+<h1>보험 아침 브리핑</h1><div class="date">{today:%Y년 %m월 %d일} ({WEEKDAYS[today.weekday()]}) · 계리 관점 데일리</div>
 <div class="headline">{_e(result.get('headline'))}</div>
 <nav class="toc" id="toc"><b>목차</b><ol>{toc}</ol></nav>{body}
 <p class="foot">뉴스 기사를 AI(Claude)가 요약·분석한 자료입니다. 원문 링크로 사실을 확인하세요. · <a href="index.html">지난 브리핑</a></p>
@@ -142,13 +166,36 @@ def render_day(result: dict, today: datetime) -> str:
 
 
 def render_index() -> str:
-    days = sorted((p.stem for p in DOCS.glob("20*.html")), reverse=True)
-    items = "".join(f'<li><a href="{d}.html">{d}</a></li>' for d in days)
+    """전체 브리핑 목록: 월별로 묶고, 날짜마다 헤드라인과 주제를 보여준다."""
+    days = sorted(_day_names(), reverse=True)
+    body, month = "", ""
+    for d in days:
+        dt = datetime.strptime(d, "%Y-%m-%d")
+        if f"{dt:%Y-%m}" != month:
+            month = f"{dt:%Y-%m}"
+            body += f'<h3 class="month">{dt:%Y년 %m월}</h3>'
+        headline, chips = "", ""
+        data = DOCS / "data" / f"{d}.json"
+        if data.exists():
+            try:
+                r = json.loads(data.read_text(encoding="utf-8"))
+                headline = r.get("headline", "")
+                cats = []
+                for i in r.get("issues", []):
+                    if i.get("category") and i["category"] not in cats:
+                        cats.append(i["category"])
+                chips = " · ".join(cats)
+                if r.get("kiri_items"):
+                    chips += f" · 보험연구원 {len(r['kiri_items'])}편"
+            except (json.JSONDecodeError, OSError):
+                pass
+        body += (f'<a class="day" href="{d}.html"><span class="d">{dt:%m월 %d일}<small>({WEEKDAYS[dt.weekday()]})</small></span>'
+                 f'<span class="h">{_e(headline)}</span><span class="chips">{_e(chips)}</span></a>')
     return f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>보험 아침 브리핑</title><style>{STYLE}</style></head><body><main>
-<h1>보험 아침 브리핑</h1><div class="date">매일 08:30 · 보험산업 이슈를 계리 관점으로</div>
-<ul>{items}</ul></main></body></html>"""
+<title>보험 아침 브리핑 목록</title><style>{STYLE}</style></head><body><main>
+<h1>보험 아침 브리핑</h1><div class="date">매일 08:30 · 보험산업 이슈를 계리 관점으로 · 총 {len(days)}일</div>
+{body}</main></body></html>"""
 
 
 def publish(result: dict, today: datetime) -> str:
@@ -157,6 +204,15 @@ def publish(result: dict, today: datetime) -> str:
     (DOCS / f"{name}.html").write_text(render_day(result, today), encoding="utf-8")
     (DOCS / "data").mkdir(exist_ok=True)
     (DOCS / "data" / f"{name}.json").write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    # 바로 전날 페이지도 다시 그려서 '다음 ›' 버튼이 오늘로 이어지게 한다 (저장된 데이터 사용, 비용 없음)
+    days = _day_names()
+    if name in days and days.index(name) > 0:
+        prev = days[days.index(name) - 1]
+        prev_data = DOCS / "data" / f"{prev}.json"
+        if prev_data.exists():
+            prev_dt = datetime.strptime(prev, "%Y-%m-%d")
+            (DOCS / f"{prev}.html").write_text(
+                render_day(json.loads(prev_data.read_text(encoding="utf-8")), prev_dt), encoding="utf-8")
     (DOCS / "index.html").write_text(render_index(), encoding="utf-8")
     print(f"웹페이지 생성: docs/{name}.html")
     return f"{name}.html"
