@@ -1,15 +1,17 @@
 """1단계: 뉴스 수집.
 
-구글 뉴스 RSS(키워드 검색)와 보험 전문지 RSS에서 최근 24시간 보험 관련 기사를 모으고,
+네이버 뉴스(NAVER API HUB, 키가 있을 때), 구글 뉴스 RSS, 보험 전문지 RSS에서 최근 24시간 보험 관련 기사를 모으고,
 같은 기사(제목이 거의 같은 것)는 하나로 합친다.
 """
 from __future__ import annotations
 
 import html
+import os
 import re
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from difflib import SequenceMatcher
+from email.utils import parsedate_to_datetime
 from urllib.parse import quote
 
 import feedparser
@@ -34,6 +36,35 @@ def _clean(text: str) -> str:
     """RSS 결과의 <b> 태그와 HTML 특수문자를 지운다."""
     text = re.sub(r"<[^>]+>", "", text or "")
     return html.unescape(text).strip()
+
+
+NAVER_HUB_NEWS_URL = "https://naverapihub.apigw.ntruss.com/search/v1/news"
+
+
+def fetch_naver(keyword: str, display: int = 30) -> list[Article]:
+    """NAVER API HUB 뉴스 검색. 키(NAVER_CLIENT_ID/SECRET)가 없으면 건너뛴다."""
+    client_id = os.environ.get("NAVER_CLIENT_ID")
+    client_secret = os.environ.get("NAVER_CLIENT_SECRET")
+    if not client_id or not client_secret:
+        return []
+    resp = requests.get(
+        NAVER_HUB_NEWS_URL,
+        params={"query": keyword, "display": display, "sort": "date", "format": "json"},
+        headers={"X-NCP-APIGW-API-KEY-ID": client_id, "X-NCP-APIGW-API-KEY": client_secret},
+        timeout=15,
+    )
+    resp.raise_for_status()
+    return [
+        Article(
+            title=_clean(item["title"]),
+            summary=_clean(item.get("description", "")),
+            url=item.get("originallink") or item["link"],
+            source="네이버뉴스",
+            published=parsedate_to_datetime(item["pubDate"]),
+            keywords=[keyword],
+        )
+        for item in resp.json().get("items", [])
+    ]
 
 
 def fetch_google_news(query: str) -> list[Article]:
@@ -92,6 +123,10 @@ def collect(now: datetime | None = None) -> list[Article]:
 
     raw: list[Article] = []
     for kw in config.NEWS_KEYWORDS + config.WATCH_COMPANIES:
+        try:
+            raw += fetch_naver(kw)
+        except Exception as e:
+            print(f"[경고] 네이버 '{kw}' 수집 실패: {e}")
         try:
             raw += fetch_google_news(kw)
         except Exception as e:  # 한 검색어가 실패해도 전체를 멈추지 않도록

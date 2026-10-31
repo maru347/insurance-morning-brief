@@ -79,6 +79,21 @@ def test_fetch_rss_and_collect_without_network():
         out = col.collect(datetime(2026, 10, 31, 0, tzinfo=timezone.utc))
         assert len(out) == 1   # 모든 검색어가 같은 기사를 돌려줘도 하나로 합쳐짐
 
+def test_fetch_naver_hub_request():
+    import os
+    from unittest import mock
+    from brief import collect as col
+    body = {"items": [{"title": "<b>보험</b> 소식", "description": "d", "link": "l", "originallink": "o",
+                       "pubDate": "Sat, 31 Oct 2026 09:00:00 +0900"}]}
+    resp = mock.Mock(); resp.json = lambda: body; resp.raise_for_status = lambda: None
+    with mock.patch.dict(os.environ, {"NAVER_CLIENT_ID": "id", "NAVER_CLIENT_SECRET": "sec"}), \
+         mock.patch("brief.collect.requests.get", return_value=resp) as get:
+        items = col.fetch_naver("보험")
+    url = get.call_args.args[0]; headers = get.call_args.kwargs["headers"]
+    assert url == "https://naverapihub.apigw.ntruss.com/search/v1/news"
+    assert headers == {"X-NCP-APIGW-API-KEY-ID": "id", "X-NCP-APIGW-API-KEY": "sec"}
+    assert items[0].title == "보험 소식" and items[0].url == "o"
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
