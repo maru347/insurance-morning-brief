@@ -26,7 +26,7 @@ def test_attach_links_and_render(tmp_path=None):
         "headline": "성장 둔화 속 수익성 시험대",
         "issues": [{"title": "보험료 성장률 3.5%로 둔화", "category": "실적·재무",
                     "summary": "s", "actuarial_view": "위험률차 관리 중요", "article_ids": [0, 99]}],
-        "watch": [{"company": "KB손해보험", "note": "공채", "article_ids": [1]}],
+        "companies": [{"company": "KB손해보험", "note": "공채", "article_ids": [1]}],
         "kakao_lines": ["내년 보험료 성장률 3.5% 전망", "KB손보 하반기 공채", "위험률차 손실 고착"],
     }
     out = attach_links(result, dedupe(arts))
@@ -66,7 +66,7 @@ def test_takeaway_and_term_render():
          "term": {"word": "CSM", "explain": "계약서비스마진입니다."}}
     page = pub.render_day(r, now)
     assert "생각해볼 점" in page and "면접" not in page and "오늘의 계리 용어" in page and "CSM" in page
-    assert "업계 회사별 소식" in page and "삼성화재" in page
+    assert "회사별 소식" in page and "삼성화재" in page
 
 def test_dedupe_speed_many_articles():
     import random, time
@@ -109,6 +109,17 @@ def test_response_text_skips_thinking_block():
     resp = NS(content=[NS(type="thinking", thinking="..."), NS(type="text", text='{"headline": "ok"}')],
               stop_reason="end_turn")
     assert parse_json(response_text(resp))["headline"] == "ok"
+
+def test_toc_and_merged_companies():
+    old = {"headline": "h", "issues": [{"title": "이슈A", "category": "기타", "summary": "s", "actuarial_view": "v"}],
+           "industry": [{"company": "한화생명", "note": "n1"}],
+           "watch": [{"company": "ABL생명", "note": "n2", "links": []}],
+           "term": {"word": "CSM", "explain": "e"}}
+    page = pub.render_day(old, now)
+    assert 'href="#issue-1"' in page and 'id="issue-1"' in page
+    assert 'href="#companies"' in page and 'href="#term"' in page and "scroll-behavior:smooth" in page
+    assert "관심 회사" not in page and page.count("<h3") == 2      # 회사 소식은 한 섹션으로 합쳐짐
+    assert page.index("한화생명") < page.index("ABL생명")
 
 if __name__ == "__main__":
     for name, fn in list(globals().items()):

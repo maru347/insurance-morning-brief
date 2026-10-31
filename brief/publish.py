@@ -13,8 +13,10 @@ from pathlib import Path
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 
 STYLE = """
+html{scroll-behavior:smooth}
 :root{--bg:#fafaf7;--fg:#1d1d1b;--muted:#6b6b66;--card:#fff;--line:#e6e4dc;--accent:#8a5a00}
-@media (prefers-color-scheme:dark){:root{--bg:#161614;--fg:#ecebe6;--muted:#a3a29b;--card:#1f1f1c;--line:#33322d;--accent:#e0b04f}}
+@media (prefers-color-scheme:dark){html{scroll-behavior:smooth}
+:root{--bg:#161614;--fg:#ecebe6;--muted:#a3a29b;--card:#1f1f1c;--line:#33322d;--accent:#e0b04f}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);
 font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.65}
 main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
@@ -26,7 +28,13 @@ h1{font-size:1.4rem;margin:0 0 4px}.date{color:var(--muted);font-size:.9rem}
 .view{margin-top:10px;padding:10px 12px;border-radius:8px;background:var(--bg);font-size:.95rem}
 .view b{color:var(--accent)}
 ul.links{margin:10px 0 0;padding-left:18px;font-size:.85rem}a{color:inherit}
-ul.co{margin:0;padding-left:18px}ul.co li{margin:4px 0}h3{margin-top:32px;font-size:1rem}.foot{color:var(--muted);font-size:.8rem;margin-top:40px}
+ul.co{margin:0;padding-left:18px}ul.co li{margin:8px 0}ul.co ul.links{margin-top:4px}
+section,h3{scroll-margin-top:16px}
+nav.toc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:0 0 20px}
+nav.toc b{font-size:.85rem;color:var(--muted)}nav.toc ol{margin:6px 0 0;padding-left:20px}
+nav.toc li{margin:3px 0}nav.toc a{text-decoration:none}nav.toc a:hover{text-decoration:underline}
+nav.toc .sub{color:var(--muted);font-size:.8rem}
+.top{display:block;text-align:right;font-size:.8rem;color:var(--muted);margin-top:8px;text-decoration:none}h3{margin-top:32px;font-size:1rem}.foot{color:var(--muted);font-size:.8rem;margin-top:40px}
 """
 
 
@@ -46,31 +54,49 @@ def _takeaway(issue) -> str:
     return f'<div class="view tip"><b>생각해볼 점</b> · {_e(tip)}</div>' if tip else ""
 
 
+def companies(result: dict) -> list[dict]:
+    """회사별 소식 목록. 예전 데이터(industry/watch로 나뉜 것)도 하나로 합친다."""
+    if result.get("companies"):
+        return result["companies"]
+    return list(result.get("industry") or []) + list(result.get("watch") or [])
+
+
 def render_day(result: dict, today: datetime) -> str:
-    issues = "".join(
-        f"""<section class="issue"><div class="cat">{_e(i.get('category'))}</div>
-<h2>{n}. {_e(i.get('title'))}</h2><p>{_e(i.get('summary'))}</p>
-<div class="view"><b>계리 관점</b> · {_e(i.get('actuarial_view'))}</div>{_takeaway(i)}{_links(i.get('links'))}</section>"""
-        for n, i in enumerate(result.get("issues", []), 1)
-    )
-    if result.get("industry"):
-        rows = "".join(f'<li><b>{_e(c.get("company"))}</b> · {_e(c.get("note"))}</li>' for c in result["industry"])
-        issues += f'<h3>업계 회사별 소식</h3><section class="issue"><ul class="co">{rows}</ul></section>'
+    issues = result.get("issues", [])
+    cos = companies(result)
     term = result.get("term") or {}
+    top = '<a class="top" href="#toc">↑ 목차</a>'
+
+    # 목차: 누르면 해당 위치로 부드럽게 스크롤
+    toc = "".join(
+        f'<li><a href="#issue-{n}">{_e(i.get("title"))}</a> <span class="sub">{_e(i.get("category"))}</span></li>'
+        for n, i in enumerate(issues, 1)
+    )
+    if cos:
+        toc += f'<li><a href="#companies">회사별 소식</a> <span class="sub">{len(cos)}곳</span></li>'
     if term.get("word"):
-        issues += (f'<h3>오늘의 계리 용어</h3><section class="issue"><h2>{_e(term["word"])}</h2>'
-                   f'<p>{_e(term.get("explain"))}</p></section>')
-    watch = ""
-    if result.get("watch"):
-        watch = "<h3>관심 회사 소식</h3>" + "".join(
-            f'<section class="issue"><h2>{_e(w.get("company"))}</h2><p>{_e(w.get("note"))}</p>{_links(w.get("links"))}</section>'
-            for w in result["watch"]
+        toc += f'<li><a href="#term">오늘의 계리 용어</a> <span class="sub">{_e(term["word"])}</span></li>'
+
+    body = "".join(
+        f"""<section class="issue" id="issue-{n}"><div class="cat">{_e(i.get('category'))}</div>
+<h2>{n}. {_e(i.get('title'))}</h2><p>{_e(i.get('summary'))}</p>
+<div class="view"><b>계리 관점</b> · {_e(i.get('actuarial_view'))}</div>{_takeaway(i)}{_links(i.get('links'))}{top}</section>"""
+        for n, i in enumerate(issues, 1)
+    )
+    if cos:
+        rows = "".join(
+            f'<li><b>{_e(c.get("company"))}</b> · {_e(c.get("note"))}{_links(c.get("links"))}</li>' for c in cos
         )
+        body += f'<h3 id="companies">회사별 소식</h3><section class="issue"><ul class="co">{rows}</ul>{top}</section>'
+    if term.get("word"):
+        body += (f'<h3 id="term">오늘의 계리 용어</h3><section class="issue"><h2>{_e(term["word"])}</h2>'
+                 f'<p>{_e(term.get("explain"))}</p>{top}</section>')
     return f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>보험 아침 브리핑 {today:%m/%d}</title><style>{STYLE}</style></head><body><main>
 <h1>보험 아침 브리핑</h1><div class="date">{today:%Y년 %m월 %d일} · 계리 관점 데일리</div>
-<div class="headline">{_e(result.get('headline'))}</div>{issues}{watch}
+<div class="headline">{_e(result.get('headline'))}</div>
+<nav class="toc" id="toc"><b>목차</b><ol>{toc}</ol></nav>{body}
 <p class="foot">뉴스 기사를 AI(Claude)가 요약·분석한 자료입니다. 원문 링크로 사실을 확인하세요. · <a href="index.html">지난 브리핑</a></p>
 </main></body></html>"""
 
