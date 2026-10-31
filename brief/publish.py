@@ -70,6 +70,10 @@ def companies(result: dict) -> list[dict]:
 
 def _kiri_section(items: list[dict], top: str) -> str:
     """보험연구원 새 보고서: 간행물·호별로 묶고, 글마다 접었다 펼 수 있게."""
+    pub_order = ["KIRI 리포트", "KIRI 글로벌 리뷰", "CEO Brief", "CEO Report"]
+    cat_order = ["포커스", "이슈분석", "글로벌 이슈", "글로벌 동향", "금융시장 주요지표"]
+    rank = lambda xs, v: xs.index(v) if v in xs else len(xs)
+    items = sorted(items, key=lambda k: (rank(pub_order, k["publication"]), rank(cat_order, k["category"])))
     groups: dict[tuple, list] = {}
     for k in items:
         groups.setdefault((k["publication"], k.get("issue", "")), []).append(k)
