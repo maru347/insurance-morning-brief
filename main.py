@@ -3,7 +3,9 @@
 수집 → AI 분석 → 웹페이지 게시 → 카카오톡 전송 순서로 실행한다.
   python main.py            # 전체 실행
   python main.py --no-kakao # 카톡 전송 없이 웹페이지까지만
-  python main.py --kakao-test # 가장 최근 브리핑을 카톡으로만 다시 보냄 (Claude 호출 없음, 무료)
+  python main.py --kakao-test # 가장 최근 브리핑을 카톡으로 보냄 (Claude 호출 없음, 무료)
+
+GitHub Actions에서는 생성(--no-kakao) → 페이지 커밋 → 90초 대기 → 카톡 전송(--kakao-test) 순서로 나눠 실행한다.
 """
 import json
 import os
