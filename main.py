@@ -4,6 +4,7 @@
   python main.py            # 전체 실행
   python main.py --no-kakao # 카톡 전송 없이 웹페이지까지만
 """
+import os
 import sys
 from datetime import datetime
 
@@ -25,6 +26,9 @@ def main() -> None:
     page = publish(result, today)
 
     if "--no-kakao" in sys.argv:
+        return
+    if not os.environ.get("KAKAO_REFRESH_TOKEN"):
+        print("카카오 토큰이 아직 없어 카톡 전송은 건너뜁니다 (웹페이지는 생성됨).")
         return
     page_url = f"{config.PAGES_BASE_URL}/{page}" if config.PAGES_BASE_URL else ""
     send(result, f"{today:%m/%d}", page_url)
