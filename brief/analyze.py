@@ -78,13 +78,13 @@ def analyze(articles: list[Article], today: datetime) -> dict:
     for attempt in range(2):  # JSON이 깨져서 오면 한 번 더 시도
         resp = client.messages.create(
             model=config.CLAUDE_MODEL,
-            max_tokens=4000,
+            max_tokens=16000,  # 모델이 먼저 '생각(thinking)'을 쓰므로 여유 있게
             system=SYSTEM_PROMPT,
             messages=[{"role": "user", "content": user_msg}],
         )
         try:
-            result = parse_json(resp.content[0].text)
-        except json.JSONDecodeError as e:
+            result = parse_json(response_text(resp))
+        except (json.JSONDecodeError, ValueError) as e:
             last_error = e
             print(f"[경고] AI 응답 JSON 오류 (시도 {attempt + 1}): {e}")
             continue
@@ -92,6 +92,14 @@ def analyze(articles: list[Article], today: datetime) -> dict:
               f"(입력 {resp.usage.input_tokens} / 출력 {resp.usage.output_tokens} 토큰)")
         return result
     raise last_error
+
+
+def response_text(resp) -> str:
+    """응답 블록 중 글(text) 블록만 모은다. 생각(thinking) 블록은 건너뛴다."""
+    text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text")
+    if not text.strip():
+        raise ValueError(f"AI 응답에 본문이 없습니다 (stop_reason={getattr(resp, 'stop_reason', None)})")
+    return text
 
 
 def parse_json(text: str) -> dict:

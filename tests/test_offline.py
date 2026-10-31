@@ -103,6 +103,13 @@ def test_fetch_naver_hub_request():
     assert headers == {"X-NCP-APIGW-API-KEY-ID": "id", "X-NCP-APIGW-API-KEY": "sec"}
     assert items[0].title == "보험 소식" and items[0].url == "o"
 
+def test_response_text_skips_thinking_block():
+    from types import SimpleNamespace as NS
+    from brief.analyze import response_text, parse_json
+    resp = NS(content=[NS(type="thinking", thinking="..."), NS(type="text", text='{"headline": "ok"}')],
+              stop_reason="end_turn")
+    assert parse_json(response_text(resp))["headline"] == "ok"
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
