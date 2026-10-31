@@ -13,44 +13,49 @@ from pathlib import Path
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 
 STYLE = """
-html{scroll-behavior:smooth}
-:root{--bg:#fafaf7;--fg:#1d1d1b;--muted:#6b6b66;--card:#fff;--line:#e6e4dc;--accent:#8a5a00}
-@media (prefers-color-scheme:dark){html{scroll-behavior:smooth}
-:root{--bg:#161614;--fg:#ecebe6;--muted:#a3a29b;--card:#1f1f1c;--line:#33322d;--accent:#e0b04f}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);
-font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.65}
-main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
-h1{font-size:1.4rem;margin:0 0 4px}.date{color:var(--muted);font-size:.9rem}
-.headline{font-size:1.05rem;margin:16px 0 24px;padding:12px 14px;border-left:3px solid var(--accent);background:var(--card)}
-.issue{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin:12px 0}
-.cat{font-size:.75rem;color:var(--accent);font-weight:600}
-.issue h2{font-size:1.05rem;margin:4px 0 8px}
-.view{margin-top:10px;padding:10px 12px;border-radius:8px;background:var(--bg);font-size:.95rem}
-.view b{color:var(--accent)}
-ul.links{margin:10px 0 0;padding-left:18px;font-size:.85rem}a{color:inherit}
-ul.co{margin:0;padding-left:18px}ul.co li{margin:8px 0}ul.co ul.links{margin-top:4px}
-section,h3,nav.toc{scroll-margin-top:72px}
-nav.toc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:0 0 20px}
-nav.toc b{font-size:.85rem;color:var(--muted)}nav.toc ol{margin:6px 0 0;padding-left:20px}
-nav.toc li{margin:3px 0}nav.toc a{text-decoration:none}nav.toc a:hover{text-decoration:underline}
-nav.toc .sub{color:var(--muted);font-size:.8rem}
-nav.toc a.it{display:flex;gap:8px;align-items:baseline}
-nav.toc .tcat{flex:0 0 6.4em;color:var(--accent);font-size:.8rem;font-weight:600;white-space:nowrap}
-.kiri h4{margin:14px 0 6px;font-size:.95rem}
-details.kr{border-top:1px solid var(--line);padding:8px 0}details.kr:first-of-type{border-top:none}
-details.kr summary{cursor:pointer;list-style:none;font-weight:600}details.kr summary::-webkit-details-marker{display:none}
-details.kr summary::before{content:"▸ ";color:var(--muted)}details.kr[open] summary::before{content:"▾ "}
-.kcat{color:var(--accent);font-size:.8rem;font-weight:600;margin-right:4px}.kby{color:var(--muted);font-size:.8rem;font-weight:400}
-nav.bar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:8px;margin:-24px -16px 16px;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line);font-size:.9rem}
-nav.bar a.home{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
-nav.bar a{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);text-decoration:none}
-nav.bar a:hover{border-color:var(--accent)}nav.bar .off{visibility:hidden}nav.bar .pn{display:flex;gap:6px}
-.month{margin:28px 0 8px;font-size:1rem;color:var(--muted)}
-a.day{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:8px 0}
-a.day:hover{border-color:var(--accent)}a.day .d{font-weight:700}a.day .d small{color:var(--muted);font-weight:400;margin-left:4px}
-a.day .h{display:block;margin-top:2px}a.day .chips{display:block;margin-top:4px;color:var(--muted);font-size:.78rem}
-.top{display:block;text-align:right;font-size:.8rem;color:var(--muted);margin-top:8px;text-decoration:none}h3{margin-top:32px;font-size:1rem}.foot{color:var(--muted);font-size:.8rem;margin-top:40px}
+:root{--ink:#17212B;--sub:#5B6875;--line:#E3E8EE;--bg:#FFFFFF;--soft:#F4F7FA;--key:#0E7A64;--bar:rgba(255,255,255,.94)}
+@media (prefers-color-scheme:dark){:root{--ink:#E7ECF1;--sub:#9AA7B4;--line:#2A3440;--bg:#12181F;--soft:#1A222B;--key:#3CC4A2;--bar:rgba(18,24,31,.94)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Pretendard","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:0 18px 96px}
+a{color:inherit}
+nav.bar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 -18px;padding:10px 18px;background:var(--bar);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);font-size:14px}
+nav.bar a{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:600}
+nav.bar a.home{background:var(--key);border-color:var(--key);color:#fff}
+nav.bar .pn{display:flex;gap:6px}nav.bar .off{visibility:hidden}
+.date{font-size:14px;color:var(--sub);margin-top:18px}
+h1{font-size:24px;line-height:1.35;margin:6px 0 18px;font-weight:800;letter-spacing:-.3px}
+.three{background:var(--soft);border-radius:14px;padding:4px 16px;margin-bottom:8px}
+.three p{margin:0;padding:12px 0;font-size:17px;font-weight:600;line-height:1.45;border-bottom:1px solid var(--line)}.three p:last-child{border:0}
+h2{font-size:15px;color:var(--sub);font-weight:700;margin:32px 0 4px;scroll-margin-top:64px}
+details{border-bottom:1px solid var(--line);scroll-margin-top:64px}
+summary{list-style:none;cursor:pointer;padding:14px 0;display:flex;gap:12px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary:focus-visible{outline:2px solid var(--key);outline-offset:2px;border-radius:6px}
+.dot{flex:0 0 10px;height:10px;border-radius:5px;margin-top:9px}
+.t{flex:1;font-size:17px;font-weight:700;line-height:1.45}.t small{display:block;font-size:13px;font-weight:500;color:var(--sub)}
+.chev{color:var(--sub);font-size:20px;line-height:1.3;transition:transform .2s}details[open]>summary .chev{transform:rotate(90deg)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chev{transition:none}}
+.body{padding:0 0 18px 22px;font-size:15.5px}.body p{margin:0 0 10px}
+.view{border-left:3px solid var(--key);padding:2px 0 2px 12px;margin:12px 0}
+.view b{display:block;font-size:13px;color:var(--key)}
+.q{color:var(--sub);font-size:15px}
+ul.links{margin:8px 0 0;padding-left:18px;font-size:14px;color:var(--sub)}ul.links li{margin:3px 0}
+.co .t{font-size:16px}.co .note{font-size:15px;font-weight:500;color:var(--ink);display:block;margin-top:2px}
+.pub{font-size:14px;font-weight:700;color:var(--ink);margin:18px 0 0}
+.term{background:var(--soft);border-radius:14px;padding:14px 16px;margin-top:8px}.term b{font-size:17px}.term p{margin:6px 0 0;font-size:15.5px}
+.foot{color:var(--sub);font-size:13px;margin-top:36px}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bar);backdrop-filter:blur(6px);border-top:1px solid var(--line);display:flex;justify-content:center}
+nav.tabs a{flex:1;max-width:160px;text-align:center;padding:11px 0 15px;font-size:13.5px;font-weight:700;color:var(--sub);text-decoration:none}
+nav.tabs a:first-child{color:var(--key)}
+.month{font-size:15px;color:var(--sub);margin:28px 0 6px}
+a.day{display:block;text-decoration:none;border-bottom:1px solid var(--line);padding:14px 0}
+a.day .d{font-weight:700}a.day .d small{color:var(--sub);font-weight:400;margin-left:4px}
+a.day .h{display:block;margin-top:2px;font-size:16px}a.day .chips{display:block;margin-top:2px;color:var(--sub);font-size:13px}
 """
+
+CAT_COLOR = {"제도·감독": "#3557A6", "실적·재무": "#0E7A64", "상품·시장": "#A36A00", "손해율·보험금": "#B4432C",
+             "신위험": "#6A45B0", "디지털·AI": "#1F7896", "기타": "#667085"}
 
 
 def _e(s) -> str:
@@ -66,7 +71,7 @@ def _links(links) -> str:
 
 def _takeaway(issue) -> str:
     tip = issue.get("takeaway") or issue.get("interview_point")  # 예전 데이터 호환
-    return f'<div class="view tip"><b>생각해볼 점</b> · {_e(tip)}</div>' if tip else ""
+    return f'<p class="q">생각해볼 점 · {_e(tip)}</p>' if tip else ""
 
 
 def companies(result: dict) -> list[dict]:
@@ -76,7 +81,17 @@ def companies(result: dict) -> list[dict]:
     return list(result.get("industry") or []) + list(result.get("watch") or [])
 
 
-def _kiri_section(items: list[dict], top: str) -> str:
+def _fold(title: str, sub: str, body: str, color: str | None = None, anchor: str = "", cls: str = "") -> str:
+    """한 줄 제목 + 눌러서 펼치기."""
+    dot = f'<span class="dot" style="background:{color}"></span>' if color else ""
+    aid = f' id="{anchor}"' if anchor else ""
+    c = f' class="{cls}"' if cls else ""
+    sub_html = f"<small>{_e(sub)}</small>" if sub else ""
+    return (f'<details{aid}{c}><summary>{dot}<span class="t">{sub_html}{title}</span>'
+            f'<span class="chev" aria-hidden="true">›</span></summary><div class="body">{body}</div></details>')
+
+
+def _kiri_section(items: list[dict]) -> str:
     """보험연구원 새 보고서: 간행물·호별로 묶고, 글마다 접었다 펼 수 있게."""
     pub_order = ["KIRI 리포트", "KIRI 글로벌 리뷰", "CEO Brief", "CEO Report"]
     cat_order = ["포커스", "이슈분석", "글로벌 이슈", "글로벌 동향", "금융시장 주요지표"]
@@ -85,23 +100,22 @@ def _kiri_section(items: list[dict], top: str) -> str:
     groups: dict[tuple, list] = {}
     for k in items:
         groups.setdefault((k["publication"], k.get("issue", "")), []).append(k)
-    html_out = ""
+    out = f'<h2 id="kiri">보험연구원 새 보고서 {len(items)}편</h2>'
     for (pub, issue), ks in groups.items():
-        html_out += f'<h4>{_e(pub)} {_e(issue)}</h4>'
+        out += f'<p class="pub">{_e(pub)} {_e(issue)}</p>'
         for k in ks:
-            link = k.get("pdf_url") or k.get("url")
             body = ""
             if k.get("summary"):
                 body += f'<p>{_e(k["summary"])}</p>'
             if k.get("actuarial_view"):
-                body += f'<div class="view"><b>계리 관점</b> · {_e(k["actuarial_view"])}</div>'
+                body += f'<div class="view"><b>계리 관점</b>{_e(k["actuarial_view"])}</div>'
             if k.get("takeaway"):
-                body += f'<div class="view tip"><b>생각해볼 점</b> · {_e(k["takeaway"])}</div>'
+                body += f'<p class="q">생각해볼 점 · {_e(k["takeaway"])}</p>'
+            link = k.get("pdf_url") or k.get("url")
             body += f'<ul class="links"><li><a href="{_e(link)}" target="_blank" rel="noopener">원문 보기</a></li></ul>'
-            by = f' <span class="kby">· {_e(k.get("author"))}</span>' if k.get("author") else ""
-            html_out += (f'<details class="kr"><summary><span class="kcat">[{_e(k["category"])}]</span>'
-                         f'{_e(k["title"])}{by}</summary>{body}</details>')
-    return f'<h3 id="kiri">보험연구원 새 보고서</h3><section class="issue kiri">{html_out}{top}</section>'
+            sub = f'{k["category"]}' + (f' · {k["author"]}' if k.get("author") else "")
+            out += _fold(_e(k["title"]), sub, body)
+    return out
 
 
 WEEKDAYS = "월화수목금토일"
@@ -112,7 +126,7 @@ def _day_names() -> list[str]:
 
 
 def _nav(name: str) -> str:
-    """페이지 맨 위: 전체 목록 버튼 + 이전/다음 날 이동."""
+    """페이지 맨 위(고정): 목록으로 + 이전/다음 날 이동."""
     days = sorted(set(_day_names()) | {name})
     i = days.index(name)
     prev = f'<a href="{days[i-1]}.html">‹ 이전</a>' if i > 0 else '<a class="off">‹ 이전</a>'
@@ -121,49 +135,56 @@ def _nav(name: str) -> str:
 
 
 def render_day(result: dict, today: datetime) -> str:
+    """디자인 A '출근길 3분': 핵심 3줄 → 한 줄 목록(눌러서 펼치기) → 아래 고정 탭."""
     issues = result.get("issues", [])
     cos = companies(result)
-    term = result.get("term") or {}
-    top = '<a class="top" href="#toc">↑ 목차</a>'
-
-    # 목차: 누르면 해당 위치로 부드럽게 스크롤
-    toc = "".join(
-        f'<li><a class="it" href="#issue-{n}"><span class="tcat">{_e(i.get("category"))}</span>{_e(i.get("title"))}</a></li>'
-        for n, i in enumerate(issues, 1)
-    )
-    if cos:
-        toc += f'<li><a href="#companies">회사별 소식</a> <span class="sub">{len(cos)}곳</span></li>'
     kiri = result.get("kiri_items") or []
-    if kiri:
-        toc += f'<li><a href="#kiri">보험연구원 새 보고서</a> <span class="sub">{len(kiri)}편</span></li>'
-    if term.get("word"):
-        toc += f'<li><a href="#term">오늘의 계리 용어</a> <span class="sub">{_e(term["word"])}</span></li>'
+    term = result.get("term") or {}
 
-    body = "".join(
-        f"""<section class="issue" id="issue-{n}"><div class="cat">{_e(i.get('category'))}</div>
-<h2>{n}. {_e(i.get('title'))}</h2><p>{_e(i.get('summary'))}</p>
-<div class="view"><b>계리 관점</b> · {_e(i.get('actuarial_view'))}</div>{_takeaway(i)}{_links(i.get('links'))}{top}</section>"""
-        for n, i in enumerate(issues, 1)
-    )
+    three = "".join(f"<p>{_e(l)}</p>" for l in result.get("kakao_lines", [])[:3])
+    body = f'<div class="three">{three}</div>' if three else ""
+
+    body += f'<h2 id="issues">오늘의 이슈 {len(issues)}</h2>'
+    for n, i in enumerate(issues, 1):
+        inner = (f"<p>{_e(i.get('summary'))}</p>"
+                 f'<div class="view"><b>계리 관점</b>{_e(i.get("actuarial_view"))}</div>'
+                 f"{_takeaway(i)}{_links(i.get('links'))}")
+        body += _fold(_e(i.get("title")), i.get("category", ""), inner,
+                      CAT_COLOR.get(i.get("category"), "#667085"), anchor=f"issue-{n}")
+
     if cos:
-        rows = "".join(
-            f'<li><b>{_e(c.get("company"))}</b> · {_e(c.get("note"))}{_links(c.get("links"))}</li>' for c in cos
-        )
-        body += f'<h3 id="companies">회사별 소식</h3><section class="issue"><ul class="co">{rows}</ul>{top}</section>'
+        body += f'<h2 id="companies">회사별 소식 {len(cos)}</h2>'
+        for c in cos:
+            title = f'{_e(c.get("company"))}<span class="note">{_e(c.get("note"))}</span>'
+            if c.get("links"):
+                body += _fold(title, "", _links(c.get("links")), cls="co")
+            else:
+                body += f'<div class="co" style="border-bottom:1px solid var(--line);padding:14px 0"><span class="t">{title}</span></div>'
+
     if kiri:
-        body += _kiri_section(kiri, top)
+        body += _kiri_section(kiri)
+
     if term.get("word"):
-        body += (f'<h3 id="term">오늘의 계리 용어</h3><section class="issue"><h2>{_e(term["word"])}</h2>'
-                 f'<p>{_e(term.get("explain"))}</p>{top}</section>')
+        body += (f'<h2 id="term">오늘의 계리 용어</h2><div class="term"><b>{_e(term["word"])}</b>'
+                 f'<p>{_e(term.get("explain"))}</p></div>')
+
+    tabs = '<a href="#issues">이슈</a>'
+    if cos:
+        tabs += '<a href="#companies">회사</a>'
+    if kiri:
+        tabs += f'<a href="#kiri">보험연구원 {len(kiri)}</a>'
+    if term.get("word"):
+        tabs += '<a href="#term">용어</a>'
+
     return f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>보험 아침 브리핑 {today:%m/%d}</title><style>{STYLE}</style></head><body><main>
 {_nav(f"{today:%Y-%m-%d}")}
-<h1>보험 아침 브리핑</h1><div class="date">{today:%Y년 %m월 %d일} ({WEEKDAYS[today.weekday()]}) · 계리 관점 데일리</div>
-<div class="headline">{_e(result.get('headline'))}</div>
-<nav class="toc" id="toc"><b>목차</b><ol>{toc}</ol></nav>{body}
-<p class="foot">뉴스 기사를 AI(Claude)가 요약·분석한 자료입니다. 원문 링크로 사실을 확인하세요. · <a href="index.html">지난 브리핑</a></p>
-</main></body></html>"""
+<div class="date">{today:%m월 %d일} {WEEKDAYS[today.weekday()]}요일 아침</div>
+<h1>{_e(result.get('headline'))}</h1>
+{body}
+<p class="foot">뉴스 기사를 AI(Claude)가 요약·분석한 자료입니다. 원문 링크로 사실을 확인하세요.</p>
+</main><nav class="tabs" aria-label="바로가기">{tabs}</nav></body></html>"""
 
 
 def render_index() -> str:
@@ -195,7 +216,7 @@ def render_index() -> str:
     return f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>보험 아침 브리핑 목록</title><style>{STYLE}</style></head><body><main>
-<h1>보험 아침 브리핑</h1><div class="date">평일 아침 · 보험산업 이슈를 계리 관점으로 · 총 {len(days)}일</div>
+<div class="date">평일 아침 · 보험산업 이슈를 계리 관점으로 · 총 {len(days)}일</div><h1>보험 아침 브리핑</h1>
 {body}</main></body></html>"""
 
 
