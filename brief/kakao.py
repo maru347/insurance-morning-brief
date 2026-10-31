@@ -17,11 +17,11 @@ KAKAO_TEXT_LIMIT = 200  # 텍스트 템플릿 최대 글자 수
 def get_access_token() -> str:
     data = {
         "grant_type": "refresh_token",
-        "client_id": os.environ["KAKAO_REST_API_KEY"],
-        "refresh_token": os.environ["KAKAO_REFRESH_TOKEN"],
+        "client_id": os.environ["KAKAO_REST_API_KEY"].strip(),
+        "refresh_token": "".join(os.environ["KAKAO_REFRESH_TOKEN"].split()),  # 복사 중 섞인 공백·줄바꿈 제거
     }
     if os.environ.get("KAKAO_CLIENT_SECRET"):
-        data["client_secret"] = os.environ["KAKAO_CLIENT_SECRET"]
+        data["client_secret"] = os.environ["KAKAO_CLIENT_SECRET"].strip()
     resp = requests.post("https://kauth.kakao.com/oauth/token", data=data, timeout=15)
     _check(resp, "토큰 갱신")
     body = resp.json()
