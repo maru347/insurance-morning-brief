@@ -194,7 +194,7 @@ def render_index() -> str:
     return f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>보험 아침 브리핑 목록</title><style>{STYLE}</style></head><body><main>
-<h1>보험 아침 브리핑</h1><div class="date">매일 08:30 · 보험산업 이슈를 계리 관점으로 · 총 {len(days)}일</div>
+<h1>보험 아침 브리핑</h1><div class="date">평일 아침 · 보험산업 이슈를 계리 관점으로 · 총 {len(days)}일</div>
 {body}</main></body></html>"""
 
 
