@@ -34,6 +34,8 @@ nav.toc{background:var(--card);border:1px solid var(--line);border-radius:10px;p
 nav.toc b{font-size:.85rem;color:var(--muted)}nav.toc ol{margin:6px 0 0;padding-left:20px}
 nav.toc li{margin:3px 0}nav.toc a{text-decoration:none}nav.toc a:hover{text-decoration:underline}
 nav.toc .sub{color:var(--muted);font-size:.8rem}
+nav.toc a.it{display:flex;gap:8px;align-items:baseline}
+nav.toc .tcat{flex:0 0 6.4em;color:var(--accent);font-size:.8rem;font-weight:600;white-space:nowrap}
 .top{display:block;text-align:right;font-size:.8rem;color:var(--muted);margin-top:8px;text-decoration:none}h3{margin-top:32px;font-size:1rem}.foot{color:var(--muted);font-size:.8rem;margin-top:40px}
 """
 
@@ -69,7 +71,7 @@ def render_day(result: dict, today: datetime) -> str:
 
     # 목차: 누르면 해당 위치로 부드럽게 스크롤
     toc = "".join(
-        f'<li><a href="#issue-{n}">{_e(i.get("title"))}</a> <span class="sub">{_e(i.get("category"))}</span></li>'
+        f'<li><a class="it" href="#issue-{n}"><span class="tcat">{_e(i.get("category"))}</span>{_e(i.get("title"))}</a></li>'
         for n, i in enumerate(issues, 1)
     )
     if cos:
