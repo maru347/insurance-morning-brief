@@ -23,11 +23,19 @@ def get_access_token() -> str:
     if os.environ.get("KAKAO_CLIENT_SECRET"):
         data["client_secret"] = os.environ["KAKAO_CLIENT_SECRET"]
     resp = requests.post("https://kauth.kakao.com/oauth/token", data=data, timeout=15)
-    resp.raise_for_status()
+    _check(resp, "토큰 갱신")
     body = resp.json()
     if "refresh_token" in body:
         print("[알림] 카카오가 새 리프레시 토큰을 발급했습니다. GitHub Secret KAKAO_REFRESH_TOKEN을 갱신하세요.")
     return body["access_token"]
+
+
+def _check(resp, step: str) -> None:
+    """실패하면 카카오가 돌려준 에러 내용을 그대로 보여준다 (키 값은 포함되지 않음)."""
+    if resp.ok:
+        return
+    print(f"[카카오 {step} 실패] HTTP {resp.status_code}: {resp.text[:500]}")
+    resp.raise_for_status()
 
 
 def build_text(result: dict, date_label: str) -> str:
@@ -50,5 +58,5 @@ def send(result: dict, date_label: str, page_url: str) -> None:
         data={"template_object": json.dumps(template, ensure_ascii=False)},
         timeout=15,
     )
-    resp.raise_for_status()
+    _check(resp, "메시지 전송")
     print("카카오톡 전송 완료")
