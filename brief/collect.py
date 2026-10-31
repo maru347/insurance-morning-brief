@@ -101,19 +101,27 @@ def fetch_rss(url: str, source: str, keyword: str) -> list[Article]:
 
 
 def _similar(a: str, b: str) -> bool:
-    return SequenceMatcher(None, a, b).ratio() > 0.75
+    m = SequenceMatcher(None, a, b)
+    # 빠른 상한 검사로 대부분을 먼저 걸러서 기사 수천 건도 금방 처리
+    return m.real_quick_ratio() > 0.75 and m.quick_ratio() > 0.75 and m.ratio() > 0.75
 
 
 def dedupe(articles: list[Article]) -> list[Article]:
     """제목이 75% 이상 비슷하면 같은 기사로 보고 하나만 남긴다 (검색 키워드는 합침)."""
     unique: list[Article] = []
+    by_url: dict[str, Article] = {}
     for art in sorted(articles, key=lambda a: a.published, reverse=True):
+        if art.url in by_url:
+            kept = by_url[art.url]
+            kept.keywords = sorted(set(kept.keywords + art.keywords))
+            continue
         for kept in unique:
-            if kept.url == art.url or _similar(kept.title, art.title):
+            if _similar(kept.title, art.title):
                 kept.keywords = sorted(set(kept.keywords + art.keywords))
                 break
         else:
             unique.append(art)
+            by_url[art.url] = art
     return unique
 
 

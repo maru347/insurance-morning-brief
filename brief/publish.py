@@ -26,7 +26,7 @@ h1{font-size:1.4rem;margin:0 0 4px}.date{color:var(--muted);font-size:.9rem}
 .view{margin-top:10px;padding:10px 12px;border-radius:8px;background:var(--bg);font-size:.95rem}
 .view b{color:var(--accent)}
 ul.links{margin:10px 0 0;padding-left:18px;font-size:.85rem}a{color:inherit}
-h3{margin-top:32px;font-size:1rem}.foot{color:var(--muted);font-size:.8rem;margin-top:40px}
+ul.co{margin:0;padding-left:18px}ul.co li{margin:4px 0}h3{margin-top:32px;font-size:1rem}.foot{color:var(--muted);font-size:.8rem;margin-top:40px}
 """
 
 
@@ -53,6 +53,9 @@ def render_day(result: dict, today: datetime) -> str:
 <div class="view"><b>계리 관점</b> · {_e(i.get('actuarial_view'))}</div>{_interview(i)}{_links(i.get('links'))}</section>"""
         for n, i in enumerate(result.get("issues", []), 1)
     )
+    if result.get("industry"):
+        rows = "".join(f'<li><b>{_e(c.get("company"))}</b> · {_e(c.get("note"))}</li>' for c in result["industry"])
+        issues += f'<h3>업계 회사별 소식</h3><section class="issue"><ul class="co">{rows}</ul></section>'
     term = result.get("term") or {}
     if term.get("word"):
         issues += (f'<h3>오늘의 계리 용어</h3><section class="issue"><h2>{_e(term["word"])}</h2>'

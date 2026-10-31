@@ -47,10 +47,14 @@ OUTPUT_SPEC = """다음 JSON 형식으로만 답하세요 (코드블록 없이):
   "watch": [
     {"company": "관심 회사명", "note": "오늘 나온 소식 1문장", "article_ids": [기사 번호]}
   ],
+  "industry": [
+    {"company": "보험사명", "note": "오늘 이 회사의 주요 소식 1문장 (실적·상품·자본·인사 등)"}
+  ],
   "term": {"word": "오늘의 계리 용어", "explain": "2문장 설명"},
   "kakao_lines": ["카톡용 핵심 3줄, 각 40자 이내"]
 }
-issues는 중요도 순으로 최대 5개, watch는 관심 회사 소식이 있을 때만 넣습니다."""
+issues는 중요도 순으로 최대 5개, watch는 관심 회사 소식이 있을 때만 넣습니다.
+industry는 issues에서 다루지 않은 개별 보험사 소식을 생·손보 가리지 않고 중요한 순으로 최대 8개 넣습니다."""
 
 
 def build_article_list(articles: list[Article]) -> str:

@@ -62,9 +62,18 @@ def test_parse_json_with_extra_text():
 def test_interview_and_term_render():
     r = {"headline": "h", "issues": [{"title": "t", "category": "기타", "summary": "s",
           "actuarial_view": "v", "interview_point": "면접에서 말할 문장", "links": []}],
+         "industry": [{"company": "삼성화재", "note": "3분기 실적 발표"}],
          "term": {"word": "CSM", "explain": "계약서비스마진입니다."}}
     page = pub.render_day(r, now)
     assert "면접 활용" in page and "오늘의 계리 용어" in page and "CSM" in page
+    assert "업계 회사별 소식" in page and "삼성화재" in page
+
+def test_dedupe_speed_many_articles():
+    import random, time
+    random.seed(0)
+    words = ["보험", "손해율", "삼성화재", "실적", "CSM", "금감원", "상품", "출시", "인상", "규제", "K-ICS", "해지율"]
+    many = [Article(" ".join(random.sample(words, 6)) + f" {i}", "", f"u{i}", "네이버뉴스", now, ["보험사 실적"]) for i in range(2000)]
+    t = time.time(); dedupe(many); assert time.time() - t < 60
 
 def test_fetch_rss_and_collect_without_network():
     from unittest import mock
