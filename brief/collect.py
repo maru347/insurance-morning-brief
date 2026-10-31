@@ -41,7 +41,7 @@ def _clean(text: str) -> str:
 NAVER_HUB_NEWS_URL = "https://naverapihub.apigw.ntruss.com/search/v1/news"
 
 
-def fetch_naver(keyword: str, display: int = 30) -> list[Article]:
+def fetch_naver(keyword: str, display: int = config.NAVER_DISPLAY) -> list[Article]:
     """NAVER API HUB 뉴스 검색. 키(NAVER_CLIENT_ID/SECRET)가 없으면 건너뛴다."""
     client_id = os.environ.get("NAVER_CLIENT_ID")
     client_secret = os.environ.get("NAVER_CLIENT_SECRET")
@@ -122,11 +122,13 @@ def collect(now: datetime | None = None) -> list[Article]:
     since = now - timedelta(hours=config.LOOKBACK_HOURS)
 
     raw: list[Article] = []
-    for kw in config.NEWS_KEYWORDS + config.WATCH_COMPANIES:
+    watch_names = [n for names in config.WATCH_COMPANIES.values() for n in names]
+    for kw in config.NEWS_KEYWORDS + watch_names:
         try:
             raw += fetch_naver(kw)
         except Exception as e:
             print(f"[경고] 네이버 '{kw}' 수집 실패: {e}")
+    for kw in config.GOOGLE_KEYWORDS + list(config.WATCH_COMPANIES):
         try:
             raw += fetch_google_news(kw)
         except Exception as e:  # 한 검색어가 실패해도 전체를 멈추지 않도록
@@ -145,12 +147,32 @@ def collect(now: datetime | None = None) -> list[Article]:
     return articles
 
 
+TOPIC_OF = {kw: topic for topic, kws in config.KEYWORD_GROUPS.items() for kw in kws}
+
+
+def topics(a: Article) -> list[str]:
+    """기사가 걸린 검색 키워드로 주제(제도·감독, 계리·재무건전성 …)를 구한다."""
+    return sorted({TOPIC_OF[k] for k in a.keywords if k in TOPIC_OF})
+
+
+def watch_hits(a: Article) -> list[str]:
+    text = a.title + " " + a.summary
+    return [c for c, names in config.WATCH_COMPANIES.items() if any(n in text for n in names)]
+
+
 def rank(articles: list[Article]) -> list[Article]:
-    """AI에 넘길 순서를 정한다: 광고성 제거 → 관심 회사 → 여러 키워드에 걸린(=중요한) 기사 → 최신."""
+    """AI에 넘길 순서: 광고성 제거 → 관심 회사 → 계리 핵심 주제 → 여러 키워드·주제에 걸린 기사 → 전문지 → 최신."""
     clean = [a for a in articles if not any(w in a.title for w in config.NOISE_WORDS)]
+    core = {"제도·감독", "계리·재무건전성", "손해율·보험금"}
 
     def score(a: Article):
-        watch = any(c in a.title or c in a.summary for c in config.WATCH_COMPANIES)
-        return (watch, len(a.keywords), a.published)
+        t = topics(a)
+        return (
+            bool(watch_hits(a)),
+            len(core.intersection(t)) > 0,
+            len(t) + len(a.keywords),
+            a.source not in ("구글뉴스", "네이버뉴스"),  # 보험 전문지 우대
+            a.published,
+        )
 
     return sorted(clean, key=score, reverse=True)
