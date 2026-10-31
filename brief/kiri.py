@@ -88,6 +88,7 @@ def _parse_title(raw: str) -> tuple[str, str, str, str]:
     title = re.sub(r"\[\s*권호\s*:[^\]]*\]", "", raw)
     title = re.sub(r"저자\s*:.*$", "", title)
     title = re.sub(r"\d{4}-\d{2}(-\d{2})?\s*$", "", title)
+    title = re.sub(r"^\s*CEO\s*(Brief|Report)\s*", "", title)  # 앞에 붙는 간행물 이름 제거
     return _clean(title), issue, author, date
 
 
