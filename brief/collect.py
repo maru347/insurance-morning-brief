@@ -125,9 +125,16 @@ def dedupe(articles: list[Article]) -> list[Article]:
     return unique
 
 
+def lookback_hours(now: datetime) -> int:
+    """월요일(한국시간)이면 주말치까지 72시간, 그 외에는 24시간."""
+    return config.MONDAY_LOOKBACK_HOURS if now.astimezone(KST).weekday() == 0 else config.LOOKBACK_HOURS
+
+
 def collect(now: datetime | None = None) -> list[Article]:
     now = now or datetime.now(timezone.utc)
-    since = now - timedelta(hours=config.LOOKBACK_HOURS)
+    hours = lookback_hours(now)
+    since = now - timedelta(hours=hours)
+    print(f"수집 범위: 최근 {hours}시간")
 
     raw: list[Article] = []
     watch_names = [n for names in config.WATCH_COMPANIES.values() for n in names]

@@ -87,11 +87,12 @@ def build_kiri_list(kiri_items: list[dict]) -> str:
 def analyze(articles: list[Article], today: datetime, kiri_items: list[dict] | None = None) -> dict:
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
     kiri_block = build_kiri_list(kiri_items or [])
+    period = "지난 금요일 아침부터 주말까지(최근 72시간)" if today.weekday() == 0 else "최근 24시간"
     user_msg = (
         f"오늘은 {today:%Y년 %m월 %d일}입니다.\n"
         f"관심 회사(회사별 소식에 빠짐없이 포함): {', '.join(config.WATCH_COMPANIES)}\n"
         f"기사 앞 괄호는 검색 주제 힌트입니다. 주제가 한쪽에 몰리지 않게 제도·계리·손해율·상품을 고루 살피세요.\n\n"
-        f"최근 24시간 기사 목록:\n{build_article_list(articles)}\n\n"
+        f"{period} 기사 목록:\n{build_article_list(articles)}\n\n"
         + (f"보험연구원 새 보고서:\n{kiri_block}\n\n" if kiri_block else "")
         + OUTPUT_SPEC + (KIRI_SPEC if kiri_block else "")
     )

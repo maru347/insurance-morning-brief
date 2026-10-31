@@ -71,8 +71,10 @@ EXTRA_RSS_FEEDS = {
     "한국보험신문": "https://www.insnews.co.kr/rss/allArticle.xml",
 }
 
-# 최근 몇 시간 안의 기사만 볼지
+# 최근 몇 시간 안의 기사만 볼지 (평일 아침 실행 기준)
 LOOKBACK_HOURS = 24
+# 월요일 아침에는 금요일 아침 이후 주말 기사까지 한 번에 (토·일은 실행하지 않음)
+MONDAY_LOOKBACK_HOURS = 72
 
 # AI 분석에 넘길 최대 기사 수 (비용 관리)
 MAX_ARTICLES_FOR_AI = 100

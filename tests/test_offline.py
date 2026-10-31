@@ -184,6 +184,14 @@ def test_kiri_prompt_attach_render_kakao():
     text = build_text(result, "10/31")
     assert "보험연구원 새 보고서 2편" in text and len(text) <= KAKAO_TEXT_LIMIT
 
+def test_monday_lookback_72h():
+    from brief.collect import lookback_hours
+    mon = datetime(2026, 11, 2, 8, 30, tzinfo=timezone(timedelta(hours=9)))
+    tue = datetime(2026, 11, 3, 8, 30, tzinfo=timezone(timedelta(hours=9)))
+    assert lookback_hours(mon) == 72 and lookback_hours(tue) == 24
+    # GitHub 서버 시각(UTC)으로 일요일 23:30이어도 한국시간 월요일로 판단
+    assert lookback_hours(datetime(2026, 11, 1, 23, 30, tzinfo=timezone.utc)) == 72
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
