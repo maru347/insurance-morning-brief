@@ -45,6 +45,28 @@ ul.links{margin:8px 0 0;padding-left:18px;font-size:14px;color:var(--sub)}ul.lin
 .pub{font-size:14px;font-weight:700;color:var(--ink);margin:18px 0 0}
 .term{background:var(--soft);border-radius:14px;padding:14px 16px;margin-top:8px}.term b{font-size:17px}.term p{margin:6px 0 0;font-size:15.5px}
 .foot{color:var(--sub);font-size:13px;margin-top:36px}
+.deckwrap{margin:16px -18px 0;scroll-margin-top:56px}
+.deck{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 18px 14px;scrollbar-width:none;align-items:flex-start}
+.deck::-webkit-scrollbar{display:none}
+.card{flex:0 0 86%;max-width:520px;scroll-snap-align:center;border-radius:20px;padding:22px 20px 20px;color:#fff;min-height:440px;display:flex;flex-direction:column;scroll-margin-top:64px}
+.card .n{font-size:13.5px;font-weight:700;opacity:.85}
+.card h1,.card h3{font-size:23px;line-height:1.35;margin:8px 0 14px;letter-spacing:-.4px;font-weight:800}
+.card p{font-size:15.5px;margin:0 0 12px}
+.card .cv{background:rgba(255,255,255,.15);border-radius:12px;padding:12px 13px;font-size:15px;margin-top:4px}
+.card .cv b{display:block;font-size:13px;opacity:.85;margin-bottom:2px}
+.card .cq{font-size:14.5px;opacity:.92;margin-top:12px}
+.card ul.links{color:rgba(255,255,255,.88);margin-top:6px}.card ul.links a{color:#fff}
+.card details.cl{border:0;margin-top:auto;padding-top:12px}
+.card details.cl summary{display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.18);font-size:13.5px;font-weight:700}
+.cover{background:var(--ink);color:var(--bg)}
+.cover .three{background:transparent;padding:0;margin:auto 0 0}
+.cover .three p{border-color:rgba(127,127,127,.35);font-size:16.5px}
+.deckctl{display:flex;align-items:center;justify-content:center;gap:12px;padding:0 18px}
+.deckctl button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;width:38px;height:38px;font-size:18px;cursor:pointer}
+.deckctl button:focus-visible{outline:2px solid var(--key);outline-offset:2px}
+.dots{display:flex;gap:6px}.dots i{width:7px;height:7px;border-radius:4px;background:var(--line);transition:width .2s}.dots i.on{width:20px;background:var(--key)}
+.swipe{font-size:13px;color:var(--sub);text-align:center;margin:6px 0 0}
+@media (prefers-reduced-motion:reduce){.dots i{transition:none}}
 nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bar);backdrop-filter:blur(6px);border-top:1px solid var(--line);display:flex;justify-content:center}
 nav.tabs a{flex:1;max-width:160px;text-align:center;padding:11px 0 15px;font-size:13.5px;font-weight:700;color:var(--sub);text-decoration:none}
 nav.tabs a:first-child{color:var(--key)}
@@ -54,7 +76,7 @@ a.day .d{font-weight:700}a.day .d small{color:var(--sub);font-weight:400;margin-
 a.day .h{display:block;margin-top:2px;font-size:16px}a.day .chips{display:block;margin-top:2px;color:var(--sub);font-size:13px}
 """
 
-CAT_COLOR = {"제도·감독": "#3557A6", "실적·재무": "#0E7A64", "상품·시장": "#A36A00", "손해율·보험금": "#B4432C",
+CAT_COLOR = {"제도·감독": "#3557A6", "실적·재무": "#0E7A64", "상품·시장": "#8A5A00", "손해율·보험금": "#B4432C",
              "신위험": "#6A45B0", "디지털·AI": "#1F7896", "기타": "#667085"}
 
 
@@ -79,6 +101,13 @@ def companies(result: dict) -> list[dict]:
     if result.get("companies"):
         return result["companies"]
     return list(result.get("industry") or []) + list(result.get("watch") or [])
+
+
+def _card_links(links) -> str:
+    """카드 안 원문 기사: 처음엔 접어 두고 '관련 기사 N건'만 보여 카드 길이를 짧게."""
+    if not links:
+        return ""
+    return f'<details class="cl"><summary>관련 기사 {len(links)}건 보기</summary>{_links(links)}</details>'
 
 
 def _fold(title: str, sub: str, body: str, color: str | None = None, anchor: str = "", cls: str = "") -> str:
@@ -118,6 +147,16 @@ def _kiri_section(items: list[dict]) -> str:
     return out
 
 
+DECK_JS = """
+(function(){var d=document.querySelector('.deck');if(!d)return;var c=d.querySelectorAll('.card'),dots=document.querySelectorAll('.dots i');
+function idx(){var best=0,min=1e9,mid=d.scrollLeft+d.clientWidth/2;c.forEach(function(x,i){var m=Math.abs(x.offsetLeft+x.offsetWidth/2-mid);if(m<min){min=m;best=i}});return best}
+function paint(){var k=idx();dots.forEach(function(x,i){x.className=i===k?'on':''})}
+d.addEventListener('scroll',function(){window.requestAnimationFrame(paint)},{passive:true});
+document.querySelectorAll('.deckctl button').forEach(function(b){b.addEventListener('click',function(){var k=Math.max(0,Math.min(c.length-1,idx()+(+b.dataset.d)));d.scrollTo({left:c[k].offsetLeft-(d.clientWidth-c[k].offsetWidth)/2,behavior:'smooth'})})});
+d.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();document.querySelector('.deckctl button[data-d="'+(e.key==='ArrowRight'?1:-1)+'"]').click()}});
+})();
+"""
+
 WEEKDAYS = "월화수목금토일"
 
 
@@ -135,22 +174,31 @@ def _nav(name: str) -> str:
 
 
 def render_day(result: dict, today: datetime) -> str:
-    """디자인 A '출근길 3분': 핵심 3줄 → 한 줄 목록(눌러서 펼치기) → 아래 고정 탭."""
+    """카드뉴스 디자인: 표지·이슈 카드를 옆으로 넘기고, 회사·보험연구원·용어는 아래 목록(눌러서 펼치기) + 아래 고정 탭."""
     issues = result.get("issues", [])
     cos = companies(result)
     kiri = result.get("kiri_items") or []
     term = result.get("term") or {}
 
+    # 카드뉴스: 0번 표지 카드(헤드라인 + 핵심 3줄) → 이슈 카드를 옆으로 넘기기
     three = "".join(f"<p>{_e(l)}</p>" for l in result.get("kakao_lines", [])[:3])
-    body = f'<div class="three">{three}</div>' if three else ""
-
-    body += f'<h2 id="issues">오늘의 이슈 {len(issues)}</h2>'
+    total = len(issues) + 1
+    cards = (f'<section class="card cover" aria-label="오늘 요약"><div class="n">1/{total} · 오늘 요약</div>'
+             f'<h1>{_e(result.get("headline"))}</h1>'
+             + (f'<div class="three">{three}</div>' if three else "") + "</section>")
     for n, i in enumerate(issues, 1):
-        inner = (f"<p>{_e(i.get('summary'))}</p>"
-                 f'<div class="view"><b>계리 관점</b>{_e(i.get("actuarial_view"))}</div>'
-                 f"{_takeaway(i)}{_links(i.get('links'))}")
-        body += _fold(_e(i.get("title")), i.get("category", ""), inner,
-                      CAT_COLOR.get(i.get("category"), "#667085"), anchor=f"issue-{n}")
+        tip = i.get("takeaway") or i.get("interview_point")
+        cards += (f'<section class="card" id="issue-{n}" style="background:{CAT_COLOR.get(i.get("category"), "#667085")}">'
+                  f'<div class="n">{n + 1}/{total} · {_e(i.get("category"))}</div><h3>{_e(i.get("title"))}</h3>'
+                  f'<p>{_e(i.get("summary"))}</p>'
+                  f'<div class="cv"><b>계리 관점</b>{_e(i.get("actuarial_view"))}</div>'
+                  + (f'<p class="cq">생각해볼 점 · {_e(tip)}</p>' if tip else "")
+                  + _card_links(i.get("links")) + "</section>")
+    dots = "".join('<i class="on"></i>' if k == 0 else "<i></i>" for k in range(total))
+    body = (f'<div class="deckwrap" id="issues"><div class="deck" tabindex="0" aria-label="오늘의 이슈 카드">{cards}</div>'
+            f'<div class="deckctl"><button type="button" data-d="-1" aria-label="이전 카드">‹</button>'
+            f'<span class="dots">{dots}</span><button type="button" data-d="1" aria-label="다음 카드">›</button></div>'
+            f'<p class="swipe">옆으로 넘겨 이슈 {len(issues)}개를 보세요</p></div>')
 
     if cos:
         body += f'<h2 id="companies">회사별 소식 {len(cos)}</h2>'
@@ -180,11 +228,11 @@ def render_day(result: dict, today: datetime) -> str:
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>보험 아침 브리핑 {today:%m/%d}</title><style>{STYLE}</style></head><body><main>
 {_nav(f"{today:%Y-%m-%d}")}
-<div class="date">{today:%m월 %d일} {WEEKDAYS[today.weekday()]}요일 아침</div>
-<h1>{_e(result.get('headline'))}</h1>
+<div class="date">{today:%m월 %d일} {WEEKDAYS[today.weekday()]}요일 아침 · 보험 아침 브리핑</div>
 {body}
 <p class="foot">뉴스 기사를 AI(Claude)가 요약·분석한 자료입니다. 원문 링크로 사실을 확인하세요.</p>
-</main><nav class="tabs" aria-label="바로가기">{tabs}</nav></body></html>"""
+</main><nav class="tabs" aria-label="바로가기">{tabs}</nav>
+<script>{DECK_JS}</script></body></html>"""
 
 
 def render_index() -> str:

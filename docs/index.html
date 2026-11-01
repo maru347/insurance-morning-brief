@@ -33,6 +33,28 @@ ul.links{margin:8px 0 0;padding-left:18px;font-size:14px;color:var(--sub)}ul.lin
 .pub{font-size:14px;font-weight:700;color:var(--ink);margin:18px 0 0}
 .term{background:var(--soft);border-radius:14px;padding:14px 16px;margin-top:8px}.term b{font-size:17px}.term p{margin:6px 0 0;font-size:15.5px}
 .foot{color:var(--sub);font-size:13px;margin-top:36px}
+.deckwrap{margin:16px -18px 0;scroll-margin-top:56px}
+.deck{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 18px 14px;scrollbar-width:none;align-items:flex-start}
+.deck::-webkit-scrollbar{display:none}
+.card{flex:0 0 86%;max-width:520px;scroll-snap-align:center;border-radius:20px;padding:22px 20px 20px;color:#fff;min-height:440px;display:flex;flex-direction:column;scroll-margin-top:64px}
+.card .n{font-size:13.5px;font-weight:700;opacity:.85}
+.card h1,.card h3{font-size:23px;line-height:1.35;margin:8px 0 14px;letter-spacing:-.4px;font-weight:800}
+.card p{font-size:15.5px;margin:0 0 12px}
+.card .cv{background:rgba(255,255,255,.15);border-radius:12px;padding:12px 13px;font-size:15px;margin-top:4px}
+.card .cv b{display:block;font-size:13px;opacity:.85;margin-bottom:2px}
+.card .cq{font-size:14.5px;opacity:.92;margin-top:12px}
+.card ul.links{color:rgba(255,255,255,.88);margin-top:6px}.card ul.links a{color:#fff}
+.card details.cl{border:0;margin-top:auto;padding-top:12px}
+.card details.cl summary{display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.18);font-size:13.5px;font-weight:700}
+.cover{background:var(--ink);color:var(--bg)}
+.cover .three{background:transparent;padding:0;margin:auto 0 0}
+.cover .three p{border-color:rgba(127,127,127,.35);font-size:16.5px}
+.deckctl{display:flex;align-items:center;justify-content:center;gap:12px;padding:0 18px}
+.deckctl button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;width:38px;height:38px;font-size:18px;cursor:pointer}
+.deckctl button:focus-visible{outline:2px solid var(--key);outline-offset:2px}
+.dots{display:flex;gap:6px}.dots i{width:7px;height:7px;border-radius:4px;background:var(--line);transition:width .2s}.dots i.on{width:20px;background:var(--key)}
+.swipe{font-size:13px;color:var(--sub);text-align:center;margin:6px 0 0}
+@media (prefers-reduced-motion:reduce){.dots i{transition:none}}
 nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bar);backdrop-filter:blur(6px);border-top:1px solid var(--line);display:flex;justify-content:center}
 nav.tabs a{flex:1;max-width:160px;text-align:center;padding:11px 0 15px;font-size:13.5px;font-weight:700;color:var(--sub);text-decoration:none}
 nav.tabs a:first-child{color:var(--key)}

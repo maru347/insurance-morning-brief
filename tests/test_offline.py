@@ -110,13 +110,13 @@ def test_response_text_skips_thinking_block():
               stop_reason="end_turn")
     assert parse_json(response_text(resp))["headline"] == "ok"
 
-def test_design_a_tabs_fold_and_merged_companies():
+def test_cardnews_tabs_and_merged_companies():
     old = {"headline": "h", "issues": [{"title": "이슈A", "category": "기타", "summary": "s", "actuarial_view": "v"}],
            "industry": [{"company": "한화생명", "note": "n1"}],
            "watch": [{"company": "ABL생명", "note": "n2", "links": []}],
            "term": {"word": "CSM", "explain": "e"}, "kakao_lines": ["줄1", "줄2", "줄3"]}
     page = pub.render_day(old, now)
-    assert 'id="issue-1"' in page and "<details" in page and 'class="three"' in page and "줄1" in page
+    assert 'id="issue-1"' in page and 'class="deck"' in page and 'class="card cover"' in page and 'class="three"' in page and "줄1" in page
     assert 'href="#issues"' in page and 'href="#companies"' in page and 'href="#term"' in page and "scroll-behavior:smooth" in page
     assert 'href="#kiri"' not in page                      # 보험연구원 글이 없는 날은 탭도 없음
     assert "관심 회사" not in page and page.count('id="companies"') == 1   # 회사 소식은 한 섹션으로 합쳐짐
