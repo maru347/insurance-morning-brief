@@ -9,8 +9,14 @@ import html
 import json
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import quote
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
+
+# '생각해볼 점'을 보고 Claude 앱에서 이어서 질문하기 위한 주소.
+# 질문 문구가 주소에 실려 가므로, 너무 길면 열리지 않을 수 있어 인코딩 후 이 글자 수 안으로 줄인다.
+ASK_URL = "https://claude.ai/new?q="
+ASK_MAX = 5500
 
 STYLE = """
 :root{--ink:#17212B;--sub:#5B6875;--line:#E3E8EE;--bg:#FFFFFF;--soft:#F4F7FA;--key:#0E7A64;--bar:rgba(255,255,255,.94)}
@@ -75,6 +81,9 @@ a.day{display:block;text-decoration:none;border-bottom:1px solid var(--line);pad
 a.day .d{font-weight:700}a.day .d small{color:var(--sub);font-weight:400;margin-left:4px}
 a.day .h{display:block;margin-top:2px;font-size:16px}a.day .chips{display:block;margin-top:2px;color:var(--sub);font-size:13px}
 .sec{font-size:15px;margin:22px 0 4px;color:var(--sub)}.none{color:var(--sub);font-size:14px;margin:6px 0 10px}
+.ask{display:inline-block;margin-top:10px;padding:8px 14px;border:1px solid var(--key);border-radius:999px;color:var(--key);font-size:14px;font-weight:700;text-decoration:none}
+.ask:focus-visible{outline:2px solid var(--key);outline-offset:2px}
+.card .ask{border-color:rgba(255,255,255,.7);color:#fff;background:rgba(255,255,255,.12);align-self:flex-start}
 """
 
 CAT_COLOR = {"제도·감독": "#3557A6", "실적·재무": "#0E7A64", "상품·시장": "#8A5A00", "손해율·보험금": "#B4432C",
@@ -95,6 +104,56 @@ def _links(links) -> str:
 def _takeaway(issue) -> str:
     tip = issue.get("takeaway") or issue.get("interview_point")  # 예전 데이터 호환
     return f'<p class="q">생각해볼 점 · {_e(tip)}</p>' if tip else ""
+
+
+def ask_prompt(head: str, fields: list[tuple[str, str]], urls: list[str], date_label: str) -> str:
+    """Claude에게 이어서 물어볼 질문 문구. 마지막 '제 질문: ' 뒤에 사용자가 질문을 이어 쓴다.
+
+    주소가 너무 길면 원문 링크 → 내용 길이 순으로 줄인다.
+    """
+    rule = ("답할 때 기사에 나온 내용과 일반적인 계리 지식을 구분해서 표시해 주세요. "
+            "기사에 없는 수치는 지어내지 말고, 모르면 모른다고 해 주세요.")
+
+    def build(fs, us):
+        body = "\n".join(f"[{k}] {v}" for k, v in fs if v)
+        refs = ("\n[원문] " + " ".join(us)) if us else ""
+        return f"{date_label} 보험 아침 브리핑의 {head}에 대해 질문할게요.\n\n{body}{refs}\n\n{rule}\n\n제 질문: "
+
+    prompt = build(fields, urls[:3])
+    if len(quote(prompt)) > ASK_MAX:
+        prompt = build(fields, [])
+    for cut in (400, 250, 150):
+        if len(quote(prompt)) <= ASK_MAX:
+            break
+        prompt = build([(k, v[:cut]) for k, v in fields], [])
+    return prompt
+
+
+def _ask_button(prompt: str) -> str:
+    """누르면 Claude 앱(웹)이 질문이 채워진 채로 열린다. 스크립트가 질문 문구를 복사해 두어 비어 있어도 붙여넣을 수 있다."""
+    href = ASK_URL + quote(prompt)
+    return (f'<a class="ask" href="{_e(href)}" target="_blank" rel="noopener" data-copy="{_e(prompt)}">'
+            f'Claude에게 질문하기 ↗</a>')
+
+
+def _issue_ask(issue: dict, date_label: str) -> str:
+    tip = issue.get("takeaway") or issue.get("interview_point")
+    prompt = ask_prompt(
+        f'이슈 "{issue.get("title", "")}"',
+        [("분류", issue.get("category", "")), ("요약", issue.get("summary", "")),
+         ("계리 관점", issue.get("actuarial_view", "")), ("생각해볼 점", tip or "")],
+        [l["url"] for l in issue.get("links") or [] if l.get("url")], date_label)
+    return _ask_button(prompt)
+
+
+def _kiri_ask(k: dict, date_label: str) -> str:
+    prompt = ask_prompt(
+        f'보험연구원 보고서 "{k.get("title", "")}"',
+        [("간행물", f'{k.get("publication", "")} {k.get("issue", "")}'.strip()), ("분류", k.get("category", "")),
+         ("요약", k.get("summary", "")), ("계리 관점", k.get("actuarial_view", "")),
+         ("생각해볼 점", k.get("takeaway", ""))],
+        [u for u in [k.get("pdf_url") or k.get("url")] if u], date_label)
+    return _ask_button(prompt)
 
 
 SECTOR_NAMES = ["손해보험", "생명보험", "공제"]
@@ -131,7 +190,7 @@ def _fold(title: str, sub: str, body: str, color: str | None = None, anchor: str
             f'<span class="chev" aria-hidden="true">›</span></summary><div class="body">{body}</div></details>')
 
 
-def _kiri_section(items: list[dict]) -> str:
+def _kiri_section(items: list[dict], date_label: str = "") -> str:
     """보험연구원 새 보고서: 간행물·호별로 묶고, 글마다 접었다 펼 수 있게."""
     pub_order = ["KIRI 리포트", "KIRI 글로벌 리뷰", "CEO Brief", "CEO Report"]
     cat_order = ["포커스", "이슈분석", "글로벌 이슈", "글로벌 동향", "금융시장 주요지표"]
@@ -151,12 +210,18 @@ def _kiri_section(items: list[dict]) -> str:
                 body += f'<div class="view"><b>계리 관점</b>{_e(k["actuarial_view"])}</div>'
             if k.get("takeaway"):
                 body += f'<p class="q">생각해볼 점 · {_e(k["takeaway"])}</p>'
+            if k.get("takeaway") or k.get("summary"):
+                body += f'<p>{_kiri_ask(k, date_label)}</p>'
             link = k.get("pdf_url") or k.get("url")
             body += f'<ul class="links"><li><a href="{_e(link)}" target="_blank" rel="noopener">원문 보기</a></li></ul>'
             sub = f'{k["category"]}' + (f' · {k["author"]}' if k.get("author") else "")
             out += _fold(_e(k["title"]), sub, body)
     return out
 
+
+ASK_JS = """
+document.querySelectorAll('a[data-copy]').forEach(function(a){a.addEventListener('click',function(){try{navigator.clipboard.writeText(a.dataset.copy)}catch(e){}})});
+"""
 
 DECK_JS = """
 (function(){var d=document.querySelector('.deck');if(!d)return;var c=d.querySelectorAll('.card'),dots=document.querySelectorAll('.dots i');
@@ -204,6 +269,7 @@ def render_day(result: dict, today: datetime) -> str:
                   f'<p>{_e(i.get("summary"))}</p>'
                   f'<div class="cv"><b>계리 관점</b>{_e(i.get("actuarial_view"))}</div>'
                   + (f'<p class="cq">생각해볼 점 · {_e(tip)}</p>' if tip else "")
+                  + _issue_ask(i, f"{today:%m/%d}")
                   + _card_links(i.get("links")) + "</section>")
     dots = "".join('<i class="on"></i>' if k == 0 else "<i></i>" for k in range(total))
     body = (f'<div class="deckwrap" id="issues"><div class="deck" tabindex="0" aria-label="오늘의 이슈 카드">{cards}</div>'
@@ -226,7 +292,7 @@ def render_day(result: dict, today: datetime) -> str:
                     body += f'<div class="co" style="border-bottom:1px solid var(--line);padding:14px 0"><span class="t">{title}</span></div>'
 
     if kiri:
-        body += _kiri_section(kiri)
+        body += _kiri_section(kiri, f"{today:%m/%d}")
 
     if term.get("word"):
         body += (f'<h2 id="term">오늘의 계리 용어</h2><div class="term"><b>{_e(term["word"])}</b>'
@@ -246,9 +312,9 @@ def render_day(result: dict, today: datetime) -> str:
 {_nav(f"{today:%Y-%m-%d}")}
 <div class="date">{today:%m월 %d일} {WEEKDAYS[today.weekday()]}요일 아침 · 보험 아침 브리핑</div>
 {body}
-<p class="foot">뉴스 기사를 AI(Claude)가 요약·분석한 자료입니다. 원문 링크로 사실을 확인하세요.</p>
+<p class="foot">뉴스 기사를 AI(Claude)가 요약·분석한 자료입니다. 원문 링크로 사실을 확인하세요.<br>'Claude에게 질문하기'를 누르면 이 이슈 내용이 담긴 질문이 Claude에서 열려요. 질문이 비어 있으면 붙여넣으세요(자동으로 복사돼요).</p>
 </main><nav class="tabs" aria-label="바로가기">{tabs}</nav>
-<script>{DECK_JS}</script></body></html>"""
+<script>{DECK_JS}{ASK_JS}</script></body></html>"""
 
 
 def render_index() -> str:

@@ -36,7 +36,6 @@ def test_attach_links_and_render(tmp_path=None):
     html = (tmp / page).read_text(encoding="utf-8")
     assert "계리 관점" in html and "KB손해보험" in html
     assert "2026-10-28.html" in (tmp / "index.html").read_text(encoding="utf-8")
-    shutil.copy(tmp / page, "/tmp/claude-0/-home-claude/e4823be2-3c3e-5ac2-ad1a-7b3360c9d7bf/scratchpad/sample_brief.html")
 
 def test_kakao_text_limit():
     text = build_text({"kakao_lines": ["가" * 80] * 3}, "10/28")
@@ -202,6 +201,38 @@ def test_kiri_prompt_attach_render_kakao():
     assert 'href="#kiri"' in page and "KIRI 리포트 제656호" in page and "<details" in page and "2편" in page
     text = build_text(result, "10/31")
     assert "보험연구원 새 보고서 2편" in text and len(text) <= KAKAO_TEXT_LIMIT
+
+def test_ask_button_on_issue_and_kiri_cards():
+    from urllib.parse import quote
+    r = {"headline": "h", "kakao_lines": ["a", "b", "c"],
+         "issues": [{"title": "CSM 변동", "category": "실적·재무", "summary": "요약문", "actuarial_view": "관점문",
+                     "takeaway": "분리해서 볼 필요가 있다", "links": [{"title": "t", "url": "http://x/1"}]}],
+         "kiri_items": [{"publication": "KIRI 리포트", "issue": "제656호", "category": "포커스", "title": "AI 에이전트",
+                         "author": "", "date": "", "url": "http://k/1", "pdf_url": "http://k/p",
+                         "summary": "보고서 요약", "actuarial_view": "관점", "takeaway": "짚을 점"}]}
+    page = pub.render_day(r, now)
+    assert page.count('class="ask"') == 2                      # 이슈 카드 1개 + 보험연구원 글 1개
+    assert "https://claude.ai/new?q=" in page and "data-copy=" in page
+    assert "분리해서 볼 필요가 있다" in page and "제 질문: " in page
+    assert "기사에 나온 내용과 일반적인 계리 지식을 구분" in page   # 답변 근거 구분 요청이 질문에 들어감
+    assert "면접" not in page
+
+def test_ask_prompt_stays_short_enough_for_url():
+    from urllib.parse import quote
+    long = "가" * 900
+    p = pub.ask_prompt('이슈 "t"', [("요약", long), ("계리 관점", long), ("생각해볼 점", long)],
+                       [f"http://example.com/{i}" for i in range(5)], "11/02")
+    assert len(quote(p)) <= pub.ASK_MAX
+    assert p.endswith("제 질문: ")                               # 줄여도 질문 입력 자리는 남음
+    short = pub.ask_prompt('이슈 "t"', [("요약", "짧은 요약")], ["http://a/1", "http://a/2", "http://a/3", "http://a/4"], "11/02")
+    assert "http://a/3" in short and "http://a/4" not in short   # 원문 링크는 최대 3개
+
+def test_ask_button_escapes_quotes():
+    r = {"headline": "h", "kakao_lines": ["a", "b", "c"],
+         "issues": [{"title": '따옴표 "테스트" <b>', "category": "기타", "summary": 's', "actuarial_view": "v",
+                     "takeaway": "t", "links": []}]}
+    page = pub.render_day(r, now)
+    assert "<b>" not in page.split('class="ask"')[1].split("</a>")[0]    # 버튼 속성이 깨지지 않음
 
 def test_monday_lookback_72h():
     from brief.collect import lookback_hours
