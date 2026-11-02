@@ -2,7 +2,9 @@ name: 보험 아침 브리핑
 
 on:
   schedule:
-    - cron: "17 22 * * 0-4" # UTC 일~목 22:17 = 한국시간 월~금 07:17 시작 → 보통 07:25~07:40 카톡 도착 (GitHub 예약 실행 지연 여유분 포함, 월요일은 주말치 72시간)
+    - cron: "17 22 * * 0-4" # UTC 일~목 22:17 = 한국시간 월~금 07:17 시작 → 보통 07:25~07:40 카톡 도착 (월요일은 주말치 72시간)
+    - cron: "47 22 * * 0-4" # 예비 1: 07:47 (GitHub가 예약 실행을 빠뜨리는 날 대비, 이미 보냈으면 자동으로 건너뜀)
+    - cron: "17 23 * * 0-4" # 예비 2: 08:17
   workflow_dispatch:         # Actions 탭에서 수동 실행 버튼
     inputs:
       mode:
@@ -10,6 +12,11 @@ on:
         type: choice
         options: [full, kakao-test, kiri-test]
         default: full
+
+# 예약 실행이 겹쳐도 한 번에 하나씩만 (앞 실행이 끝난 뒤 다음 실행이 '이미 보냈는지' 확인)
+concurrency:
+  group: brief
+  cancel-in-progress: false
 
 permissions:
   contents: write            # docs/ 폴더에 브리핑 페이지를 커밋하기 위해
@@ -22,10 +29,20 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      # 예비 실행이 중복 발송하지 않도록: 예약 실행인데 오늘 브리핑이 이미 있으면 나머지 단계를 모두 건너뜀
+      - name: 오늘 이미 보냈는지 확인
+        id: guard
+        run: |
+          TODAY=$(TZ=Asia/Seoul date +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f "docs/data/$TODAY.json" ]; then
+            echo "오늘($TODAY) 브리핑이 이미 있어서 건너뜁니다"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
       - run: pip install -r requirements.txt
+        if: steps.guard.outputs.skip != 'true'
       # 0) 보험연구원 읽기 시험 (kiri-test 모드에서만): 결과를 debug/ 폴더에 올림
       - name: 보험연구원 읽기 시험
-        if: github.event.inputs.mode == 'kiri-test'
+        if: steps.guard.outputs.skip != 'true' && github.event.inputs.mode == 'kiri-test'
         run: |
           python main.py --kiri-test
           git config user.name "brief-bot"
@@ -35,7 +52,7 @@ jobs:
           git push
       # 1) 뉴스 수집 → Claude 분석 → 웹페이지 파일 생성 (kakao-test 모드에서는 건너뜀)
       - name: 브리핑 생성
-        if: github.event.inputs.mode != 'kakao-test' && github.event.inputs.mode != 'kiri-test'
+        if: steps.guard.outputs.skip != 'true' && github.event.inputs.mode != 'kakao-test' && github.event.inputs.mode != 'kiri-test'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
@@ -43,7 +60,7 @@ jobs:
         run: python main.py --no-kakao
       # 2) 만든 페이지를 저장소에 올림 → GitHub Pages가 웹사이트에 반영
       - name: 브리핑 페이지 커밋
-        if: github.event.inputs.mode != 'kakao-test' && github.event.inputs.mode != 'kiri-test'
+        if: steps.guard.outputs.skip != 'true' && github.event.inputs.mode != 'kakao-test' && github.event.inputs.mode != 'kiri-test'
         run: |
           git config user.name "brief-bot"
           git config user.email "brief-bot@users.noreply.github.com"
@@ -52,11 +69,11 @@ jobs:
           git push
       # 3) 웹페이지가 실제로 열릴 때까지 잠깐 대기 (카톡 버튼이 404가 되지 않게)
       - name: 웹페이지 반영 대기
-        if: github.event.inputs.mode != 'kakao-test' && github.event.inputs.mode != 'kiri-test'
+        if: steps.guard.outputs.skip != 'true' && github.event.inputs.mode != 'kakao-test' && github.event.inputs.mode != 'kiri-test'
         run: sleep 90
       # 4) 가장 최근 브리핑을 카카오톡 '나에게 보내기'로 전송
       - name: 카카오톡 전송
-        if: github.event.inputs.mode != 'kiri-test'
+        if: steps.guard.outputs.skip != 'true' && github.event.inputs.mode != 'kiri-test'
         env:
           KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
           KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
