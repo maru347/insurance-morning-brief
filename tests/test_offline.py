@@ -126,18 +126,30 @@ def test_response_text_skips_thinking_block():
               stop_reason="end_turn")
     assert parse_json(response_text(resp))["headline"] == "ok"
 
-def test_cardnews_tabs_and_merged_companies():
-    old = {"headline": "h", "issues": [{"title": "이슈A", "category": "기타", "summary": "s", "actuarial_view": "v"}],
+def test_newspaper_layout_tabs_and_merged_companies():
+    old = {"headline": "h", "issues": [{"title": "이슈A", "category": "기타", "summary": "s", "actuarial_view": "v"},
+                                       {"title": "이슈B", "category": "신위험", "summary": "s2", "actuarial_view": "v2"}],
            "industry": [{"company": "한화생명", "note": "n1"}],
            "watch": [{"company": "ABL생명", "note": "n2", "links": []}],
            "term": {"word": "CSM", "explain": "e"}, "kakao_lines": ["줄1", "줄2", "줄3"]}
     page = pub.render_day(old, now)
-    assert 'id="issue-1"' in page and 'class="deck"' in page and 'class="card cover"' in page and 'class="three"' in page and "줄1" in page
+    assert 'class="mast"' in page and "보험 아침 브리핑" in page and 'class="three"' in page and "줄1" in page
+    assert '<details id="issue-1">' in page and '<details id="issue-2">' in page   # 이슈는 모두 접힌 상태로 시작
+    assert "<details open" not in page and 'class="deck"' not in page
+    assert '<span class="no">01</span>' in page and "오늘의 이슈 2" in page
     assert 'href="#issues"' in page and 'href="#companies"' in page and 'href="#term"' in page and "scroll-behavior:smooth" in page
     assert 'href="#kiri"' not in page                      # 보험연구원 글이 없는 날은 탭도 없음
     assert "관심 회사" not in page and page.count('id="companies"') == 1   # 회사 소식은 한 섹션으로 합쳐짐
     assert page.index("한화생명") < page.index("ABL생명")
-    assert "← 목록으로" in page and "prefers-color-scheme:dark" in page
+    assert "← 목록으로" in page
+    assert "prefers-color-scheme" not in page and 'content="light"' in page   # 항상 흰 바탕
+    assert "Noto+Serif+KR" in page
+
+def test_monday_masthead_says_72h():
+    mon = datetime(2026, 11, 2, 7, 30)
+    tue = datetime(2026, 11, 3, 7, 30)
+    r = {"headline": "h", "issues": []}
+    assert "주말 포함 72시간" in pub.render_day(r, mon) and "최근 24시간" in pub.render_day(r, tue)
 
 KIRI_HTML = """<html><body>
 <div class="issue"><span>제656호</span> 발간일 2026-10-26

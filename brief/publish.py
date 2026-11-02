@@ -2,6 +2,7 @@
 
 docs/ 폴더에 날짜별 페이지(2026-10-28.html)와 목록 페이지(index.html)를 쓴다.
 GitHub Pages가 docs/ 폴더를 그대로 웹사이트로 보여준다.
+디자인: 신문 1면형 (흰 바탕 고정, 명조 제목, 이슈는 모두 접어 두고 눌러서 펼침).
 """
 from __future__ import annotations
 
@@ -18,76 +19,67 @@ DOCS = Path(__file__).resolve().parent.parent / "docs"
 ASK_URL = "https://claude.ai/new?q="
 ASK_MAX = 5500
 
-STYLE = """
-:root{--ink:#17212B;--sub:#5B6875;--line:#E3E8EE;--bg:#FFFFFF;--soft:#F4F7FA;--key:#0E7A64;--bar:rgba(255,255,255,.94)}
-@media (prefers-color-scheme:dark){:root{--ink:#E7ECF1;--sub:#9AA7B4;--line:#2A3440;--bg:#12181F;--soft:#1A222B;--key:#3CC4A2;--bar:rgba(18,24,31,.94)}}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Pretendard","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;-webkit-text-size-adjust:100%}
-main{max-width:640px;margin:0 auto;padding:0 18px 96px}
-a{color:inherit}
-nav.bar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 -18px;padding:10px 18px;background:var(--bar);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);font-size:14px}
-nav.bar a{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:600}
-nav.bar a.home{background:var(--key);border-color:var(--key);color:#fff}
-nav.bar .pn{display:flex;gap:6px}nav.bar .off{visibility:hidden}
-.date{font-size:14px;color:var(--sub);margin-top:18px}
-h1{font-size:24px;line-height:1.35;margin:6px 0 18px;font-weight:800;letter-spacing:-.3px}
-.three{background:var(--soft);border-radius:14px;padding:4px 16px;margin-bottom:8px}
-.three p{margin:0;padding:12px 0;font-size:17px;font-weight:600;line-height:1.45;border-bottom:1px solid var(--line)}.three p:last-child{border:0}
-h2{font-size:15px;color:var(--sub);font-weight:700;margin:32px 0 4px;scroll-margin-top:64px}
-details{border-bottom:1px solid var(--line);scroll-margin-top:64px}
-summary{list-style:none;cursor:pointer;padding:14px 0;display:flex;gap:12px;align-items:flex-start}
-summary::-webkit-details-marker{display:none}
-summary:focus-visible{outline:2px solid var(--key);outline-offset:2px;border-radius:6px}
-.dot{flex:0 0 10px;height:10px;border-radius:5px;margin-top:9px}
-.t{flex:1;font-size:17px;font-weight:700;line-height:1.45}.t small{display:block;font-size:13px;font-weight:500;color:var(--sub)}
-.chev{color:var(--sub);font-size:20px;line-height:1.3;transition:transform .2s}details[open]>summary .chev{transform:rotate(90deg)}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chev{transition:none}}
-.body{padding:0 0 18px 22px;font-size:15.5px}.body p{margin:0 0 10px}
-.view{border-left:3px solid var(--key);padding:2px 0 2px 12px;margin:12px 0}
-.view b{display:block;font-size:13px;color:var(--key)}
-.q{color:var(--sub);font-size:15px}
-ul.links{margin:8px 0 0;padding-left:18px;font-size:14px;color:var(--sub)}ul.links li{margin:3px 0}
-.co .t{font-size:16px}.co .note{font-size:15px;font-weight:500;color:var(--ink);display:block;margin-top:2px}
-.pub{font-size:14px;font-weight:700;color:var(--ink);margin:18px 0 0}
-.term{background:var(--soft);border-radius:14px;padding:14px 16px;margin-top:8px}.term b{font-size:17px}.term p{margin:6px 0 0;font-size:15.5px}
-.foot{color:var(--sub);font-size:13px;margin-top:36px}
-.deckwrap{margin:16px -18px 0;scroll-margin-top:56px}
-.deck{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 18px 14px;scrollbar-width:none;align-items:flex-start}
-.deck::-webkit-scrollbar{display:none}
-.card{flex:0 0 86%;max-width:520px;scroll-snap-align:center;border-radius:20px;padding:22px 20px 20px;color:#fff;min-height:440px;display:flex;flex-direction:column;scroll-margin-top:64px}
-.card .n{font-size:13.5px;font-weight:700;opacity:.85}
-.card h1,.card h3{font-size:23px;line-height:1.35;margin:8px 0 14px;letter-spacing:-.4px;font-weight:800}
-.card p{font-size:15.5px;margin:0 0 12px}
-.card .cv{background:rgba(255,255,255,.15);border-radius:12px;padding:12px 13px;font-size:15px;margin-top:4px}
-.card .cv b{display:block;font-size:13px;opacity:.85;margin-bottom:2px}
-.card .cq{font-size:14.5px;opacity:.92;margin-top:12px}
-.card ul.links{color:rgba(255,255,255,.88);margin-top:6px}.card ul.links a{color:#fff}
-.card details.cl{border:0;margin-top:auto;padding-top:12px}
-.card details.cl summary{display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.18);font-size:13.5px;font-weight:700}
-.cover{background:var(--ink);color:var(--bg)}
-.cover .three{background:transparent;padding:0;margin:auto 0 0}
-.cover .three p{border-color:rgba(127,127,127,.35);font-size:16.5px}
-.deckctl{display:flex;align-items:center;justify-content:center;gap:12px;padding:0 18px}
-.deckctl button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;width:38px;height:38px;font-size:18px;cursor:pointer}
-.deckctl button:focus-visible{outline:2px solid var(--key);outline-offset:2px}
-.dots{display:flex;gap:6px}.dots i{width:7px;height:7px;border-radius:4px;background:var(--line);transition:width .2s}.dots i.on{width:20px;background:var(--key)}
-.swipe{font-size:13px;color:var(--sub);text-align:center;margin:6px 0 0}
-@media (prefers-reduced-motion:reduce){.dots i{transition:none}}
-nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bar);backdrop-filter:blur(6px);border-top:1px solid var(--line);display:flex;justify-content:center}
-nav.tabs a{flex:1;max-width:160px;text-align:center;padding:11px 0 15px;font-size:13.5px;font-weight:700;color:var(--sub);text-decoration:none}
-nav.tabs a:first-child{color:var(--key)}
-.month{font-size:15px;color:var(--sub);margin:28px 0 6px}
-a.day{display:block;text-decoration:none;border-bottom:1px solid var(--line);padding:14px 0}
-a.day .d{font-weight:700}a.day .d small{color:var(--sub);font-weight:400;margin-left:4px}
-a.day .h{display:block;margin-top:2px;font-size:16px}a.day .chips{display:block;margin-top:2px;color:var(--sub);font-size:13px}
-.sec{font-size:15px;margin:22px 0 4px;color:var(--sub)}.none{color:var(--sub);font-size:14px;margin:6px 0 10px}
-.ask{display:inline-block;margin-top:10px;padding:8px 14px;border:1px solid var(--key);border-radius:999px;color:var(--key);font-size:14px;font-weight:700;text-decoration:none}
-.ask:focus-visible{outline:2px solid var(--key);outline-offset:2px}
-.card .ask{border-color:rgba(255,255,255,.7);color:#fff;background:rgba(255,255,255,.12);align-self:flex-start}
-"""
+FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
+         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800'
+         '&amp;family=Noto+Serif+KR:wght@600;700;900&amp;display=swap">')
 
-CAT_COLOR = {"제도·감독": "#3557A6", "실적·재무": "#0E7A64", "상품·시장": "#8A5A00", "손해율·보험금": "#B4432C",
-             "신위험": "#6A45B0", "디지털·AI": "#1F7896", "기타": "#667085"}
+STYLE = """
+:root{--ink:#111111;--sub:#555555;--line:#DDDDDD;--bg:#FFFFFF;--soft:#F6F3F0;--key:#8E1F25;--bar:rgba(255,255,255,.96);
+--serif:"Noto Serif KR","Nanum Myeongjo","AppleMyungjo",serif;--sans:"Noto Sans KR","Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;color-scheme:light}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);-webkit-text-size-adjust:100%}
+main{max-width:640px;margin:0 auto;padding:0 20px 96px}
+a{color:inherit}
+nav.bar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 -20px;padding:4px 20px;background:var(--bar);border-bottom:1px solid var(--ink);font-size:13.5px}
+nav.bar a{display:inline-block;padding:10px 2px;text-decoration:none;font-weight:700}
+nav.bar .pn{display:flex;gap:16px}nav.bar .off{visibility:hidden}
+.mast{text-align:center;padding:18px 0 14px;border-bottom:3px double var(--ink)}
+.mast .date{font-size:13px;color:var(--sub)}
+.mast .name{font-family:var(--serif);font-size:30px;font-weight:900;letter-spacing:-.5px;line-height:1.3;margin-top:4px}
+.mast .sub{font-size:12.5px;color:var(--sub);margin-top:4px}
+h1{font-family:var(--serif);font-size:27px;line-height:1.38;font-weight:900;margin:22px 0 14px;letter-spacing:-.6px}
+.three{padding-bottom:18px;border-bottom:1px solid var(--line)}
+.three p{margin:0 0 8px;font-size:15.5px;line-height:1.5;display:flex;gap:10px}.three p:last-child{margin:0}.three b{color:var(--key)}
+.label{font-size:13px;font-weight:800;letter-spacing:1px;color:var(--key);margin:28px 0 2px;scroll-margin-top:60px}
+details{border-bottom:1px solid var(--line);scroll-margin-top:60px}
+summary{list-style:none;cursor:pointer;padding:14px 0;display:flex;gap:12px;align-items:baseline}
+summary::-webkit-details-marker{display:none}
+summary:focus-visible,.ask:focus-visible,.out:focus-visible{outline:2px solid var(--key);outline-offset:2px}
+.no{flex:0 0 20px;font-size:12px;color:var(--sub)}
+.t{flex:1;font-family:var(--serif);font-size:17.5px;font-weight:700;line-height:1.45}
+.t small{display:block;font-family:var(--sans);font-size:12px;font-weight:500;color:var(--sub)}
+.chev{color:var(--sub);font-size:18px;transition:transform .2s}details[open]>summary .chev{transform:rotate(90deg)}
+.body{padding:0 0 18px;font-size:15.5px;line-height:1.65;color:#222222}.body p{margin:0 0 12px}
+.view{background:var(--soft);padding:12px 14px;font-size:14.5px;line-height:1.6;margin:0 0 12px}
+.view b{display:block;font-size:12px;color:var(--key);margin-bottom:2px}
+.q{font-family:var(--serif);font-size:15px;line-height:1.6;color:#333333}
+.q b{display:block;font-family:var(--sans);font-size:12px;color:var(--key);margin-bottom:2px}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;align-items:flex-start}
+.ask,.out{flex:1 1 140px;display:block;text-align:center;padding:12px 10px;text-decoration:none;font-size:14px;font-weight:700}
+.ask{background:var(--ink);color:#FFFFFF}
+.out{border:1px solid var(--ink)}
+details.cl{flex:1 1 140px;border:0}
+details.cl>summary{display:block;text-align:center;padding:11px 10px;border:1px solid var(--ink);font-size:14px;font-weight:700}
+details.cl[open]{flex-basis:100%}
+ul.links{margin:8px 0 0;padding-left:18px;font-size:14px;color:var(--sub)}ul.links li{margin:4px 0}
+.sec,.pub{font-size:14px;font-weight:700;margin:18px 0 0;padding-bottom:6px;border-bottom:1px solid var(--ink)}
+.none{color:var(--sub);font-size:14px;margin:10px 0}
+.co .t{font-size:16.5px}.co .note{display:block;font-family:var(--sans);font-size:14.5px;font-weight:400;color:#333333;margin-top:2px}
+.row{display:flex;padding:14px 0;border-bottom:1px solid var(--line)}
+.term{margin-top:30px;border-top:3px double var(--ink);padding-top:14px;scroll-margin-top:60px}
+.term .w{font-family:var(--serif);font-size:20px;font-weight:700;margin-top:6px}.term p{margin:6px 0 0;font-size:15.5px}
+.foot{color:var(--sub);font-size:13px;margin-top:36px;border-top:1px solid var(--line);padding-top:12px}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bar);border-top:1px solid var(--ink);display:flex;justify-content:center}
+nav.tabs a{flex:1;max-width:160px;text-align:center;padding:12px 0 16px;font-size:13.5px;font-weight:700;color:var(--sub);text-decoration:none}
+nav.tabs a:first-child{color:var(--key)}
+.month{font-family:var(--serif);font-size:16px;font-weight:700;margin:28px 0 0;padding-bottom:6px;border-bottom:1px solid var(--ink)}
+a.day{display:block;text-decoration:none;border-bottom:1px solid var(--line);padding:14px 0}
+a.day .d{display:block;font-size:12.5px;color:var(--sub)}
+a.day .h{display:block;margin-top:2px;font-family:var(--serif);font-size:17.5px;font-weight:700;line-height:1.45}
+a.day .chips{display:block;margin-top:4px;color:var(--sub);font-size:13px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chev{transition:none}}
+"""
 
 
 def _e(s) -> str:
@@ -99,11 +91,6 @@ def _links(links) -> str:
         return ""
     items = "".join(f'<li><a href="{_e(l["url"])}" target="_blank" rel="noopener">{_e(l["title"])}</a></li>' for l in links)
     return f'<ul class="links">{items}</ul>'
-
-
-def _takeaway(issue) -> str:
-    tip = issue.get("takeaway") or issue.get("interview_point")  # 예전 데이터 호환
-    return f'<p class="q">생각해볼 점 · {_e(tip)}</p>' if tip else ""
 
 
 def ask_prompt(head: str, fields: list[tuple[str, str]], urls: list[str], date_label: str) -> str:
@@ -133,7 +120,7 @@ def _ask_button(prompt: str) -> str:
     """누르면 Claude 앱(웹)이 질문이 채워진 채로 열린다. 스크립트가 질문 문구를 복사해 두어 비어 있어도 붙여넣을 수 있다."""
     href = ASK_URL + quote(prompt)
     return (f'<a class="ask" href="{_e(href)}" target="_blank" rel="noopener" data-copy="{_e(prompt)}">'
-            f'Claude에게 질문하기 ↗</a>')
+            f'Claude에게 질문하기</a>')
 
 
 def _issue_ask(issue: dict, date_label: str) -> str:
@@ -174,20 +161,33 @@ def companies(result: dict) -> list[dict]:
 
 
 def _card_links(links) -> str:
-    """카드 안 원문 기사: 처음엔 접어 두고 '관련 기사 N건'만 보여 카드 길이를 짧게."""
+    """원문 기사: 처음엔 접어 두고 '관련 기사 N건'만 보인다."""
     if not links:
         return ""
-    return f'<details class="cl"><summary>관련 기사 {len(links)}건 보기</summary>{_links(links)}</details>'
+    return f'<details class="cl"><summary>관련 기사 {len(links)}건</summary>{_links(links)}</details>'
 
 
-def _fold(title: str, sub: str, body: str, color: str | None = None, anchor: str = "", cls: str = "") -> str:
-    """한 줄 제목 + 눌러서 펼치기."""
-    dot = f'<span class="dot" style="background:{color}"></span>' if color else ""
+def _fold(title: str, sub: str, body: str, anchor: str = "", cls: str = "", no: str = "") -> str:
+    """한 줄 제목 + 눌러서 펼치기 (처음에는 접혀 있음)."""
     aid = f' id="{anchor}"' if anchor else ""
     c = f' class="{cls}"' if cls else ""
+    num = f'<span class="no">{_e(no)}</span>' if no else ""
     sub_html = f"<small>{_e(sub)}</small>" if sub else ""
-    return (f'<details{aid}{c}><summary>{dot}<span class="t">{sub_html}{title}</span>'
+    return (f'<details{aid}{c}><summary>{num}<span class="t">{sub_html}{title}</span>'
             f'<span class="chev" aria-hidden="true">›</span></summary><div class="body">{body}</div></details>')
+
+
+def _tip(text: str) -> str:
+    return f'<p class="q"><b>생각해볼 점</b>“{_e(text)}”</p>' if text else ""
+
+
+def _issue(issue: dict, n: int, date_label: str) -> str:
+    body = f'<p>{_e(issue.get("summary"))}</p>' if issue.get("summary") else ""
+    if issue.get("actuarial_view"):
+        body += f'<div class="view"><b>계리 관점</b>{_e(issue["actuarial_view"])}</div>'
+    body += _tip(issue.get("takeaway") or issue.get("interview_point"))
+    body += f'<div class="acts">{_issue_ask(issue, date_label)}{_card_links(issue.get("links"))}</div>'
+    return _fold(_e(issue.get("title")), issue.get("category", ""), body, anchor=f"issue-{n}", no=f"{n:02d}")
 
 
 def _kiri_section(items: list[dict], date_label: str = "") -> str:
@@ -199,21 +199,17 @@ def _kiri_section(items: list[dict], date_label: str = "") -> str:
     groups: dict[tuple, list] = {}
     for k in items:
         groups.setdefault((k["publication"], k.get("issue", "")), []).append(k)
-    out = f'<h2 id="kiri">보험연구원 새 보고서 {len(items)}편</h2>'
+    out = f'<div class="label" id="kiri">보험연구원 새 보고서 {len(items)}편</div>'
     for (pub, issue), ks in groups.items():
         out += f'<p class="pub">{_e(pub)} {_e(issue)}</p>'
         for k in ks:
-            body = ""
-            if k.get("summary"):
-                body += f'<p>{_e(k["summary"])}</p>'
+            body = f'<p>{_e(k["summary"])}</p>' if k.get("summary") else ""
             if k.get("actuarial_view"):
                 body += f'<div class="view"><b>계리 관점</b>{_e(k["actuarial_view"])}</div>'
-            if k.get("takeaway"):
-                body += f'<p class="q">생각해볼 점 · {_e(k["takeaway"])}</p>'
-            if k.get("takeaway") or k.get("summary"):
-                body += f'<p>{_kiri_ask(k, date_label)}</p>'
+            body += _tip(k.get("takeaway"))
+            ask = _kiri_ask(k, date_label) if (k.get("takeaway") or k.get("summary")) else ""
             link = k.get("pdf_url") or k.get("url")
-            body += f'<ul class="links"><li><a href="{_e(link)}" target="_blank" rel="noopener">원문 보기</a></li></ul>'
+            body += f'<div class="acts">{ask}<a class="out" href="{_e(link)}" target="_blank" rel="noopener">원문 보기</a></div>'
             sub = f'{k["category"]}' + (f' · {k["author"]}' if k.get("author") else "")
             out += _fold(_e(k["title"]), sub, body)
     return out
@@ -223,17 +219,14 @@ ASK_JS = """
 document.querySelectorAll('a[data-copy]').forEach(function(a){a.addEventListener('click',function(){try{navigator.clipboard.writeText(a.dataset.copy)}catch(e){}})});
 """
 
-DECK_JS = """
-(function(){var d=document.querySelector('.deck');if(!d)return;var c=d.querySelectorAll('.card'),dots=document.querySelectorAll('.dots i');
-function idx(){var best=0,min=1e9,mid=d.scrollLeft+d.clientWidth/2;c.forEach(function(x,i){var m=Math.abs(x.offsetLeft+x.offsetWidth/2-mid);if(m<min){min=m;best=i}});return best}
-function paint(){var k=idx();dots.forEach(function(x,i){x.className=i===k?'on':''})}
-d.addEventListener('scroll',function(){window.requestAnimationFrame(paint)},{passive:true});
-document.querySelectorAll('.deckctl button').forEach(function(b){b.addEventListener('click',function(){var k=Math.max(0,Math.min(c.length-1,idx()+(+b.dataset.d)));d.scrollTo({left:c[k].offsetLeft-(d.clientWidth-c[k].offsetWidth)/2,behavior:'smooth'})})});
-d.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();document.querySelector('.deckctl button[data-d="'+(e.key==='ArrowRight'?1:-1)+'"]').click()}});
-})();
-"""
-
 WEEKDAYS = "월화수목금토일"
+
+
+def _head(title: str) -> str:
+    return (f'<!doctype html><html lang="ko"><head><meta charset="utf-8">\n'
+            f'<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+            f'<meta name="color-scheme" content="light">\n'
+            f'<title>{_e(title)}</title>{FONTS}<style>{STYLE}</style></head><body><main>')
 
 
 def _day_names() -> list[str]:
@@ -246,39 +239,31 @@ def _nav(name: str) -> str:
     i = days.index(name)
     prev = f'<a href="{days[i-1]}.html">‹ 이전</a>' if i > 0 else '<a class="off">‹ 이전</a>'
     nxt = f'<a href="{days[i+1]}.html">다음 ›</a>' if i < len(days) - 1 else '<a class="off">다음 ›</a>'
-    return f'<nav class="bar"><a class="home" href="index.html">← 목록으로</a><span class="pn">{prev}{nxt}</span></nav>'
+    return f'<nav class="bar"><a href="index.html">← 목록으로</a><span class="pn">{prev}{nxt}</span></nav>'
 
 
 def render_day(result: dict, today: datetime) -> str:
-    """카드뉴스 디자인: 표지·이슈 카드를 옆으로 넘기고, 회사·보험연구원·용어는 아래 목록(눌러서 펼치기) + 아래 고정 탭."""
+    """신문 1면형: 제호 → 헤드라인·핵심 3줄 → 이슈(모두 접힘) → 업계 소식 → 보험연구원 → 계리 용어."""
     issues = result.get("issues", [])
     cos = companies(result)
     kiri = result.get("kiri_items") or []
     term = result.get("term") or {}
+    date_label = f"{today:%m/%d}"
+    period = "주말 포함 72시간" if today.weekday() == 0 else "최근 24시간"
 
-    # 카드뉴스: 0번 표지 카드(헤드라인 + 핵심 3줄) → 이슈 카드를 옆으로 넘기기
-    three = "".join(f"<p>{_e(l)}</p>" for l in result.get("kakao_lines", [])[:3])
-    total = len(issues) + 1
-    cards = (f'<section class="card cover" aria-label="오늘 요약"><div class="n">1/{total} · 오늘 요약</div>'
-             f'<h1>{_e(result.get("headline"))}</h1>'
-             + (f'<div class="three">{three}</div>' if three else "") + "</section>")
-    for n, i in enumerate(issues, 1):
-        tip = i.get("takeaway") or i.get("interview_point")
-        cards += (f'<section class="card" id="issue-{n}" style="background:{CAT_COLOR.get(i.get("category"), "#667085")}">'
-                  f'<div class="n">{n + 1}/{total} · {_e(i.get("category"))}</div><h3>{_e(i.get("title"))}</h3>'
-                  f'<p>{_e(i.get("summary"))}</p>'
-                  f'<div class="cv"><b>계리 관점</b>{_e(i.get("actuarial_view"))}</div>'
-                  + (f'<p class="cq">생각해볼 점 · {_e(tip)}</p>' if tip else "")
-                  + _issue_ask(i, f"{today:%m/%d}")
-                  + _card_links(i.get("links")) + "</section>")
-    dots = "".join('<i class="on"></i>' if k == 0 else "<i></i>" for k in range(total))
-    body = (f'<div class="deckwrap" id="issues"><div class="deck" tabindex="0" aria-label="오늘의 이슈 카드">{cards}</div>'
-            f'<div class="deckctl"><button type="button" data-d="-1" aria-label="이전 카드">‹</button>'
-            f'<span class="dots">{dots}</span><button type="button" data-d="1" aria-label="다음 카드">›</button></div>'
-            f'<p class="swipe">옆으로 넘겨 이슈 {len(issues)}개를 보세요</p></div>')
+    body = (f'<header class="mast"><div class="date">{today:%Y년 %m월 %d일} {WEEKDAYS[today.weekday()]}요일</div>'
+            f'<div class="name">보험 아침 브리핑</div>'
+            f'<div class="sub">보험산업 이슈를 계리 관점으로 · {period}</div></header>')
+    body += f'<h1>{_e(result.get("headline"))}</h1>'
+    lines = result.get("kakao_lines", [])[:3]
+    if lines:
+        body += '<div class="three">' + "".join(f"<p><b>{n}</b>{_e(l)}</p>" for n, l in enumerate(lines, 1)) + "</div>"
+
+    body += f'<div class="label" id="issues">오늘의 이슈 {len(issues)}</div>'
+    body += "".join(_issue(i, n, date_label) for n, i in enumerate(issues, 1))
 
     if cos:
-        body += f'<h2 id="companies">업계 소식 {len(cos)}</h2>'
+        body += f'<div class="label" id="companies">업계 소식 {len(cos)}</div>'
         for name, items in sectors(result).items():
             if name in SECTOR_NAMES:
                 body += f'<h3 class="sec">{_e(name)} {len(items)}</h3>'
@@ -289,14 +274,14 @@ def render_day(result: dict, today: datetime) -> str:
                 if c.get("links"):
                     body += _fold(title, "", _links(c.get("links")), cls="co")
                 else:
-                    body += f'<div class="co" style="border-bottom:1px solid var(--line);padding:14px 0"><span class="t">{title}</span></div>'
+                    body += f'<div class="co row"><span class="t">{title}</span></div>'
 
     if kiri:
-        body += _kiri_section(kiri, f"{today:%m/%d}")
+        body += _kiri_section(kiri, date_label)
 
     if term.get("word"):
-        body += (f'<h2 id="term">오늘의 계리 용어</h2><div class="term"><b>{_e(term["word"])}</b>'
-                 f'<p>{_e(term.get("explain"))}</p></div>')
+        body += (f'<div class="term" id="term"><div class="label" style="margin:0">오늘의 계리 용어</div>'
+                 f'<div class="w">{_e(term["word"])}</div><p>{_e(term.get("explain"))}</p></div>')
 
     tabs = '<a href="#issues">이슈</a>'
     if cos:
@@ -306,15 +291,11 @@ def render_day(result: dict, today: datetime) -> str:
     if term.get("word"):
         tabs += '<a href="#term">용어</a>'
 
-    return f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>보험 아침 브리핑 {today:%m/%d}</title><style>{STYLE}</style></head><body><main>
-{_nav(f"{today:%Y-%m-%d}")}
-<div class="date">{today:%m월 %d일} {WEEKDAYS[today.weekday()]}요일 아침 · 보험 아침 브리핑</div>
-{body}
-<p class="foot">뉴스 기사를 AI(Claude)가 요약·분석한 자료입니다. 원문 링크로 사실을 확인하세요.<br>'Claude에게 질문하기'를 누르면 이 이슈 내용이 담긴 질문이 Claude에서 열려요. 질문이 비어 있으면 붙여넣으세요(자동으로 복사돼요).</p>
-</main><nav class="tabs" aria-label="바로가기">{tabs}</nav>
-<script>{DECK_JS}{ASK_JS}</script></body></html>"""
+    return (_head(f"보험 아침 브리핑 {date_label}") + _nav(f"{today:%Y-%m-%d}") + body
+            + '<p class="foot">뉴스 기사를 AI(Claude)가 요약·분석한 자료입니다. 원문 링크로 사실을 확인하세요.<br>'
+              "'Claude에게 질문하기'를 누르면 이 이슈 내용이 담긴 질문이 Claude에서 열려요. "
+              "질문이 비어 있으면 붙여넣으세요(자동으로 복사돼요).</p>"
+            + f'</main><nav class="tabs" aria-label="바로가기">{tabs}</nav><script>{ASK_JS}</script></body></html>')
 
 
 def render_index() -> str:
@@ -341,13 +322,12 @@ def render_index() -> str:
                     chips += f" · 보험연구원 {len(r['kiri_items'])}편"
             except (json.JSONDecodeError, OSError):
                 pass
-        body += (f'<a class="day" href="{d}.html"><span class="d">{dt:%m월 %d일}<small>({WEEKDAYS[dt.weekday()]})</small></span>'
+        body += (f'<a class="day" href="{d}.html"><span class="d">{dt:%m월 %d일} ({WEEKDAYS[dt.weekday()]})</span>'
                  f'<span class="h">{_e(headline)}</span><span class="chips">{_e(chips)}</span></a>')
-    return f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>보험 아침 브리핑 목록</title><style>{STYLE}</style></head><body><main>
-<div class="date">평일 아침 · 보험산업 이슈를 계리 관점으로 · 총 {len(days)}일</div><h1>보험 아침 브리핑</h1>
-{body}</main></body></html>"""
+    return (_head("보험 아침 브리핑 목록")
+            + '<header class="mast"><div class="date">평일 아침 발행</div><div class="name">보험 아침 브리핑</div>'
+              f'<div class="sub">보험산업 이슈를 계리 관점으로 · 총 {len(days)}일</div></header>'
+            + body + "</main></body></html>")
 
 
 def publish(result: dict, today: datetime) -> str:
