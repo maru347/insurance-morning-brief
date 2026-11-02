@@ -13,7 +13,7 @@ from datetime import datetime
 import anthropic
 
 from . import config
-from .collect import Article, topics, watch_hits
+from .collect import Article, topics
 
 SYSTEM_PROMPT = """당신은 한국 보험사 상품계리 부서의 시니어 계리사입니다.
 매일 아침 신입 계리사에게 보험산업 이슈를 브리핑합니다.
@@ -48,23 +48,26 @@ OUTPUT_SPEC = """다음 JSON 형식으로만 답하세요 (코드블록 없이):
       "article_ids": [기사 번호들]
     }
   ],
-  "companies": [
-    {"company": "회사명", "note": "오늘 이 회사의 주요 소식 1문장 (실적·상품·자본·제재 등)", "article_ids": [기사 번호]}
-  ],
+  "sectors": {
+    "손해보험": [{"company": "회사명", "note": "이 회사의 주요 소식 1문장", "article_ids": [기사 번호]}],
+    "생명보험": [{"company": "회사명", "note": "…", "article_ids": [기사 번호]}],
+    "공제": [{"company": "기관명 (수협·신협·새마을금고·우체국보험·공제회 등)", "note": "…", "article_ids": [기사 번호]}]
+  },
   "term": {"word": "오늘의 계리 용어", "explain": "2문장 설명"},
-  "kakao_lines": ["카톡용 핵심 3줄, 각 40자 이내"]
+  "kakao_lines": ["손보: 손해보험 쪽 오늘 핵심 한 줄", "생보: 생명보험 쪽 오늘 핵심 한 줄", "공제: 공제 쪽 오늘 핵심 한 줄"]
 }
-issues는 중요도 순으로 최대 5개입니다.
-companies는 개별 보험사·공제 소식을 생·손보·공제 가리지 않고 중요한 순으로 최대 10개 넣습니다.
-관심 회사 소식이 있으면 빠짐없이 넣되, 다른 회사와 똑같은 형식·기준으로 섞어서 씁니다 (따로 강조하지 않음).
-headline·issues·kakao_lines는 업계 전체에서 중요한 순서로 고르고, 관심 회사라는 이유만으로 올리지 않습니다 (관심 회사 소식은 companies에서 다룸).
-관심 회사가 들어간 issue는 최대 1개로 하고, 업계 전체에 영향을 주는 소식일 때만 넣습니다."""
+issues는 업계 전체에서 중요한 순으로 최대 5개입니다. 특정 회사를 우선하지 않습니다.
+sectors는 손해보험·생명보험·공제 세 갈래로 나눠, 갈래마다 개별 회사·기관 소식을 중요한 순으로 최대 5개씩 넣습니다.
+  회사가 어느 갈래인지는 업종으로 판단합니다 (예: 삼성화재·KB손해보험·코리안리=손해보험, 삼성생명·ABL생명·KB라이프=생명보험,
+  수협·신협·새마을금고 공제, 우체국보험, 교직원공제회·군인공제회=공제). 소식이 없는 갈래는 빈 목록으로 둡니다.
+kakao_lines는 정확히 3줄이며 순서대로 '손보: ', '생보: ', '공제: '로 시작하고 각 35자 이내입니다 (카톡 글자 수 제한).
+  그 갈래에 오늘 소식이 없으면 '공제: 오늘은 눈에 띄는 소식 없음'처럼 씁니다."""
 
 
 def build_article_list(articles: list[Article]) -> str:
     lines = []
     for i, a in enumerate(articles[: config.MAX_ARTICLES_FOR_AI]):
-        tags = topics(a) + [f"관심:{c}" for c in watch_hits(a)]
+        tags = topics(a)
         tag = f" ({', '.join(tags)})" if tags else ""
         lines.append(f"[{i}]{tag} {a.title} — {a.source}\n    {a.summary[:200]}")
     return "\n".join(lines)
@@ -92,7 +95,6 @@ def analyze(articles: list[Article], today: datetime, kiri_items: list[dict] | N
     period = "지난 금요일 아침부터 주말까지(최근 72시간)" if today.weekday() == 0 else "최근 24시간"
     user_msg = (
         f"오늘은 {today:%Y년 %m월 %d일}입니다.\n"
-        f"관심 회사(회사별 소식에 빠짐없이 포함): {', '.join(config.WATCH_COMPANIES)}\n"
         f"기사 앞 괄호는 검색 주제 힌트입니다. 주제가 한쪽에 몰리지 않게 제도·계리·손해율·상품을 고루 살피세요.\n\n"
         f"{period} 기사 목록:\n{build_article_list(articles)}\n\n"
         + (f"보험연구원 새 보고서:\n{kiri_block}\n\n" if kiri_block else "")
@@ -146,6 +148,9 @@ def attach_links(result: dict, articles: list[Article]) -> dict:
         issue["links"] = links(issue.pop("article_ids", []))
     for c in result.get("companies", []):
         c["links"] = links(c.pop("article_ids", []))
+    for items in (result.get("sectors") or {}).values():
+        for c in items or []:
+            c["links"] = links(c.pop("article_ids", []))
     return result
 
 

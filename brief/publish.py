@@ -74,6 +74,7 @@ nav.tabs a:first-child{color:var(--key)}
 a.day{display:block;text-decoration:none;border-bottom:1px solid var(--line);padding:14px 0}
 a.day .d{font-weight:700}a.day .d small{color:var(--sub);font-weight:400;margin-left:4px}
 a.day .h{display:block;margin-top:2px;font-size:16px}a.day .chips{display:block;margin-top:2px;color:var(--sub);font-size:13px}
+.sec{font-size:15px;margin:22px 0 4px;color:var(--sub)}.none{color:var(--sub);font-size:14px;margin:6px 0 10px}
 """
 
 CAT_COLOR = {"제도·감독": "#3557A6", "실적·재무": "#0E7A64", "상품·시장": "#8A5A00", "손해율·보험금": "#B4432C",
@@ -96,11 +97,21 @@ def _takeaway(issue) -> str:
     return f'<p class="q">생각해볼 점 · {_e(tip)}</p>' if tip else ""
 
 
+SECTOR_NAMES = ["손해보험", "생명보험", "공제"]
+
+
+def sectors(result: dict) -> dict[str, list[dict]]:
+    """손해보험·생명보험·공제 갈래별 소식. 예전 데이터(companies 한 목록, industry/watch)는 '회사별 소식' 한 갈래로 보여 준다."""
+    sec = result.get("sectors")
+    if isinstance(sec, dict):
+        return {name: list(sec.get(name) or []) for name in SECTOR_NAMES}
+    old = result.get("companies") or (list(result.get("industry") or []) + list(result.get("watch") or []))
+    return {"회사별 소식": old} if old else {}
+
+
 def companies(result: dict) -> list[dict]:
-    """회사별 소식 목록. 예전 데이터(industry/watch로 나뉜 것)도 하나로 합친다."""
-    if result.get("companies"):
-        return result["companies"]
-    return list(result.get("industry") or []) + list(result.get("watch") or [])
+    """모든 갈래의 회사 소식을 한 목록으로 (개수 세기용)."""
+    return [c for items in sectors(result).values() for c in items]
 
 
 def _card_links(links) -> str:
@@ -201,13 +212,18 @@ def render_day(result: dict, today: datetime) -> str:
             f'<p class="swipe">옆으로 넘겨 이슈 {len(issues)}개를 보세요</p></div>')
 
     if cos:
-        body += f'<h2 id="companies">회사별 소식 {len(cos)}</h2>'
-        for c in cos:
-            title = f'{_e(c.get("company"))}<span class="note">{_e(c.get("note"))}</span>'
-            if c.get("links"):
-                body += _fold(title, "", _links(c.get("links")), cls="co")
-            else:
-                body += f'<div class="co" style="border-bottom:1px solid var(--line);padding:14px 0"><span class="t">{title}</span></div>'
+        body += f'<h2 id="companies">업계 소식 {len(cos)}</h2>'
+        for name, items in sectors(result).items():
+            if name in SECTOR_NAMES:
+                body += f'<h3 class="sec">{_e(name)} {len(items)}</h3>'
+            if not items:
+                body += '<p class="none">오늘은 눈에 띄는 소식이 없어요.</p>'
+            for c in items:
+                title = f'{_e(c.get("company"))}<span class="note">{_e(c.get("note"))}</span>'
+                if c.get("links"):
+                    body += _fold(title, "", _links(c.get("links")), cls="co")
+                else:
+                    body += f'<div class="co" style="border-bottom:1px solid var(--line);padding:14px 0"><span class="t">{title}</span></div>'
 
     if kiri:
         body += _kiri_section(kiri)
@@ -218,7 +234,7 @@ def render_day(result: dict, today: datetime) -> str:
 
     tabs = '<a href="#issues">이슈</a>'
     if cos:
-        tabs += '<a href="#companies">회사</a>'
+        tabs += '<a href="#companies">생보·손보·공제</a>'
     if kiri:
         tabs += f'<a href="#kiri">보험연구원 {len(kiri)}</a>'
     if term.get("word"):

@@ -175,10 +175,19 @@ def watch_hits(a: Article) -> list[str]:
     return [c for c, names in config.WATCH_COMPANIES.items() if any(n in text for n in names)]
 
 
-def rank(articles: list[Article]) -> list[Article]:
-    """AI에 넘길 순서: 광고성 제거 → 관심 회사 기사(최대 MAX_WATCH_ARTICLES건) → 나머지를 계리 핵심 주제·키워드 수·전문지·최신 순.
+def bucket(a: Article) -> str:
+    """기사가 걸린 검색어로 손해보험사·생명보험사·공제·업계 전반 중 어디인지 정한다."""
+    t = topics(a)
+    for b in config.SECTOR_BUCKETS:
+        if b in t:
+            return b
+    return "업계 전반"
 
-    관심 회사 기사는 빠지지 않게 앞에 넣되 개수를 제한해서, 업계 전체 기사가 밀려나지 않게 한다.
+
+def rank(articles: list[Article]) -> list[Article]:
+    """AI에 넘길 순서: 광고성 제거 → 묶음(손보·생보·공제·업계 전반)마다 관련도 순 정렬 → 묶음을 번갈아 한 건씩.
+
+    특정 회사를 앞세우지 않고, 생보·손보·공제·업계 전반 기사가 고르게 섞이게 한다.
     """
     clean = [a for a in articles if not any(w in a.title for w in config.NOISE_WORDS)]
     core = {"제도·감독", "계리·재무건전성", "손해율·보험금", "신위험"}
@@ -192,7 +201,14 @@ def rank(articles: list[Article]) -> list[Article]:
             a.published,
         )
 
-    ordered = sorted(clean, key=score, reverse=True)
-    watch = [a for a in ordered if watch_hits(a)][: config.MAX_WATCH_ARTICLES]
-    picked = set(id(a) for a in watch)
-    return watch + [a for a in ordered if id(a) not in picked]
+    groups: dict[str, list[Article]] = {}
+    for a in sorted(clean, key=score, reverse=True):
+        groups.setdefault(bucket(a), []).append(a)
+    order = ["업계 전반"] + config.SECTOR_BUCKETS
+    queues = [groups.get(g, []) for g in order]
+    out: list[Article] = []
+    while any(queues):
+        for q in queues:
+            if q:
+                out.append(q.pop(0))
+    return out

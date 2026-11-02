@@ -45,7 +45,7 @@ def test_kakao_text_limit():
 def test_article_list_format():
     assert build_article_list(arts).startswith("[0] ")
 
-def test_rank_watch_first_and_noise_removed():
+def test_rank_noise_removed_no_company_priority():
     from brief.collect import rank
     items = [
         Article("보험업계 일반 소식", "", "a", "네이버뉴스", now, ["보험업계", "손해보험", "손해율"]),
@@ -53,21 +53,24 @@ def test_rank_watch_first_and_noise_removed():
         Article("[인사] 某보험사 임원 인사", "", "c", "네이버뉴스", now, ["보험업계"]),
     ]
     out = rank(items)
-    assert [a.url for a in out] == ["b", "a"]
+    assert [a.url for a in out] == ["a", "b"]  # 업계 전반이 먼저, 특정 회사 우선 없음, 광고성 제거
 
-def test_rank_caps_watch_articles():
-    from brief import config
+def test_rank_mixes_sectors():
     from brief.collect import rank
-    watch = [Article(f"KB손해보험 소식 {i}", "", f"w{i}", "네이버뉴스", now, ["KB손해보험"]) for i in range(30)]
-    other = [Article(f"손해율 기사 {i}", "", f"o{i}", "네이버뉴스", now, ["손해율"]) for i in range(30)]
-    out = rank(watch + other)
-    top = out[: config.MAX_WATCH_ARTICLES + 5]
-    assert sum(a.url.startswith("w") for a in top) == config.MAX_WATCH_ARTICLES
-    assert all(a.url.startswith("o") for a in top[config.MAX_WATCH_ARTICLES:])
+    life = [Article(f"생보 {i}", "", f"l{i}", "네이버뉴스", now, ["삼성생명"]) for i in range(10)]
+    nonlife = [Article(f"손보 {i}", "", f"n{i}", "네이버뉴스", now, ["삼성화재"]) for i in range(10)]
+    mutual = [Article(f"공제 {i}", "", f"m{i}", "네이버뉴스", now, ["신협 공제"]) for i in range(2)]
+    out = rank(life + nonlife + mutual)
+    assert {a.url[0] for a in out[:6]} == {"l", "n", "m"}
 
-def test_suhyup_bank_not_watch():
-    from brief.collect import watch_hits
-    assert watch_hits(Article("수협은행 학사시스템 해킹", "", "x", "네이버뉴스", now, [])) == []
+def test_sectors_render_and_old_data():
+    r = {"headline": "h", "issues": [], "kakao_lines": ["손보: a", "생보: b", "공제: c"],
+         "sectors": {"손해보험": [{"company": "삼성화재", "note": "실적", "links": []}],
+                     "생명보험": [{"company": "ABL생명", "note": "신상품", "links": []}], "공제": []}}
+    page = pub.render_day(r, now)
+    assert "손해보험 1" in page and "생명보험 1" in page and "공제 0" in page and "눈에 띄는 소식이 없어요" in page
+    old = pub.render_day({"headline": "h", "issues": [], "companies": [{"company": "KB손해보험", "note": "n", "links": []}]}, now)
+    assert "KB손해보험" in old
 
 def test_parse_json_with_extra_text():
     from brief.analyze import parse_json
@@ -80,7 +83,7 @@ def test_takeaway_and_term_render():
          "term": {"word": "CSM", "explain": "계약서비스마진입니다."}}
     page = pub.render_day(r, now)
     assert "생각해볼 점" in page and "면접" not in page and "오늘의 계리 용어" in page and "CSM" in page
-    assert "회사별 소식" in page and "삼성화재" in page
+    assert "업계 소식" in page and "삼성화재" in page
 
 def test_dedupe_speed_many_articles():
     import random, time
