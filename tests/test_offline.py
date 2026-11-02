@@ -55,6 +55,20 @@ def test_rank_watch_first_and_noise_removed():
     out = rank(items)
     assert [a.url for a in out] == ["b", "a"]
 
+def test_rank_caps_watch_articles():
+    from brief import config
+    from brief.collect import rank
+    watch = [Article(f"KB손해보험 소식 {i}", "", f"w{i}", "네이버뉴스", now, ["KB손해보험"]) for i in range(30)]
+    other = [Article(f"손해율 기사 {i}", "", f"o{i}", "네이버뉴스", now, ["손해율"]) for i in range(30)]
+    out = rank(watch + other)
+    top = out[: config.MAX_WATCH_ARTICLES + 5]
+    assert sum(a.url.startswith("w") for a in top) == config.MAX_WATCH_ARTICLES
+    assert all(a.url.startswith("o") for a in top[config.MAX_WATCH_ARTICLES:])
+
+def test_suhyup_bank_not_watch():
+    from brief.collect import watch_hits
+    assert watch_hits(Article("수협은행 학사시스템 해킹", "", "x", "네이버뉴스", now, [])) == []
+
 def test_parse_json_with_extra_text():
     from brief.analyze import parse_json
     assert parse_json('여기 결과입니다\n```json\n{"headline": "x"}\n```')["headline"] == "x"

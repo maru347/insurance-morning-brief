@@ -176,18 +176,23 @@ def watch_hits(a: Article) -> list[str]:
 
 
 def rank(articles: list[Article]) -> list[Article]:
-    """AI에 넘길 순서: 광고성 제거 → 관심 회사 → 계리 핵심 주제 → 여러 키워드·주제에 걸린 기사 → 전문지 → 최신."""
+    """AI에 넘길 순서: 광고성 제거 → 관심 회사 기사(최대 MAX_WATCH_ARTICLES건) → 나머지를 계리 핵심 주제·키워드 수·전문지·최신 순.
+
+    관심 회사 기사는 빠지지 않게 앞에 넣되 개수를 제한해서, 업계 전체 기사가 밀려나지 않게 한다.
+    """
     clean = [a for a in articles if not any(w in a.title for w in config.NOISE_WORDS)]
     core = {"제도·감독", "계리·재무건전성", "손해율·보험금", "신위험"}
 
     def score(a: Article):
         t = topics(a)
         return (
-            bool(watch_hits(a)),
             len(core.intersection(t)) > 0,
             len(t) + len(a.keywords),
             a.source not in ("구글뉴스", "네이버뉴스"),  # 보험 전문지 우대
             a.published,
         )
 
-    return sorted(clean, key=score, reverse=True)
+    ordered = sorted(clean, key=score, reverse=True)
+    watch = [a for a in ordered if watch_hits(a)][: config.MAX_WATCH_ARTICLES]
+    picked = set(id(a) for a in watch)
+    return watch + [a for a in ordered if id(a) not in picked]
