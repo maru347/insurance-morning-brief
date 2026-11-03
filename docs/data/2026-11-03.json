@@ -1,0 +1,379 @@
+{
+  "headline": "금융지주 보험사 CSM은 늘고 순익은 줄고, GA 수수료 규제 공방 가열",
+  "issues": [
+    {
+      "title": "금융지주 보험사, CSM 늘었지만 순익 뒷걸음",
+      "category": "실적·재무",
+      "summary": "금융지주 계열 보험사들의 3분기 누적 순이익이 줄었지만 CSM은 대부분 늘었다. 9월 말 KB손보 CSM은 10조8975억원으로 지난해 말보다 17.4% 증가했고, KB라이프는 3조6994억원(13.4%↑), 신한라이프는 8조423억원이다. 기사들은 금리 상승에 따른 투자손익 부진을 순익 감소의 원인으로 짚었다.",
+      "actuarial_view": "CSM 증가는 신계약 유입이 늘었다는 신호이지만, 투자손익이 부진하면 CSM 잔액이 순익으로 바로 이어지지 않는다. 금리 상승 구간에서는 보험손익과 투자손익이 엇갈리고, 연말 계리가정 점검에서 CSM이 조정될 수 있다.",
+      "takeaway": "신계약 CSM이 늘어도 예실차와 자산·부채 듀레이션 관리에서 이익이 새고 있지 않은지, CSM 상각액 대비 실제 보험손익 비율로 확인해 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "투자손익 부진 속 미래 이익 선점…금융지주 보험사 CSM 경쟁 - 한스경제",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Wd0NmZzNPdFl6LTdRYmZUQWNEU0lPOUN6X0Rqa2lXb18zcHNpdFV4TXFYVkoyN0VIWkFmX3QtT09nVnZLcnE5d2x5bDQ3WDZNakMwTVQxUzlhVV9VT3FZbXAyTDhkTU1iYVBsRlRtTdIBb0FVX3lxTE1Wd0NmZzNPdFl6LTdRYmZUQWNEU0lPOUN6X0Rqa2lXb18zcHNpdFV4TXFYVkoyN0VIWkFmX3QtT09nVnZLcnE5d2x5bDQ3WDZNakMwTVQxUzlhVV9VT3FZbXAyTDhkTU1iYVBsRlRtTQ?oc=5"
+        },
+        {
+          "title": "금융지주 계열 보험사, 3분기 순익 뒷걸음…CSM 늘었지만 수익성 회복 과제 - 한국아이닷컴",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5FekFvWDJYTUMzWUxHUjBDcGVCOVlHZWNwX2JpaDl5RHVMQWstYy1iLWxBbkRQRnVmMkV6VldmdXdJSjNYTm9TbDhVNGp4bnF5bVRRcHJ2Y3F5N09aOGU5Yk96ZjdKT3I4TFNHR0h3a9IBb0FVX3lxTE5FekFvWDJYTUMzWUxHUjBDcGVCOVlHZWNwX2JpaDl5RHVMQWstYy1iLWxBbkRQRnVmMkV6VldmdXdJSjNYTm9TbDhVNGp4bnF5bVRRcHJ2Y3F5N09aOGU5Yk96ZjdKT3I4TFNHR0h3aw?oc=5"
+        },
+        {
+          "title": "[Invest]금융지주 보험사 실적도 '털썩'…지주선 \"알아서 생존\" 선 긋기",
+          "url": "https://www.investchosun.com/site/data/html_dir/2026/11/02/2026110280129.html"
+        },
+        {
+          "title": "본업 살아나도 채권에 발목…금융지주 보험사 실적 ‘흔들’",
+          "url": "http://www.joseilbo.com/news/news_read.php?uid=578770&class=18&grp="
+        },
+        {
+          "title": "잘나가는 금융지주 속 ‘아픈 손가락’ 된 보험사…미래이익 쌓아도 수...",
+          "url": "https://www.mydaily.co.kr/page/view/2026110214430814292"
+        },
+        {
+          "title": "5대 금융지주, 3분기 보험사 실적 '휘청'",
+          "url": "https://www.asiaa.co.kr/news/articleView.html?idxno=268898"
+        },
+        {
+          "title": "금융지주 보험사 3분기 순익 감소…보험·투자손익 증감 엇갈려",
+          "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=210691"
+        },
+        {
+          "title": "5대 금융지주 3분기 수익 구조 뜯어보니···",
+          "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2487242"
+        },
+        {
+          "title": "금융지주 보험사 실적 ‘주춤’… 금리 상승에 투자손익 ‘발목’ - www.dt.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1HWG1RTEhWLVNuVDY5NC1LcE5wLUNHNUw0ZW5pVzVDTDU0QXIzSzV3ZjVuemVyMGNweXktaUpEZ2hiOGRRRVJZcWNwTnhtZw?oc=5"
+        },
+        {
+          "title": "신한라이프, 3분기 신계약 CSM 19% 반등…미래 이익 곳간 8조 돌파",
+          "url": "https://www.e-science.co.kr/news/articleView.html?idxno=138770"
+        },
+        {
+          "title": "NH농협생명, 신계약 미래이익 96% 증가…보유 CSM 5조원 가시권",
+          "url": "https://sateconomy.co.kr/news/view/1065589299571661"
+        },
+        {
+          "title": "[보험사 실적 평가의 딜레마] ②CSM 높으면 좋은 실적?…숫자 뒤에 가려진 수익성",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110383"
+        },
+        {
+          "title": "계리가정 다시 검증대에…보험사 연말 CSM 변동 촉각 - 파이낸셜투데이",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0yM2xMbmVLLVhuT0F5eHNpVjNtTnY0UGdLOE5wYjI1WG90Wm9JT2g2eUF0TkI4RXd5X3QzWVBtUURKd3VUcDBnbEpaMEYxZTJiaU1uZmhuem5NSHR6LThGYktBZEg3eFdHMmxiLUtR0gFuQVVfeXFMTTIzbExuZUstWG5PQXl4c2lWM21OdjRQZ0s4TnBiMjVYb3Rab0lPaDZ5QXROQjhFd3lfdDNZUG1RREp3dVRwMGdsSlowRjFlMmJpTW5maG56bk1IdHotOEZiS0FkSDd4V0cybGItS1E?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "GA 수수료 규제 확대와 분급제 앞 인센티브 요구",
+      "category": "제도·감독",
+      "summary": "내년 판매수수료 분급제 시행을 앞두고 일부 대형 GA가 보험사에 판매 인센티브 상향과 해외여행 경비 지원을 요구한 사례가 보도됐다. GA에 1200% 룰이 확대 적용된 뒤 설계사 정착지원금이 40~50% 줄었다는 분석도 나왔다. 금감원장은 GA 규율 강화 입법 지원을 요청했고, 보험사와 GA는 협상 권한 법제화를 놓고 온도차를 보인다.",
+      "actuarial_view": "수수료 규제의 사각지대로 인센티브가 늘면 실질 사업비가 가격 산정에 쓴 예정사업비율을 넘어설 수 있다. 사업비 가정이 어긋나면 신계약 CSM이 낮아지고 보험료 경쟁력도 떨어질 수 있다.",
+      "takeaway": "규제 밖 비용(인센티브·경비 지원)까지 포함한 실제 채널별 사업비를 상품 수익성 테스트에 어떻게 반영해야 할까.",
+      "links": [
+        {
+          "title": "[단독] 해도 너무한 GA…“판매 인센티브 올리고 해외여행 경비 대라”",
+          "url": "https://www.sedaily.com/article/20109260?ref=naver"
+        },
+        {
+          "title": "“인센티브 더 주고 해외여행 비용도”…분급제 앞두고 보험사 압박하는...",
+          "url": "https://www.sedaily.com/article/20109350?ref=naver"
+        },
+        {
+          "title": "\"'1200% 룰' GA 확대시행 후 설계사 정착지원금 40~50% 줄었다\"(종합) - 아시아경제",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBFTk5PQ05CcGZlRXlKR3NIdWxyZ2pqcmVCdkZ5cW0weGxqMTJQdGgxa0pOa0Z4X3c1RTRVYW9ZNFE2ekUxNGpldDZ5dS1MbVR1NkNoek16aEw5RnNfZklXMQ?oc=5"
+        },
+        {
+          "title": "이찬진, GA 규율 강화 입법 지원 요청…\"사후 감독만으론 한계\"",
+          "url": "https://view.asiae.co.kr/article/2026110307415486418"
+        },
+        {
+          "title": "장동혁·박성훈 “보험시장, 잘못된 판매엔 분명한 책임 지워야”",
+          "url": "https://www.kukinews.com/article/view/kuk202611030037"
+        },
+        {
+          "title": "GA 권한 확대 놓고 보험업계 온도차…비용•책임 분담 관건",
+          "url": "https://www.viva100.com/article/20261102500767"
+        },
+        {
+          "title": "[Epic Why] TM 강자 라이나, 왜 손보 출신 영업통 잇따라 영입하나",
+          "url": "https://www.globalepic.co.kr/view.php?ud=2026110308370425407cc35ccc5c_29"
+        }
+      ]
+    },
+    {
+      "title": "종신보험 당국 제한 이후 설계 변화",
+      "category": "상품·시장",
+      "summary": "금감원이 9월 21일 생보사에 환급형 종신보험 개선 방안을 전달해 특정 시점의 환급률을 높이는 설계를 제한했고, 이후 보장 구성을 바꾼 상품이 잇따르고 있다. 동양생명과 처브라이프가 납입면제·입원·수술·3대질병 보장을 강화한 건강종신보험을 내놓았다. 올해 상반기 생보사 종신보험 신계약 금액은 27조5232억원으로 전년 동기 대비 3.23% 감소했다.",
+      "actuarial_view": "환급률 중심 설계가 제한되면 해약환급금 구조가 달라져 해지율 가정과 사업비 이연·상각 방식을 다시 볼 수 있다. 건강 특약 비중이 커지면 사망위험 중심에서 질병 발생률 중심으로 위험 구성이 바뀌어 경험통계 확보가 중요해진다.",
+      "takeaway": "저해지·환급금 일부지급형 구조에서 건강보장 비중이 커질 때 해지율과 질병 발생률 가정을 어느 수준으로 둘지 검토해 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "동양생명, 건강플러스종신보험 출시…종신 경쟁 가열 속 상품 강화",
+          "url": "https://www.news2day.co.kr/article/20261103500052"
+        },
+        {
+          "title": "처브라이프, 종신보험에 입원·수술·3대질병 보장 강화",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110386"
+        },
+        {
+          "title": "처브라이프, ‘Chubb 플러스 건강종신보험’ 출시",
+          "url": "https://www.insweek.co.kr/news/articleView.html?idxno=72917"
+        },
+        {
+          "title": "동양생명, ‘우리WON하는건강플러스종신보험’ 출시",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93640"
+        },
+        {
+          "title": "동양생명, 납입 완료 후 치료보장…사망보험금 2배",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110387"
+        },
+        {
+          "title": "처브라이프, '처브 플러스 건강종신보험' 선봬",
+          "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2487626"
+        },
+        {
+          "title": "보험료 낮추고 중도인출 늘리고…종신보험의 진화",
+          "url": "https://www.ajunews.com/view/20261102134630372"
+        },
+        {
+          "title": "[Invest]금융지주 보험사 실적도 '털썩'…지주선 \"알아서 생존\" 선 긋기",
+          "url": "https://www.investchosun.com/site/data/html_dir/2026/11/02/2026110280129.html"
+        }
+      ]
+    },
+    {
+      "title": "간병인보험 일당 한도 조정, 위험손해율 부담",
+      "category": "손해율·보험금",
+      "summary": "미래에셋생명은 간병인 일당 한도를 올리고 NH농협생명은 내리는 등 회사별 조정이 이어지고 있다. 지난해 8월 말 기준 간병인보험 위험손해율은 생보업계 평균 99%, 손보업계 평균 83.1%로 집계됐다. 당국도 관련 정비를 준비 중이라는 보도가 나왔다.",
+      "actuarial_view": "생보 평균 위험손해율이 100%에 가까우면 간병 일당의 실제 사용 규모(입원일수×일당)가 예정위험률 가정을 넘어서고 있을 가능성이 있다. 한도 조정이 신계약에는 손해율 완화 효과가 있겠지만, 이미 판 계약의 손해율에는 효과가 제한적이다.",
+      "takeaway": "생보·손보 간 손해율 격차(99% 대 83.1%)가 상품 구조 차이에서 오는지 언더라이팅·청구 관리 차이에서 오는지 구분해 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "간병인 일당 한도 조정 잇따라…미래에셋생명 상향·NH농협생명 인하",
+          "url": "https://www.news2day.co.kr/article/20261102500310"
+        }
+      ]
+    },
+    {
+      "title": "코인거래소 대형 해킹과 금융권 사이버 점검",
+      "category": "신위험",
+      "summary": "바이낸스 8조원 규모 해킹 이후 금융위가 코인거래소 보안 강화에 나섰고, 대규모 해킹에 대비한 보험 가입과 준비금 적립 현황도 점검한다. 금융위는 보험업계를 포함해 기존 12개 항목 긴급점검에서 전수점검으로 확대하는 방안을 추진 중이며, 사이버 보험 문의가 급증했다는 보도도 있다.",
+      "actuarial_view": "사이버 위험은 과거 손실 데이터가 짧고 사고가 연쇄·집중되는 경향이 있어 빈도·심도를 안정적으로 추정하기 어렵다. 업체별 방어 수준 차이(기초위험)가 크고 누적 위험이 한꺼번에 터질 수 있어 한도, 면책, 재보험 출재 설계가 요율만큼 중요하다.",
+      "takeaway": "사이버 보험 수요가 늘 때 보안 수준 평가를 요율 차등에 어떻게 반영하고, 누적 위험은 재보험으로 어디까지 이전할 수 있을까.",
+      "links": [
+        {
+          "title": "바이낸스 8조원 해킹 쇼크…금융위, 코인거래소 보안벽 높인다",
+          "url": "https://www.etnews.com/20261102000362"
+        },
+        {
+          "title": "'보험업계 보안 취약점'…금융당국·보험사 대응 강화",
+          "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=210598"
+        },
+        {
+          "title": "늘어가는 해킹 피해에 사이버 보험 문의도 급증…시장 커지나 | - 연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9VNGVvYkZ1aWVMQ3dsMTdSQmNBV0FqRWVLSnpQUGN5QUduWF80LVNtVzJUSDhTcDlkOWp2RlQ4NEJjRGhCaUpoOW1hZ1ZhbEQ4ZkJGWmlycDdYTzlOb3E1LWZadktLU01FdlJWYWMwNWVSZkU3?oc=5"
+        },
+        {
+          "title": "금융권 보안 예산 1000억대로 확대…AI 해킹에 투자 공식 바뀐다",
+          "url": "http://www.inews24.com/view/2021862"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "KB손해보험",
+        "note": "9월 말 CSM이 10조8975억원으로 지난해 말보다 17.4% 늘었으나 K-ICS 비율은 6월 말 187.45%로 지난해 말보다 4.09%p 하락했고, 로이즈 시장 진출에 따른 자본 부담이 과제로 거론됐다.",
+        "links": [
+          {
+            "title": "5대 금융지주, 3분기 보험사 실적 '휘청'",
+            "url": "https://www.asiaa.co.kr/news/articleView.html?idxno=268898"
+          },
+          {
+            "title": "[CEO파일] 구본욱 KB손보 대표, 글로벌 영토 확장…수익성 개선 시험대",
+            "url": "https://www.econovill.com/news/articleView.html?idxno=755031"
+          },
+          {
+            "title": "[진단_보험업계 ①KB손해보험] 외형 성장에도 수익성 후퇴... 할인 안내...",
+            "url": "https://www.newsworker.co.kr/news/articleView.html?idxno=511781"
+          }
+        ]
+      },
+      {
+        "company": "한화손해보험",
+        "note": "교권침해부터 마음건강까지 보장하는 교직원 전용 보험을 출시했다.",
+        "links": [
+          {
+            "title": "[보험 트렌드] 한화손보, 교직원 전용 보험 출시…교권침해부터 마음건...",
+            "url": "https://www.ibabynews.com/news/articleView.html?idxno=156482"
+          },
+          {
+            "title": "[보험 뉴스브리핑] 한화손보 교직원 전용 플랜 출시",
+            "url": "https://www.asiatime.co.kr/article/20261102500418"
+          }
+        ]
+      },
+      {
+        "company": "흥국화재",
+        "note": "PBR 0.2배로 금융권 최저 수준이며 해약환급금준비금 적립 부담과 K-ICS 규제로 배당 여력이 크지 않다는 분석이 나왔다.",
+        "links": [
+          {
+            "title": "흥국화재, PBR 0.2배 금융권 꼴찌...해약환급준비금·K-ICS 규제 속 '밸류...",
+            "url": "http://www.consumernews.co.kr/news/articleView.html?idxno=767346"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "신한라이프",
+        "note": "은행계 생보사 최초로 CSM 8조원을 넘어(8조423억원) 3분기 신계약 CSM이 19% 반등했다.",
+        "links": [
+          {
+            "title": "신한라이프, 3분기 신계약 CSM 19% 반등…미래 이익 곳간 8조 돌파",
+            "url": "https://www.e-science.co.kr/news/articleView.html?idxno=138770"
+          },
+          {
+            "title": "[은행계 생보사 성적표] 신한라이프, CSM 잔액 8兆 최초 돌파",
+            "url": "https://www.fetv.co.kr/news/articleView.html?idxno=312848"
+          },
+          {
+            "title": "[창간22주년 특집: 보험을 넘어 미래로]② 신한라이프, CSM 8조423억원 역...",
+            "url": "https://www.upkoreanews.kr/news/articleView.html?idxno=100962"
+          },
+          {
+            "title": "신한라이프, 금융지주 계열 생보 1위 수성... CSM 8조로 미래 다진다 - 리버티코리아포스트",
+            "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4yMFd1dnBFYjFHVHVVMUYzV2dkeWl5SFFWWEZZWmw4ZWRjcnNLZ3F3Q3VSbGhjaTBnY3NXTU1aQU4xcURnYUYzWXNFSTVjZXdNTVNITUJSNVBtNWVJT09UM042ZklyRDDSAWdBVV95cUxOMjBXdXZwRWIxR1R1VTFGM1dnZHlpeUhRVlhGWVpsOGVkY3JzS2dxd0N1UmxoY2kwZ2NzV01NWkFOMXFEZ2FGM1lzRUk1Y2V3TU1TSE1CUjVQbTVlSU9PVDNONmZJckQw?oc=5"
+          }
+        ]
+      },
+      {
+        "company": "NH농협생명",
+        "note": "3분기 누적 신계약 CSM이 8471억원으로 96% 늘어 보유 CSM 5조원이 가시권에 들어왔다.",
+        "links": [
+          {
+            "title": "NH농협생명, 신계약 미래이익 96% 증가…보유 CSM 5조원 가시권",
+            "url": "https://sateconomy.co.kr/news/view/1065589299571661"
+          },
+          {
+            "title": "[은행계 생보사 성적표] 신한라이프, CSM 잔액 8兆 최초 돌파",
+            "url": "https://www.fetv.co.kr/news/articleView.html?idxno=312848"
+          }
+        ]
+      },
+      {
+        "company": "동양생명",
+        "note": "납입면제와 납입 완료 후 치료보장을 더한 건강플러스종신보험을 출시했다.",
+        "links": [
+          {
+            "title": "동양생명, 건강플러스종신보험 출시…종신 경쟁 가열 속 상품 강화",
+            "url": "https://www.news2day.co.kr/article/20261103500052"
+          },
+          {
+            "title": "동양생명, ‘우리WON하는건강플러스종신보험’ 출시",
+            "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93640"
+          },
+          {
+            "title": "동양생명, 납입 완료 후 치료보장…사망보험금 2배",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110387"
+          }
+        ]
+      },
+      {
+        "company": "처브라이프생명",
+        "note": "사망보험금이 매년 늘어나는 체증형에 입원·수술·3대질병 보장을 더한 건강종신보험을 출시했다.",
+        "links": [
+          {
+            "title": "처브라이프, 종신보험에 입원·수술·3대질병 보장 강화",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110386"
+          },
+          {
+            "title": "처브라이프, ‘Chubb 플러스 건강종신보험’ 출시",
+            "url": "https://www.insweek.co.kr/news/articleView.html?idxno=72917"
+          },
+          {
+            "title": "처브라이프, '처브 플러스 건강종신보험' 선봬",
+            "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2487626"
+          }
+        ]
+      },
+      {
+        "company": "교보생명",
+        "note": "2분기 말 K-ICS 비율이 경과조치 적용 전 기준 155.43%로 직전 분기보다 4.98%p 하락한 가운데 교보SBI저축은행 출범으로 지주 전환에 속도를 낸다.",
+        "links": [
+          {
+            "title": "신창재 교보생명 회장, 교보SBI저축 닻 올려...'9000억 효과' 볼까",
+            "url": "https://www.insightkorea.co.kr/news/articleView.html?idxno=257809"
+          },
+          {
+            "title": "'교보SBI저축은행' 출범··· 교보생명 지주 전환 속도낸다",
+            "url": "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=307906"
+          },
+          {
+            "title": "SBI저축은행, ‘교보SBI저축은행’으로 사명 변경",
+            "url": "https://www.g-enews.com/view.php?ud=202611021737111588e30fcb1ba8_1"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "새마을금고",
+        "note": "고객 신용정보 관리에 대한 검사를 10년간 받지 않았다는 지적이 나왔다.",
+        "links": [
+          {
+            "title": "새마을금고, 신용정보 검사 10년간 안 받아",
+            "url": "https://www.khan.co.kr/article/202611021823001"
+          }
+        ]
+      },
+      {
+        "company": "과학기술인공제회·군인공제회",
+        "note": "사모펀드 운용사 아크앤파트너스의 블라인드펀드 출자사업에 잇따라 선정됐다.",
+        "links": [
+          {
+            "title": "아크앤파트너스, 과기공·군공 등 LP 출자 유치…3000억 확보",
+            "url": "https://www.hankyung.com/article/202611020937O"
+          },
+          {
+            "title": "아크앤파트너스, 공제회 출자사업 잇따라 선정… 중견 운용사 입지 강화",
+            "url": "https://biz.heraldcorp.com/article/10923189?ref=naver"
+          },
+          {
+            "title": "아크앤파트너스, 공제회 잇단 출자 유치…펀드레이징 순항",
+            "url": "https://www.etnews.com/20261102000443"
+          }
+        ]
+      },
+      {
+        "company": "전문건설공제조합",
+        "note": "조합원 경영 지원용 통합 서비스 플랫폼 '비즈니스 라운지'를 정식 출범했다.",
+        "links": [
+          {
+            "title": "전문조합, 통합 서비스 플랫폼 '비즈니스 라운지' 정식 출범",
+            "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611021728395200273"
+          }
+        ]
+      },
+      {
+        "company": "한국교직원공제회",
+        "note": "출자회사 쉐라톤 제주 호텔이 개관 한 달 만에 객실 예약률 70% 이상을 기록했다.",
+        "links": [
+          {
+            "title": "[제주경제소식] '개관 한 달' 쉐라톤 제주, 객실 예약률 70% 이상",
+            "url": "https://www.news1.kr/local/jeju/6341191"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "예실차",
+    "explain": "보험계약의 계리적 가정으로 예상한 보험금·사업비와 실제 발생액의 차이로, 보험손익 변동의 핵심 요인이다. 예실차가 반복해서 불리하게 나오면 가정이 현실과 어긋났다는 뜻이므로 가정 변경과 CSM 조정으로 이어질 수 있다."
+  },
+  "kakao_lines": [
+    "손보: KB손보 CSM 10.9조, 순익은 뒷걸음",
+    "생보: 신한라이프 CSM 8조 돌파, 신계약 19%↑",
+    "공제: 새마을금고 신용정보 검사 10년 공백"
+  ]
+}
