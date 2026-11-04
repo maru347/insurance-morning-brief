@@ -1,0 +1,349 @@
+{
+  "headline": "계리가정 검증 강화와 GA 규제 속, 3분기 보험사 순익은 줄고 CSM은 늘었다",
+  "issues": [
+    {
+      "title": "금감원 계리가정 점검·감독규정 개정",
+      "category": "제도·감독",
+      "summary": "금감원 계리감리팀이 9월 생보·손보 각 3곳의 계리가정 제도개선 이행 실태를 점검했습니다. 보험료 인상 낙관, 물가상승 제외, 통계 외면 등 자의적 산출 사례가 드러났습니다. 금감원은 연말 결산을 앞두고 '미래이익' 계산 방식을 집중 점검하고 제재도 예고했습니다. 오늘 금융위 정례회의에는 계리가정보고서 도입 등 보험업감독규정 개정안이 의결 안건으로 올라 있습니다. 내년도 장기선도금리는 4.3%로 유지하기로 고시됐습니다.",
+      "actuarial_view": "보험료 인상 효과를 낙관하거나 물가상승을 제외한 가정은 손해율·사업비 가정을 낮춰 CSM을 키우는 방향으로 작용할 수 있습니다. 감독이 강화되면 가정이 경험통계 기반으로 수정되면서 CSM이 줄거나 일회성 손실이 생길 수 있습니다. 하나손보의 일회성 손실 505억원이 그런 사례입니다.",
+      "takeaway": "우리 상품의 손해율·물가·해지율 가정을 경험통계로 설명할 수 있는지, 계리가정보고서에 어떤 근거를 남겨야 하는지를 미리 점검해 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "보험사 부채 자의적 계산…보험료 인상 낙관·물가상승 제외·통계 외면",
+          "url": "https://www.raonnews.com/news/article.html?no=62458"
+        },
+        {
+          "title": "[Epic Why] 금감원, 왜 연말 결산 앞두고 보험사 '미래이익' 검증 나섰나",
+          "url": "https://www.globalepic.co.kr/view.php?ud=2026110409032725087cc35ccc5c_29"
+        },
+        {
+          "title": "[보험사 실적 평가의 딜레마] ③같은 보험도 다른 계리가정…실적 비교 신뢰성은",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110395"
+        },
+        {
+          "title": "[오늘의 채권ㆍ외환 메모] (11월04일)",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4442893"
+        },
+        {
+          "title": "[오늘 재경부 등 경제부처 일정]",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4442844"
+        },
+        {
+          "title": "[내년 보험 할인율] 장기선도금리 4.3% 유지…보험부채 부담 덜어",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4442868"
+        },
+        {
+          "title": "금융지주 보험사, 보험손익 개선에도 투자손실에 실적 뒷걸음…CSM은 성...",
+          "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=361796"
+        }
+      ]
+    },
+    {
+      "title": "1200%룰 GA 확대와 판매조직 책임 강화",
+      "category": "제도·감독",
+      "summary": "7월부터 GA 소속 설계사에게도 첫해 수수료 상한 1200%룰이 적용됐고, 정착지원금은 40~50% 줄었다는 분석이 나왔습니다. 현대해상은 GA 판매 감소폭이 3.5%에 그쳤고, 10월 생보 GA 실적은 전월보다 감소했습니다. 금감원과 보험연구원은 IFRS17 도입 이후 수수료 경쟁이 과열됐다고 진단했습니다. 보험업법에 사업비 관리·내부통제 원칙을 마련하고 GA의 책임을 강화하자는 논의가 이어졌고, 보험판매전문회사 도입 법안도 발의됐습니다.",
+      "actuarial_view": "초회 수수료 상한은 신계약 사업비 가정과 신계약 CSM 산출에 영향을 줄 수 있습니다. 불완전판매와 승환이 줄면 13회차·25회차 유지율과 해지율 가정이 안정되는 방향으로 움직일 수 있습니다. 반대로 신계약 규모가 줄면 CSM 증가 속도는 둔화될 수 있습니다.",
+      "takeaway": "수수료 개편 이후 채널별 신계약 규모와 초기 해지율이 가격·CSM 가정과 어긋나는지 분기마다 확인할 필요가 있다.",
+      "links": [
+        {
+          "title": "설계사 수수료 막히자 GA 판매 급감... 현대해상, 3.5% 감소에 그쳐",
+          "url": "https://www.pressman.kr/news/articleView.html?idxno=104274"
+        },
+        {
+          "title": "\"'1200% 룰' GA 확대시행 후 설계사 정착지원금 40~50% 줄었다\"(종합) - 아시아경제",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBBbnNWQjhOZExDaW54TnZFTFAyWDd2R1VVOTJLY1VUYTZ0TFhRcWEwZ2t4Qm9MMTVSZF9Ob2czQU9JZ2JhZ0JmNldDc2FjUE00UkZTeEI1cF9qSUl2QnlsWDFkemxJX3poUjhIMUtoeEZEUFhOSFE?oc=5"
+        },
+        {
+          "title": "김철주 생보협회장, 3년 간 시장 체질 개선 성과 주목",
+          "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=324656"
+        },
+        {
+          "title": "“부당승환 등 소비자 피해 속출…제판분리에 맞는 규율체계 갖춰야”",
+          "url": "https://www.ekn.kr/web/view.php?key=20261104022085055"
+        },
+        {
+          "title": "“보험 수수료 과열 경쟁, 불완전판매 부추겨”…금융당국, GA 책임 강화...",
+          "url": "https://www.kukinews.com/article/view/kuk202611030138"
+        },
+        {
+          "title": "“불완전판매 GA 모집 단계서 나오는데 책임은 보험사만”",
+          "url": "https://biz.heraldcorp.com/article/10924281?ref=naver"
+        },
+        {
+          "title": "[현장] 보험硏 “GA, 판매 권한 커졌지만 책임 못 따라와…모집시장 핵...",
+          "url": "https://www.ceoscoredaily.com/page/view/2026110310384812905"
+        },
+        {
+          "title": "보험 제판분리, “모집 조직 과열·혼탁 경쟁…투명성·소비자 보호 시...",
+          "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611031524284360468"
+        },
+        {
+          "title": "업무 확대 전 책임부터…보험판매전문회사 도입 타당성 따진다",
+          "url": "https://www.kbanker.co.kr/news/articleView.html?idxno=226344"
+        },
+        {
+          "title": "보험 불공정 관행 개선 위해 \"판매조직 책임 강화 필요\"",
+          "url": "http://www.consumernews.co.kr/news/articleView.html?idxno=767435"
+        },
+        {
+          "title": "[현장] \"대형 GA 등 보험 판매조직 책임성 높여야\" | - 이뉴스투데이",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5iWGRoWl91NjNLMHlkejZodjhITUx0MGYwZDFwRFNHYk81VVRQT2lsb0ttNGlFM1M5Z05DZGNpNURhYnBnWFAxcGMzaElwcTRHVGgwVjI1Q1RBb2hZdGg4bG05TW9ZQWphN0p4Uy15TVZDUDda?oc=5"
+        },
+        {
+          "title": "[업앤다운]보험주 하락…서울보증보험↑·에이플러스에셋↓",
+          "url": "https://www.nspna.com/news/?mode=view&newsid=834454"
+        }
+      ]
+    },
+    {
+      "title": "3분기 금융지주 보험사 순익 급감, CSM은 증가",
+      "category": "실적·재무",
+      "summary": "금융지주 보험사 순익이 31% 급감했고 10곳 중 4곳이 적자를 냈습니다. 반면 KB손보 보유 CSM은 10조8974억원으로 16.0% 늘었고 신한라이프는 8조423억원이었습니다. 은행계 생보사의 9월 말 K-ICS비율은 줄줄이 하락했고, 한화생명은 4000억원 후순위채를 금리 상단 5.3%에 발행하기로 했습니다. 내년 기본자본 K-ICS 규제 도입을 앞두고 해약환급금준비금이 쌓이는 문제도 논의되고 있습니다.",
+      "actuarial_view": "보험손익이 개선돼도 금리·환율 변동에 따른 투자손익과 계리가정 변경이 순익을 크게 흔들었습니다. 해약환급금준비금은 기본자본 인정액을 줄여 기본자본비율을 낮출 수 있어, 후순위채 같은 보완자본만으로는 한계가 있을 수 있습니다.",
+      "takeaway": "CSM 성장이 곧 자본의 질 개선은 아니라는 점에서, 신계약 CSM과 기본자본비율이 함께 움직이는지 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "금융지주 보험사 순익 31% 급감…10곳 중 4곳 적자",
+          "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=901774"
+        },
+        {
+          "title": "금융지주 보험사, 보험손익 개선에도 투자손실에 실적 뒷걸음…CSM은 성...",
+          "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=361796"
+        },
+        {
+          "title": "동양생명, 금융지주 보험사 중 나홀로 반등...\"투자손실 만회한 본업 개...",
+          "url": "https://www.greened.kr/news/articleView.html?idxno=353793"
+        },
+        {
+          "title": "NH농협생명 순이익 97% 급감, 무엇이 문제이고 무엇이 아닌가?",
+          "url": "https://www.ilemonde.com/news/articleView.html?idxno=30928"
+        },
+        {
+          "title": "[은행계 생보사 성적표] K-ICS 줄줄이 하락…KB 222.8% '최고'",
+          "url": "https://www.fetv.co.kr/news/articleView.html?idxno=312849"
+        },
+        {
+          "title": "한화생명, 후순위채 4000억 수요예측 '턱걸이'…금리 상단 5.3% 확정",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110398"
+        },
+        {
+          "title": "한국투자증권, 회사채 수요예측 1.8조 확보…한화생명 후순위채 5천억원",
+          "url": "https://www.youthdaily.co.kr/news/article.html?no=229316"
+        },
+        {
+          "title": "한투증권, 회사채 수요예측에 6배 몰려…한화생명 1.25배(종합)",
+          "url": "https://www.yna.co.kr/view/AKR20261103146951008?input=1195m"
+        },
+        {
+          "title": "보험사 CEO 연임 시험대…순익·건전성 저울질",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110411"
+        },
+        {
+          "title": "쌓이는 해약환급금준비금…제도 개선은 난제",
+          "url": "https://www.kukinews.com/article/view/kuk202611030119"
+        }
+      ]
+    },
+    {
+      "title": "로봇 고장·기후 리스크, 새 위험의 보장 설계",
+      "category": "신위험",
+      "summary": "아시아 보험시장에서 AI 로봇의 고장·수리 위험을 여러 보험사가 공동 인수하는 체계가 등장했고, 신종 위험의 통계 부족이 배경으로 꼽혔습니다. 국내에서는 폭염·폭우로 멈추는 건설현장을 겨냥한 기후보험의 보장 범위가 아직 정해지지 않았습니다. 기온·강수량 등 사전에 정한 지표가 기준을 충족하면 지급하는 지수형 보험·공제 방식이 거론되고 있습니다.",
+      "actuarial_view": "로봇 고장은 경험통계가 부족해 순보험료 산출이 어렵고, 공동인수나 재보험으로 위험을 분산해야 합니다. 지수형 상품은 지표와 실제 손실이 어긋나는 기초위험(basis risk)과, 폭염·폭우가 같은 지역에 동시에 발생하는 누적위험을 요율에 어떻게 반영할지가 관건입니다.",
+      "takeaway": "통계가 없는 위험에서는 지수 기준점과 면책·한도 설계가 곧 가격이라는 점에서, 어떤 외부 데이터로 초기 요율을 검증할 수 있을까.",
+      "links": [
+        {
+          "title": "로봇 고장도 보험으로…아시아 보험시장 '신위험 대응' 속도",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110406"
+        },
+        {
+          "title": "폭염·폭우에 멈추는 건설현장…기후보험 보장 범위는 '미정'",
+          "url": "https://www.greened.kr/news/articleView.html?idxno=353726"
+        }
+      ]
+    },
+    {
+      "title": "종신보험 개편과 해지율 가정 조정",
+      "category": "상품·시장",
+      "summary": "700종신이 사라진 자리를 두고 생보사들이 판매수수료 분급제를 앞두고 내년 영업전략을 고심하고 있습니다. 신한라이프는 단기납 종신의 해지율 가정을 조정했지만 신계약 CSM 성장으로 상쇄할 수 있다고 밝혔습니다. 한화생명의 생애자금 활용형 종신은 20·30대 가입 비중이 31%로 일반 종신(16%)의 약 2배였고, 동양생명·처브라이프 등도 보장을 다양화한 종신을 출시했습니다.",
+      "actuarial_view": "단기납 종신은 해지율 가정이 낮을수록 CSM이 유리하게 잡히기 때문에, 해지율 상향은 기존 계약 CSM 감소로 이어질 수 있습니다. 생존급부나 선지급 구조를 넣은 상품은 사망 위험 중심이던 종신보험의 위험률 구성과 해약환급금 구조를 바꿀 수 있습니다.",
+      "takeaway": "젊은 층의 신규 가입 비중이 높아진 상품이 실제로 유지되는지, 해지율 실적으로 확인할 필요가 있다.",
+      "links": [
+        {
+          "title": "'700종신' 빈자리 여전…생보사, 내년 영업전략 고심",
+          "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=368823"
+        },
+        {
+          "title": "신한라이프, 단기납 종신 해지율 조정에도 자신감…CSM 성장으로 상쇄",
+          "url": "http://www.press9.kr/news/articleView.html?idxno=85503"
+        },
+        {
+          "title": "한화생명, 생애자금형 종신보험 2030 가입 비중 31%",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110410"
+        },
+        {
+          "title": "종신보험 \"생존혜택 늘렸더니 2030도 '눈팅'\"...생존 활용도 높인 신개념...",
+          "url": "https://www.greened.kr/news/articleView.html?idxno=353789"
+        },
+        {
+          "title": "동양생명, '우리WON하는건강플러스종신보험' 출시",
+          "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=210799"
+        },
+        {
+          "title": "처브라이프, 의료비 보장 더한 체증형 종신보험 출시",
+          "url": "https://www.the-today.com/news/articleView.html?idxno=92939"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "하나손해보험",
+        "note": "3분기 누적 순손실이 846억원으로 확대됐고, 계리가정 선진화 방안 적용에 따른 일회성 손실 505억원이 부담으로 작용했다.",
+        "links": [
+          {
+            "title": "금융지주 보험사, 보험손익 개선에도 투자손실에 실적 뒷걸음…CSM은 성...",
+            "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=361796"
+          }
+        ]
+      },
+      {
+        "company": "KB손해보험",
+        "note": "3분기 말 보유 CSM이 10조8974억원으로 전년 동기보다 16.0% 증가했다.",
+        "links": [
+          {
+            "title": "금융지주 보험사 순익 31% 급감…10곳 중 4곳 적자",
+            "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=901774"
+          }
+        ]
+      },
+      {
+        "company": "현대해상",
+        "note": "GA 수수료 규제 강화에도 GA 판매 감소폭은 3.5%에 그쳤다.",
+        "links": [
+          {
+            "title": "설계사 수수료 막히자 GA 판매 급감... 현대해상, 3.5% 감소에 그쳐",
+            "url": "https://www.pressman.kr/news/articleView.html?idxno=104274"
+          }
+        ]
+      },
+      {
+        "company": "한화손해보험",
+        "note": "자동차 사고·고장 시 가족 등에게 위치를 공유하는 '안심위치공유서비스'로 배타적사용권을 획득했다.",
+        "links": [
+          {
+            "title": "[보험 뉴스브리핑] 한화손보 '안심위치공유서비스' 배타적사용권 획득",
+            "url": "https://www.asiatime.co.kr/article/20261103500401"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "한화생명",
+        "note": "4000억원 후순위채 수요예측이 모집액을 소폭 웃도는 데 그쳐 금리가 희망 범위 상단인 5.3%로 확정됐다.",
+        "links": [
+          {
+            "title": "한화생명, 후순위채 4000억 수요예측 '턱걸이'…금리 상단 5.3% 확정",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110398"
+          }
+        ]
+      },
+      {
+        "company": "신한라이프",
+        "note": "단기납 종신 해지율 가정을 조정했지만 CSM 성장으로 상쇄할 수 있다는 입장이다.",
+        "links": [
+          {
+            "title": "신한라이프, 단기납 종신 해지율 조정에도 자신감…CSM 성장으로 상쇄",
+            "url": "http://www.press9.kr/news/articleView.html?idxno=85503"
+          }
+        ]
+      },
+      {
+        "company": "NH농협생명",
+        "note": "3분기 누적 순이익은 97% 급감했지만 신계약 CSM은 8,471억원으로 95.5% 늘었다.",
+        "links": [
+          {
+            "title": "NH농협생명 순이익 97% 급감, 무엇이 문제이고 무엇이 아닌가?",
+            "url": "https://www.ilemonde.com/news/articleView.html?idxno=30928"
+          }
+        ]
+      },
+      {
+        "company": "동양생명",
+        "note": "보험료 면제와 치료보장을 더한 '우리WON하는건강플러스종신보험'을 출시했다.",
+        "links": [
+          {
+            "title": "동양생명, '우리WON하는건강플러스종신보험' 출시",
+            "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=210799"
+          }
+        ]
+      },
+      {
+        "company": "KB라이프",
+        "note": "9월 말 K-ICS비율이 3개 분기 연속 하락했으나 은행계 생보사 중 가장 높은 222.8%를 기록했다.",
+        "links": [
+          {
+            "title": "[은행계 생보사 성적표] K-ICS 줄줄이 하락…KB 222.8% '최고'",
+            "url": "https://www.fetv.co.kr/news/articleView.html?idxno=312849"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "Sh수협보험",
+        "note": "국내외 여행 리스크를 종합 보장하는 'Sh여행공제' 신상품을 출시했다.",
+        "links": [
+          {
+            "title": "Sh수협보험, 국내외 여행 리스크 종합 보장하는 'Sh여행공제' 신상품 출...",
+            "url": "https://www.suhyupnews.co.kr/news/articleView.html?idxno=40824"
+          }
+        ]
+      },
+      {
+        "company": "한국노동공제회",
+        "note": "창립 5주년을 맞아 플랫폼·프리랜서 노동자 약 7000명과 연결됐다고 밝혔다.",
+        "links": [
+          {
+            "title": "한국노동공제회 출범 5년…플랫폼·프리랜서 노동자 7000명 연결",
+            "url": "https://www.kukinews.com/article/view/kuk202611030185"
+          },
+          {
+            "title": "한국노동공제회 창립 5주년 \"혼자 일해도 혼자가 아니도록\"",
+            "url": "http://news.inochong.org/detail.php?number=6668&thread=22r07"
+          }
+        ]
+      },
+      {
+        "company": "플랫폼프리랜서노동공제회",
+        "note": "우아한청년들로부터 라이더 안전·복지 지원 기부금 3000만원을 받았다.",
+        "links": [
+          {
+            "title": "우아한청년들, 플랫폼프리랜서노동공제회에 3000만원 기부…라이더 지원...",
+            "url": "https://www.cbci.co.kr/news/articleView.html?idxno=622894"
+          }
+        ]
+      },
+      {
+        "company": "새마을금고",
+        "note": "취약계층 240명의 'MG희망나눔공제' 보험료 약 8000만원을 지원하는 등 금융·의료 사각지대 지원을 이어가고 있다.",
+        "links": [
+          {
+            "title": "김인 새마을금고 회장, '사람 살리는 금융' 캠페인 동참…취약계층 지원...",
+            "url": "https://www.the-today.com/news/articleView.html?idxno=92958"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "장기선도금리(LTFR)",
+    "explain": "보험부채를 할인할 때 시장에서 금리가 관찰되지 않는 장기 구간에 수렴시키는 목표금리입니다. 기사에 따르면 장기평균 실질이자율과 기대 물가상승률을 합해 산출하며, 내년도 값은 4.3%로 유지됐습니다."
+  },
+  "kakao_lines": [
+    "손보: 하나손보 계리가정 일회성 손실 505억",
+    "생보: 한화생명 후순위채 금리 상단 5.3%",
+    "공제: 수협보험 Sh여행공제 신상품 출시"
+  ]
+}
