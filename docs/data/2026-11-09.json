@@ -1,0 +1,420 @@
+{
+  "headline": "금리 상승에 생보 기본자본이 흔들리고 보험손익도 둔화",
+  "issues": [
+    {
+      "title": "금리 상승기 생보 기본자본비율 경고",
+      "category": "실적·재무",
+      "summary": "보험연구원에 따르면 생보사 21곳의 K-ICS 비율은 2023년 6월 말 184.0%에서 올해 6월 말 177.2%로 6.8%p 하락했고, 기본자본비율은 116.7%에서 81.3%로 35.4%p 떨어졌다. 99.5% 신뢰수준의 금리 상승 충격 시 순자산 감소액은 3.1조 원에서 9.9조 원(기본자본의 20.5%)으로 커졌다. 2027년 기본자본 K-ICS 50% 기준 시행을 앞두고 한화생명은 후순위채 7800억 원 발행을 확정했다.",
+      "actuarial_view": "금리 상승기에 늘어난 순자산 대부분이 기본자본으로 인정되지 않는 초과분이어서, 지급여력비율은 유지돼도 기본자본비율은 내려갈 수 있다. 금리가 더 오르면 지급여력금액 감소와 지급여력기준금액 증가가 동시에 나타나므로 자산·부채 금리 민감도(듀레이션 갭) 관리 방식이 달라질 수 있다.",
+      "takeaway": "금리위험 한도를 지급여력비율이 아닌 기본자본비율 기준으로 잡으면 상품별 금리 민감도와 보증 구조를 어떻게 다시 봐야 하는지 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "보험硏 \"금리 올랐는데 생보사 기본자본비율 하락…100bp 더 오르면 18.4...",
+          "url": "https://view.asiae.co.kr/article/2026110611441442480"
+        },
+        {
+          "title": "생명보험사 '자본의 질' 비상… 추가 금리인상 때 기본자본비율 급락 우...",
+          "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1730877"
+        },
+        {
+          "title": "“금리 더 오르면 버틸 곳 줄어든다”...생보사 기본자본 킥스 비상",
+          "url": "https://www.ekn.kr/web/view.php?key=20261108020136749"
+        },
+        {
+          "title": "보험硏 “금리 상승기 생보사 기본자본 관리 강화해야”",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110460"
+        },
+        {
+          "title": "생명보험사, 금리 더 오르면 기본자본비율·지급여력비율 폭락",
+          "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611072226463620062"
+        },
+        {
+          "title": "내 보험사 자본 늘었다는데…손실 막을 ‘알짜 자본’은 제자리",
+          "url": "https://www.kukinews.com/article/view/kuk202611080030"
+        },
+        {
+          "title": "한화생명, 후순위채 7800억 확정…자본건전성 선제 방어",
+          "url": "http://sateconomy.co.kr/news/view/1065618288620834"
+        },
+        {
+          "title": "생보사, 자본 12조 늘었지만 금리상승기 자본건전성 악화 위험 커져",
+          "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=718255"
+        }
+      ]
+    },
+    {
+      "title": "CSM은 쌓이는데 보험손익은 둔화",
+      "category": "실적·재무",
+      "summary": "올해 상반기 22개 생보사의 보험손익은 1조9297억 원으로 전년 동기보다 6850억 원(26.2%) 줄었고, 손실부담비용 등이 원인으로 지목됐다. 3분기 지주계 보험사 순익은 31.4% 감소했고 10곳 중 4곳이 적자였으며, 하나손보는 계리가정 선진화 방안 반영에 따른 2분기 일회성 손실 505억 원이 영향을 줬다. 삼성화재의 상반기 신계약 CSM은 1조2423억 원으로 12.6% 감소했다.",
+      "actuarial_view": "CSM 잔액이 늘어도 신계약 CSM이 줄고 손실부담비용이 커지면 향후 이익 인식의 질이 낮아질 수 있다. 계리가정 변경이 일회성 손실로 이어진 하나손보 사례는 손해율·유지율·사업비 가정의 보수성이 손익에 바로 반영될 수 있음을 보여준다.",
+      "takeaway": "CSM 총량보다 신계약 CSM 배수, 예실차, 손실부담계약의 구성이 어떻게 바뀌었는지 확인해 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "보험사 CSM 136조 쌓았지만…생보 본업 이익은 26% 급감 왜?",
+          "url": "http://www.issuenbiz.com/news/articleView.html?idxno=81364"
+        },
+        {
+          "title": "3분기 지주계 보험사 순익 31.4% '뚝'…10곳 중 4곳 '적자'",
+          "url": "https://www.asiatime.co.kr/article/20261102500316"
+        },
+        {
+          "title": "하나손보, 사업 재편에도 적자 지속…배성완 대표 연임 '안갯속'",
+          "url": "https://daily.hankooki.com/news/articleView.html?idxno=1422748"
+        },
+        {
+          "title": "[인물포커스] 이문화표 삼성화재, 수익 다지고 글로벌 영토 확장…'초격...",
+          "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=818390"
+        },
+        {
+          "title": "보험손익 개선 불구 투자손익 악화…보험사 실적 발목",
+          "url": "http://www.newstomato.com/ReadNews.aspx?no=1319526&inflow=N"
+        },
+        {
+          "title": "본업은 '질'로 다지고 자본은 '해외'로…삼성화재, 글로벌 톱티어 향한...",
+          "url": "https://www.the-pr.co.kr/news/articleView.html?idxno=63187"
+        },
+        {
+          "title": "본업보다 짭짤… 자산운용 키우는 보험사들",
+          "url": "https://www.fnnews.com/news/202611081801401588"
+        }
+      ]
+    },
+    {
+      "title": "종신보험, 환급률 경쟁에서 생애자금으로",
+      "category": "상품·시장",
+      "summary": "금감원이 지난 9월 700종신보험(가입 약 7년 차에 해약환급률 100% 도달) 판매에 제동을 걸자, 생보사들이 생전 자금 인출, 질병보장, 가입심사 완화를 내세우고 있다. 금감원은 4월에도 종신보험이 저축·노후 목적에는 적합하지 않다고 경고한 바 있다. 한화생명은 생애자금 기능으로 2030 가입층을 넓히고 있고, 라이나생명은 연말까지 단기납 종신보험의 카드납을 한시 허용했다.",
+      "actuarial_view": "해약환급률 중심 설계에서 인출·보험금 선지급 기능 중심으로 옮겨 가면 해지율뿐 아니라 인출 시점·금액 가정이 가격과 CSM에 들어오게 된다. 인출을 쓰는 만큼 실제 보장이 줄어드는 구조라 옵션 행사의 역선택과 사망 위험률 가정도 다시 볼 수 있다.",
+      "takeaway": "생전 인출 옵션을 붙인 종신보험의 인출률·해지율 가정은 기존 경험통계 없이 어떤 근거로 세울 수 있을까.",
+      "links": [
+        {
+          "title": "사망보장에 생애자금도… 종신보험 판매 새 국면",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93696"
+        },
+        {
+          "title": "\"사망보장 넘어 생애자금·건강까지\"…생보사, 종신보험 보장 강화",
+          "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=880612"
+        },
+        {
+          "title": "2030도 찾는 종신보험…한화생명, 생애자금 기능으로 가입층 넓힌다",
+          "url": "https://www.bloter.net/news/articleView.html?idxno=678049"
+        },
+        {
+          "title": "죽기전 꺼내쓰고, 보험금 ‘리필’도…2030 사로잡은 종신보험의 변신",
+          "url": "https://www.donga.com/news/Economy/article/all/20261108/134985905/1"
+        },
+        {
+          "title": "필요할때 꺼내쓰고, 보험금 리필도… 젊은층 겨냥 신종보험 잇달아 나와",
+          "url": "https://www.donga.com/news/Economy/article/all/20261108/134987353/2"
+        },
+        {
+          "title": "라이나생명, 종신보험 카드납 허용 제한 해제",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110441"
+        }
+      ]
+    },
+    {
+      "title": "초기 실손 5세대 전환 시 50% 할인",
+      "category": "제도·감독",
+      "summary": "금융위원회는 지난 4일 보험업감독규정 개정안을 의결했다. 초기 1·2세대 실손 가입자가 5세대로 바꾸면 3년간 보험료를 50% 할인받으며, 이 할인 상품을 기존 주계약에 특약으로 붙여 팔 수 있게 했다. 개정안에는 보험회사가 보험부채를 계산할 때 쓰는 계리가정 관련 내용도 담겼다.",
+      "actuarial_view": "손해율이 높은 초기 세대 계약이 5세대로 옮겨 가면 전체 실손 손해율은 개선될 수 있지만, 할인 3년 동안은 전환 계약의 보험료 수입이 줄 수 있다. 전환율과 전환 계약군의 위험 구성이 달라지므로 보험부채 평가 가정도 함께 조정될 수 있다.",
+      "takeaway": "전환 신청자가 상대적으로 건강한 계약일 가능성은 없는지, 할인 종료 후 해지율은 어떻게 움직일지 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "초기 1·2세대 실손, 5세대로 바꾸면 3년간 보험료 50% 할인",
+          "url": "http://www.dailypop.kr/news/articleView.html?idxno=104177"
+        }
+      ]
+    },
+    {
+      "title": "요양비 급증, 즉시형 장기요양연금 제안",
+      "category": "신위험",
+      "summary": "보험연구원은 이미 돌봄이 필요한 고령자가 일시납으로 가입해 사망 시까지 요양비를 받는 즉시형 장기요양연금(INA) 도입이 시급하다고 밝혔다. 기존 민영 장기요양보험은 건강할 때 가입하는 사전 보장에 집중돼 있다. 영국에서는 사전적립형 보험이 보험위험 산정의 어려움 등으로 2004년 주요 보험사가 철수한 뒤 즉시형 상품이 남았다.",
+      "actuarial_view": "개인별 건강상태와 기대여명을 반영하는 손상체 연금은 국내에 경험통계가 부족해 가입 시점 인수심사 기준과 요율 산출이 핵심 난제다. 돌봄 기간이 예상보다 길어지는 장수위험은 보험사가 떠안게 되므로 재보험이나 위험 분담 구조 없이는 가격 가정의 오차를 흡수하기 어려울 수 있다.",
+      "takeaway": "기대여명 추정이 틀릴 때 손실이 누구에게 얼마나 쌓이는지, 단명·장수 방향의 가정 오차를 어떻게 한도로 관리할지 짚어볼 필요가 있다.",
+      "links": [
+        {
+          "title": "요양비 10년 새 4배 폭증···'평생 요양연금' 도입 목소리",
+          "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=260852"
+        },
+        {
+          "title": "돌봄 시작된 고령층 보장 공백…'즉시형 요양연금' 도입론",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110463"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "삼성화재",
+        "note": "상반기 신계약 CSM이 1조2423억 원으로 전년 동기 대비 12.6% 감소해 미래 이익 확보가 과제로 남았다.",
+        "links": [
+          {
+            "title": "[인물포커스] 이문화표 삼성화재, 수익 다지고 글로벌 영토 확장…'초격...",
+            "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=818390"
+          },
+          {
+            "title": "본업은 '질'로 다지고 자본은 '해외'로…삼성화재, 글로벌 톱티어 향한...",
+            "url": "https://www.the-pr.co.kr/news/articleView.html?idxno=63187"
+          }
+        ]
+      },
+      {
+        "company": "하나손해보험",
+        "note": "3분기 누적 순손실이 846억 원으로 전년 동기보다 522억 원 늘었고, 계리가정 선진화 방안 반영 일회성 손실 영향 속에 배성완 대표 연임이 불투명하다.",
+        "links": [
+          {
+            "title": "하나손보, 사업 재편에도 적자 지속…배성완 대표 연임 '안갯속'",
+            "url": "https://daily.hankooki.com/news/articleView.html?idxno=1422748"
+          },
+          {
+            "title": "3분기 지주계 보험사 순익 31.4% '뚝'…10곳 중 4곳 '적자'",
+            "url": "https://www.asiatime.co.kr/article/20261102500316"
+          }
+        ]
+      },
+      {
+        "company": "농협손해보험",
+        "note": "올해 상반기 민원이 609건으로 전년 동기(404건)보다 늘어 송춘수 대표 연임 불가론이 확산되고 있다.",
+        "links": [
+          {
+            "title": "'첫 내부 출신' 송춘수 농협손보 대표, '연임 불가론' 확산",
+            "url": "https://www.smartbizn.com/news/articleView.html?idxno=158671"
+          }
+        ]
+      },
+      {
+        "company": "메리츠화재",
+        "note": "단체상해보험 시장이 커진 가운데 수입보험료가 39% 늘며 약진했다.",
+        "links": [
+          {
+            "title": "단체상해보험 시장 커졌다…수입보험료 39% 늘어난 메리츠화재 ‘약진’",
+            "url": "https://www.ceoscoredaily.com/page/view/2026110408331636791"
+          }
+        ]
+      },
+      {
+        "company": "한화손해보험",
+        "note": "안심위치공유서비스로 배타적사용권 3개월을 확보했다.",
+        "links": [
+          {
+            "title": "[보험업계기상도]미래에셋생명 유출 확대 ‘비’…한화손보 독점권 확보...",
+            "url": "https://www.nspna.com/news/?mode=view&newsid=834802"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "한화생명",
+        "note": "후순위채 7800억 원 발행을 확정했고, 6월 말 기본자본비율은 약 57%로 2027년 50% 기준을 웃돈다.",
+        "links": [
+          {
+            "title": "한화생명, 후순위채 7800억 확정…자본건전성 선제 방어",
+            "url": "http://sateconomy.co.kr/news/view/1065618288620834"
+          },
+          {
+            "title": "한화생명·흥국화재 '저PBR'… 배당 재원·기본자본에 발목",
+            "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=501951"
+          }
+        ]
+      },
+      {
+        "company": "KB라이프",
+        "note": "3분기 누적 당기순이익이 2106억 원으로 17.3% 감소했지만 CSM 잔액은 3조6994억 원으로 집계돼 이익·자본 방어가 과제다.",
+        "links": [
+          {
+            "title": "이재근 시대, KB국민은행 첫 행장은[금융권 인사 쓰나미①]",
+            "url": "https://www.newsway.co.kr/news/view?ud=2026110415100466422"
+          },
+          {
+            "title": "KB라이프, 체질 개선 나섰지만…이익·자본 방어 '이중고'",
+            "url": "https://dealsite.co.kr/articles/172107"
+          }
+        ]
+      },
+      {
+        "company": "라이나생명",
+        "note": "상반기 순이익이 급감하고 보험손익이 적자로 돌아선 가운데 단기납 종신보험 카드납을 연말까지 한시 허용했다.",
+        "links": [
+          {
+            "title": "라이나생명, 종신보험 카드납 허용 제한 해제",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110441"
+          }
+        ]
+      },
+      {
+        "company": "삼성생명",
+        "note": "ALM 전략이 재조명되는 가운데 금감원은 경영실태평가 금리위험에 듀레이션 갭 지표를 2028년 1월 1일부터 신설한다.",
+        "links": [
+          {
+            "title": "[디깅노트] 삼성생명 가세에 재조명받는 'ALM'",
+            "url": "https://www.bloter.net/news/articleView.html?idxno=677982"
+          }
+        ]
+      },
+      {
+        "company": "AIA생명",
+        "note": "보험계리 전공에 미국 보험계리사협회 정회원인 리오 응 내정자가 차기 대표를 맡아 수익성·자본관리·GA 안정화가 과제다.",
+        "links": [
+          {
+            "title": "새 수장 맞는 AIA생명… 리오 응 차기 대표, 수익성·자본관리·GA 안정화...",
+            "url": "https://www.ilyoseoul.co.kr/news/articleView.html?idxno=524733"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "한국플랫폼프리랜서노동공제회",
+        "note": "설립 5주년을 맞아 노동공제 제도화 논의가 이어졌고, 플랫폼·프리랜서의 37%가 최소 한 달 일감이 끊겼다는 조사 결과가 나왔다.",
+        "links": [
+          {
+            "title": "한국노동공제회 5년··· 노동공제 제도화 논의 본격화",
+            "url": "https://www.laborplus.co.kr/news/articleView.html?idxno=41777"
+          },
+          {
+            "title": "플랫폼·프리랜서 37% 최소 한 달 일감 끊겼다",
+            "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=237620"
+          },
+          {
+            "title": "‘풀빵’ ‘카부키공제회’ 들어보셨나요 [양종곤의 노동 톺아보기]",
+            "url": "https://www.sedaily.com/article/20111138?ref=naver"
+          }
+        ]
+      },
+      {
+        "company": "교직원공제회 등 8대 공제회",
+        "note": "공제회 노조들이 서울시 이전에 신중론을 호소하며 대체투자 비중이 높은 운용 구조를 반대 논거로 내세웠다.",
+        "links": [
+          {
+            "title": "공제회·한국투자공사 노조, 서울시에 '이전 신중론' 호소",
+            "url": "https://www.news2day.co.kr/article/20261106500180"
+          },
+          {
+            "title": "\"지방 이전, 무슨 이득이 있죠?\"…512조 큰손들 '술렁['위클리IB]",
+            "url": "https://www.edaily.co.kr/News/Read?newsId=02299286645643424&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
+          }
+        ]
+      },
+      {
+        "company": "공제사업 관리체계(금융위 협의)",
+        "note": "기관별 검사 권한과 건전성 규제가 달라, 2018년 이후 개정되지 않은 지급여력비율 산출기준 보완을 금융위와 협의 중이다.",
+        "links": [
+          {
+            "title": "보험처럼 팔지만 감독은 제각각⋯공제사업 관리체계 정비 과제 [보험 밖...",
+            "url": "https://www.etoday.co.kr/news/view/2643982"
+          },
+          {
+            "title": "보장은 보험과 비슷한데⋯분쟁 해결 절차 저마다 달라 [보험 밖의 보험...",
+            "url": "https://www.etoday.co.kr/news/view/2644115"
+          }
+        ]
+      },
+      {
+        "company": "새마을금고중앙회",
+        "note": "1차 공격은 보안장비로 차단했으나 이후 공제 홈페이지가 우회 공격에 뚫렸다.",
+        "links": [
+          {
+            "title": "[기획] 2금융권, 협회·중앙회 AI 공동관제로 우산",
+            "url": "https://www.m-i.kr/news/articleView.html?idxno=2015354"
+          }
+        ]
+      },
+      {
+        "company": "우체국보험",
+        "note": "경영평가 1위에도 성과급 0원이던 우체국장에 대한 최하위 처분이 위법하다는 법원 판단이 나왔다.",
+        "links": [
+          {
+            "title": "경평 1위 이끌고 성과급 0원…法 \"우체국장 최하위 처분 위법\"",
+            "url": "https://www.edaily.co.kr/News/Read?newsId=01823686645644080&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
+          },
+          {
+            "title": "경영평가 1위인데 성과급 0원?...소송 건 前우체국장, 판결은",
+            "url": "https://www.mt.co.kr/society/2026/11/09/2026110814102884506"
+          },
+          {
+            "title": "경영평가 1위에도 '성과급 0원' 우체국 국장…법원 \"처분 위법\"",
+            "url": "https://www.yna.co.kr/view/AKR20261108046500004?input=1195m"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "기본자본 K-ICS 비율",
+    "explain": "지급여력기준금액 대비 기본자본(보통주·이익잉여금 등 손실을 즉시 흡수할 수 있는 자본)의 비율로, 후순위채 등 보완자본은 제외한다. 2027년부터 50% 기준이 시행되며 미달하면 경영개선권고 등 조치 대상이 된다."
+  },
+  "kakao_lines": [
+    "손보: 하나손보 3분기 누적 순손실 846억",
+    "생보: 금리 상승에 기본자본비율 하락 위험",
+    "공제: 플랫폼 노동자 37% 한 달 이상 일감 끊겨"
+  ],
+  "kiri_items": [
+    {
+      "publication": "KIRI 리포트",
+      "issue": "제657호",
+      "category": "글로벌 이슈",
+      "title": "금융권의 양자내성암호 전환 과제",
+      "author": "임준수",
+      "date": "2026-11-09",
+      "url": "https://www.kiri.or.kr/publication/list.do?catId=30&docId=899089",
+      "pdf_url": "https://www.kiri.or.kr/report/downloadFile.do?docId=899089",
+      "summary": "양자컴퓨터가 공개키 암호를 해독할 가능성에 대비해 금융권이 양자내성암호 전환을 준비 중이다. BIS의 유로시스템 결제망 시험에서 서명 검증시간이 0.0281초에서 0.2099초로 약 7.5배 늘었고, 보험권에서는 메이지야스다생명과 퍼시픽라이프가 암호 관리방침과 외부업체 요건을 정비하고 있다.",
+      "actuarial_view": "건강정보처럼 오래 민감한 고객정보는 '선 수집, 후 해독' 방식으로 미래에 노출될 수 있어, 유출 손실이 오래 이어지는 장기 사이버 위험이 된다. 이런 위험은 과거 사고 통계가 거의 없어 요율 산출과 누적위험 관리가 어려울 수 있다.",
+      "takeaway": "고객정보 보호기간과 암호 사용현황을 점검해 계약관리·보험금 지급 같은 핵심 업무의 전환 순서를 정할 필요가 있다."
+    },
+    {
+      "publication": "KIRI 리포트",
+      "issue": "제657호",
+      "category": "글로벌 이슈",
+      "title": "글로벌 생명보험 판매채널의 변화",
+      "author": "홍예림",
+      "date": "2026-11-09",
+      "url": "https://www.kiri.or.kr/publication/list.do?catId=30&docId=898639",
+      "pdf_url": "https://www.kiri.or.kr/report/downloadFile.do?docId=898639",
+      "summary": "고령화와 DC형 연금 확대로 금융 자문 수요가 커지면서 독립 중개업자가 성장하고 있으며, 미국에서는 2019년 이후 비중이 8%p 이상 늘어 개인 생명보험 판매의 약 60%를 차지한다. 채널이 대형화·통합되면서 판매업자의 협상력이 강해질 수 있고, 보험사와 채널은 AI·디지털로 고객 접점을 넓히고 있다.",
+      "actuarial_view": "대형 판매채널의 협상력이 커지면 수수료 등 사업비 가정에 상승 압력이 생길 수 있다. 종신연금 최초 선택 비중이 TIAA 자료에서 2000년 52%에서 2018년 18%로 줄었듯 연금 수령 선택이 달라지면 장수위험 이전 수요와 연금 가정도 영향을 받을 수 있다.",
+      "takeaway": "국내 GA 대형화와 수수료 분급제 도입 국면에서 채널별 사업비·유지율 가정을 따로 점검할 필요가 있다."
+    },
+    {
+      "publication": "KIRI 리포트",
+      "issue": "제657호",
+      "category": "금융시장 주요지표",
+      "title": "금융시장 주요지표",
+      "author": "홍예림",
+      "date": "2026-11-09",
+      "url": "https://www.kiri.or.kr/publication/list.do?catId=31&docId=898189",
+      "pdf_url": "https://www.kiri.or.kr/report/downloadFile.do?docId=898189",
+      "summary": "",
+      "actuarial_view": "",
+      "takeaway": ""
+    },
+    {
+      "publication": "KIRI 리포트",
+      "issue": "제657호",
+      "category": "포커스",
+      "title": "금리 상승기 금리위험과 자본의 질: ① 생명보험회사",
+      "author": "조영현",
+      "date": "2026-11-09",
+      "url": "https://www.kiri.or.kr/publication/list.do?catId=28&docId=899989",
+      "pdf_url": "https://www.kiri.or.kr/report/downloadFile.do?docId=899989",
+      "summary": "금리가 오른 지난 1년간 생보사 21곳의 금리위험 노출은 오히려 커져, 금리 100bp 상승 시 지급여력금액 감소액이 2025년 6월 말 1.3조 원에서 2026년 6월 말 7.8조 원으로 늘었다. 늘어난 순자산 대부분이 기본자본으로 인정되지 않는 초과분이어서 지급여력비율은 대체로 유지됐지만 기본자본비율은 하락했다.",
+      "actuarial_view": "같은 상승 폭에서 지급여력기준금액도 5.1조 원(8.5%) 증가해 지급여력비율 하락 폭 25.9%p의 대략 절반을 설명한다. 따라서 금리 민감도는 자산 쪽 손실뿐 아니라 요구자본 증가까지 함께 봐야 한다.",
+      "takeaway": "동일한 금리 충격 시나리오를 기본자본비율 관리와 듀레이션 갭 관리에 함께 적용해 두 규제가 상충하지 않는지 확인해 볼 필요가 있다."
+    },
+    {
+      "publication": "KIRI 리포트",
+      "issue": "제657호",
+      "category": "포커스",
+      "title": "중산층 고령자를 위한 즉시형 장기요양연금 도입 필요성과 과제",
+      "author": "송윤아",
+      "date": "2026-11-09",
+      "url": "https://www.kiri.or.kr/publication/list.do?catId=28&docId=899539",
+      "pdf_url": "https://www.kiri.or.kr/report/downloadFile.do?docId=899539",
+      "summary": "고령화로 공적 장기요양보험 재정 부담이 커지는 가운데, 이미 돌봄이 필요한 고령자가 돌봄 기간의 불확실성을 이전할 수단은 제한적이다. 영국의 즉시형 장기요양연금은 일시납으로 가입하면 건강상태와 기대여명을 반영한 연금을 사망 시까지 지급하는 손상체 종신연금으로, 국내 도입 검토와 세제 지원이 제안됐다.",
+      "actuarial_view": "기대여명이 짧을수록 같은 보험료로 더 높은 연금액이 산정되므로 개별 인수심사에서 기대여명을 얼마나 정확히 추정하느냐가 가격의 핵심이다. 영국에서 사전적립형 보험이 보험위험 산정의 어려움 등으로 위축됐다는 점도 보험위험 산정의 난이도를 시사한다.",
+      "takeaway": "손상체 연금의 인수심사 기반과 직접 지급 체계를 갖추려면 어떤 데이터와 인력이 먼저 필요한지 생각해 볼 필요가 있다."
+    }
+  ]
+}
