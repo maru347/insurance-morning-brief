@@ -1,0 +1,349 @@
+{
+  "headline": "계리가정 점검 강화와 K-ICS 개편 속에 삼성화재의 英 캐노피우스 인수가 눈길",
+  "issues": [
+    {
+      "title": "금감원 계리가정 점검, 연말 CSM 변수",
+      "category": "제도·감독",
+      "summary": "금융감독원이 6개 보험사를 점검해 계리가정 산출 과정의 미흡 사례를 확인했고, 보험사들은 개선 방안을 검토 중이다. 보험사의 계리가정 보고 의무화도 거론되며 '낙관적 추정'을 걸러낼 검증 절차가 필요하다는 지적이 나온다. 하나생명처럼 손해율 가정 변경으로 건강보험 CSM이 조정된 사례도 보도됐다.",
+      "actuarial_view": "손해율·해지율 가정이 보수적으로 바뀌면 미래 보험금 현금흐름 추정이 늘어 건강보험 등 장기보장성 상품의 CSM이 줄 수 있다. 가정 변경 손실이 연말 결산에서 한꺼번에 반영될 경우 회사별 부담 차이가 커질 수 있다.",
+      "takeaway": "우리 상품의 손해율·해지율 가정이 최근 경험통계와 얼마나 괴리되어 있는지, 근거 자료를 설명할 수 있는지 점검해 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "금감원 '계리가정 옐로카드'에 보험사 비상⋯ 연말 CSM 촉각",
+          "url": "https://www.etoday.co.kr/news/view/2643093"
+        },
+        {
+          "title": "보험사 계리가정 보고 의무화…\"‘낙관적 추정’ 걸러낼 검증 절차 필요\" | - 핀포인트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1yVmluYk1hX2xGaEM1d3Qtb2NObWIxYUpHRlZNZXRNRjdlbGJYeU91QTJtZWhGRnVWejh2c1J5U0FUUG5WdHVSd190RUNjV2RFSXBQT0xhSk1lLUFHT2tRdTNoU1FfQ0g0XzBiY09tRXRmblA3QVN3?oc=5"
+        },
+        {
+          "title": "생보사, 번 돈보다 나간 돈이 1.2조 더 많아…신한라이프는 ‘역전’ 해...",
+          "url": "https://www.ceoscoredaily.com/page/view/2026110621435615755"
+        },
+        {
+          "title": "[금융지주 임원 인사 전망] [하나금융] 남궁원 하나생명 대표, 적자에 자...",
+          "url": "https://dealsite.co.kr/articles/172295"
+        },
+        {
+          "title": "지주계열 보험사 수익성 '역주행'…\"투자손익 악화·계리가정 부담\"",
+          "url": "https://news.tf.co.kr/read/economy/2386314.htm"
+        }
+      ]
+    },
+    {
+      "title": "단기납·체증형 종신 심사기준 정비",
+      "category": "상품·시장",
+      "summary": "금감원이 단기납·체증형 종신보험과 펫보험 등의 상품 심사기준을 정비한다. 높은 환급률을 앞세워 저축성보험처럼 판매된 상품과 과도한 보장 경쟁을 막겠다는 취지다. 보험상품 자문위원회를 구성해 해지환급금과 사망보험금의 설계 적정성을 살필 예정이며, 생활자금 기능을 내세운 생애보장형 종신보험은 2030 고객 확보 경쟁이 이어지고 있다.",
+      "actuarial_view": "해지환급금 수준과 납입기간 설계가 심사 대상이 되면, 환급률을 높이는 상품 구조는 해지율 가정과 사업비 배분을 더 엄격하게 소명해야 한다. 앞선 계리감독 방안에서 단기납 종신에 보너스 지급 시점의 추가 해지를 반영하도록 한 만큼, 신계약 CSM 산출도 더 보수적으로 바뀔 수 있다.",
+      "takeaway": "환급률 중심의 상품 경쟁에서 심사기준 이후 어떤 수준의 해지환급금과 보장 구조가 가격 적정성을 인정받을지 지켜볼 필요가 있다.",
+      "links": [
+        {
+          "title": "단기납·체증형 종신보험에 펫보험까지…보험상품 심사기준 '손질'",
+          "url": "https://www.etnews.com/20261109000227"
+        },
+        {
+          "title": "'생애자금 기능' 앞세운 종신보험의 진화… 2030 고객확보 경쟁",
+          "url": "https://www.g-enews.com/view.php?ud=202611091450329063a6e8311f64_1"
+        },
+        {
+          "title": "[상품백서] 생활자금도 되고 건강보험도 되고…생애보장형 종신보험, 보...",
+          "url": "http://www.consumernews.co.kr/news/articleView.html?idxno=767828"
+        }
+      ]
+    },
+    {
+      "title": "기본자본 K-ICS 시행 앞두고 자본 차별화",
+      "category": "실적·재무",
+      "summary": "내년 1월 1일 기본자본 K-ICS 규제와 GA 수수료 분급제가 시행될 예정이어서 보험사별 자본 여력에 따라 실적과 주주환원이 갈릴 전망이다. 한편 보험사 유동성자산은 1년 새 29조원 줄었고, 단기 현금을 줄이고 고금리 장기채 운용으로 옮기는 흐름이 나타났다. 코스피 급락으로 채권·주식 평가손실이 커지고 금리 상승으로 투자손익이 악화됐다는 보도도 이어졌다.",
+      "actuarial_view": "기본자본비율이 80% 콜 요건 수준에서 관리되면 자본 질(質) 관리가 배당 여력에 직접 연결된다. 금리 상승과 주식 급락은 금융자산 평가손익과 자본 변동을 키울 수 있고, 장기채 비중 확대는 자산·부채 듀레이션 매칭에 영향을 줄 수 있다.",
+      "takeaway": "경과조치를 제외한 K-ICS 비율 기준으로 보면 회사별 자본 체력이 어떻게 달라 보일까 따져볼 필요가 있다.",
+      "links": [
+        {
+          "title": "[분석] 보험업, K-ICS·GA 규제 앞두고 차별화 극대화",
+          "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=624033"
+        },
+        {
+          "title": "“배당 줄이고 자본 채우나”…보험, K-ICS 80% ‘주주환원’ 갈림길 - 파이낸셜투데이",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAtVUo0VGJEUWpaX3ZKNlRuVHVfaEVfVDBSNmkxLUQyQjJjSmxPM29uWmNoZE40QjFDUEJFa1I5TEJ0VE1UTHU0WVEyaFd4U05DSFRENmoxNlFEOVlmYlFZZTZyc3hQcGZCVlFYM3Nn0gFuQVVfeXFMUC1VSjRUYkRRalpfdko2VG5UdV9oRV9UMFI2aTEtRDJCMmNKbE8zb25aY2hkTjRCMUNQQkVrUjlMQnRUTVRMdTRZUTJoV3hTTkNIVEQ2ajE2UUQ5WWZiUVllNnJzeFBwZkJWUVgzc2c?oc=5"
+        },
+        {
+          "title": "국내 보험사 유동성자산 1년 새 29조원 '썰물'",
+          "url": "https://www.smartbizn.com/news/articleView.html?idxno=158835"
+        },
+        {
+          "title": "보험사, 코스피 급락에 채권·주식 손실 '연타' - 뉴스투데이",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB0MGJYWjRUN0VjQXJCUFYyUzNUVnZTN1NUNE84TkdVc2FiRkJOTlRjel9fTUhNeXUyQzE4NC1pV1Y3X1JRTjFsMjVsZXNtRFJPS3JITEFibmFQRWtTd2c?oc=5"
+        },
+        {
+          "title": "지주계열 보험사 수익성 '역주행'…\"투자손익 악화·계리가정 부담\"",
+          "url": "https://news.tf.co.kr/read/economy/2386314.htm"
+        },
+        {
+          "title": "KDB생명 우협 시한 다시 임박…본계약이냐, 재연장이냐",
+          "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=369241"
+        },
+        {
+          "title": "자회사 투자 1.5조 늘린 한투, KDB생명 인수 협상 난항...김남구의 확장...",
+          "url": "https://www.insight.co.kr/news/581202"
+        }
+      ]
+    },
+    {
+      "title": "삼성화재, 英 캐노피우스 경영권 확보",
+      "category": "상품·시장",
+      "summary": "삼성화재가 KKR 펀드, 한국투자공사와 함께 영국 로이즈 보험사 캐노피우스의 잔여 지분 60% 인수 계약을 맺었다. 삼성화재는 지분을 40%에서 80.6%로 높이며 투입 금액은 약 2조2647억원으로 보도됐다. 국내 시장 성장 둔화에 대응해 북미·유럽 특수보험으로 수익원을 넓히려는 행보다.",
+      "actuarial_view": "경영권 확보 후 캐노피우스의 보험위험이 연결 기준으로 반영되면, 올해 상반기 말 K-ICS 282.8%(중장기 목표 220%)에 자본 부담이 생길 수 있다. 특수보험·재보험은 사고 빈도는 낮고 심도는 큰 구조라 현지 손해율 변동성과 환율이 이익·자본 가정을 흔들 수 있다.",
+      "takeaway": "국내 장기보험 가정 체계와 다른 특수보험·재보험 포트폴리오를 그룹 차원에서 어떤 리스크 지표로 관리할지가 관건이 아닐까 생각해 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "삼성화재, 영국 캐노피우스 경영권 인수 계약",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110481"
+        },
+        {
+          "title": "삼성화재, 英캐노피우스 경영권 인수 추진…해외보험 공략 가속",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110474"
+        },
+        {
+          "title": "삼성화재, 英 캐노피우스 경영권 확보…2조2647억 들여 지분 80.6%로",
+          "url": "http://www.srtimes.kr/news/articleView.html?idxno=217148"
+        },
+        {
+          "title": "삼성 금융 첫 해외 M&A…북미·유럽 특수보험 시장 노린다",
+          "url": "https://www.sedaily.com/article/20112083?ref=naver"
+        },
+        {
+          "title": "삼성화재, 英 캐노피우스 3조에 인수…북미·유럽 특수보험 시장 공략",
+          "url": "https://www.sedaily.com/article/20112162?ref=naver"
+        },
+        {
+          "title": "삼성화재, 2.3조 '글로벌 승부수'…캐노피우스 품고 해외사업 판 키운다",
+          "url": "http://www.thevaluenews.co.kr/news/view.php?idx=203120"
+        },
+        {
+          "title": "보험손익 개선에도 순익 전망 하향...삼성화재, 초과자본 어디에",
+          "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=241674"
+        }
+      ]
+    },
+    {
+      "title": "AI·사이버 등 새로운 위험, 보험 대응 논의",
+      "category": "신위험",
+      "summary": "보험연구원이 스위스 생갈렌대와 AI, 자율주행차, 사이버 리스크 등 새로운 위험에 대응하기 위한 보험 연구 협력에 나선다. 한편 금융사 37곳에서 침해사고가 신고돼 개인정보 47만건이 유출됐고 보험사 3곳도 포함됐다. 생성형 AI 사고는 소비자 피해구제 사각지대라는 지적과 함께 배상기금 조성, 책임보험 활성화 검토가 제기됐다.",
+      "actuarial_view": "AI·사이버 사고는 과거 경험통계가 짧고 손실 상관성이 커서 빈도·심도 요율 산출이 어렵고, 사고 발생 정의가 모호해 기초위험도 생기기 쉽다. 대규모 동시 손실 가능성 때문에 재보험 조달이나 배상기금 같은 별도 위험 분담 구조 없이는 단독 상품 인수가 부담스러울 수 있다.",
+      "takeaway": "해킹 피해나 AI 오작동 책임 같은 손실을 어떤 담보 단위와 면책 범위로 정의해야 가격 산정이 가능할까 생각해 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "보험연구원, 스위스 생갈렌대와 ‘보험 연구’ 협력",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93719"
+        },
+        {
+          "title": "보험연구원, 스위스 생갈렌대와 AI·사이버 리스크 연구 협력 - 뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBvNjQ1Z3l1S3IwbG5DMWJablpZTnRENk41MmVVdEt5V0dDR2FpeTNYMkRhMzA5eW5iY0RucVZFa2xYVHRkN2pRRWJSYWo2WHp0bnUtWE1JellTZjNsMFlYQVdtNUdhOUN0YVJFQ3FKZzdpQTBWeTBsZdIBeEFVX3lxTFBvNjQ1Z3l1S3IwbG5DMWJablpZTnRENk41MmVVdEt5V0dDR2FpeTNYMkRhMzA5eW5iY0RucVZFa2xYVHRkN2pRRWJSYWo2WHp0bnUtWE1JellTZjNsMFlYQVdtNUdhOUN0YVJFQ3FKZzdpQTBWeTBsZQ?oc=5"
+        },
+        {
+          "title": "보험연구원, 엘링 생갈렌대 교수와 상호 협력 논의 - 이뉴스투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE94UUc2eU1jd2xzMXpuXzNKNGhyODhnLVJySHdTTVJUYjFUR3lSSWlUeDJnWk0yeGdwWkh3ZlJGdmxzbk9IUmh0NDZzaXRUWUdaTWxqMkkwaHBaWnJ1STItNFNjWGFOR0Z1cUFtNi16SXHSAXRBVV95cUxPMUFBNHBvcGRYZzF5cmV2QnZ0RkxvRUQ0a3hQVFB4Y3FIVHFwSi11X25CQXV4UHdVcUNkZ0dSR1BBREFkcFlwN0MzQ0kwb1dNRzQzSFJpR1Joc0MwQURiOTdfRHA5TmNEdkdtZGxaTk93dUtqTA?oc=5"
+        },
+        {
+          "title": "‘생성형 AI 사고’ 소비자 피해구제 사각지대 우려",
+          "url": "https://www.naeil.com/news/read/608151?ref=naver"
+        },
+        {
+          "title": "“금융사 37곳 뚫리고 개인정보 47만건 유출”…내 예금은 안전할까",
+          "url": "https://www.donga.com/news/Economy/article/all/20261110/134996819/2"
+        },
+        {
+          "title": "\"은행권 보안 예산 1000억 시대…연말 금융권 인선도 본격화\"",
+          "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7193087"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "삼성화재",
+        "note": "영국 캐노피우스 지분을 40%에서 80.6%로 늘리는 인수 계약을 맺고 경영권을 확보한다.",
+        "links": [
+          {
+            "title": "삼성화재, 영국 캐노피우스 경영권 인수 계약",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110481"
+          },
+          {
+            "title": "삼성화재, 英캐노피우스 경영권 인수 추진…해외보험 공략 가속",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110474"
+          },
+          {
+            "title": "삼성화재, 英 캐노피우스 경영권 확보…2조2647억 들여 지분 80.6%로",
+            "url": "http://www.srtimes.kr/news/articleView.html?idxno=217148"
+          }
+        ]
+      },
+      {
+        "company": "카카오페이손해보험",
+        "note": "캐롯 자동차보험 실적이 더해져 자동차보험 원수보험료가 83.4% 늘었으나 흑자전환은 숙제로 남았고, 운전자보험 보장 차별화로 시장 공략을 이어간다.",
+        "links": [
+          {
+            "title": "'마지막 디지털 보험사' 카카오페이손보…외형 성장에도 흑자전환 과제",
+            "url": "https://www.news1.kr/finance/insurance-card/6347945"
+          },
+          {
+            "title": "카카오페이손해보험, 보장 차별화로 운전자보험 시장공략 가속...장기보...",
+            "url": "https://www.greened.kr/news/articleView.html?idxno=354180"
+          }
+        ]
+      },
+      {
+        "company": "한화손해보험",
+        "note": "손보사 배타적사용권 신청이 줄어드는 가운데 12개월 보호기간을 받은 곳은 한화손보가 유일하다.",
+        "links": [
+          {
+            "title": "손보사 배타적사용권 신청 '뚝'…12개월 보호는 한화손해보험 유일",
+            "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=205914"
+          }
+        ]
+      },
+      {
+        "company": "5대 손해보험사",
+        "note": "분쟁조정 건수가 25% 늘어나는 등 보험금 지급 갈등에서 비롯된 민원·분쟁이 이어지고 있다.",
+        "links": [
+          {
+            "title": "[소비자 분쟁] 5대 손보사, 분쟁조정 25% 증가…연간 최대 3만건",
+            "url": "https://www.fetv.co.kr/news/articleView.html?idxno=313292"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "KDB생명",
+        "note": "우선협상 시한이 다시 임박했고, 6월 말 K-ICS는 경과조치 적용 후 182.4%이나 적용 전에는 78.7%로 인수자 부담이 남아 있다.",
+        "links": [
+          {
+            "title": "KDB생명 우협 시한 다시 임박…본계약이냐, 재연장이냐",
+            "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=369241"
+          },
+          {
+            "title": "자회사 투자 1.5조 늘린 한투, KDB생명 인수 협상 난항...김남구의 확장...",
+            "url": "https://www.insight.co.kr/news/581202"
+          },
+          {
+            "title": "[진단_보험업계 ④KDB생명보험] 흑자 전환에도 부실한 자본구조... 실적...",
+            "url": "https://www.newsworker.co.kr/news/articleView.html?idxno=513002"
+          }
+        ]
+      },
+      {
+        "company": "KB라이프",
+        "note": "올 3분기 누적 신계약 CSM이 4412억원으로 전년 동기 대비 15.1% 증가했다.",
+        "links": [
+          {
+            "title": "KB라이프, 보험 넘어 시니어 라이프케어 공략 '승부수'...\"고객 생애와 ...",
+            "url": "https://www.greened.kr/news/articleView.html?idxno=354228"
+          }
+        ]
+      },
+      {
+        "company": "하나생명",
+        "note": "금융당국의 계리감독 강화에 따른 손해율 가정 변경 등으로 건강보험 CSM이 조정됐고 적자가 이어졌다.",
+        "links": [
+          {
+            "title": "[금융지주 임원 인사 전망] [하나금융] 남궁원 하나생명 대표, 적자에 자...",
+            "url": "https://dealsite.co.kr/articles/172295"
+          }
+        ]
+      },
+      {
+        "company": "삼성생명",
+        "note": "삼성전자의 5조원 규모 보험 납입이 알려졌으나 저축성보험 보험료 유입액을 곧바로 매출·CSM 증가로 보기 어렵다는 분석이 나왔다.",
+        "links": [
+          {
+            "title": "삼성전자 '5조 보험' 납입…삼성생명 실익 가를 운용수익·비용",
+            "url": "http://www.metroseoul.co.kr/article/20261109500359"
+          }
+        ]
+      },
+      {
+        "company": "교보생명",
+        "note": "11월 생명보험 브랜드평판에서 1위를 차지했다.",
+        "links": [
+          {
+            "title": "교보생명, 11월 생명보험 평판 223만 점 '1위'…미래에셋·삼성생명 순 ...",
+            "url": "http://www.popcornnews.net/news/articleView.html?idxno=139319"
+          },
+          {
+            "title": "교보생명, 생명보험 브랜드평판 2026년 11월...1위",
+            "url": "http://www.beyondpost.co.kr/view.php?ud=20261110080805678346a9e4dd7f_30"
+          },
+          {
+            "title": "교보생명, 11월 생명보험 브랜드평판 1위 탈환",
+            "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280876"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "교직원공제회 등 5대 공제회",
+        "note": "KIPE가 지방 이전 시 10년간 약 8조5886억원의 손실을 추산했으며, 교직원공제회가 5조1707억원으로 가장 크다.",
+        "links": [
+          {
+            "title": "KIPE \"5대 공제회, 지방 이전 땐 10년간 8.6조 손실\"",
+            "url": "https://www.newstopkorea.com/news/articleView.html?idxno=48912"
+          },
+          {
+            "title": "“교직원·경찰 노후자금인데”…공제회 지방 이전에 8.6조 손실 누가 메...",
+            "url": "https://www.edaily.co.kr/News/Read?newsId=04031126645644408&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
+          },
+          {
+            "title": "\"공제회 지방이전 시 10년간 8조5886억 손실…경제성 없어\"",
+            "url": "https://view.asiae.co.kr/article/2026111010072411684"
+          }
+        ]
+      },
+      {
+        "company": "새마을금고",
+        "note": "새마을금고의 신용·공제사업 감독권을 금융위로 이관할지 연말 결론을 낼 예정이다.",
+        "links": [
+          {
+            "title": "새마을금고 감독권 금융위로 이관되나…연말 결론 낸다",
+            "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4443924"
+          }
+        ]
+      },
+      {
+        "company": "수협",
+        "note": "내년 총 사업 예산은 12.6% 줄였지만 공제사업 예산은 7300억원으로 4.3% 늘려 편성했다.",
+        "links": [
+          {
+            "title": "수협 2027년도 예산안 11조9712억원 편성...\"불요불급 예산 조정\"",
+            "url": "https://www.agrinet.co.kr/news/articleView.html?idxno=408714"
+          }
+        ]
+      },
+      {
+        "company": "군인공제회",
+        "note": "지방 이전 시 1조306억원 손실이 예상되며, 한편 원익투자파트너스 딥테크 펀드 출자확약에도 참여했다.",
+        "links": [
+          {
+            "title": "군인공제회 등 5대 공제회 지방이전 시 10년간 8조6천억 손실 우려",
+            "url": "https://www.smartbizn.com/news/articleView.html?idxno=158912"
+          },
+          {
+            "title": "원익투자, 1610억원 1차 펀드 클로징…전문성 기반 딥테크 '정조준'",
+            "url": "https://view.asiae.co.kr/article/2026111008270911010"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "경과조치",
+    "explain": "새 지급여력제도(K-ICS) 도입 같은 제도 변경의 충격을 줄이기 위해 일정 기간 완화된 기준을 적용해 주는 제도입니다. 예를 들어 KDB생명의 6월 말 K-ICS 비율은 경과조치 적용 후 182.4%지만 적용 전에는 78.7%여서, 경과조치를 빼고 보면 실제 자본 체력이 훨씬 낮을 수 있습니다."
+  },
+  "kakao_lines": [
+    "손보: 삼성화재, 英 캐노피우스 지분 80.6% 확보",
+    "생보: 계리가정 점검·단기납 심사, 연말 CSM 촉각",
+    "공제: 5대 공제회 지방이전 시 10년 8.6조 손실"
+  ]
+}
