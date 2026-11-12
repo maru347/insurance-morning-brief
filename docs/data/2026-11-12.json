@@ -1,0 +1,369 @@
+{
+  "headline": "삼성화재 캐노피우스 인수와 기본자본 규제 속, 실손·자동차 손해율을 주시",
+  "issues": [
+    {
+      "title": "삼성화재 3Q 실적과 캐노피우스 인수",
+      "category": "실적·재무",
+      "summary": "삼성화재의 3분기 순이익은 4937억원으로 전년 동기 대비 8.3% 줄었고, 투자영업비용이 94% 급증해 영업이익도 13% 감소했다. 1~3분기 누적 순이익은 1조8655억원(+4.6%)이며, 자동차보험은 누적 흑자를 기록했다. 신계약 CSM은 5980억원으로 2.9% 감소했지만 CSM 총량은 9월 말 14조8350억원으로 연초보다 6674억원 늘었다. 회사는 영국 로이즈 특종보험사 캐노피우스의 경영권 인수도 결정했다.",
+      "actuarial_view": "신계약 CSM이 줄어도 잔액이 늘어난 것은 기존 계약의 CSM 증가가 신규 감소분을 메웠다는 뜻일 수 있다. 신계약 CSM의 감소 원인(판매량, 마진, 가정)을 따로 분해해 봐야 한다. 캐노피우스 같은 특종·재보험 포트폴리오는 자연재해와 대형사고에 따라 손해율 변동이 커서, 인수 후 K-ICS 요구자본(자연재해·보험위험액)을 키울 수 있다.",
+      "takeaway": "지분법 이익이 늘어나는 해외 비중이 커질수록 국내 보험손익 중심으로 보던 CSM·손해율 지표만으로 이익의 질을 설명할 수 있을까?",
+      "links": [
+        {
+          "title": "삼성화재, 투자영업비용 94% 급증…3분기 영업익 13% 감소",
+          "url": "https://www.newspost.kr/news/articleView.html?idxno=227307"
+        },
+        {
+          "title": "삼성화재, 3분기 누적 순이익 1.9兆…車보험 흑자 전환",
+          "url": "https://www.fetv.co.kr/news/articleView.html?idxno=313558"
+        },
+        {
+          "title": "삼성화재, 3분기 누적 순익 1조8655억원… 전년比 4.6% 증가",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93806"
+        },
+        {
+          "title": "삼성화재, 3.5조 품은 英캐노피우스…알짜 회사 인수 후 과제는",
+          "url": "https://www.newstopkorea.com/news/articleView.html?idxno=48954"
+        },
+        {
+          "title": "3분기 순익 주춤한 삼성화재…캐노피우스 인수로 해외 이익 비중 9%→26...",
+          "url": "http://www.srtimes.kr/news/articleView.html?idxno=217383"
+        },
+        {
+          "title": "삼성화재, 3분기 순이익 4937억… 전년比 8.3% ↓",
+          "url": "https://www.g-enews.com/view.php?ud=202611121015171936a6e8311f64_1"
+        },
+        {
+          "title": "삼성화재, 보험손익 개선에도 3분기 순익 8.3%↓…“캐노피우스로 새 성장동력 구축” - 마이데일리",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1pQ2JSMndZQXNjMlBtUW1nYXlmYms3UURqYXhobEc3RFZvdmZxelpkUFdJWndvbDg0UjZpM1JRUE5jVGpZZmlnMkZYYUV5dUJZcDllSkxzUHlPazduaDNLUw?oc=5"
+        },
+        {
+          "title": "보험사, 수조원 해외 투자…특수보험·비보험 성장동력 발굴",
+          "url": "https://www.dailian.co.kr/news/view/1713748/?sc=Naver"
+        }
+      ]
+    },
+    {
+      "title": "기본자본비율 50% 앞둔 중소 생보사",
+      "category": "제도·감독",
+      "summary": "IBK연금보험의 6월 말 기본자본비율은 22.6%로 금융당국이 2027년 도입하는 기준 50%의 절반에 못 미쳤다. 지급여력비율은 경과조치를 빼도 121.85%이며, 해지 대비금이 늘어 배당이 막혔다고 한다. 당국은 기본자본비율이 50%에 못 미치는 보험사에 회사별 최저 이행기준을 부과하고, 1년 넘게 충족하지 못하면 경과조치를 끝내고 적기시정조치를 내린다. 한편 한화생명은 7800억원 규모 후순위채를 발행했다.",
+      "actuarial_view": "후순위채는 K-ICS에서 보완자본으로 인정되므로 지급여력비율에는 도움이 되지만, 기본자본비율 개선에는 한계가 있을 수 있다. 기본자본을 채우려면 이익 유보나 보장성 중심의 CSM 확대 같은 질적 개선이 필요하다. 해지율 가정이 높아지면 해지 대비금(준비금)이 늘어 이익잉여금과 배당여력을 직접 깎을 수 있다.",
+      "takeaway": "신상품의 가격·해지율 가정이 기본자본 축적 속도에 주는 영향까지 상품 설계 단계에서 점검해 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "[계약자 주의보] IBK연금보험, '해지 대비금' 증가로 배당 막혀…가입자...",
+          "url": "https://www.lawissue.co.kr/view.php?ud=2026111117472119189817d053b9_12"
+        },
+        {
+          "title": "[계약자 주의보] 박경원 호(號) iM라이프, 자본총계 2분기 연속 자본금 ...",
+          "url": "https://www.lawissue.co.kr/view.php?ud=2026111117440620249817d053b9_12"
+        },
+        {
+          "title": "[계약자 주의보] 남궁원 호(號) 하나생명, 벌어도 배당 한 푼 못 한다…...",
+          "url": "https://www.lawissue.co.kr/view.php?ud=2026111117453538779817d053b9_12"
+        },
+        {
+          "title": "한화생명, 조기상환 대비 7800억 확보…2650억은 인수단이 채웠다",
+          "url": "http://www.popcornnews.net/news/articleView.html?idxno=139773"
+        },
+        {
+          "title": "한화생명, 7800억원 후순위채 발행 실적 공시",
+          "url": "https://www.vegannews.co.kr/news/article.html?no=403921"
+        },
+        {
+          "title": "보험계열 금융그룹 자본건전성 희비…삼성·한화↑ 교보·DB↓",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110519"
+        }
+      ]
+    },
+    {
+      "title": "실손 계약전환과 비급여 관리 논란",
+      "category": "손해율·보험금",
+      "summary": "2013년 3월 이전 가입한 1세대·초기 2세대 실손 중 재가입 조건이 없는 계약, 약 1600만명이 전환 대상이다. 이달 '반값 할인' 계약전환 제도 시행을 앞두고 가입자들이 갈아탈지 고민하고 있다. 한편 비급여 관리 법안은 비급여 진료비 실태조사와 보건복지부·금융위의 실손 정책 연계를 담고 있어, 개원가가 진료 자율성과 정보 제공 문제를 들어 반발한다. 금융위는 보험업감독규정 개정으로 계리가정보고서 제출 의무화도 추진한다.",
+      "actuarial_view": "전환율과 전환자의 청구 성향에 따라 구세대·신세대 풀의 손해율과 예실차가 달라질 수 있다. 전환 시 보험료 할인분을 가격 가정에서 어떻게 반영할지도 쟁점이다. 비급여 실태조사 데이터가 쌓이면 비급여 청구 가정과 요율 산출 근거를 정교하게 만들 수 있다.",
+      "takeaway": "전환 가입자가 건강한 계약자 위주로 이탈하는 역선택이 생길 경우, 남는 구세대 풀의 손해율 악화를 어떤 지표로 먼저 포착할 수 있을까?",
+      "links": [
+        {
+          "title": "실손 ‘반값 할인’ 이달 앞두고…1·2세대 1600만명, 갈아탈까 버틸까",
+          "url": "https://www.kukinews.com/article/view/kuk202611110189"
+        },
+        {
+          "title": "비급여 가격부터 진료지침까지…이비인후과醫 \"통제 우려\"",
+          "url": "https://www.medipana.com/news/articleView.html?idxno=421562"
+        },
+        {
+          "title": "비급여 관리법에 개원가 집단 반발…\"진료 자율성·개인정보 침해\"",
+          "url": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3044506"
+        },
+        {
+          "title": "[업앤다운]보험 주요 6종목 하락…삼성화재, 2거래일 연속↓",
+          "url": "https://www.nspna.com/news/?mode=view&newsid=835713"
+        },
+        {
+          "title": "실손서 확인한 절감 효과…손보사, 다음은 '8주룰' 손익 개선",
+          "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=369431"
+        }
+      ]
+    },
+    {
+      "title": "자동차보험 적자와 '8주룰' 효과",
+      "category": "손해율·보험금",
+      "summary": "올해 상반기 자동차보험 보험손익은 1848억원 손실로 6년 만에 적자였고, 손해율은 84.9%로 1.6%p, 사업비율은 17.0%로 0.6%p 올랐다. '8주룰'이 본격 가동되면서 손보업계는 손해율 개선을 기대하지만 우회 진단이 변수로 꼽힌다. 반면 삼성화재는 누적 기준 자동차보험 흑자를 기록했다.",
+      "actuarial_view": "8주룰이 경상환자 치료기간과 대인 지급보험금을 줄이면 손해율 하락 요인이 되지만, 우회 진단이 늘면 효과가 상쇄될 수 있다. 손해율과 사업비율이 함께 오른 만큼, 손해율 개선만으로 요율 조정 여부를 판단하기는 어렵다. 사고 발생연도별 지급 패턴이 바뀌면 지급준비금(IBNR) 가정도 재검토해야 한다.",
+      "takeaway": "제도 효과가 손해율에 반영되기까지의 시차를 감안하면, 4분기와 내년 1분기 대인 지급 추이에서 무엇을 먼저 확인해야 할까?",
+      "links": [
+        {
+          "title": "'8주룰' 본격 가동에 손보업계, 손해율 개선 촉각…우회 진단 변수",
+          "url": "https://www.mediapen.com/news/view/1136896"
+        },
+        {
+          "title": "실손서 확인한 절감 효과…손보사, 다음은 '8주룰' 손익 개선",
+          "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=369431"
+        },
+        {
+          "title": "삼성화재, 3분기 누적 순이익 1.9兆…車보험 흑자 전환",
+          "url": "https://www.fetv.co.kr/news/articleView.html?idxno=313558"
+        },
+        {
+          "title": "삼성화재, 3분기 누적 순익 1조8655억원… 전년比 4.6% 증가",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93806"
+        }
+      ]
+    },
+    {
+      "title": "건설·플랫폼 노동자 대안신용평가",
+      "category": "신위험",
+      "summary": "금융위·고용부·금감원은 11일 건설근로자공제회에서 업무협약을 맺었다. 건설노동자, 플랫폼노동자, 프리랜서의 근로이력(고용·산재보험 부과정보, 퇴직공제금 납부정보, 건설근로자 기능등급제 정보)을 대출심사에 반영한다. 소득이 불규칙해 대출에서 불이익을 받던 이들을 위한 맞춤형 금융상품도 내년 중 출시할 계획이다.",
+      "actuarial_view": "소득이 불규칙한 노무제공자는 기존 정규직 중심 경험통계로는 위험을 측정하기 어렵다. 근로이력이 소득·신용의 대리변수로 얼마나 정확한지 검증할 데이터가 아직 부족하다. 비슷한 데이터가 보험 언더라이팅이나 소득보상 요율에 쓰이면, 대리변수와 실제 위험의 불일치(기초위험)를 감안해 가격을 보수적으로 잡아야 할 수 있다.",
+      "takeaway": "근로이력 같은 비금융 정보가 보험 가격 산정에도 쓰일 때 어떤 가정이 먼저 달라질지 미리 정리해 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "건설노동자 근로 이력도 대출심사 반영…내년 맞춤형 상품 나온다",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110503"
+        },
+        {
+          "title": "건설·플랫폼노동자 금융지원 체계 구축 … 노동·노무제공 신용평가 반...",
+          "url": "http://www.efnews.co.kr/news/articleView.html?idxno=133897"
+        },
+        {
+          "title": "건설노동자·프리랜서, 대출 때 근무경력 인정… 맞춤형 금융상품도 나...",
+          "url": "https://www.hankookilbo.com/news/article/A2026111113530004217?did=NA"
+        },
+        {
+          "title": "이억원 \"금융 잣대 바꿔야…근로이력도 신용평가에 반영\"",
+          "url": "http://www.inews24.com/view/2025059"
+        },
+        {
+          "title": "정부·금융권·노동계 포용금융 협약…노동이력 반영·채무조정 지원 추...",
+          "url": "https://idsn.co.kr/news/view/1065595706829381"
+        },
+        {
+          "title": "건설근로자·플랫폼노동자 금융 문턱 낮춘다…대안신용평가 추진",
+          "url": "https://www.mediapen.com/news/view/1136638"
+        },
+        {
+          "title": "건설·플랫폼 노동자 '일한 기록'도 신용평가에…내년 맞춤 금융상품 출...",
+          "url": "https://www.dailian.co.kr/news/view/1713327/?sc=Naver"
+        },
+        {
+          "title": "건설·플랫폼노동자 근로이력, 대출심사 반영 추진...맞춤형 상품 내년...",
+          "url": "https://www.newspim.com/news/view/20261110001042"
+        },
+        {
+          "title": "금융당국, 건설·플랫폼 노동자 대안신용평가 추진…근로이력도 신용",
+          "url": "https://www.raonnews.com/news/article.html?no=62674"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "삼성화재",
+        "note": "3분기 순이익이 8.3% 감소했으나 CSM 총량은 14조8350억원으로 늘었고, 캐노피우스 인수를 결정했다.",
+        "links": [
+          {
+            "title": "삼성화재, 3분기 누적 순익 1조8655억원… 전년比 4.6% 증가",
+            "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93806"
+          },
+          {
+            "title": "3분기 순익 주춤한 삼성화재…캐노피우스 인수로 해외 이익 비중 9%→26...",
+            "url": "http://www.srtimes.kr/news/articleView.html?idxno=217383"
+          },
+          {
+            "title": "삼성화재, 3분기 순이익 4937억… 전년比 8.3% ↓",
+            "url": "https://www.g-enews.com/view.php?ud=202611121015171936a6e8311f64_1"
+          }
+        ]
+      },
+      {
+        "company": "한화손해보험",
+        "note": "3분기 순이익이 961억원으로 34.1% 늘었고, K-ICS 비율은 경과조치 후 231%(전 184%)다.",
+        "links": [
+          {
+            "title": "한화손보, 3분기 순이익 961억원… 전년比 34.1% 증가",
+            "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93801"
+          },
+          {
+            "title": "한화손보, 올 3분기 순이익 961억…보험손익 196.7%↑",
+            "url": "https://www.newstopkorea.com/news/articleView.html?idxno=48968"
+          },
+          {
+            "title": "한화손보, 3분기 순이익 34% 껑충…여성보험 효과 본격화",
+            "url": "https://www.newsway.co.kr/news/view?ud=2026111117473390760"
+          }
+        ]
+      },
+      {
+        "company": "메리츠화재",
+        "note": "3분기 말 CSM 잔액이 12조2600억원으로 연초보다 1조1500억원 늘었고, 신계약 CSM 배수는 11.8배로 낮아졌다.",
+        "links": [
+          {
+            "title": "메리츠화재, 보험으로 버틴 3분기…주식 손실에도 “비중 더 늘린다”",
+            "url": "https://www.kukinews.com/article/view/kuk202611110211"
+          },
+          {
+            "title": "메리츠금융 \"중장기 주식투자 확대 이어갈 것\"",
+            "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=315171"
+          }
+        ]
+      },
+      {
+        "company": "NH농협손해보험",
+        "note": "농협생명과 함께 그룹 최대 실적 속에서도 순익이 감소했고, 신계약 CSM 확대로 미래 이익을 강화하고 있다.",
+        "links": [
+          {
+            "title": "NH농협생명·손보, 그룹 최대 실적 속 순익 감소...미래 이익 강화",
+            "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=882099"
+          }
+        ]
+      },
+      {
+        "company": "OK금융그룹(예별손해보험)",
+        "note": "예금보험공사의 예별손보 공개매각 우선협상대상자로 선정돼 금융위 대주주 변경승인 등 절차를 진행 중이다.",
+        "links": [
+          {
+            "title": "[기획] 금융사 M&A로 몸집 불리기 \"시장 지배력 높인다\"",
+            "url": "https://www.m-i.kr/news/articleView.html?idxno=2017252"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "삼성생명",
+        "note": "3분기 순익이 8239억원으로 8.3% 늘었고 CSM 잔액은 14조5640억원이며, 해외 신종자본증권 15억달러를 처음 발행했다.",
+        "links": [
+          {
+            "title": "삼성생명, 3분기 순익 8239억원…보험손익 개선에 전년比 8.3%↑",
+            "url": "https://www.edaily.co.kr/News/Read?newsId=03227526645645064&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
+          },
+          {
+            "title": "국내 성장 한계에 해외로 향하는 보험사들…M&A로 돌파구 모색",
+            "url": "https://www.econovill.com/news/articleView.html?idxno=756840"
+          }
+        ]
+      },
+      {
+        "company": "한화생명",
+        "note": "제9회 무보증 후순위채 7800억원을 발행했고, 인수단이 2650억원을 채웠다.",
+        "links": [
+          {
+            "title": "한화생명, 조기상환 대비 7800억 확보…2650억은 인수단이 채웠다",
+            "url": "http://www.popcornnews.net/news/articleView.html?idxno=139773"
+          },
+          {
+            "title": "한화생명, 7800억원 후순위채 발행 실적 공시",
+            "url": "https://www.vegannews.co.kr/news/article.html?no=403921"
+          }
+        ]
+      },
+      {
+        "company": "IBK연금보험",
+        "note": "해지 대비금 증가로 배당이 막혔고, 기본자본비율(22.6%)이 2027년 기준 50%의 절반에 못 미친다.",
+        "links": [
+          {
+            "title": "[계약자 주의보] IBK연금보험, '해지 대비금' 증가로 배당 막혀…가입자...",
+            "url": "https://www.lawissue.co.kr/view.php?ud=2026111117472119189817d053b9_12"
+          }
+        ]
+      },
+      {
+        "company": "라이나생명",
+        "note": "신경계질환 진단을 통합 보장하는 특약이 중증도별 보험금 설계를 인정받아 배타적사용권을 획득했다.",
+        "links": [
+          {
+            "title": "라이나생명, ‘신경계질환 진단 통합 보장’ 배타적사용권 획득",
+            "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93808"
+          },
+          {
+            "title": "라이나생명, 신경계질환 통합진단특약 배타적사용권",
+            "url": "http://www.finomy.com/news/articleView.html?idxno=266428"
+          }
+        ]
+      },
+      {
+        "company": "신한라이프",
+        "note": "저축·연금 판매가 99% 급증했으나 CSM 수익성이 높은 보장성 확대와는 구분해서 봐야 한다는 지적이 나온다.",
+        "links": [
+          {
+            "title": "신한라이프, 저축·연금 판매 99% 급증…영업 저변 확대",
+            "url": "http://www.press9.kr/news/articleView.html?idxno=86058"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "건설근로자공제회",
+        "note": "퇴직공제금 납부정보 등을 대안신용평가에 제공하는 포용금융 업무협약의 무대가 됐다.",
+        "links": [
+          {
+            "title": "건설·플랫폼노동자 금융지원 체계 구축 … 노동·노무제공 신용평가 반...",
+            "url": "http://www.efnews.co.kr/news/articleView.html?idxno=133897"
+          },
+          {
+            "title": "건설노동자 근로 이력도 대출심사 반영…내년 맞춤형 상품 나온다",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110503"
+          }
+        ]
+      },
+      {
+        "company": "신협중앙회",
+        "note": "상해·치매·암 보장 공제상품 4종을 출시하고 개편했으며, 치매·간병 수요와 고액 치료비 부담에 대응한다고 밝혔다.",
+        "links": [
+          {
+            "title": "신협, 상해·치매·암 보장 공제상품 4종 출시·개편",
+            "url": "https://www.thepowernews.co.kr/view.php?ud=202611121055327728de3f0aa1be_7"
+          },
+          {
+            "title": "신협, 상해부터 치매·암까지⋯공제상품 보장 넓혔다",
+            "url": "https://www.etoday.co.kr/news/view/2647233"
+          },
+          {
+            "title": "신협중앙회, 신규 공제상품 출시·기존 3종 보장 개편",
+            "url": "http://www.ttlnews.com/news/articleView.html?idxno=3161507"
+          }
+        ]
+      },
+      {
+        "company": "새마을금고",
+        "note": "행안부와 금융위가 다음 달 차관급 회의에서 감독체계 개편 방향을 논의할 예정이다.",
+        "links": [
+          {
+            "title": "새마을금고 감독권 이관 연말 분수령···행안부·금융위 절충 가능할...",
+            "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=424956"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "기본자본비율",
+    "explain": "K-ICS 가용자본 중 자본금·이익잉여금 등 손실 흡수력이 높은 기본자본을 요구자본으로 나눈 비율로, 후순위채 같은 보완자본은 포함하지 않는다. 금융당국은 2027년부터 이 비율 50% 기준을 도입해 미달 시 회사별 최저 이행기준을 부과한다."
+  },
+  "kakao_lines": [
+    "손보: 삼성화재 3분기 순익 8.3%↓, 캐노피우스 인수",
+    "생보: 기본자본비율 50% 앞두고 일부 생보사 부담",
+    "공제: 건설근로자공제회, 근로이력 신용평가 협약"
+  ]
+}
