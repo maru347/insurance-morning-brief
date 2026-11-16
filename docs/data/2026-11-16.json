@@ -1,0 +1,411 @@
+{
+  "headline": "3분기 본업은 호조, 승부는 투자손익이 갈랐고 연말 계리가정과 수수료 규제가 변수",
+  "issues": [
+    {
+      "title": "3분기 실적: 본업 호조, 투자손익이 갈랐다",
+      "category": "실적·재무",
+      "summary": "생·손보사 3분기 순익은 3.2% 늘어난 10.8조원으로 보험 본업이 실적을 이끌었다. 손보 빅5는 보험손익이 56% 늘었지만 투자손익이 69% 급감했다. 미래에셋생명은 스페이스X 투자 손실과 환율 변동으로 적자 전환했고, 8곳 중 7곳이 뒷걸음했다는 분석도 나왔다.",
+      "actuarial_view": "보험금 예실차 손실이 줄고 손해율이 개선된 것은 위험률·손해율 가정이 실제 경험에 가까워지고 있다는 신호일 수 있다. 반면 투자손익 변동은 금리·환율·주가를 통해 K-ICS 비율에도 영향을 준다. 미래에셋생명은 시장금리 상승으로 K-ICS가 147.3%로 29.4%p 하락했다고 밝혔다.",
+      "takeaway": "보험손익 개선이 일회성 요인인지 가정 정교화의 결과인지 분기별 예실차 추이로 나눠 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "보험 본업이 실적 견인…생·손보사 3분기 순익, 3.2% 커진 ‘10.8조’",
+          "url": "https://www.ceoscoredaily.com/page/view/2026111314542669170"
+        },
+        {
+          "title": "손보 '빅5', 3분기 보험손익 56% 늘었지만…투자손익 69% 급감",
+          "url": "https://www.joongangenews.com/news/articleView.html?idxno=563994"
+        },
+        {
+          "title": "보험 8곳 중 7곳 뒷걸음 vs 삼성 독주…채권·대체투자 직격탄",
+          "url": "https://www.newsway.co.kr/news/view?ud=2026111312561365565"
+        },
+        {
+          "title": "미래에셋생명, 스페이스X 투자손실 영향 3분기 적자 전환",
+          "url": "https://www.mt.co.kr/finance/2026/11/13/2026111318413133320"
+        },
+        {
+          "title": "주요 보험회사 3분기 실적… 본업보다 자산운용에 희비 [경제 레이더]",
+          "url": "https://www.segye.com/newsView/20261115508907?OutUrl=naver"
+        },
+        {
+          "title": "미래에셋생명, 건강보험 성장에 보유 CSM 2.3조…미래 이익 기반 강화",
+          "url": "https://www.ziksir.com/news/articleView.html?idxno=153317"
+        },
+        {
+          "title": "현대해상, 투자이익 76% 급감 수익성 '빨간불'⋯3분기 투자손익 적자 전...",
+          "url": "https://www.autodaily.co.kr/news/articleView.html?idxno=602122"
+        },
+        {
+          "title": "보험료보다 지급액 많은 생보사…투자 재원 찾아 연금·일시납 확대",
+          "url": "https://www.raonnews.com/news/article.html?no=62787"
+        }
+      ]
+    },
+    {
+      "title": "연말 계리가정 조정과 CSM 변동",
+      "category": "실적·재무",
+      "summary": "삼성생명은 상반기에 약 4000억원의 CSM 조정을 반영했다. 4분기에는 간편보험 목표 손해율 변경과 연간 경험통계 업데이트로 추가 조정이 예상된다. 미래에셋생명은 계리가정 변경이 보험손익에 -707억원으로 작용했다. DB손보는 2분기부터 당국의 계리가정 가이드 영향이 이어지며 3분기 신계약 CSM이 약 4830억원으로 전년 동기보다 33.3% 감소했다.",
+      "actuarial_view": "간편보험의 손해율이나 유지율 가정을 보수적으로 바꾸면 미래 보험금 추정이 늘어 CSM이 줄어들 수 있다. 신계약은 가정 변경 직후 계약당 수익성(신계약 CSM 대비 보험료 규모)이 먼저 낮아질 수 있다.",
+      "takeaway": "가정 변경이 보유계약 CSM과 신계약 CSM 중 어디에 더 크게 반영되는지, 회사별로 공시 수치를 분리해서 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "[보험사 3Q 리뷰] 삼성생명·화재, 같은 호실적·다른 이익 구조",
+          "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=668106"
+        },
+        {
+          "title": "실적 숫자보다 자본 여력에 베팅…보험주 옥석 가리기",
+          "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=369762"
+        },
+        {
+          "title": "\"보험으론 벌었는데 투자에 발목\"…5대 손보사 실적 온도차",
+          "url": "https://www.ajunews.com/view/20261113160211264"
+        },
+        {
+          "title": "미래에셋생명, 3분기 순익 375억원…전년比 70.1% 감소",
+          "url": "https://www.sentv.co.kr/article/view/sentv202611140013"
+        },
+        {
+          "title": "미래에셋생명, CSM 2.3조에도 3분기 적자 전환",
+          "url": "https://www.newspost.kr/news/articleView.html?idxno=227406"
+        },
+        {
+          "title": "신계약 줄었지만 보험손익 껑충…DB손보, 3분기 순익 35%↑",
+          "url": "https://www.kukinews.com/article/view/kuk202611130058"
+        },
+        {
+          "title": "DB손해보험, 해외 자회사 덕에 이익 확대…국내 성장 동력은 약화",
+          "url": "https://www.news2day.co.kr/article/20261113500274"
+        },
+        {
+          "title": "삼성화재 순이익 8% 감소…실적 부진 속에서도 선방한 이유는?",
+          "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=503980"
+        },
+        {
+          "title": "보험 8곳 중 7곳 뒷걸음 vs 삼성 독주…채권·대체투자 직격탄",
+          "url": "https://www.newsway.co.kr/news/view?ud=2026111312561365565"
+        }
+      ]
+    },
+    {
+      "title": "수수료 분급제·1200%룰·기본자본 K-ICS",
+      "category": "제도·감독",
+      "summary": "내년 1월부터 보험 판매수수료 4년 분급제가 시행되고, 금융위는 내년부터 기본자본 K-ICS 비율 제도를 도입한다. 1200%룰은 7월부터 GA 소속 설계사에도 적용되고 있다. 현대해상의 기본자본 K-ICS 비율은 81.4%로 전분기(83.8%)보다 낮아졌고, 일시납 연금 중심 신계약은 내년 시장 위축 가능성이 제기됐다.",
+      "actuarial_view": "수수료가 분급되면 신계약 사업비 현금흐름의 시점이 바뀌어 CSM 산출과 신계약 수익성 지표가 달라질 수 있다. 기본자본 비율은 보완자본을 제외하므로 이익 누적과 자본의 질 관리가 더 중요해질 수 있다.",
+      "takeaway": "분급제 이후 사업비 가정과 해지율 가정이 어떻게 연동되는지, 일시납 연금의 신계약 CSM 기여는 어떻게 달라질지 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "실적 숫자보다 자본 여력에 베팅…보험주 옥석 가리기",
+          "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=369762"
+        },
+        {
+          "title": "삼성·한화생명, 보장성 신계약 건수 줄고 단가는 ↑…중소형사는 외형...",
+          "url": "https://www.ceoscoredaily.com/page/view/2026110914473479869"
+        },
+        {
+          "title": "경제 성장세 이어져도 보험·은행업계 부담 가중",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93771"
+        },
+        {
+          "title": "[생보산업 3대 과제②] GA에 쏠린 보험 영업…'많이 파는 경쟁'에서 '오...",
+          "url": "https://www.pointe.co.kr/news/articleView.html?idxno=87747"
+        },
+        {
+          "title": "GA 연말 내부통제 점검 앞두고…지점 시정조치 이행이 관건",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110526"
+        },
+        {
+          "title": "[Epic Why] 한투금융, KDB생명 우선협상 연장하고도 왜 본계약 못 맺나?",
+          "url": "https://www.globalepic.co.kr/view.php?ud=2026111608361470457cc35ccc5c_29"
+        },
+        {
+          "title": "에이플러스에셋, 3분기 누적 영업이익 411억…1년 새 82% 증가",
+          "url": "https://www.news2day.co.kr/article/20261116500170"
+        },
+        {
+          "title": "[실적] 현대해상, 3Q 누적 순이익 7808억…보험손익 개선에 전년比 23.1%...",
+          "url": "http://www.thevaluenews.co.kr/news/view.php?idx=203291"
+        }
+      ]
+    },
+    {
+      "title": "대체납 실손보험료, 금융위 법해심 착수",
+      "category": "제도·감독",
+      "summary": "대체납입형 실손보험의 갱신보험료가 제대로 산정됐는지 금융위가 법령해석심의위원회를 열어 약관 해석에 나선다. 쟁점은 갱신보험료에 수수료 성격의 사업비를 부가할 수 있는지다. 같은 약관인데 납입액이 다르다는 점이 문제로 제기됐고, 수천억원 규모의 과다·과소 수취 여부가 거론된다.",
+      "actuarial_view": "해석 결과에 따라 갱신 시 사업비 부가 방식과 보험료 산출 기초서류의 정합성이 문제될 수 있다. 소급 정산이 필요해지면 실손 손익과 관련 준비금 가정에도 영향이 갈 수 있다.",
+      "takeaway": "결론이 어느 방향이든 약관 문구와 산출 방법서의 사업비 부가 근거를 상품 단계에서 일치시켜 두었는지 점검할 필요가 있다.",
+      "links": [
+        {
+          "title": "[단독] 같은 약관, 다른 납입액… 대체납 실손보험료 법해심 열린다",
+          "url": "https://www.mt.co.kr/finance/2026/11/16/2026111519555979290"
+        },
+        {
+          "title": "[단독]'대체납입형 실손보험료' 수천억 더 받았나, 덜 받았나..금융위 법해심 연다 - 머니투데이 - 머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVdDQtVU5BLUI1M29kNngwOEtWdWIxU1VPVU9ONWJ3bEZNbTV0ODNjQVUxeXQ1U2JQWE1HTTZRUm1xd3ZQWHBJM2duNnQ0S1JDRElWX2pYYThnYmpSY1FGUlF6S1ZtbVhTdmFydGFDRS3SAXBBVV95cUxQVXQ0LVVOQS1CNTNvZDZ4MDhLVnViMVNVT1VPTjVid2xGTW01dDgzY0FVMXl0NVNiUFhNR002UVJtcXd2UFhwSTNnbjZ0NEtSQ0RJVl9qWGE4Z2JqUmNRRlJRektWbW1YU3ZhcnRhQ0Ut?oc=5"
+        },
+        {
+          "title": "'같은 약관, 다른 보험료'..대체납 실손보험, 수십년 논란 종지부 - 머니투데이 - 머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5WdnZ2dGRhSExGa3g3S3dCaHNQVW1ueGtFeUswRVI3U3MxWk9jdEN2RHBJUXRlU0FmOF81LTUtVzdPLUY4Y1VrdVBocU5rdmJFX1VqQ2V0QmtfcEpfZTctZUtWX29aSUZIbzFJdE9WS3PSAXBBVV95cUxOVnZ2dnRkYUhMRmt4N0t3QmhzUFVtbnhrRXlLMEVSN1NzMVpPY3RDdkRwSVF0ZVNBZjhfNS01LVc3Ty1GOGNVa3VQaHFOa3ZiRV9VakNldEJrX3BKX2U3LWVLVl9vWklGSG8xSXRPVktz?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "저수온·기후 재해와 지수형 보험",
+      "category": "신위험",
+      "summary": "해수부는 겨울철 자연재난 대비 계획을 시행하며 양식재해보험 가입 품목을 30개에서 32개로 늘리고, 피해액의 50%를 재난지원금으로 지급한다. 2024~2025년 겨울 이상 저수온 양식 피해는 약 110억원이었다. 경기 기후보험은 9월 23일 기준 5만1766건, 12억7780만원을 지급했고, 보험개발원은 아시아 포럼에서 지수형 보험 사례를 소개했다.",
+      "actuarial_view": "이상 저수온은 관측·피해 이력이 짧아 빈도와 심도를 경험통계로 산출하기 어렵고, 품목이 늘면 새 품목은 사실상 데이터 없이 요율을 정해야 한다. 지수형은 수온 지수와 실제 손실이 어긋나는 기초위험(basis risk)을 관리해야 하며, 동시 다발 피해에 대비한 재보험 설계도 필요하다.",
+      "takeaway": "정부 지원금이 피해액의 50%를 보전하는 구조에서 민간 보험의 손해율 산출 기준을 어디에 두어야 하는지 생각해볼 필요가 있다.",
+      "links": [
+        {
+          "title": "해수부, '겨울철 자연재난 대비 계획' 시행…시설 점검·출항 제한",
+          "url": "https://www.news1.kr/economy/idustry-trade/6354325"
+        },
+        {
+          "title": "해수부, 겨울철 자연재난 대비 선박·양식장 사전 점검 강화",
+          "url": "https://www.dailian.co.kr/news/view/1714992/?sc=Naver"
+        },
+        {
+          "title": "해양수산부, 4개월간 '겨울 재난 24시간 철벽 방어' 돌입",
+          "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=883430"
+        },
+        {
+          "title": "해수부, 내년 3월까지 겨울철 재난 대비… 수온 관측 210곳 실시간 제공",
+          "url": "https://www.fnnews.com/news/202611151247144653"
+        },
+        {
+          "title": "해수부, 겨울철 자연재난 대비…해양수산 분야 피해 예방 강화",
+          "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4118622"
+        },
+        {
+          "title": "해수부, 겨울철 저수온·폭설 피해 선제 대응…내년 3월까지 대비 총력...",
+          "url": "https://www.ajunews.com/view/20261115103656642"
+        },
+        {
+          "title": "해수부, 겨울철 해양수산 재난 대응 강화…양식장 저수온 피해 예방",
+          "url": "https://www.newsis.com/view/NISX20261115_0003868344"
+        },
+        {
+          "title": "경기 기후보험 첫 성적표… 취약계층 보장 집중, 실효성은 과제",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93803"
+        },
+        {
+          "title": "보험개발원, 아시아 보험포럼서 AI 활용 위험평가 방안 제시",
+          "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=211425"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "DB손해보험",
+        "note": "3분기 누적 순익 1조5605억원, 보험손익은 56% 급증했고 K-ICS는 9월 말 212.0%지만 3분기 신계약 CSM은 전년 동기 대비 33.3% 감소했다.",
+        "links": [
+          {
+            "title": "DB손해보험, 3분기 누적 순익 1조5605억원…보험손익 56% 급증",
+            "url": "http://www.newslock.co.kr/news/articleView.html?idxno=140107"
+          },
+          {
+            "title": "신계약 줄었지만 보험손익 껑충…DB손보, 3분기 순익 35%↑",
+            "url": "https://www.kukinews.com/article/view/kuk202611130058"
+          },
+          {
+            "title": "DB손보, 투자손익 급감에도 순익 성장…본업 수익성 회복",
+            "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=668112"
+          }
+        ]
+      },
+      {
+        "company": "삼성화재",
+        "note": "누적 순익 1.9조원으로 자동차보험 흑자 전환 등 본업이 실적을 뒷받침했고, 캐노피우스 인수로 해외 성장동력을 확보했다.",
+        "links": [
+          {
+            "title": "삼성화재, 누적 순익 1.9조…캐노피우스 인수로 해외 성장동력 확보",
+            "url": "https://www.sentv.co.kr/article/view/sentv202611130094"
+          },
+          {
+            "title": "삼성생명은 투자·삼성화재는 보험…실적 성장동력 엇갈려",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110557"
+          },
+          {
+            "title": "삼성화재 순이익 8% 감소…실적 부진 속에서도 선방한 이유는?",
+            "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=503980"
+          }
+        ]
+      },
+      {
+        "company": "현대해상",
+        "note": "3분기 누적 순이익은 7808억원(23.1%↑)이고 K-ICS는 210.3%지만 투자손익은 적자로 전환했다.",
+        "links": [
+          {
+            "title": "[실적] 현대해상, 3Q 누적 순이익 7808억…보험손익 개선에 전년比 23.1%...",
+            "url": "http://www.thevaluenews.co.kr/news/view.php?idx=203291"
+          },
+          {
+            "title": "현대해상, 투자이익 76% 급감 수익성 '빨간불'⋯3분기 투자손익 적자 전...",
+            "url": "https://www.autodaily.co.kr/news/articleView.html?idxno=602122"
+          }
+        ]
+      },
+      {
+        "company": "KB손해보험",
+        "note": "CSM이 10조8974억원으로 1년 새 16.0% 늘었다.",
+        "links": [
+          {
+            "title": "보험 본업이 실적 견인…생·손보사 3분기 순익, 3.2% 커진 ‘10.8조’",
+            "url": "https://www.ceoscoredaily.com/page/view/2026111314542669170"
+          }
+        ]
+      },
+      {
+        "company": "메리츠화재",
+        "note": "순이익이 29.2% 감소한 3285억원으로 손보 3위에 올랐다.",
+        "links": [
+          {
+            "title": "손보 '빅5', 3분기 보험손익 56% 늘었지만…투자손익 69% 급감",
+            "url": "https://www.joongangenews.com/news/articleView.html?idxno=563994"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "삼성생명",
+        "note": "순이익이 26.9% 증가했고 CSM은 연초 대비 1조1000억원 늘어난 14조3000억원이며, 4분기 간편보험 손해율 가정 변경에 따른 추가 CSM 조정이 예상된다.",
+        "links": [
+          {
+            "title": "[직장 돋보기 분석] 삼성생명, 순이익 26.9% 증가 속 '라이프케어 복합금...",
+            "url": "https://www.news2day.co.kr/article/20261104500433"
+          },
+          {
+            "title": "[보험사 3Q 리뷰] 삼성생명·화재, 같은 호실적·다른 이익 구조",
+            "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=668106"
+          },
+          {
+            "title": "삼성생명은 투자·삼성화재는 보험…실적 성장동력 엇갈려",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110557"
+          }
+        ]
+      },
+      {
+        "company": "한화생명",
+        "note": "3분기 누적 순익 8656억원(12.6%↑)이고 보험금 예실차 손실이 축소됐으며 손실부담계약이 환입으로 전환됐다.",
+        "links": [
+          {
+            "title": "한화생명, 3Q 누적 순익 8656억원…전년比 12.6%↑",
+            "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=668141"
+          },
+          {
+            "title": "생보사 엇갈린 실적… 삼성 홀로 ‘독주’·한화는 본업으로 버텨",
+            "url": "https://www.dt.co.kr/article/12095215?ref=naver"
+          }
+        ]
+      },
+      {
+        "company": "미래에셋생명",
+        "note": "3분기 순손실 339억원으로 적자 전환했으나 보유 CSM은 2.3조원으로 12.7% 늘었고 K-ICS는 147.3%로 하락했다.",
+        "links": [
+          {
+            "title": "미래에셋생명, 3분기 순손실 339억원…보유 CSM 12.7% 증가",
+            "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=211393"
+          },
+          {
+            "title": "미래에셋생명, 스페이스X 투자손실 영향 3분기 적자 전환",
+            "url": "https://www.mt.co.kr/finance/2026/11/13/2026111318413133320"
+          },
+          {
+            "title": "미래에셋생명, 건강보험 성장에 보유 CSM 2.3조…미래 이익 기반 강화",
+            "url": "https://www.ziksir.com/news/articleView.html?idxno=153317"
+          },
+          {
+            "title": "미래에셋생명, CSM 2.3조에도 3분기 적자 전환",
+            "url": "https://www.newspost.kr/news/articleView.html?idxno=227406"
+          }
+        ]
+      },
+      {
+        "company": "신한라이프",
+        "note": "저축보험으로 외형은 방어했지만 수익성은 남지 않았다는 평가이며, 신계약 CSM 확대보다 해지율·손해율 경험조정 요인을 고려하겠다고 밝혔다.",
+        "links": [
+          {
+            "title": "[핀포인트] [신한라이프] 외형 방어한 저축보험…남는 건 없다",
+            "url": "https://news.dealsitetv.com/articles/178295"
+          }
+        ]
+      },
+      {
+        "company": "교보생명",
+        "note": "악사손보에 1000억원을 투자해 몸집을 불리는 가운데, 악사손보 K-ICS는 상반기 말 185.7%로 16.1%p 하락했다.",
+        "links": [
+          {
+            "title": "교보생명 '1000억 베팅'…악사손보 '적자 청구서\"에도 몸집 불리기?(2부...",
+            "url": "https://www.the-today.com/news/articleView.html?idxno=93646"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "노란우산(중소기업중앙회)",
+        "note": "가입자 192만명 규모의 노란우산공제에서도 해킹 정황이 나왔으며, 앞선 침해사고와의 연관성은 아직 밝혀지지 않았다.",
+        "links": [
+          {
+            "title": "192만 가입 노란우산 공제도 해킹 정황",
+            "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=366150"
+          }
+        ]
+      },
+      {
+        "company": "새마을금고중앙회",
+        "note": "지난달 공제회원 400명대의 개인정보 유출을 공지했고, 충북도와 청년 두배 적금 사업 협약을 맺었다.",
+        "links": [
+          {
+            "title": "192만 가입 노란우산 공제도 해킹 정황",
+            "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=366150"
+          },
+          {
+            "title": "'목돈 마련' 충북행복결혼공제사업 사실상 중단…두배 적금 사업 대체 ...",
+            "url": "https://www.inews365.com/news/article.html?no=943644"
+          }
+        ]
+      },
+      {
+        "company": "충북도(행복결혼공제사업)",
+        "note": "10년 만에 사실상 중단되고, 내년 4월부터 새마을금고 연계 두배 적금 사업으로 대체된다.",
+        "links": [
+          {
+            "title": "충북결혼행복공제사업 중단…대체 사업 추진",
+            "url": "https://www.ccdailynews.com/news/articleView.html?idxno=2451505"
+          },
+          {
+            "title": "'목돈 마련' 충북행복결혼공제사업 사실상 중단…두배 적금 사업 대체 ...",
+            "url": "https://www.inews365.com/news/article.html?no=943644"
+          },
+          {
+            "title": "충북결혼행복공제사업 10년 만에 중단 수순…대체 사업 마련",
+            "url": "https://www.yna.co.kr/view/AKR20261113159700064?input=1195m"
+          }
+        ]
+      },
+      {
+        "company": "교직원공제회",
+        "note": "이음PE가 교직원공제회 등의 출자사업에서 위탁운용사로 선정돼 5450억원 규모 펀드를 결성했다.",
+        "links": [
+          {
+            "title": "프로젝트펀드 한계 절감한 이음PE 서동범…바이아웃 큰손으로",
+            "url": "https://dealsite.co.kr/articles/172589"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "예실차",
+    "explain": "보험사가 예상한 보험금·사업비와 실제 발생액의 차이를 말합니다. 실제가 예상보다 크면 손실로 당기 보험손익에 반영되고, 이런 차이가 쌓이면 계리가정을 바꾸는 근거가 됩니다."
+  },
+  "kakao_lines": [
+    "손보: DB손보 K-ICS 212%, 본업↑ 투자손익 급감",
+    "생보: 미래에셋생명 적자, K-ICS 147.3%",
+    "공제: 노란우산공제도 해킹 정황, 가입자 192만"
+  ]
+}
