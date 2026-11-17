@@ -1,0 +1,343 @@
+{
+  "headline": "대형 GA 등록취소 예고 속, 3분기 보험손익은 늘었으나 투자·신계약 CSM은 부진",
+  "issues": [
+    {
+      "title": "대형 GA 한국보험금융 등록취소 사전통지",
+      "category": "제도·감독",
+      "summary": "금감원이 불법 리베이트 혐의를 받는 대형 GA 한국보험금융에 보험대리점 등록취소를 사전 통지했다. 소속 설계사는 6000여명으로 업계 상위 10위 안에 들고, 리베이트 규모는 732억원 의혹이 제기됐다. 아직 사전통지 단계이며, 이르면 19일 제재심의위원회에서 안건을 심의하고 이후 금융위원회 의결을 거친다.",
+      "actuarial_view": "리베이트를 통한 단기 대형 판매 경쟁이 제재 대상이 되면 보험사의 GA 채널 신계약 가정(판매량, 유지율)과 사업비 가정을 보수적으로 볼 여지가 커질 수 있다. 사업비 예실차와 해지율 가정에도 영향이 갈 수 있다.",
+      "takeaway": "특정 GA에 설계사가 크게 몰린 채널의 계약이 조직 해체나 이동으로 이어질 때, 우리 상품의 13회차·25회차 유지율은 어떻게 달라질지 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "금감원, ‘불법리베이트’ 한국보험금융에 등록취소 사전통지",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93873"
+        },
+        {
+          "title": "금감원, 한국보험금융 등록취소 추진...732억 리베이트 의혹에 대형 보...",
+          "url": "https://www.ppss.kr/news/articleView.html?idxno=321397"
+        },
+        {
+          "title": "금감원, 대형 GA 한국보험금융 '등록취소' 사전 통지…불법 리베이트 혐...",
+          "url": "https://www.econovill.com/news/articleView.html?idxno=757515"
+        },
+        {
+          "title": "금감원, '보험설계사 6천명' 한국보험금융에 등록취소 사전통지",
+          "url": "https://www.fnnews.com/news/202611162222526317"
+        },
+        {
+          "title": "금감원, '732억 불법 리베이트' 대형 GA 한국보험금융에 '등록취소' 칼 ...",
+          "url": "https://www.joongangenews.com/news/articleView.html?idxno=564374"
+        },
+        {
+          "title": "[금융家] 보험 ⑭ㅣ 사고 줄어도 보험금은 증가…불법 리베이트 제재·...",
+          "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627635"
+        },
+        {
+          "title": "\"대표가 리베이트\" 등록취소 예고된 설계사 6천명 한국보험금융 어떤 곳? - 데일리브리프",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9YY1g2YnQza19aSmN3UDNSSUNXb0ZaMjFtYjZDRTFEWi1IOV9kang5NVdzVWk5czcwazdrRUtQY21OR2p0YU05TVNHRDczLWJma2hQUndmVjJwSW5hcTMwQ3Q5OEpDN1JNUUNkUHlR?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "3분기 실적: 보험손익 개선, 투자·신계약은 부진",
+      "category": "실적·재무",
+      "summary": "다수 보험사의 3분기 보험손익은 개선됐으나 투자손익이 줄었다. 손보 5개사는 보험손익이 1조원 늘었지만 신계약 CSM은 18% 감소했다. 생보는 삼성생명을 제외하면 순익이 18.5% 줄어 양극화가 뚜렷하다. 교보생명은 보유 CSM이 7조원을 넘었지만 투자 부진으로 3분기 별도 기준 적자를 냈다.",
+      "actuarial_view": "보유 CSM 잔액은 늘었는데 신계약 CSM이 줄었다면, 신계약 CSM 배수 하락이나 판매 축소가 미래 이익 성장의 둔화 요인이 될 수 있다. 연말에는 보험금 지급 추이, 손해율, 해지율 등 계리가정 변경이 손익을 흔들 수 있다.",
+      "takeaway": "CSM 잔액 증가와 신계약 CSM 감소가 동시에 나타날 때, 이익 지속성은 무엇으로 판단해야 할까.",
+      "links": [
+        {
+          "title": "생보는 삼성생명 독주, 손보는 본업 회복…3분기 실적 희비",
+          "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=147134"
+        },
+        {
+          "title": "\"본업서 벌고 투자서 잃고\"…보험사 순익 '희비'",
+          "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7193734"
+        },
+        {
+          "title": "\"보험사 3분기 실적 부진에도 CSM 잔액 증가\"<다올투자證>",
+          "url": "https://www.news2day.co.kr/article/20261117500056"
+        },
+        {
+          "title": "생보업계, 3분기 실적 양극화 심화...삼성생명 빼면 순익 18.5%↓",
+          "url": "https://daily.hankooki.com/news/articleView.html?idxno=1425464"
+        },
+        {
+          "title": "손보 5개사 보험손익 1조 늘었는데…신계약 CSM 18% 감소",
+          "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=903247"
+        },
+        {
+          "title": "[이슈+] 삼성·한화 '방긋'-교보·신한·KB '우울'···5대 생보사 실적...",
+          "url": "https://www.seoulfn.com/news/articleView.html?idxno=643017"
+        },
+        {
+          "title": "[경제일보] 5대 손보, 보험손익 개선에도 순익 엇갈려…투자손익 감소가...",
+          "url": "https://www.ajunews.com/view/20261117081126863"
+        },
+        {
+          "title": "교보생명, 보유 CSM 첫 7조 돌파…3분기 보험손익 10.8% 성장",
+          "url": "https://www.ziksir.com/news/articleView.html?idxno=153586"
+        },
+        {
+          "title": "주요 손보사 3분기 순익 5.1% 하락…DB만 '약진'",
+          "url": "https://www.asiatime.co.kr/article/20261116500279"
+        },
+        {
+          "title": "[CSM 성적표] 5대 손보사, 60兆 돌파…메리츠만 신계약 증가",
+          "url": "https://www.fetv.co.kr/news/articleView.html?idxno=313719"
+        },
+        {
+          "title": "교보생명, 3분기 누적 순이익 7082억…전년比 20% 감소",
+          "url": "http://www.segyebiz.com/newsView/20261116516746?OutUrl=naver"
+        }
+      ]
+    },
+    {
+      "title": "예상보다 더 나간 보험금: 예실차·자동차보험",
+      "category": "손해율·보험금",
+      "summary": "3분기 보고서를 낸 생보사 12곳 중 8곳이 1~9월 누적 예실차 손실을 냈다. 대형 손보 4곳의 상반기 자동차보험 물적담보 지급보험금은 4조940억원으로 1.6% 늘었다. 사고 건수는 줄었지만 건당 지급액이 올랐다. 5대 손보사 자동차보험은 3분기 흑자로 돌아섰으나, 상반기 전체 손보사 자동차보험은 1848억원 적자였다.",
+      "actuarial_view": "생보 예실차 손실은 발생 보험금이 위험률 가정을 웃돌았다는 뜻이어서 위험률 재산출이나 가정 보수화 압력으로 이어질 수 있다. 자동차보험은 빈도가 줄어도 심도(건당 수리비)가 오르면 손해율 개선이 제한될 수 있어, 요율 인상 효과와 심도 추세를 따로 봐야 한다.",
+      "takeaway": "3분기 자동차보험 흑자를 추세 전환으로 보려면 4분기 계절 요인과 건당 지급액 추이를 함께 확인해야 하지 않을까.",
+      "links": [
+        {
+          "title": "생보사 보험금, 예상보다 더 나갔다…12곳 중 8곳 예실차 손실",
+          "url": "https://www.raonnews.com/news/article.html?no=62825"
+        },
+        {
+          "title": "상반기 車보험 물적담보 지급보험금, 사고 줄었는데 1.6%↑",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93880"
+        },
+        {
+          "title": "5년 만의 보험료 인상 효과?…5대 손보사 자동차보험 3분기 흑자 돌아섰...",
+          "url": "https://www.goodkyung.com/news/articleView.html?idxno=293515"
+        },
+        {
+          "title": "[금융家] 보험 ⑭ㅣ 사고 줄어도 보험금은 증가…불법 리베이트 제재·...",
+          "url": "https://www.cbci.co.kr/news/articleView.html?idxno=627635"
+        }
+      ]
+    },
+    {
+      "title": "기본자본 킥스 부담과 자본성증권",
+      "category": "실적·재무",
+      "summary": "동양생명의 9월 말 잠정 K-ICS는 172.0%로 6월 말(205.4%)보다 33.4%포인트 낮아졌고, ABL생명은 기본자본 비율이 규제 기준을 밑돈다. 우리금융은 두 회사 통합 과정에서 추가 출자를 하지 않겠다는 방침이다. 한편 KB손보는 후순위채 1조원을 설정했고, 보험연구원은 금리가 더 오르면 생보사 기본자본 킥스 비율이 하락할 수 있다고 경고했다.",
+      "actuarial_view": "내년 기본자본 규제가 도입되면 보완자본으로 채울 수 없는 영역이 생겨, 금리 상승에 따른 순자산 변동이 기본자본 비율에 어떻게 반영되는지가 중요해질 수 있다. 자본 소모가 큰 상품의 가격과 판매 믹스에도 영향이 갈 수 있다.",
+      "takeaway": "신상품 가격을 정할 때 CSM 수익성뿐 아니라 기본자본 소모(리스크 요구자본)까지 함께 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "자산 매각이 지킨 동양생명 3분기 흑자",
+          "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=504687"
+        },
+        {
+          "title": "자본성증권 문 열어두는 보험사…KB손보 후순위채 1조원 설정",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4445063"
+        },
+        {
+          "title": "‘KDB생명 M&A’ 발목 잡는 기본자본 킥스...한투도 부담스러운 1兆",
+          "url": "https://www.ekn.kr/web/view.php?key=20261116021420153"
+        },
+        {
+          "title": "추가 출자 없는 동양·ABL생명…자본건전성 관리 시험대",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110573"
+        }
+      ]
+    },
+    {
+      "title": "금융권 연쇄 해킹과 사이버 위험",
+      "category": "신위험",
+      "summary": "금융위원회에 따르면 9월 30일 첫 침해사고 확인 이후 11월 3일까지 37개사에서 40건의 사고가 신고됐고, 정보유출은 47만건에 이른다. 금융보안원도 해킹 피해를 입었다. 대신증권은 정보유출 고객에게 피싱 피해보상보험 가입과 거래수수료 면제를 지원한다.",
+      "actuarial_view": "사이버 사고는 과거 손해 경험이 짧고 한 공급망·공통 취약점이 여러 기업에 동시에 영향을 주는 누적(accumulation) 위험이 있어 빈도·심도 모두 경험요율로 산출하기 어렵다. 재보험 출재 한도와 면책 범위 설정도 함께 고민해야 한다.",
+      "takeaway": "연쇄 사고가 공통 원인에서 비롯됐다면, 개별 건 단위 요율 대신 이벤트 단위 누적 손실 시나리오로 가격을 봐야 하지 않을까.",
+      "links": [
+        {
+          "title": "금융권 연쇄 해킹…47만건 정보유출에 ESG 경영 '시험대'",
+          "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=883800"
+        },
+        {
+          "title": "[핀테크핫이슈] 금융지주 지배구조 개편 본격화…해킹 당한 금융보안원",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=715826"
+        },
+        {
+          "title": "AI로 지키고, AI도 지킨다… 금융보안의 두 전선",
+          "url": "https://kidd.co.kr/news/248166"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "현대해상",
+        "note": "3분기 누적 순이익에서 KB손보를 앞질러 손보 4위로 올라섰고 K-ICS는 210%다.",
+        "links": [
+          {
+            "title": "현대해상, KB손보 제치고 손보 4위로…보험영업이 바꾼 중위권 판도",
+            "url": "https://www.news2day.co.kr/article/20261116500379"
+          }
+        ]
+      },
+      {
+        "company": "KB손해보험",
+        "note": "후순위채 1조원을 설정해 기본자본 규제 도입을 앞두고 K-ICS 관리에 나선다.",
+        "links": [
+          {
+            "title": "자본성증권 문 열어두는 보험사…KB손보 후순위채 1조원 설정",
+            "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4445063"
+          }
+        ]
+      },
+      {
+        "company": "DB손해보험",
+        "note": "주요 손보사 3분기 순익이 5.1% 줄어든 가운데 DB만 약진했고, 인터넷 전용 '미니암보험'도 출시했다.",
+        "links": [
+          {
+            "title": "주요 손보사 3분기 순익 5.1% 하락…DB만 '약진'",
+            "url": "https://www.asiatime.co.kr/article/20261116500279"
+          },
+          {
+            "title": "[보험 NOW] DB손보·KB손보·동양생명·한화금융",
+            "url": "https://www.wikileaks-kr.org/news/articleView.html?idxno=194714"
+          }
+        ]
+      },
+      {
+        "company": "메리츠화재",
+        "note": "5대 손보사 가운데 신계약 CSM이 증가한 유일한 회사로 꼽혔다.",
+        "links": [
+          {
+            "title": "[CSM 성적표] 5대 손보사, 60兆 돌파…메리츠만 신계약 증가",
+            "url": "https://www.fetv.co.kr/news/articleView.html?idxno=313719"
+          }
+        ]
+      },
+      {
+        "company": "SGI서울보증",
+        "note": "3분기 누적 순익 1607억원, K-ICS 396.2%를 기록했다.",
+        "links": [
+          {
+            "title": "[실적] SGI서울보증, 3Q 누적 순익 1607억…보증보험 수익성 개선에 10.4...",
+            "url": "http://www.thevaluenews.co.kr/news/view.php?idx=203370"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "삼성생명",
+        "note": "3분기 만에 작년 순익을 넘어섰고 K-ICS는 209% 수준이며, 무릎 로봇수술·폐렴 입원비 담보로 배타적사용권을 신청했다.",
+        "links": [
+          {
+            "title": "[K금융 리더] 홍원학號, 3분기 만에 작년 순익 추월…삼성생명 ‘수익·...",
+            "url": "https://www.g-enews.com/view.php?ud=202611161458237412e30fcb1ba8_1"
+          },
+          {
+            "title": "무릎 로봇수술·폐렴 입원비 차등 '업계 최초'…삼성생명, 배타권 신청",
+            "url": "https://www.raonnews.com/news/article.html?no=62819"
+          }
+        ]
+      },
+      {
+        "company": "교보생명",
+        "note": "보유 CSM이 처음 7조원을 넘었으나 3분기 별도 기준 472억원 순손실을 냈고, 최근 1년 배타적사용권 6건으로 업계 최다다.",
+        "links": [
+          {
+            "title": "교보생명, 보유 CSM 첫 7조 돌파…3분기 보험손익 10.8% 성장",
+            "url": "https://www.ziksir.com/news/articleView.html?idxno=153586"
+          },
+          {
+            "title": "교보생명, 3분기 누적 순이익 7천82억원…작년 대비 19.9%↓",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110579"
+          },
+          {
+            "title": "교보생명, 최근 1년 배타적사용권 6건 획득···생보업계 최다",
+            "url": "https://www.insweek.co.kr/news/articleView.html?idxno=73026"
+          }
+        ]
+      },
+      {
+        "company": "동양생명",
+        "note": "자산 매각으로 3분기 흑자를 지켰지만 K-ICS는 172.0%로 크게 낮아졌다.",
+        "links": [
+          {
+            "title": "자산 매각이 지킨 동양생명 3분기 흑자",
+            "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=504687"
+          },
+          {
+            "title": "추가 출자 없는 동양·ABL생명…자본건전성 관리 시험대",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110573"
+          }
+        ]
+      },
+      {
+        "company": "미래에셋생명",
+        "note": "3분기 신계약 CSM 4111억원으로 건강보험·변액보험 중심 성장을 이어갔다.",
+        "links": [
+          {
+            "title": "[실적] 미래에셋생명, 3Q 신계약 CSM 4111억…건강보험·변액보험 중심 ...",
+            "url": "http://www.thevaluenews.co.kr/news/view.php?idx=203331"
+          }
+        ]
+      },
+      {
+        "company": "ABL생명",
+        "note": "기본자본 비율이 규제 기준을 밑돌지만 우리금융의 추가 출자 없이 내년 10월 통합을 준비해야 한다.",
+        "links": [
+          {
+            "title": "추가 출자 없는 동양·ABL생명…자본건전성 관리 시험대",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110573"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "기계설비건설공제조합",
+        "note": "창립 30주년을 맞아 자산 1조3650억원, 조합원 1만여 곳 규모로 성장했다.",
+        "links": [
+          {
+            "title": "신뢰의 30년, 함께 여는 미래",
+            "url": "https://www.kmecnews.co.kr/news/articleView.html?idxno=52784"
+          }
+        ]
+      },
+      {
+        "company": "5대 공제회(교직원·행정·군인·경찰·소방)",
+        "note": "대체투자 비중이 61.5%로 국민연금(15.95%)의 약 네 배이며, 지방 이전에 따른 운용 인력 이탈 우려가 제기됐다.",
+        "links": [
+          {
+            "title": "부장도 차장도 떠났다…잘 나가던 '이 직장'에 무슨 일이",
+            "url": "https://www.hankyung.com/article/2026111684191"
+          }
+        ]
+      },
+      {
+        "company": "교직원공제회",
+        "note": "린드먼아시아 3000억원 규모 PEF에 500억원을 출자했으나 해당 펀드가 청산 수순에 들어갔다.",
+        "links": [
+          {
+            "title": "린드먼아시아, 3000억 간판 PEF 청산…성적표는 '글쎄'",
+            "url": "https://www.newstopkorea.com/news/articleView.html?idxno=49077"
+          }
+        ]
+      },
+      {
+        "company": "한국자원순환에너지공제조합",
+        "note": "직매립 금지 대응 폐자원 기술 협의회에서 민간 소각시설 활용 현황을 발표했다.",
+        "links": [
+          {
+            "title": "폐자원에너지기술협의회, 직매립 금지 대응·자원화 기술 논의",
+            "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=883796"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "예실차",
+    "explain": "예실차는 보험사가 계리가정으로 예상한 보험금·사업비와 실제 발생액의 차이입니다. 실제가 예상보다 많으면 손실이 나고, 이것이 반복되면 위험률 등 계리가정을 바꿔야 할 신호가 됩니다."
+  },
+  "kakao_lines": [
+    "손보: 보험손익 늘었지만 신계약 CSM 18% 감소",
+    "생보: 12곳 중 8곳 예실차 손실, 킥스 부담도",
+    "공제: 5대 공제회 대체투자 비중 61.5%"
+  ]
+}
