@@ -1,0 +1,375 @@
+{
+  "headline": "계리가정 낙관 논란 속, 3분기 실적은 투자손익이 갈랐다",
+  "issues": [
+    {
+      "title": "낙관적 계리가정 논란과 감독 강화",
+      "category": "제도·감독",
+      "summary": "실제 손해율은 100%를 웃도는데 미래 예상손해율은 89% 안팎(103~104%에서 1년 만에 88~89%)으로 낮게 잡았다는 지적이 나왔다. 보험사 36곳의 예상손해율은 실제보다 15.3%p 낮았다. 금융위는 보험업감독규정 개정안을 지난 4일 의결하고 9일 고시했다. 이에 따라 올해 결산분부터 계리가정보고서를 매년 금감원에 제출해야 한다. 금감원 보험 부원장보는 계리가정을 합리적이면서 보수적으로 운영해야 한다고 강조했다.",
+      "actuarial_view": "예상손해율을 낮게 두면 보험부채가 줄고 CSM이 커져 미래이익이 부풀려질 수 있다. 가정을 현실화하면 CSM이 줄고 연말 결산에서 보험손익과 K-ICS 가용자본이 함께 흔들릴 수 있다. 생보사 미래이익이 3조원 하향 조정됐다는 보도(신계약 CSM의 29%에 해당)도 이 방향과 맞닿아 있다.",
+      "takeaway": "우리 상품의 예상손해율과 최근 실제 손해율의 괴리를 가정별로 설명할 근거(경험통계 기간, 보수성 여유)를 갖추고 있는지 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "보험사 손해율 104%→89% 전망…낙관적 계리가정 논란",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110598"
+        },
+        {
+          "title": "\"103% 손해율이 1년 만에 88%로?\"…보험사 낙관 가정에 \"IFRS17 취지 어긋...",
+          "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=67940"
+        },
+        {
+          "title": "104% 보험사 손해율이 1년 만에 89%로 뚝?…\"계리가정 개선해야\"(종합) - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOOFMzX0QzOHNFd21QNXBZVHdLZnB2T3pTZnM2U2pnZno2OWFldVRuNlVPRGJTVzN4c3VjUGNyREdkTUJBTEdBNW1tU3VidDdNWEwtb3diMU12b0hHbmxjTtIBYEFVX3lxTFBOOFMzX0QzOHNFd21QNXBZVHdLZnB2T3pTZnM2U2pnZno2OWFldVRuNlVPRGJTVzN4c3VjUGNyREdkTUJBTEdBNW1tU3VidDdNWEwtb3diMU12b0hHbmxjTg?oc=5"
+        },
+        {
+          "title": "보험사 36곳, 예상손해율 실제보다 15.3%p 낮아…CSM 적정성 검증대",
+          "url": "https://sateconomy.co.kr/news/view/1065541009086121"
+        },
+        {
+          "title": "생보사 미래이익 3조 하향 조정…신계약으로 쌓은 몫의 29% 해당",
+          "url": "https://www.raonnews.com/news/article.html?no=62843"
+        },
+        {
+          "title": "\"기계적 중립만으론 부족\"⋯학계, 보험사 계리가정 개선 제언 - 서플 뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NYTR5ak5vSTI5YzB0dDlCODZlTnJqNmphU3FOWGpmNXBvd09RXzBNNW1mWjdGVG94WEMxalRwc3NnVmt6cGdZN0FKSDFGSDhBM3JwRnFoUmxIanVo?oc=5"
+        },
+        {
+          "title": "한승엽 이화여대 교수 \"IFRS17 실적 착시·낙관적 계리 가정 경계…보험...",
+          "url": "https://www.fntimes.com/html/view.php?ud=2026111717115620569efc5ce4ae_18"
+        },
+        {
+          "title": "보험사 자본관리 대전환…재보험 확대·회계 신뢰성 '두 축'(종합)",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110599"
+        }
+      ]
+    },
+    {
+      "title": "3분기 실적, 보험손익 개선 vs 투자손익 부진",
+      "category": "실적·재무",
+      "summary": "주요 9개 보험사의 3분기 누적 순익은 8조121억원으로 전년 수준이었다. 보험손익이 좋아져도 투자손익에서 희비가 갈렸다. 대형 손보 5곳의 보험손익은 24.7% 늘었지만 신계약 CSM은 줄었다. DB손보는 보험손익이 45% 늘었으나 증가분의 74%가 손실부담계약 개선에서 나왔다. 생보 5곳은 CSM이 늘었지만 3곳이 적자였다.",
+      "actuarial_view": "손실부담계약 비용 감소나 환입은 일회성 성격이 있어, 신계약 CSM 유입이 줄면 보험손익의 지속 가능성이 낮아질 수 있다. 연말 해지율·손해율 가정을 바꾸면 CSM 조정 폭이 달라질 수 있다.",
+      "takeaway": "보험손익 증가분 중 CSM 상각, 예실차, 손실부담계약 환입이 각각 얼마인지 나눠 봐야 이익의 질을 판단할 수 있지 않을까.",
+      "links": [
+        {
+          "title": "보험사 3분기 실적 온도차⋯투자 성적표가 갈랐다",
+          "url": "https://www.etoday.co.kr/news/view/2647977"
+        },
+        {
+          "title": "“본업서 벌고 투자서 잃고”…보험사 순익 ‘희비’ - 주간한국",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1IRjZrc2lidjUxVS1LYjhxWTd2Tk5wV1FKM1NpRThTWWdnM3pzUE5qdWo5ZXVfekRzaFJHZlNXZnZUNHpZRTQ3RVlWOThhUlB1YTQ0bzFIYlM1d0FqYVk5WFZJdFVIOEdaSE9xWE5WNG1nQld10gF0QVVfeXFMTUhGNmtzaWJ2NTFVLUtiOHFZN3ZOTnBXUUozU2lFOFNZZ2czenNQTmp1ajlldV96RHNoUkdmU1dmdlQ0ellFNDdFWVY5OGFSUHVhNDRvMUhiUzV3QWphWTlYVkl0VUg4R1pIT3FYTlY0bWdCV3U?oc=5"
+        },
+        {
+          "title": "보험사 3분기 실적 희비 가른 투자손익… 내년엔 자본 활용 능력이 관건",
+          "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=362655"
+        },
+        {
+          "title": "주요 손보사 3분기 보험손익 24.7%↑…신계약 CSM은 주춤",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110594"
+        },
+        {
+          "title": "손보사 보험손익 25% 늘었지만…신계약 미래 이익은 21% 줄었다 - 더퍼블릭",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAwYlBYaGR6N0JUX2psMXVoaVd3Y3RsT3U4MUhpaDM5S2Q3dkEyb3dRUUdxSzFKOXd0bDJoVU1rZWMyb3hMMy1jQmFHWUNHQUhBeFpLNEFqZjl5aEN5MEREaW11RnFaQWY1dGpxeTdwTdIBb0FVX3lxTFAwYlBYaGR6N0JUX2psMXVoaVd3Y3RsT3U4MUhpaDM5S2Q3dkEyb3dRUUdxSzFKOXd0bDJoVU1rZWMyb3hMMy1jQmFHWUNHQUhBeFpLNEFqZjl5aEN5MEREaW11RnFaQWY1dGpxeTdwTQ?oc=5"
+        },
+        {
+          "title": "DB손보, 보험손익 45% 늘었지만…증가분 74%는 손실부담계약 개선",
+          "url": "https://www.s-journal.co.kr/news/articleView.html?idxno=45392"
+        },
+        {
+          "title": "대형 손보사, 투자 부진에 3분기 순이익 '뒷걸음'",
+          "url": "https://daily.hankooki.com/news/articleView.html?idxno=1426052"
+        },
+        {
+          "title": "생보 5곳 CSM 늘었지만 3곳 적자…투자손익에 실적 희비",
+          "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=903343"
+        },
+        {
+          "title": "[N2 포커스] 삼성생명만 버텼다…증시·환율 충격에 갈린 생보 빅3 성적",
+          "url": "https://www.news2day.co.kr/article/20261117500290"
+        },
+        {
+          "title": "9대 보험사 고금리·주가하락 직격탄… 투자손익 급감하고 3곳은 ‘적자...",
+          "url": "https://www.munhwa.com/article/11632207?ref=naver"
+        }
+      ]
+    },
+    {
+      "title": "KDB생명 7번째 매각 무산",
+      "category": "실적·재무",
+      "summary": "산업은행이 한국투자금융지주와 한 KDB생명 매각 협상이 18일 결렬됐다. 핵심 쟁점은 인수가격보다 인수 이후 필요한 자본확충(약 1조원 규모로 거론) 비용의 부담 주체였다. KDB생명의 K-ICS 비율은 올해 6월 말 경과조치 적용 후 182.40%, 적용 전 78.66%다. 3분기 누적 순손실은 711억원으로 적자가 커졌다.",
+      "actuarial_view": "경과조치 전후 K-ICS 격차가 크고 내년 도입 예정인 기본자본 킥스까지 부담이어서, 경과조치 종료 이후 요구자본과 자본의 질이 인수 조건을 좌우할 수 있다. CSM이 늘어도 투자손실이 이를 상쇄하는 구조라 보험계약 가치가 자본으로 인정되는 속도에 한계가 있을 수 있다.",
+      "takeaway": "경과조치에 기댄 건전성은 제도 전환 시 어떤 모습이 되는지, 우리 회사에 대입하면 무엇일까.",
+      "links": [
+        {
+          "title": "KDB생명 7번째 매각도 무산…산은, 출구전략 원점",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110604"
+        },
+        {
+          "title": "한국산업은행, 한국투자금융지주와 KDB생명 매각협상 종료",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93907"
+        },
+        {
+          "title": "KDB생명 매각 또 결렬…'1조 자본확충' 누가 부담하나 '쟁점'(종합)",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110607"
+        },
+        {
+          "title": "한국금융지주, KDB생명 우선협상대상자 지위 잃어",
+          "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38540"
+        },
+        {
+          "title": "KDB생명 새 주인 찾기 또 실패…자본건전성 부담에 매각 '원점'",
+          "url": "https://www.news1.kr/finance/insurance-card/6357831"
+        },
+        {
+          "title": "KDB생명 7번째 매각 실패…CSM 42% 늘어도 적자 '정상화 험로'",
+          "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=903452"
+        },
+        {
+          "title": "산업은행, 한투금융에 KDB생명 매각 불발…석 달 협상 끝에 결렬",
+          "url": "http://www.popcornnews.net/news/articleView.html?idxno=140472"
+        },
+        {
+          "title": "[삐딱경제] 매각 또 물거품...'적자경영' KDB생명 살아날 수 있나",
+          "url": "http://www.nongaek.com/news/articleView.html?idxno=97513"
+        },
+        {
+          "title": "김병철 KDB생명 대표, 보험손익 개선에도 투자손실 부담…누적 적자 확...",
+          "url": "https://www.fntimes.com/html/view.php?ud=202611161807131450ed56b8e1f8_18"
+        }
+      ]
+    },
+    {
+      "title": "AI·사이버 위험관리와 보험 연계 모색",
+      "category": "신위험",
+      "summary": "화재보험협회는 AI가 화재 징후를 미리 잡아내는 기술을 보험료 할인으로 연결하는 연구를 진행 중이다. 연구는 초기 단계이며 2027년 5월까지 논문을 마무리해 금융당국과 협의할 계획이다. 금융당국은 AI 해킹 등 사이버 침해가 잇따르자 대형 보험사 보안점검을 연 2회로 늘리고 주변 전산망까지 확대한다. 한화손보는 보안등급 평가기업 시큐리티스코어카드와 사이버보험 위험평가 협력 MOU를 맺었다.",
+      "actuarial_view": "AI 감지 기술의 화재 예방 효과는 경험통계가 거의 없어 할인율을 산출할 근거가 부족하며, 기술 도입 여부와 실제 손실이 어긋나는 기초위험(basis risk)도 남는다. 사이버보험도 외부 보안등급이 실제 손실과 얼마나 상관되는지 검증이 필요하고, 사고가 동시에 터지는 누적위험은 재보험 설계에 영향을 줄 수 있다.",
+      "takeaway": "기술 도입에 따른 할인을 어느 시점에 어떤 데이터로 검증해 요율에 반영할지 기준은 무엇일까.",
+      "links": [
+        {
+          "title": "[뉴스락 현장] 불 나기 전 AI가 징후 잡는다… 보험료 할인까지 엿보는...",
+          "url": "http://www.newslock.co.kr/news/articleView.html?idxno=140304"
+        },
+        {
+          "title": "AI로 화재 예방…보험료 할인까지 연결",
+          "url": "http://www.newstomato.com/ReadNews.aspx?no=1320723&inflow=N"
+        },
+        {
+          "title": "[르포]보조배터리 불 붙자 연기감지기 '삐~'…화재감지기보다 빨랐다",
+          "url": "https://news.bizwatch.co.kr/article/finance/2026/11/17/0028"
+        },
+        {
+          "title": "대형 보험사 보안점검 연 2회로…주변 전산망까지 확대",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110606"
+        },
+        {
+          "title": "한화손보, 글로벌 사이버 보안 기업 ‘시큐리티스코어카드’와 사이버보험 위험관리 강화",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93910"
+        }
+      ]
+    },
+    {
+      "title": "저축성·종신 판매 확대와 확정금리 부담",
+      "category": "상품·시장",
+      "summary": "금리 환경 덕에 저축성보험이 부활해 삼성생명 등 생보 빅3의 1~9월 저축성보험 판매가 늘었다. 한편 과거 판 4%대 확정금리 계약이 생보업계의 부담으로 지적된다. 내년 3월에는 방카 규제 특례도 만료된다. 단기납 종신보험은 불완전판매와 재무구조 악화 우려로 제동이 걸렸다.",
+      "actuarial_view": "저축성 비중이 커지면 CSM 대비 금리 민감도가 높아져 자산·부채 듀레이션 불일치가 K-ICS 금리위험에 영향을 줄 수 있다. 단기납 종신은 해지율 가정에 따라 CSM과 해약환급금 부담이 크게 달라질 수 있다.",
+      "takeaway": "고금리 시기 판매한 계약의 보증이율과 현재 운용수익률의 역마진 여부는 어느 시점에 드러날까.",
+      "links": [
+        {
+          "title": "고금리 타고 돌아온 저축성보험...삼성생명, 3분기까지 7조 쓸어담아, 전...",
+          "url": "https://www.goodkyung.com/news/articleView.html?idxno=293566"
+        },
+        {
+          "title": "생보업계 발목 잡는 과거의 약속…4%대 확정금리 부메랑",
+          "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1731995"
+        },
+        {
+          "title": "죽을 때만 챙겨주던 종신보험이 달라졌다",
+          "url": "https://www.naeil.com/news/read/609076?ref=naver"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "DB손해보험",
+        "note": "3분기 보험손익이 45% 늘었으나 증가분의 74%는 손실부담계약 개선이며, 신계약 CSM은 4828억원으로 33.3% 줄었다.",
+        "links": [
+          {
+            "title": "DB손보, 보험손익 45% 늘었지만…증가분 74%는 손실부담계약 개선",
+            "url": "https://www.s-journal.co.kr/news/articleView.html?idxno=45392"
+          },
+          {
+            "title": "\"DB손해보험, 포테그라 인수에도 K-ICS 212%…주주환원 관건\"<NH투자證>",
+            "url": "https://www.news2day.co.kr/article/20261118500024"
+          }
+        ]
+      },
+      {
+        "company": "현대해상",
+        "note": "증권가에서 투자손실과 배당결손 확대를 이유로 목표가를 줄줄이 낮췄다.",
+        "links": [
+          {
+            "title": "증권가, 현대해상에 \"투자손실·배당결손 확대\"…목표가 줄하향",
+            "url": "http://www.press9.kr/news/articleView.html?idxno=86546"
+          }
+        ]
+      },
+      {
+        "company": "카카오페이손해보험",
+        "note": "올해 상반기 말 K-ICS 비율이 215.93%로 지난해 말 352.72%보다 136.79%p 하락했다.",
+        "links": [
+          {
+            "title": "'1000만 고객' 장영근 카카오페이손보 대표, 수익성 개선 속도낸다",
+            "url": "https://www.insightkorea.co.kr/news/articleView.html?idxno=259107"
+          },
+          {
+            "title": "[진단_보험업계 ⑩카카오페이손해보험] 보험수익 급증에도 보험·투자 ...",
+            "url": "https://www.newsworker.co.kr/news/articleView.html?idxno=514542"
+          }
+        ]
+      },
+      {
+        "company": "한화손해보험",
+        "note": "시큐리티스코어카드와 사이버보험 위험평가·사고예방 협력 MOU를 맺었다.",
+        "links": [
+          {
+            "title": "한화손보, 글로벌 사이버 보안 기업 ‘시큐리티스코어카드’와 사이버보험 위험관리 강화",
+            "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93910"
+          }
+        ]
+      },
+      {
+        "company": "삼성화재",
+        "note": "KB증권이 보험금 예실차 개선과 보유 CSM 증가를 근거로 2027년 지배주주순이익을 3조101억원으로 전망했다.",
+        "links": [
+          {
+            "title": "[추천주 직썰] 본업 날개 단 보험주…실적·배당·성장 '삼박자' 갖췄다",
+            "url": "https://www.ziksir.com/news/articleView.html?idxno=153612"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "KDB생명",
+        "note": "한국투자금융지주와의 매각 협상이 결렬돼 7번째 매각이 무산됐고, 3분기 누적 순손실은 711억원이다.",
+        "links": [
+          {
+            "title": "한국산업은행, 한국투자금융지주와 KDB생명 매각협상 종료",
+            "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93907"
+          },
+          {
+            "title": "KDB생명 매각 또 결렬…'1조 자본확충' 누가 부담하나 '쟁점'(종합)",
+            "url": "http://www.fins.co.kr/news/articleView.html?idxno=110607"
+          },
+          {
+            "title": "[삐딱경제] 매각 또 물거품...'적자경영' KDB생명 살아날 수 있나",
+            "url": "http://www.nongaek.com/news/articleView.html?idxno=97513"
+          }
+        ]
+      },
+      {
+        "company": "삼성생명",
+        "note": "3분기 K-ICS 209%, 기본자본 K-ICS 176%로 지난해 수준을 유지했고, 15억 달러 신종자본증권 발행으로 K-ICS 약 4~5%p 개선을 예상한다.",
+        "links": [
+          {
+            "title": "삼성생명, 생보업계 실적 한파 속 성장세 지속… 내년 밸류업 구체화 주...",
+            "url": "https://www.ekoreanews.co.kr/news/articleView.html?idxno=89263"
+          },
+          {
+            "title": "삼성생명 생보업계서 '수익성 초격차' 입증, 홍원학 연임해 해외 M&A 힘...",
+            "url": "https://www.businesspost.co.kr/BP?command=article_view&num=452171"
+          }
+        ]
+      },
+      {
+        "company": "교보생명",
+        "note": "3분기 연결 순이익이 62억원으로 전년보다 98.0% 줄었으나 흑자는 유지했다.",
+        "links": [
+          {
+            "title": "교보생명 3분기 순익 98.0%↓…자회사 편입 평가익·법인세 수익에 흑자",
+            "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=505099"
+          }
+        ]
+      },
+      {
+        "company": "미래에셋생명",
+        "note": "3분기 누적 보험손익에 계리가정 가이드라인 적용 제도변경 영향 707억원이 반영됐고, 해킹 사고도 부담으로 거론된다.",
+        "links": [
+          {
+            "title": "순익 급감에 해킹 사고… 김재식 미래에셋생명 부회장 '골머리'",
+            "url": "https://www.sisaweek.com/news/articleView.html?idxno=239032"
+          }
+        ]
+      },
+      {
+        "company": "한화생명",
+        "note": "3분기 신계약 CSM이 40% 늘어 빅3 가운데 신계약 성장세가 두드러졌다.",
+        "links": [
+          {
+            "title": "[N2 포커스] 삼성생명만 버텼다…증시·환율 충격에 갈린 생보 빅3 성적",
+            "url": "https://www.news2day.co.kr/article/20261117500290"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "한국교직원공제회",
+        "note": "공제회와 6개 출자회사가 경주에서 CPO·CISO 워크숍을 열고 정보보호·사이버 위협 대응을 논의했다.",
+        "links": [
+          {
+            "title": "한국교직원공제회, 6개 출자회사와 CPO·CISO 워크숍 개최",
+            "url": "https://www.gukjenews.com/news/articleView.html?idxno=3755181"
+          },
+          {
+            "title": "한국교직원공제회, 출자회사와 정보보호 협력 강화",
+            "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4119153"
+          },
+          {
+            "title": "한국교직원공제회, 출자회사와 개인정보·정보보호 역량 강화 워크숍 개...",
+            "url": "http://www.beyondpost.co.kr/view.php?ud=20261117154205269746a9e4dd7f_30"
+          }
+        ]
+      },
+      {
+        "company": "군인공제회",
+        "note": "올해 두 번째 금리 인상을 소개하며 내년 5.1% 금리와 7000억원 환원 계획을 밝혔다.",
+        "links": [
+          {
+            "title": "“올해 두 번째 금리 인상…평생 자산 파트너”",
+            "url": "https://kookbang.dema.mil.kr/newsWeb/20261118/1/ATCE_CTGR_0010010000/view.do"
+          }
+        ]
+      },
+      {
+        "company": "새마을금고",
+        "note": "기부 캠페인, 영양꾸러미 전달, 보험료 지원사업 등 사회공헌 활동을 추진한다.",
+        "links": [
+          {
+            "title": "새마을금고, 나눔 봉사활동·기부 캠페인·영양꾸러미 전달·보험료 지...",
+            "url": "http://www.wsobi.com/news/articleView.html?idxno=321970"
+          }
+        ]
+      },
+      {
+        "company": "건설공제조합",
+        "note": "경남 현동 아파트 공사와 관련해 보증사로서 대지종합건설과 423억원에 잔여 공사 계약을 맺은 사실을 두고 공방이 이어지고 있다.",
+        "links": [
+          {
+            "title": "경남 건설업계, 건설회관·현동 아파트 공사 놓고 공방",
+            "url": "https://www.idomin.com/news/articleView.html?idxno=2019848"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "예실차",
+    "explain": "예실차는 계리가정으로 예상한 보험금·사업비와 실제 발생액의 차이로, 실제가 예상보다 적으면 이익, 많으면 손실로 잡힙니다. 예상손해율을 낙관적으로 두면 이후 예실차가 손실로 나타날 수 있어, 최근 감독당국이 계리가정의 합리성과 보수성을 따지는 배경이 됩니다."
+  },
+  "kakao_lines": [
+    "손보: 예상손해율 실제보다 15.3%p 낮아 검증 강화",
+    "생보: KDB생명 7번째 매각 무산, 자본확충이 관건",
+    "공제: 교직원공제회, 출자사와 정보보호 워크숍 개최"
+  ]
+}
