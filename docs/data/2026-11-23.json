@@ -1,0 +1,438 @@
+{
+  "headline": "계리가정 보수화와 할인율·기본자본 규제가 보험사 이익과 자본을 함께 압박한다",
+  "issues": [
+    {
+      "title": "보유 CSM 증가 속 신계약 CSM 둔화",
+      "category": "실적·재무",
+      "summary": "생보 빅5의 보유 CSM이 올해 3조5000억원 늘었고 5대 손보사도 보유 CSM을 늘렸다. 반면 신계약에서 확보하는 기대이익은 손보사 대부분에서 줄었다. 삼성생명은 건강보험을 더 팔고도 CSM이 감소했고, 계리가정 조정으로 신계약 CSM 배수도 하락했다. 미래에셋생명은 계리 가이드라인 반영으로 보험손익이 707억원 줄었고, 이를 제외하면 보험이익은 1252억원이었다.",
+      "actuarial_view": "신계약 CSM 배수(신계약 CSM÷월납환산 초회보험료)가 떨어졌다는 것은 같은 보험료에서 기대이익이 줄었다는 뜻이다. 해지율 상향 같은 가정 보수화와 판매수수료 규제가 신계약 마진에 반영되고 있다고 해석할 수 있다. 해지율 가정을 올리면 CSM뿐 아니라 보험이익도 줄 수 있다는 지적이 나온다.",
+      "takeaway": "판매량이 늘어도 CSM이 줄어드는 구간에서는 신계약 CSM 배수의 하락이 해지율·사업비·손해율 중 어느 가정에서 비롯됐는지 분해해 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "삼성생명, 종신·연금 키웠지만…건강보험 더 팔고도 CSM 감소",
+          "url": "https://dealsite.co.kr/articles/173182"
+        },
+        {
+          "title": "5대 손보사, 보유 CSM 늘었지만 신계약 기대이익은 온도차",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93942"
+        },
+        {
+          "title": "미래에셋생명, 건강상해보험 신계약 CSM 2년 새 2.3배",
+          "url": "https://dealsite.co.kr/articles/173283"
+        },
+        {
+          "title": "보험이익으로 3분기 버틴 보험사···4분기엔 '암울'",
+          "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=425203"
+        },
+        {
+          "title": "미래 이익 쌓는 생보 '빅5'…CSM 올해 3조5000억원 '쑥'",
+          "url": "http://www.newsdream.kr/news/articleView.html?idxno=122659"
+        },
+        {
+          "title": "보험사 이익, 회복 전망에도 신계약 CSM는 감소",
+          "url": "http://www.bizwnews.com/news/articleView.html?idxno=152597"
+        },
+        {
+          "title": "미래에셋생명, 최대 실적 1년 만에 분기 적자…김재식·황문규 각자대표...",
+          "url": "https://ilyo.co.kr/?ac=article_view&entry_id=513739"
+        }
+      ]
+    },
+    {
+      "title": "예상 보험금 vs 실제 지급 격차 축소",
+      "category": "손해율·보험금",
+      "summary": "NH투자증권 보고서는 보수적 계리가정 반영으로 예상보험금이 늘고, 관리급여 도입으로 실제 보험금 지급 부담은 줄어 둘의 격차가 좁혀지고 있다고 분석했다. iM증권은 4분기 간편보험 계리가정 강화 등 제도 불확실성이 있다고 짚었다. 금융당국은 미래 손해율의 자의적 조정을 차단하고 신규 담보에는 보수적 기준을 적용하는 방향으로 보험부채 관리체계를 정비하는 모습이다.",
+      "actuarial_view": "가정(예상) 손해율은 보수적으로 올라가고 실제 손해율은 관리급여 효과로 내려가면, 예실차 이익은 줄거나 방향이 바뀔 수 있다. 관리급여 효과가 일회성인지 추세인지에 따라 다음 가정 갱신 때 손해율 가정이 하향될 여지도 달라진다.",
+      "takeaway": "관리급여로 인한 지급 감소를 손해율 가정에 얼마나 반영할지, 감독 방향이 보수 기조일 때 그 판단 근거를 어떻게 설명할지 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "“투자가 아쉽네”…3분기 웃지 못한 손보사들",
+          "url": "https://www.kukinews.com/article/view/kuk202611200135"
+        },
+        {
+          "title": "DB손해보험, 제도 개선에 이익 체력 강화…주주환원도 기대",
+          "url": "https://www.consumuch.com/news/articleView.html?idxno=79625"
+        },
+        {
+          "title": "[업앤다운]보험주 하락…서울보증보험↓·롯데손해보험↑",
+          "url": "https://www.nspna.com/news/?mode=view&newsid=837173"
+        }
+      ]
+    },
+    {
+      "title": "할인율 강화·기본자본 규제, 금리 방향 전환",
+      "category": "제도·감독",
+      "summary": "금감원은 내년부터 보험부채 할인율 산출 시 유동성프리미엄을 축소하고 신용위험 반영을 확대하기로 했다. 이 경우 보험부채 평가액이 늘어 가용자본이 줄고, 내년 기본자본 K-ICS 비율 규제까지 도입되어 부담이 커진다. 보험연구원은 금리 상승기에 손보사가 기본자본 중심으로 관리하고 손익 관리와 증자를 활용해야 한다고 제언했다. 미래이익(CSM)과 미적립 부족액은 초과분에 포함되어 기본자본으로 인정되지 않는다.",
+      "actuarial_view": "유동성프리미엄이 줄면 할인율이 낮아져 부채(책임준비금) 평가액이 커지고 지급여력금액이 줄 수 있다. 금리가 오르면 그동안의 부채 감소 효과가 약해져 자산 가치 하락이 더 크게 반영될 수 있다. CSM이 기본자본에 포함되지 않으므로 CSM이 큰 회사도 기본자본비율은 이익잉여금 같은 실질 자본에 좌우된다.",
+      "takeaway": "금리가 오를 때와 내릴 때 모두에서 기본자본이 얼마나 줄어드는지 상품별 듀레이션갭과 함께 점검해 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "보험부채 할인율 산출기준 강화 건전성 관리부담 가중",
+          "url": "https://www.insweek.co.kr/news/articleView.html?idxno=73050"
+        },
+        {
+          "title": "보험硏 \"손보사, 기본자본 중심 관리 필요…손익 관리·증자 활용\" - 연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1ZTm1oSEx6Zmc3eHR4T1N4MXVzVDlxOUhhZWRjc29IcDF1SFNZZ2JxaHcxRzhDVmFkQVdrTjJsTEdZXzZ4c21TeENsbEgxYmNZM3JWZGp0c0R1dl96UWdEUEZuX01mSTF6Q0ZRQmVPSVBEY2hy0gF0QVVfeXFMTVlObWhITHpmZzd4dHhPU3gxdXNUOXE5SGFlZGNzb0hwMXVIU1lnYnFodzFHOENWYWRBV2tOMmxMR1lfNnhzbVN4Q2xsSDFiY1kzclZkanRzRHV2X3pRZ0RQRm5fTWZJMXpDRlFCZU9JUERjaHI?oc=5"
+        },
+        {
+          "title": "보험硏 \"손보사, 금리 상승기 맞아 양방향 리스크 관리·실질 자본확충...",
+          "url": "https://www.joongangenews.com/news/articleView.html?idxno=565495"
+        },
+        {
+          "title": "금리 오르면 손보사 자본 '뚝'⋯1년 새 건전성 위험 뒤집혔다",
+          "url": "http://www.inews24.com/view/2028792"
+        }
+      ]
+    },
+    {
+      "title": "경기 기후보험, 직접지원 전환 논란",
+      "category": "신위험",
+      "summary": "경기도는 보험사의 이익을 줄이고 재정 효율을 높이겠다며 '경기 기후보험'을 민간보험 방식에서 직접지원 체계로 전환하는 방안을 추진하고 있다. 그러나 보험료와 보험금 지급액의 차이를 보험사의 실제 이익으로 볼 수 있는지 불분명하고, 기존 보장이 축소될 가능성도 있어 실효성 논란이 예상된다.",
+      "actuarial_view": "기후·자연재해는 경험통계가 짧고 연도별 변동이 커서, 한두 해의 보험료와 보험금 차이를 이익으로 단정하기 어렵다. 재해가 적은 해의 차익은 재해가 큰 해의 손실을 메우는 변동성 완충분일 수 있고, 위험을 재보험으로 이전한 부분은 보험사에 남는 이익과 다를 수 있다.",
+      "takeaway": "기후 위험을 공공이 직접 부담하면 변동성 완충 장치가 사라지는데, 재정이 이 꼬리위험을 어떻게 감당할지는 무엇일까.",
+      "links": [
+        {
+          "title": "경기도, 기후보험 대신 ‘기후보장’ 직접지원 추진… 실효성 논란",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93874"
+        }
+      ]
+    },
+    {
+      "title": "GA 수수료·판매전문회사 개편 논의",
+      "category": "제도·감독",
+      "summary": "금융위는 보험개혁회의 2차 회의에서 GA의 과도한 설계사 스카우트 경쟁을 막기 위해 정착지원금 운영 모범규준을 제정하겠다고 밝혔다. 올해 7월부터 GA 소속 설계사에게도 첫해 수수료를 월납보험료의 12배 이내로 제한하는 '1200% 룰'이 적용됐고, 보험판매전문회사 도입도 가시화되고 있다. '판매한 곳이 책임져야 한다'는 입장과 'GA 제도 개선이 먼저'라는 입장이 맞서고 있다.",
+      "actuarial_view": "초년도 수수료가 제한되고 분급 구조로 바뀌면 신계약비 부담이 이연되어 신계약 CSM과 해약환급금 구조에 영향을 줄 수 있다. 승환·단기 해지가 줄면 해지율 가정이 낮아질 여지도 생기지만, 실제 효과는 유지율 실적으로 확인해야 한다.",
+      "takeaway": "수수료 체계가 바뀐 뒤 13회차·25회차 유지율이 실제로 개선되는지가 해지율 가정 조정의 선행지표가 될 수 있는지 볼 필요가 있다.",
+      "links": [
+        {
+          "title": "‘1200%룰ʼ부터 수수료 분급제까지… 과잉 모집·승환계약 정조준 [금융...",
+          "url": "https://www.fntimes.com/html/view.php?ud=202611202313185038dd55077bc2_18"
+        },
+        {
+          "title": "보험판매전문회사 도입 가시화…생·손보업계 판매 독립성 시험대",
+          "url": "https://www.bloter.net/news/articleView.html?idxno=679242"
+        },
+        {
+          "title": "“보험 판매한 곳이 끝까지 책임” vs “GA제도 개선이 먼저”…보험판...",
+          "url": "https://biz.heraldcorp.com/article/10944626?ref=naver"
+        },
+        {
+          "title": "보험사 이익, 회복 전망에도 신계약 CSM는 감소",
+          "url": "http://www.bizwnews.com/news/articleView.html?idxno=152597"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "삼성화재",
+        "note": "캐노피우스 인수로 글로벌 보험시장 공략을 본격화하며 성장축을 다변화하고 있다.",
+        "links": [
+          {
+            "title": "삼성화재, 글로벌 보험시장 공략 본격화…캐노피우스 인수로 성장축 다...",
+            "url": "https://www.koreaittimes.com/news/articleView.html?idxno=159365"
+          }
+        ]
+      },
+      {
+        "company": "현대해상",
+        "note": "3분기 누적 순익이 23% 증가했고, CSM 잔액은 3분기 말 10조1692억원으로 지난해 말보다 14.2% 늘었다.",
+        "links": [
+          {
+            "title": "현대해상, 3분기 누적 순익 23% 증가로 '선방'…투자 수익성 개선은 '과...",
+            "url": "https://news.tf.co.kr/read/economy/2392042.htm"
+          }
+        ]
+      },
+      {
+        "company": "DB손해보험",
+        "note": "4분기 간편보험 계리가정 강화 등 제도 불확실성에도 K-ICS·CSM 등 핵심 지표가 경쟁력 있다는 평가가 나왔다.",
+        "links": [
+          {
+            "title": "DB손해보험, 제도 개선에 이익 체력 강화…주주환원도 기대",
+            "url": "https://www.consumuch.com/news/articleView.html?idxno=79625"
+          }
+        ]
+      },
+      {
+        "company": "코리안리",
+        "note": "상반기 투자 호조 뒤 3분기에 수익 구조가 급변했고, 신계약 유입에도 기존 계약 관련 조정이 더 크게 발생했다.",
+        "links": [
+          {
+            "title": "상반기 투자 호조 뒤 3분기 급변…코리안리 수익 구조 살펴보니",
+            "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=506636"
+          }
+        ]
+      },
+      {
+        "company": "KB손해보험",
+        "note": "3분기 누적 보험손익은 개선됐으나 투자손익 감소로 순이익이 줄었고, 대표 연임 여부가 주목받고 있다.",
+        "links": [
+          {
+            "title": "'사상 최대 실적' KB금융 물려받은 이재근, 계열사 10곳 대표 결정한다...",
+            "url": "https://www.huffingtonpost.kr/article/262261"
+          },
+          {
+            "title": "KB손보 구본욱·KB라이프 정문철, 이재근 회장 첫 인사서 연임 ‘촉각’",
+            "url": "https://www.globalepic.co.kr/view.php?ud=2026112308161475907cc35ccc5c_29"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "삼성생명",
+        "note": "건강보험을 더 팔고도 계리가정 조정 영향으로 CSM이 감소했고 신계약 CSM 배수도 하락했다.",
+        "links": [
+          {
+            "title": "삼성생명, 종신·연금 키웠지만…건강보험 더 팔고도 CSM 감소",
+            "url": "https://dealsite.co.kr/articles/173182"
+          }
+        ]
+      },
+      {
+        "company": "미래에셋생명",
+        "note": "건강상해보험 신계약 CSM이 2년 새 2.3배로 늘어 보유 CSM이 2.3조원을 넘었지만, 계리 가이드라인 반영으로 보험손익이 707억원 줄었다.",
+        "links": [
+          {
+            "title": "미래에셋생명, 건강상해보험 신계약 CSM 2년 새 2.3배",
+            "url": "https://dealsite.co.kr/articles/173283"
+          },
+          {
+            "title": "미래에셋생명, 건강상해보험 '훈풍'…CSM 2.3조 원 돌파",
+            "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=206276"
+          },
+          {
+            "title": "미래에셋생명, 최대 실적 1년 만에 분기 적자…김재식·황문규 각자대표...",
+            "url": "https://ilyo.co.kr/?ac=article_view&entry_id=513739"
+          }
+        ]
+      },
+      {
+        "company": "KDB생명",
+        "note": "한국투자금융지주와의 인수 협상이 지난 18일 결렬됐고, 6월 말 경과조치 적용 전 K-ICS는 78.7%에 머문다.",
+        "links": [
+          {
+            "title": "[IB탈탈털기] KDB생명 7번째 매각 불발…4000억대 몸값보다 컸던 '1조 증...",
+            "url": "https://www.newsworker.co.kr/news/articleView.html?idxno=515517"
+          },
+          {
+            "title": "한투, KDB생명 접고 카디프생명으로 '선회'···보험업 진출 재도전",
+            "url": "http://www.finomy.com/news/articleView.html?idxno=267464"
+          },
+          {
+            "title": "한투저축은행, 적자에도 1800억 중간배당...'자본 재분배' 가속",
+            "url": "https://www.topdaily.kr/articles/113044"
+          }
+        ]
+      },
+      {
+        "company": "iM라이프",
+        "note": "CSM을 키운 대표의 연임 여부가 주목받는 가운데, 내년 규제 도입에 맞춰 기본자본 킥스비율을 끌어올려야 한다.",
+        "links": [
+          {
+            "title": "CSM 키운 박경원의 2년…iM라이프, 연임으로 힘 실을까",
+            "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=370204"
+          }
+        ]
+      },
+      {
+        "company": "동양생명",
+        "note": "4대암 치료 중에도 가입할 수 있는 암보험을 출시했다.",
+        "links": [
+          {
+            "title": "동양생명, 4대암 치료 중 가입 암보험 출시…상품 경쟁 가열",
+            "url": "https://www.news2day.co.kr/article/20261123500119"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "한국사회복지공제회",
+        "note": "발달장애인 돌봄 종사자 종합공제를 개선해 대체인력 사고도 보장하며, 연 공제료는 종사자 1명당 15만원이다.",
+        "links": [
+          {
+            "title": "복지부, 발달장애인 돌봄 종사자 사고 보장 확대",
+            "url": "https://www.newscj.com/news/articleView.html?idxno=3451076"
+          },
+          {
+            "title": "발달장애인 돌봄 종사자 보호 강화… 대체인력 사고에도 보장 지원",
+            "url": "https://www.viva100.com/article/20261122500297"
+          },
+          {
+            "title": "복지부, 발달장애인 지원 종합공제 개선…대체 돌봄인력도 보장",
+            "url": "https://www.yna.co.kr/view/AKR20261120167000530?input=1195m"
+          },
+          {
+            "title": "발달장애인 돌봄 '대체인력 사고'도 보장…종합공제 확대",
+            "url": "https://www.newsis.com/view/NISX20261122_0003878028"
+          },
+          {
+            "title": "발달장애인 돌봄 현장 안전망 넓힌다… 대체 인력도 보상",
+            "url": "https://health.chosun.com/site/data/html_dir/2026/11/23/2026112301285.html"
+          },
+          {
+            "title": "대체인력 사고도 보장, 발달장애인지원사업 종합공제 확대",
+            "url": "https://www.ablenews.co.kr/news/articleView.html?idxno=234791"
+          }
+        ]
+      },
+      {
+        "company": "군인공제회",
+        "note": "자회사 대한토지신탁의 부실사업장 정리가 난항이어서 미분양이 2176가구에 달하고 대손충당금이 반년 새 1000억원 가까이 늘었다.",
+        "links": [
+          {
+            "title": "[단독] 3700억 지원에도 '부실 털기' 난항…대한토지신탁 미분양 2176가구",
+            "url": "https://www.hankyung.com/article/202611209838r"
+          }
+        ]
+      },
+      {
+        "company": "교직원공제회",
+        "note": "총 4000억원 규모로 최대 4개 운용사를 선정해 국내 헤지펀드 투자에 나섰다.",
+        "links": [
+          {
+            "title": "헤지펀드 투자 잰걸음…큰손들 앞다퉈 출자",
+            "url": "https://news.mtn.co.kr/article/2026112010125955859"
+          },
+          {
+            "title": "'주가하락·금리상승' 투자기관들, 헤지펀드 잇단 출자",
+            "url": "https://www.etoday.co.kr/news/view/2651242"
+          }
+        ]
+      },
+      {
+        "company": "대한지방행정공제회",
+        "note": "국내외 운용사 최대 5곳을 선정해 헤지펀드에 출자하는 등 수익원 다변화에 나섰다.",
+        "links": [
+          {
+            "title": "'주가하락·금리상승' 투자기관들, 헤지펀드 잇단 출자",
+            "url": "https://www.etoday.co.kr/news/view/2651242"
+          }
+        ]
+      },
+      {
+        "company": "지방재정공제회",
+        "note": "태안 해광호 실종사고 수습을 위해 구성된 지원센터에 참여 기관으로 참여했다.",
+        "links": [
+          {
+            "title": "태안군, 침몰어선 해광호 실종자 가족 지원·사고 수습에 행정력 집중",
+            "url": "https://www.ggilbo.com/news/articleView.html?idxno=1194823"
+          },
+          {
+            "title": "태안군, 해광호 실종사고 수습 위해 24시간 대응체계 가동",
+            "url": "https://www.m-i.kr/news/articleView.html?idxno=2022030"
+          },
+          {
+            "title": "태안군, 해광호 실종자 가족 1대1 지원…사고 수습 총력",
+            "url": "https://www.news1.kr/local/daejeon-chungnam/6362334"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "유동성프리미엄",
+    "explain": "보험부채를 할인할 때 무위험금리에 더해 주는 가산분으로, 보험부채가 쉽게 해지·유출되지 않는 장기 성격이라는 점을 반영한 것이다. 이 가산분을 줄이면 할인율이 낮아져 보험부채 평가액이 커지고 가용자본이 줄어드므로, 내년 할인율 산출기준 강화의 핵심 변수다."
+  },
+  "kakao_lines": [
+    "손보: 예상보험금↑·실제지급↓, 격차 좁혀지는 중",
+    "생보: 보유 CSM은 늘고 신계약 CSM은 둔화",
+    "공제: 발달장애인 돌봄 종사자 공제, 대체인력 보장"
+  ],
+  "kiri_items": [
+    {
+      "publication": "KIRI 리포트",
+      "issue": "제658호",
+      "category": "글로벌 이슈",
+      "title": "영국의 캡티브보험 규제 체계 도입 추진 동향",
+      "author": "김혜란",
+      "date": "2026-11-23",
+      "url": "https://www.kiri.or.kr/publication/list.do?catId=30&docId=905839",
+      "pdf_url": "https://www.kiri.or.kr/report/downloadFile.do?docId=905839",
+      "summary": "영국 PRA와 FCA는 2026년 7월 캡티브보험 별도 규제 체계를 제안하고 10월 14일까지 의견을 수렴했으며, 2027년 중반 시행을 목표로 한다. 초기에는 단일 모기업 캡티브를 대상으로 하며 일부 비계열회사 위험 인수를 허용하고, 생명보험(임직원 복리후생 제외)·연금·투자위험 인수는 금지한다. 위험이 낮다고 보아 자본요건·보고의무를 완화하고 인가절차를 간소화한다.",
+      "actuarial_view": "캡티브는 모기업과 이해관계가 일치하고 정보 비대칭이 작아 비례적 자본규제를 적용하겠다는 논리다. 재산·배상책임·사이버 등 시장에서 보험료가 높거나 보장받기 어려운 위험을 직접 인수할 수 있어, 기업 위험이 기존 보험시장에서 캡티브로 이동하면 해당 위험의 요율 산정 기반이 달라질 수 있다.",
+      "takeaway": "자본요건을 낮춘 캡티브가 사이버처럼 경험통계가 부족한 위험을 인수할 때 재보험으로 이를 어떻게 감당하게 할지는 무엇일까."
+    },
+    {
+      "publication": "KIRI 리포트",
+      "issue": "제658호",
+      "category": "글로벌 이슈",
+      "title": "EU 디지털 운영 복원력법(DORA) 시행과 보험산업 영향",
+      "author": "김유미",
+      "date": "2026-11-23",
+      "url": "https://www.kiri.or.kr/publication/list.do?catId=30&docId=905389",
+      "pdf_url": "https://www.kiri.or.kr/report/downloadFile.do?docId=905389",
+      "summary": "EU DORA는 금융권 ICT 리스크 관리와 중대 사고 보고, 제3자 ICT 리스크 관리를 의무화한 규제로 2025년 1월부터 시행되어 올해 2년 차를 맞았다. 보험금 청구 지연이나 계리 시스템 장애도 중대 ICT 사고가 될 수 있으며, 분류 후 4시간 내 최초 통보 등 단계적 보고를 해야 한다. 보험회사들은 비용과 실무 부담 완화를 요구하고 있고, 유럽집행위는 사고 보고를 일원화하는 단일 EU 허브 신설 등 보완을 추진한다.",
+      "actuarial_view": "계리·언더라이팅 핵심 시스템 장애가 규제상 보고 대상이 될 수 있어, 계리 모델·산출 시스템도 운영 복원력 관점에서 관리해야 한다. 외부 IT 공급자 의존도에 대한 통제와 출구 전략이 요구되므로 모델·데이터 파이프라인을 외부에 맡긴 경우 점검 범위가 넓어질 수 있다.",
+      "takeaway": "우리 회사의 요율·준비금 산출 시스템이 멈출 때 영향을 받는 업무와 복구 시나리오를 계리 부서가 직접 설명할 수 있는지 볼 필요가 있다."
+    },
+    {
+      "publication": "KIRI 리포트",
+      "issue": "제658호",
+      "category": "금융시장 주요지표",
+      "title": "금융시장 주요지표",
+      "author": "홍예림",
+      "date": "2026-11-23",
+      "url": "https://www.kiri.or.kr/publication/list.do?catId=31&docId=904939",
+      "pdf_url": "https://www.kiri.or.kr/report/downloadFile.do?docId=904939",
+      "summary": "",
+      "actuarial_view": "",
+      "takeaway": ""
+    },
+    {
+      "publication": "KIRI 리포트",
+      "issue": "제658호",
+      "category": "이슈분석",
+      "title": "미국 재보험 적격관할권 평가 재개의 의미와 과제",
+      "author": "문제영",
+      "date": "2026-11-23",
+      "url": "https://www.kiri.or.kr/publication/list.do?catId=29&docId=906739",
+      "pdf_url": "https://www.kiri.or.kr/report/downloadFile.do?docId=906739",
+      "summary": "올해 9월 4일 NAIC가 한국의 적격관할권 평가를 재개하고 60일간 의견 수렴을 공고했다. 이는 데이터 국내보관·국외이전 제약 문제로 보류됐던 절차가 개인정보 동의 절차 정비(표준 정보제공 동의서 개정, 올해 1월)로 진전된 것이다. 미지정국은 수재물건 책임준비금의 100%를 담보로 거치해야 하고, 적격관할권은 회사별 인증으로 0~100% 차등, 상호인정관할권은 면제(0%)다.",
+      "actuarial_view": "담보 요건이 완화되면 재보험사의 자금 운용 유연성이 높아져 미국 수재 확대 여력이 생길 수 있다. 다만 수재가 늘면 지역·종목 집중과 책임준비금 평가 부담이 함께 커질 수 있어 위험관리를 병행해야 한다.",
+      "takeaway": "적격관할권을 받은 뒤 회사별 인증 등급에 따라 담보비율이 달라질 때, 재보험 출재·수재 전략과 자본 계획을 어떻게 연결할지 볼 필요가 있다."
+    },
+    {
+      "publication": "KIRI 리포트",
+      "issue": "제658호",
+      "category": "이슈분석",
+      "title": "자동차보험 수리비·수리이력 분석과 시사점",
+      "author": "전용식",
+      "date": "2026-11-23",
+      "url": "https://www.kiri.or.kr/publication/list.do?catId=29&docId=906289",
+      "pdf_url": "https://www.kiri.or.kr/report/downloadFile.do?docId=906289",
+      "summary": "정비업체 수리이력 자료(차체수리 3,189건)를 분석한 결과 차체손상 수리 1건당 실질 수리비는 보험수리가 비보험수리보다 14% 높았고, 사고심도가 낮은 범퍼·펜더 수리는 22% 높았다. 이 차이는 수리 부위 수의 차이에서 주로 나타났고, 사고심도·주행거리·입고 연도에 수리 부위 수까지 통제하면 통계적으로 유의하지 않았다. 1년 내 반복 수리 557건을 검토했으나 수리이력만으로 보험사기 여부를 판단하기에는 한계가 있었다.",
+      "actuarial_view": "자동차 대물 손해액의 건당 보험금(심도)이 보험처리 시 수리 범위 확대로 높아질 수 있다는 근거여서, 경미손상 수리기준의 실효성이 손해율 개선 수단이 될 수 있다. 수리이력만으로는 사기 판별이 어려워 보상기록과 연계한 데이터 구조가 있어야 이상징후 모형의 정확도를 높일 수 있다.",
+      "takeaway": "보험수리 시 수리 부위 확대가 과잉수리인지 정당한 수리인지를 구분할 수 있는 변수를 우리 보상 데이터에서 확보하고 있는지 볼 필요가 있다."
+    },
+    {
+      "publication": "KIRI 리포트",
+      "issue": "제658호",
+      "category": "포커스",
+      "title": "금리 상승기 금리위험과 자본의 질: ② 손해보험회사",
+      "author": "조영현",
+      "date": "2026-11-23",
+      "url": "https://www.kiri.or.kr/publication/list.do?catId=28&docId=907639",
+      "pdf_url": "https://www.kiri.or.kr/report/downloadFile.do?docId=907639",
+      "summary": "금리가 오른 지난 1년간 손보사 9개 사의 금리위험은 하락 위험에서 상승 위험으로 전환됐다. 금리 100bp 상승 시 지급여력금액 변동이 2025년 6월 말 1.5조원 증가에서 2026년 6월 말 2.7조원 감소로 반전됐고, 지급여력비율 하락 폭(4.6%p)은 생보(25.9%p)보다 작았다. 기본자본비율은 지난 1년간 상승했으나 금리가 추가로 오르면 하락하며, 기본자본비율 50% 기준은 2027년부터 시행된다.",
+      "actuarial_view": "금리 수준에 따라 듀레이션갭의 민감도 방향이 바뀌므로 한도를 한 방향 시나리오로만 관리하면 위험을 놓칠 수 있다. 미래이익과 미적립 부족액은 초과분에 들어가 기본자본으로 인정되지 않아, CSM이 쌓여도 기본자본비율은 이익잉여금 같은 실질 자본 확충에 더 좌우된다.",
+      "takeaway": "금리 상승과 하락 양방향에서 기본자본 감소액을 기준으로 위험한도를 설정하려면 상품별 부채 듀레이션 가정을 어떻게 갱신해야 할까."
+    },
+    {
+      "publication": "KIRI 리포트",
+      "issue": "제658호",
+      "category": "포커스",
+      "title": "주요국의 자산집약형 재보험 규제 동향과 시사점",
+      "author": "최우석,김가현",
+      "date": "2026-11-23",
+      "url": "https://www.kiri.or.kr/publication/list.do?catId=28&docId=907189",
+      "pdf_url": "https://www.kiri.or.kr/report/downloadFile.do?docId=907189",
+      "summary": "자산집약형 재보험(AIR)은 보험위험뿐 아니라 상당한 투자위험을 재보험사에 이전하는 방식으로, 미국·영국·일본 등에서 자본 부담 완화와 수익률 제고 수요로 빠르게 늘고 있다. 미국은 AG55로 준비금과 지원 자산의 적정성을 현금흐름분석으로 검증하고, 영국은 AIR 재보험자산에 회사채 직접투자와 같은 수준의 신용위험 차감 기준을 제시했으며, 네덜란드는 사전 동의제를 도입했다. 국내는 AIR 관련 위험을 거래 초기부터 종합 평가하는 체계를 마련하고 거래 확대에 따라 규제를 단계적으로 조정할 필요가 있다고 제언한다.",
+      "actuarial_view": "AIR은 재보험사의 자산운용 성과가 핵심이어서 가격 산정에 사망·장수 가정뿐 아니라 신용·환수 위험과 거래상대방 집중위험이 들어간다. 미국 첫 보고에서 상호인정관할권 밖 재보험사와의 거래에서 신용·환수위험이 크게 나타나 요구자본 반영이 검토되고 있어, 출재 시 자본 절감 효과가 위험 반영 후에도 유지되는지 따져 봐야 한다.",
+      "takeaway": "이차역마진 부담을 줄이려고 AIR을 쓴다면 환수 시점의 자본·유동성 영향까지 포함한 순효과를 어떻게 측정할지 볼 필요가 있다."
+    }
+  ]
+}
