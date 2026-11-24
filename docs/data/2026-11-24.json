@@ -1,0 +1,353 @@
+{
+  "headline": "내년 1월 기본자본 규제 앞두고 자본관리 부담, 설계사 진입 규제도 강화",
+  "issues": [
+    {
+      "title": "기본자본 규제 임박, 자본의 질 관리",
+      "category": "실적·재무",
+      "summary": "내년 1월부터 보험사 건전성 규제의 기준이 '자본의 양'에서 '자본의 질'(기본자본)로 바뀌어, 기준에 못 미치는 보험사들이 대응에 나서고 있다. 단기간에 CSM을 크게 늘리기 어려워 유상증자 등이 남은 선택지로 거론된다. 삼성화재는 캐노피우스 인수로 지급여력비율이 약 25%p 낮아질 것으로 추산했고(9월 말 280.8%에서 255.8%), 현대해상은 CSM 10조 돌파와 지급여력 210%를 알렸다. 해외채권을 늘려온 보험사들은 글로벌 금리 상승으로 자본관리 부담이 커졌다는 보도도 나왔다.",
+      "actuarial_view": "후순위채 같은 보완자본으로는 규제 비율을 채우기 어려워져, 이익잉여금이나 CSM 같은 질 높은 자본의 축적 속도가 중요해진다. 해외채권 비중이 큰 회사는 금리 상승 시 평가손익과 요구자본(금리위험)이 함께 움직여 비율이 흔들릴 수 있다.",
+      "takeaway": "신상품 설계에서 CSM 기여도뿐 아니라 요구자본(보험위험·금리위험)을 얼마나 소모하는지도 함께 봐야 하지 않을까.",
+      "links": [
+        {
+          "title": "기본자본 50% 규제 코앞…'커트라인 미달' 보험사들 발 동동",
+          "url": "https://www.goodkyung.com/news/articleView.html?idxno=293764"
+        },
+        {
+          "title": "보험업계 성장 둔화…해외에서 기회 찾는다",
+          "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=316071"
+        },
+        {
+          "title": "현대해상, CSM 10조 돌파·지급여력 210%…수익·자본 경쟁력 동반 강화 - 업코리아",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9mSXN4WFFUTDVjWVVCNVdRQURDRGRJTG42clc2T0FGcnB0MEZNZWVwMWFxdmhSM0d6QVVwWkZJcktyVFFoa0c0ZXd2YUxhOHh6dWc1WEJsZXFIZkg3WHpyV2lxZHFsbkJLUGJKQlFR?oc=5"
+        },
+        {
+          "title": "해외채권 늘려온 보험사들…글로벌 금리 상승에 자본관리 비상 - 머니투데이 - 머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9vOHNFNUcwR0Q4cVFLeVREXzMyRDZkaENzS3U4d2pRNjFKN0ZWUUpDQzlycXlWTm1WLU14SnJURHpSSnh0SXZIeFoyeWlWNml6VXZwbi13RlQtdjlPaEE1MUFYLWtpOWFPT2VwdTZqdUbSAXBBVV95cUxPbzhzRTVHMEdEOHFRS3lURF8zMkQ2ZGhDc0t1OHdqUTYxSjdGVlFKQ0M5cnF5Vk5tVi1NeEpyVER6Ukp4dEl2SHhaMnlpVjZpelV2cG4td0ZULXY5T2hBNTFBWC1raTlhT09lcHU2anVG?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "쌓이는 CSM, 묶이는 해약준비금",
+      "category": "실적·재무",
+      "summary": "손보사에 CSM이 61조원 쌓였지만 새 계약의 수익성은 주춤하다는 분석이 나왔다. 손보 5사가 해약준비금으로 배당하지 못하고 묶어둔 돈은 24조원으로 보도됐고, 생보사 해약환급금은 1년 새 13조원 늘었다. 교보생명은 CSM이 9월 말 7조587억원으로 IFRS17 도입 후 처음 7조원을 넘었지만 3분기에 2716억원의 투자손실을 냈다.",
+      "actuarial_view": "CSM은 미실현 이익이라 배당 가능 이익으로 곧바로 이어지지 않으며, 해약준비금이 이익잉여금을 묶는다. 해지율·납입기간 가정이 어긋나면 CSM 상각과 해약환급금 부담이 함께 달라질 수 있다.",
+      "takeaway": "CSM 잔액 대신 신계약 CSM과 예실차 안정성을 중심으로 상품 수익성을 점검해볼 필요가 있다.",
+      "links": [
+        {
+          "title": "손보사 미래이익의 역설…61조 쌓였지만 새 계약 수익성은 ‘주춤’ - 투데이신문",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5vWjloRE92SWdKcVNuSmI1a3Y5cVNTVUhaRk9oSTJJZjRWVXZRb0ZpTlVJekQxWVpqZWk0N2tsMzhYR2hYZUJyVU5CU1VzQzVGanlYd3c4Z2tTUHBGSmlxLXUzTmNhdXpfb3NRejJSTdIBb0FVX3lxTE5vWjloRE92SWdKcVNuSmI1a3Y5cVNTVUhaRk9oSTJJZjRWVXZRb0ZpTlVJekQxWVpqZWk0N2tsMzhYR2hYZUJyVU5CU1VzQzVGanlYd3c4Z2tTUHBGSmlxLXUzTmNhdXpfb3NRejJSTQ?oc=5"
+        },
+        {
+          "title": "메리츠도 두 손든 해약준비금… 손보 5사, 배당 못하고 묶인 돈 24조",
+          "url": "https://it.chosun.com/news/articleView.html?idxno=3000000001632"
+        },
+        {
+          "title": "생보사 해약환급금 1년 새 13조 증가…내년 저축보험 만기 부담",
+          "url": "https://www.raonnews.com/news/article.html?no=63009"
+        },
+        {
+          "title": "교보생명, 3분기 2716억 투자손실…신창재 의장 IPO 추진 '흔들'",
+          "url": "https://realty.chosun.com/site/data/html_dir/2026/11/23/2026112302453.html"
+        },
+        {
+          "title": "실제와 동떨어진 보험손익 추정…공시도 '유명무실'",
+          "url": "https://www.kbanker.co.kr/news/articleView.html?idxno=226505"
+        }
+      ]
+    },
+    {
+      "title": "보험사기 전력자 모집 차단·GA 과징금",
+      "category": "제도·감독",
+      "summary": "금융위원회는 24일 보험업법 시행령과 금융기관 검사 및 제재에 관한 규정 개정안을 25일부터 내년 1월 4일까지 입법예고한다고 밝혔다. 보험사기 등 금융관계법률 위반자의 보험모집 진입을 제한하는 결격사유를 확대하고, GA·보험중개사는 업무정지 대신 과징금을 부과할 수 있게 한다. 과징금 기준에는 '가담 설계사 150명·15%'가 거론되며, 시행은 개정 보험업법이 시행되는 내년 3월 9일에 맞춘다.",
+      "actuarial_view": "보험사기에 연루된 모집인을 걸러내면 부정 청구와 불완전판매로 인한 손해율 상승 요인을 입구에서 줄일 수 있다. 다만 효과는 청구 단계가 아니라 모집 단계에서 나타나므로 손해율 가정에 반영하기까지 시차가 있을 수 있다.",
+      "takeaway": "모집 품질 개선이 장기적으로 초기 해지율과 사기 관련 보험금 가정에 어떤 흔적을 남길지 지켜볼 필요가 있다.",
+      "links": [
+        {
+          "title": "보험업법 시행령·금융기관 검사 및 제재에 관한 규정 개정안 입법예고",
+          "url": "https://www.intn.co.kr/news/articleView.html?idxno=3000470"
+        },
+        {
+          "title": "보험사기 전력자 영업 퇴출…GA 과징금 물린다",
+          "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=316070"
+        },
+        {
+          "title": "보험사기 전력자 걸러내고 선량한 설계사는 보호…보험업법 시행령 개정",
+          "url": "https://www.tfmedia.co.kr/news/article.html?no=209175"
+        },
+        {
+          "title": "보험사기 전력자 보험모집시장 진입 차단···GA 과징금 부과기준 마련",
+          "url": "https://www.insweek.co.kr/news/articleView.html?idxno=73113"
+        },
+        {
+          "title": "보험사기 전력자 보험시장 진입 제한… GA 제재 방식도 개편",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=94006"
+        },
+        {
+          "title": "보험사기 전력자 보험모집시장 진입 막는다…GA 업무정지 대체 과징금 ...",
+          "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=68343"
+        },
+        {
+          "title": "보험사기 전력자, 설계사 못 한다…GA 업무정지 대신 과징금 도입",
+          "url": "https://biz.heraldcorp.com/article/10947556?ref=naver"
+        },
+        {
+          "title": "GA 업무정지 대신 과징금 가능…기준은 '가담 설계사 150명·15%'",
+          "url": "https://www.raonnews.com/news/article.html?no=63024"
+        },
+        {
+          "title": "GA 업무정지 땐 설계사 '올스톱'…내년 3월부터 과징금으로 대신",
+          "url": "https://www.news1.kr/finance/general-finance/6363792"
+        },
+        {
+          "title": "보험사기범 설계사 금지·GA엔 과징금…내년 3월부터 시행",
+          "url": "http://www.newskr.kr/news/articleView.html?idxno=108264"
+        }
+      ]
+    },
+    {
+      "title": "판매전문회사 신중론과 GA 수수료 부담",
+      "category": "상품·시장",
+      "summary": "20일 국회 입법토론회 이후 보험판매전문회사 도입에는 권한 확대보다 책임·내부통제 강화가 먼저라는 신중론이 이어진다. 금융위 보험과장은 별도 채널 없이도 현행 법제 안에서 내부통제와 배상책임을 강화할 수 있다고 밝혔다. GA 수수료는 10조원 시대로 보도됐고, 수수료율 상승이 보험료 인상으로 이어질 수 있다는 우려가 나온다. 한편 1200%룰이 GA로 확대된 뒤 주요 GA 10개사의 정착지원금은 한 분기 만에 약 70% 줄었다.",
+      "actuarial_view": "판매 수수료 협상력이 GA로 넘어가면 신계약비(사업비) 가정이 높아져 보험료 산출 시 예정사업비율이 올라갈 수 있다. 반대로 1200%룰은 초기 사업비 이연과 해지 시 손실 구조에 영향을 줄 수 있다.",
+      "takeaway": "수수료 분급제 이후 채널별 실제 사업비와 13·25회차 유지율이 예정사업비·해지율 가정과 얼마나 어긋나는지 확인해볼 필요가 있다.",
+      "links": [
+        {
+          "title": "보험판매전문회사 소비자 편익 있나…당국도 신중론",
+          "url": "https://www.kbanker.co.kr/news/articleView.html?idxno=226503"
+        },
+        {
+          "title": "\"브레이크 없는 질주 막아야\"…국회서 나온 '보험판매전문사' 신중론",
+          "url": "https://www.bloter.net/news/articleView.html?idxno=679529"
+        },
+        {
+          "title": "GA 수수료 10조원 시대…판전사 협상권에 원수사 사업비 셈법 복잡",
+          "url": "https://www.topdaily.kr/articles/113049"
+        },
+        {
+          "title": "판전사, '배상재원' 관건...1차 배상에도 원수사 책임 남는다",
+          "url": "https://www.topdaily.kr/articles/113045"
+        },
+        {
+          "title": "'1200%룰 효과' 3달 만에 정착지원금 지급액 70% 급감",
+          "url": "https://www.etnews.com/20261123000394"
+        },
+        {
+          "title": "원수사, GA 역할 확대에 셈법 복잡…수수료·업무 분담 쟁점",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110672"
+        },
+        {
+          "title": "[분석] 가속페달 밟는 GA, 브레이크는? 당국도 신중론",
+          "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=302800"
+        }
+      ]
+    },
+    {
+      "title": "GLP-1 비만약 해외 처방, 보험 사각지대",
+      "category": "신위험",
+      "summary": "해외에서 처방받은 마운자로 등 GLP-1 계열 비만치료제는 보험 고지와 검증이 어려운 '깜깜이' 영역이라는 지적이 나왔다. 보험연구원은 지난해 보고서에서 이 약의 확산이 보험상품의 가격, 언더라이팅, 지급심사 전 과정에 영향을 줄 수 있다고 봤다. 장기적으로는 심혈관 위험과 사망·질병 부담을 낮출 수 있지만 단기적으로는 외래 약제 쪽 부담이 있다는 진단이다.",
+      "actuarial_view": "복용 이력이 청약 시 확인되지 않으면 체중·대사 지표 기반 언더라이팅이 왜곡되고, 사망·질병 위험률이 개선되더라도 그 효과를 현재의 경험통계로 분리해 측정하기 어렵다. 복용 중단 시 체중 재증가 같은 사후 행태 데이터도 부족해, 복용자와 비복용자의 위험률 차이를 가격에 반영하기 어렵다.",
+      "takeaway": "복용 여부를 고지 항목에 넣을지, 넣는다면 위험률 개선 가정을 언제부터 반영할지는 무엇일까.",
+      "links": [
+        {
+          "title": "해외 처방 마운자로, 보험 고지·검증 ‘깜깜이’",
+          "url": "https://biz.heraldcorp.com/article/10947256?ref=naver"
+        },
+        {
+          "title": "‘스시자로’ 확산하는데…해외 처방 이력은 보험 사각지대",
+          "url": "https://biz.heraldcorp.com/article/10947453?ref=naver"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "삼성화재",
+        "note": "캐노피우스 인수로 지급여력비율이 약 25%p 낮아질 것으로 추산했고, 한국릴리와 알츠하이머병 치료·관리 업무협약도 맺었다.",
+        "links": [
+          {
+            "title": "보험업계 성장 둔화…해외에서 기회 찾는다",
+            "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=316071"
+          },
+          {
+            "title": "[포토뉴스] 삼성화재, 한국릴리와 '알츠하이머병 치료·관리' 업무협약",
+            "url": "https://www.cnbnews.com/news/articleView.html?idxno=1025010"
+          }
+        ]
+      },
+      {
+        "company": "현대해상",
+        "note": "CSM 10조원 돌파와 지급여력 210%를 기록했다고 알렸다.",
+        "links": [
+          {
+            "title": "현대해상, CSM 10조 돌파·지급여력 210%…수익·자본 경쟁력 동반 강화 - 업코리아",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9mSXN4WFFUTDVjWVVCNVdRQURDRGRJTG42clc2T0FGcnB0MEZNZWVwMWFxdmhSM0d6QVVwWkZJcktyVFFoa0c0ZXd2YUxhOHh6dWc1WEJsZXFIZkg3WHpyV2lxZHFsbkJLUGJKQlFR?oc=5"
+          }
+        ]
+      },
+      {
+        "company": "메리츠화재",
+        "note": "이익잉여금 대비 해약준비금 비중이 커져 손보 5사의 배당 불가 자금 24조원 보도에 거론됐다.",
+        "links": [
+          {
+            "title": "메리츠도 두 손든 해약준비금… 손보 5사, 배당 못하고 묶인 돈 24조",
+            "url": "https://it.chosun.com/news/articleView.html?idxno=3000000001632"
+          }
+        ]
+      },
+      {
+        "company": "DB손보",
+        "note": "내실 위주 성장으로 보험손익 정상에 올랐으나 성장 딜레마를 겪는다는 분석이 나왔다.",
+        "links": [
+          {
+            "title": "[핀포인트] [DB손보] 내실 다지기 나섰더니 성장 딜레마",
+            "url": "https://news.dealsitetv.com/articles/178958"
+          }
+        ]
+      },
+      {
+        "company": "KB손해보험",
+        "note": "장기손해보험 보험료가 26% 성장하며 2위에 올랐고, 이주배경 산모 지원 사업도 추진한다.",
+        "links": [
+          {
+            "title": "손보업계 장기보험 49.8조원 돌파…KB손보 26% 급성장하며 2위 올라",
+            "url": "https://www.ceoscoredaily.com/page/view/2026112015135883017"
+          },
+          {
+            "title": "[금융家 브리핑] 기업 금융지원·고객 편의 개선···금융권, 상생 행보...",
+            "url": "https://www.smartbizn.com/news/articleView.html?idxno=160418"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "교보생명",
+        "note": "CSM이 7조587억원으로 처음 7조원을 넘었지만 3분기 2716억원의 투자손실이 났다.",
+        "links": [
+          {
+            "title": "교보생명, 3분기 2716억 투자손실…신창재 의장 IPO 추진 '흔들'",
+            "url": "https://realty.chosun.com/site/data/html_dir/2026/11/23/2026112302453.html"
+          }
+        ]
+      },
+      {
+        "company": "한화생명",
+        "note": "IRP 가입자가 상품을 팔지 않고 연금을 받을 수 있는 분할연금 '라이프핏 연금'을 출시했다.",
+        "links": [
+          {
+            "title": "한화생명, IRP 상품 매도 없이 연금 받는 ‘분할연금’ 선보여",
+            "url": "https://www.insnews.co.kr/news/articleView.html?idxno=94003"
+          },
+          {
+            "title": "한화생명, IRP 상품 매도 없이 연금 수령…‘라이프핏 연금’ 출시",
+            "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065591637026733"
+          }
+        ]
+      },
+      {
+        "company": "동양생명",
+        "note": "건강·종신보험 중심으로 포트폴리오를 재편하며 CSM 확대를 노린다.",
+        "links": [
+          {
+            "title": "동양생명, 건강·종신보험 중심 포트폴리오 재편 '가속화'...연이은 신상...",
+            "url": "https://www.greened.kr/news/articleView.html?idxno=355371"
+          }
+        ]
+      },
+      {
+        "company": "신한라이프",
+        "note": "보험 2년 유지율이 73.5%에서 78.5%로 개선됐다.",
+        "links": [
+          {
+            "title": "신한라이프, 보험 2년 유지율 73.5%→78.5%…장기고객 관리 성과",
+            "url": "http://www.press9.kr/news/articleView.html?idxno=86918"
+          }
+        ]
+      },
+      {
+        "company": "ABL생명",
+        "note": "보험업계 최초로 자금세탁방지 업무 유공 대통령 표창을 받았다.",
+        "links": [
+          {
+            "title": "ABL생명, 보험업계 최초 자금세탁방지 ‘대통령 표창’ 수상",
+            "url": "https://www.insnews.co.kr/news/articleView.html?idxno=94001"
+          },
+          {
+            "title": "ABL생명, ‘제20회 자금세탁방지의 날’ 대통령 표창 수상",
+            "url": "https://www.insweek.co.kr/news/articleView.html?idxno=73109"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "새마을금고",
+        "note": "감독권을 둘러싸고 행안부와 금융당국의 공동관리 강화 방안이 검토되고 있다.",
+        "links": [
+          {
+            "title": "새마을금고 감독권, 누구 손에…공동관리 강화 검토",
+            "url": "https://www.edaily.co.kr/News/Read?newsId=03011046645648672&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
+          }
+        ]
+      },
+      {
+        "company": "한국교직원공제회",
+        "note": "제24대 이사장 선임 절차에 들어가 낙하산 우려가 나오며, 유튜브 부문 대상도 수상했다.",
+        "links": [
+          {
+            "title": "차기 교공 이사장 인선에 쏠리는 눈…'낙하산' 우려도",
+            "url": "https://news.mtn.co.kr/article/2026112315224152432"
+          },
+          {
+            "title": "한국교직원공제회, '올해의 SNS' 유튜브 채널 대상 수상",
+            "url": "https://news.unn.net/news/articleView.html?idxno=601310"
+          }
+        ]
+      },
+      {
+        "company": "우체국보험",
+        "note": "지방정부와 협력해 청소년 꿈보험, 어깨동무보험, 배달 노동자용 나르미 안전보험 등 공익보험을 확대하고 있다.",
+        "links": [
+          {
+            "title": "좋은 복지도 닿지 않으면 무용지물... 우체국공익보험-지방정부 협력 모...",
+            "url": "http://www.jeollailbo.com/news/articleView.html?idxno=817686"
+          }
+        ]
+      },
+      {
+        "company": "수협",
+        "note": "해광호 실종자 가족 지원을 위한 태안군 대책 체계에 수협중앙회가 참여한다.",
+        "links": [
+          {
+            "title": "태안군, 해광호 수색 장기화 대응…가족 1대1 지원·피해자센터 준비",
+            "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=720886"
+          },
+          {
+            "title": "태안군, 해광호 실종자 가족 지원·사고 수습 총력…대책본부 24시간 운...",
+            "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7195219"
+          }
+        ]
+      },
+      {
+        "company": "군인공제회",
+        "note": "문학터널 공사에 총사업비 783억원 중 673억원을 투입한다.",
+        "links": [
+          {
+            "title": "[오늘의 인천소사] 문학터널 착공",
+            "url": "https://www.incheontoday.com/news/articleView.html?idxno=326793"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "기본자본",
+    "explain": "기본자본은 보험사 지급여력(K-ICS) 중 자본금과 이익잉여금처럼 영업을 계속하는 상태에서 손실을 흡수할 수 있는 질 높은 자본을 말합니다. 후순위채 등 보완자본과 구분되며, 내년 1월부터 규제 기준이 '자본의 양'에서 '질'로 옮겨간다고 보도됐습니다."
+  },
+  "kakao_lines": [
+    "손보: 삼성화재 인수 후 K-ICS 약 25%p 하락 추산",
+    "생보: 한화생명 IRP 매도 없이 받는 분할연금 출시",
+    "공제: 새마을금고 감독권, 공동관리 강화 검토"
+  ]
+}
