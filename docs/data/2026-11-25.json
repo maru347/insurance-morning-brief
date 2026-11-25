@@ -1,0 +1,349 @@
+{
+  "headline": "보험사 3분기 누적 순익 7.8%↓, 생보 부진·손보 선방 속 계리가정 부담 부각",
+  "issues": [
+    {
+      "title": "3분기 누적 순익 10.4조, 7.8% 감소",
+      "category": "실적·재무",
+      "summary": "금감원이 25일 발표한 1~9월 경영실적에 따르면 생보 22곳과 손보 30곳의 당기순이익은 10조4087억원으로 전년 동기보다 8823억원(7.8%) 줄었다. 수입보험료는 212조325억원으로 15.6% 늘었지만 순익은 감소했다. 생보는 3조8879억원으로 19.5% 감소하며 예실차 부담이 커졌고, 손보는 보험손익 개선으로 0.9% 증가했다.",
+      "actuarial_view": "보험료 외형이 커졌는데 생보 순익이 줄었다면 예실차(실제 보험금·사업비 대비 예상치)가 불리하게 벌어졌다는 뜻일 수 있다. 이 경우 위험률·사업비 가정을 재점검해야 하고, 향후 가정이 보수적으로 바뀌면 CSM 상각 이익에도 영향을 줄 수 있다.",
+      "takeaway": "생보 순익 감소 중 투자손익 요인과 예실차 요인이 각각 얼마인지 분리해서 봐야 우리 담보의 가정 문제인지 시장 문제인지 판단할 수 있지 않을까.",
+      "links": [
+        {
+          "title": "보험사 3분기 누적 순익 10.4조원…전년比 7.8%↓",
+          "url": "https://www.mediapen.com/news/view/1139934"
+        },
+        {
+          "title": "상반기 웃었던 보험사, 3분기 순익 반토막…생보업계는 적자 전환",
+          "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=147466"
+        },
+        {
+          "title": "3분기 누적 보험사 순익 10조4087억원… 전년比 7.8% 감소",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=94022"
+        },
+        {
+          "title": "보험사 3분기 누적 순익 10조 돌파…보험료 수입 15% 늘었는데 순익은 8...",
+          "url": "https://www.fnnews.com/news/202611250837195963"
+        },
+        {
+          "title": "보험사 3분기 누적 순익 10.4조 '7.8%↓'…예실차 커지고 투자손익은 줄...",
+          "url": "https://www.econovill.com/news/articleView.html?idxno=758416"
+        },
+        {
+          "title": "보험료 28조 더 걷었는데...생보사 3분기 375억 순손실",
+          "url": "https://www.asiaa.co.kr/news/articleView.html?idxno=272753"
+        },
+        {
+          "title": "연말 인사 앞둔 보험사 CEO들…엇갈린 실적에 연임 희비 갈리나",
+          "url": "https://www.peoplewatch.co.kr/article/view/ppw202611250001"
+        },
+        {
+          "title": "보험사 당기순익 8천800억원 줄었다…생보·손보 희비",
+          "url": "https://www.kbsm.net/news/view.php?idx=543212"
+        },
+        {
+          "title": "보험사 3Q 누적 순익 7.8%↓…투자손익 악화 직격탄",
+          "url": "http://www.press9.kr/news/articleView.html?idxno=86954"
+        },
+        {
+          "title": "보험사 순익 8800억원 감소… 생보사 예실차 부담 확대",
+          "url": "https://biz.chosun.com/stock/finance/2026/11/25/ZCZY5X4OWJGPZC3PIQRXJHOO34/?utm_source=naver&utm_medium=original&utm_campaign=biz"
+        },
+        {
+          "title": "보험사 3Q 누적 순이익 7.8% '뚝'…손보0.9%↑·생보 19.5%↓",
+          "url": "https://www.newsway.co.kr/news/view?ud=2026112414583774125"
+        },
+        {
+          "title": "보험사 3분기 누적 보험료 수입 28조 늘었는데…순익은 8823억원 감소",
+          "url": "https://www.newsinside.kr/news/articleView.html?idxno=5056095"
+        }
+      ]
+    },
+    {
+      "title": "계리감독 선진화, 보험손익·CSM에 반영",
+      "category": "제도·감독",
+      "summary": "올해부터 신규 담보의 손해율을 보수적으로 산정하도록 한 계리 가이드라인이 적용되면서 미래에셋생명은 보험손익에 707억원의 감소 요인이 생겼다. 금감원은 계리감독 선진화로 단기적으로 일부 보험손익이 악화됐지만 향후 손익변동성이 줄어들 것으로 기대한다고 밝혔다. 한화생명은 계리가정 선진화 방안에도 2027년 연 2조원 이상의 신계약 CSM을 목표로 하며, DB그룹 관련 보고서는 4분기 간편보험 계리가정 강화를 언급했다.",
+      "actuarial_view": "신규 담보의 손해율 가정이 높아지면 같은 보험료에서 신계약 CSM 배수가 낮아지고, 예상 보험금이 늘어나는 방향의 가정 조정은 보유 CSM을 줄일 수 있다. 간편보험처럼 가정 변경 여지가 큰 상품군은 손실부담계약 판정 여부도 함께 확인해야 한다.",
+      "takeaway": "보수적 가정이 초기 손익은 낮추되 이후 예실차 변동은 줄여주는 구조인지, 우리 상품의 신계약 CSM 배수 변화로 확인해볼 필요가 있다.",
+      "links": [
+        {
+          "title": "미래에셋생명, 건강보험 신계약 CSM 2년 만에 두배로 늘었다",
+          "url": "https://www.hankyung.com/article/202611259279i"
+        },
+        {
+          "title": "미래에셋생명, 보유 CSM 2조3000억원 돌파… 건강보험 신계약 확대",
+          "url": "https://biz.chosun.com/stock/finance/2026/11/25/3BOFYAGAYZE7JBSUYOMV7YHJRQ/?utm_source=naver&utm_medium=original&utm_campaign=biz"
+        },
+        {
+          "title": "[모닝 리포트] \"한화생명, 일회성 투자손실에도 보험 수익성 개선\"",
+          "url": "https://www.newspim.com/news/view/20261125000104"
+        },
+        {
+          "title": "손보업계, 3분기 누적 순익 6.1조원… 투자 부진에 미래 수익까지 '먹구...",
+          "url": "http://www.newslock.co.kr/news/articleView.html?idxno=140823"
+        },
+        {
+          "title": "[Q4 전망] \"보험·파운드리 웃고, 투자손익·PF 울고\" Q3 DB그룹…\"Q4: 배...",
+          "url": "https://www.economytalk.kr/news/articleView.html?idxno=425529"
+        },
+        {
+          "title": "보험사 당기순익 8천800억원 줄었다…생보·손보 희비",
+          "url": "https://www.kbsm.net/news/view.php?idx=543212"
+        },
+        {
+          "title": "보험업계, 보험료 28조 더 걷고도 수익성 뒷걸음질 왜?",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110697"
+        }
+      ]
+    },
+    {
+      "title": "기본자본 규제·듀레이션 갭 관리 강화",
+      "category": "제도·감독",
+      "summary": "금융위는 내년부터 기본자본을 요구자본의 50% 이상 확보하도록 하는 기본자본지급여력비율 규제를 도입한다고 밝혔고, 이에 KB손해보험은 최대 6000억원 후순위채 발행을 준비 중이다. 보험업감독규정 개정안은 2028년 1월부터 듀레이션 갭을 경영실태평가(RAAS)의 금리위험 계량평가에 반영하는 내용을 담았으며, 삼성생명은 3분기 듀레이션 갭을 줄였다. 한화생명의 3분기 말 K-ICS 비율은 171%로 3%p 올랐고 이달 7800억원 후순위채 발행 효과가 반영될 전망이다.",
+      "actuarial_view": "기본자본 기준이 생기면 후순위채 같은 보완자본보다 이익잉여금·CSM 등 기본자본의 질이 중요해져 상품 수익성과 자본 소모 관리가 더 긴밀히 연결된다. 듀레이션 갭이 평가 항목이 되면 장기 보장성 상품의 현금흐름 만기 구조도 상품 설계 단계부터 고려 대상이 될 수 있다.",
+      "takeaway": "신상품 설계 때 CSM 창출력뿐 아니라 요구자본 증가분과 부채 듀레이션에 미치는 영향까지 함께 점검해야 하지 않을까.",
+      "links": [
+        {
+          "title": "KB손해보험, 최대 6000억 후순위채 채비…\"자본건전성 확보\"",
+          "url": "https://www.bloter.net/news/articleView.html?idxno=679598"
+        },
+        {
+          "title": "삼성생명, 3분기 듀레이션 갭 축소... 자산·부채 간극 좁혔다",
+          "url": "http://www.lkp.news/news/articleView.html?idxno=86432"
+        },
+        {
+          "title": "하나증권 \"한화생명, 3분기 투자손실 일시적…목표가 하향\"",
+          "url": "https://www.jasm.co.kr/news/view/326398/?sc=Naver"
+        },
+        {
+          "title": "하나證 \"한화생명, 대규모 투자손실 일회성…목표가 17.8%↓\"",
+          "url": "https://www.ajunews.com/view/20261125074937882"
+        }
+      ]
+    },
+    {
+      "title": "10월 車보험 손해율 80.5%, 올해 최저",
+      "category": "손해율·보험금",
+      "summary": "삼성화재·현대해상·DB손보·KB손보 4개사의 10월 자동차보험 손해율은 80.5%로 2021년 집계 시작 후 10월 기준 가장 낮았다. 강수량과 사고 건수가 줄어 10월 누적 손해율도 83.9%로 지난해보다 개선됐으나 여전히 손익분기점을 웃돈다. 사고 한 건당 지급보험금은 늘고 있어 연말까지 하락세가 이어질지는 지켜봐야 한다.",
+      "actuarial_view": "손해율 개선이 사고 빈도(frequency) 감소에서 왔고 건당 보험금(severity)은 오르는 상황이라면, 날씨 요인이 큰 일시적 빈도 하락을 요율 인하 근거로 삼기 어렵다. 겨울철 사고 증가와 건당 보험금 추세를 함께 반영해야 요율 적정성을 판단할 수 있다.",
+      "takeaway": "빈도 하락과 건당 보험금 상승이 겹칠 때 손해율 개선을 구조적 변화로 볼지 일시적 변동으로 볼지 판단할 기준 지표는 무엇일까.",
+      "links": [
+        {
+          "title": "車보험 손해율 올 들어 최저치",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110703"
+        },
+        {
+          "title": "10월 車보험 누적 손해율 83.9%…강수량·사고 감소에 개선",
+          "url": "https://www.mydaily.co.kr/page/view/2026112513001437965"
+        }
+      ]
+    },
+    {
+      "title": "특고·플랫폼 노동자 1인당 100만원 지원",
+      "category": "신위험",
+      "summary": "정부가 특수고용·플랫폼 노동자 보호를 위한 예산을 신설해 1명당 100만원씩 지원하는 방안이 보도됐다. 기업에 고용된 노동자는 국민연금·건강보험·고용보험·산재보험 등을 기업이 일정 비율 또는 전부 부담하지만, 이들은 그 혜택에서 벗어난 노동 사각지대에 있다는 지적이 배경이다.",
+      "actuarial_view": "플랫폼 노동자는 소득과 노동시간 변동이 크고 업무 중 재해·질병 경험통계가 축적되지 않아 위험률과 보험료 산출이 어렵다. 가입 집단이 위험도 높은 사람에게 쏠리는 역선택도 우려되고, 사회보험과 민영보험 담보 범위 구분도 불명확해 기초위험을 가늠하기 어렵다.",
+      "takeaway": "정부 지원이 민영 보장성·공제 상품 수요를 늘린다면 이 집단의 업종별 사고·소득 데이터는 어디서 확보할 수 있을까.",
+      "links": [
+        {
+          "title": "'노동 사각지대' 줄인다… 특고·플랫폼 노동자 1명당 100만원씩 지원",
+          "url": "https://www.fnnews.com/news/202611241809039455"
+        },
+        {
+          "title": "[단독] 1명당 100만원씩, 플랫폼 노동자 보호 예산 신설",
+          "url": "https://www.fnnews.com/news/202611241328192999"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "삼성화재",
+        "note": "자체 건강DB를 분석한 결과 녹내장 실손보험금 지급 고객의 31.6%가 40대 이하로 나타났다고 25일 밝혔다.",
+        "links": [
+          {
+            "title": "[금융권 이모저모]한국투자신탁운용, 전주사무소 개소…국민연금과 협...",
+            "url": "https://www.businessplus.kr/news/articleView.html?idxno=120441"
+          }
+        ]
+      },
+      {
+        "company": "KB손해보험",
+        "note": "자본건전성 확보를 위해 최대 6000억원 규모 후순위채 발행을 준비 중이다.",
+        "links": [
+          {
+            "title": "KB손해보험, 최대 6000억 후순위채 채비…\"자본건전성 확보\"",
+            "url": "https://www.bloter.net/news/articleView.html?idxno=679598"
+          }
+        ]
+      },
+      {
+        "company": "DB손해보험",
+        "note": "순이익은 DB손보가 메리츠를 역전했고, 메리츠와의 신계약 CSM 격차는 지난해 1조원대에서 3772억원으로 줄었다.",
+        "links": [
+          {
+            "title": "순익은 DB손보가 역전, 신계약은 메리츠가 추격 … 손보업계 2위 경쟁",
+            "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/24/2026112450221.html"
+          },
+          {
+            "title": "[Q4 전망] \"보험·파운드리 웃고, 투자손익·PF 울고\" Q3 DB그룹…\"Q4: 배...",
+            "url": "https://www.economytalk.kr/news/articleView.html?idxno=425529"
+          }
+        ]
+      },
+      {
+        "company": "한화손해보험",
+        "note": "신계약 CSM 배수가 개선돼 같은 보험료로 기대할 수 있는 신규 계약 이익이 커졌고, 밸류업 기반을 다지고 있다.",
+        "links": [
+          {
+            "title": "미래이익 쌓고 건전성 높이고…한화손보, 밸류업 기반 다진다",
+            "url": "https://dealsite.co.kr/articles/173263"
+          }
+        ]
+      },
+      {
+        "company": "코리안리",
+        "note": "25일 보험주 시황에서 보험주는 상승이 우세했으나 코리안리는 3.54% 하락했다.",
+        "links": [
+          {
+            "title": "[업앤다운] 보험주 상승 우세…코리안리 3.54% 하락",
+            "url": "https://www.nspna.com/news/?mode=view&newsid=837542"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "한화생명",
+        "note": "3분기 투자손실은 일회성으로 평가되며 K-ICS 비율은 171%로 3%p 올랐고, 2027년에도 연 2조원 이상의 신계약 CSM을 목표로 한다.",
+        "links": [
+          {
+            "title": "하나증권 \"한화생명, 3분기 투자손실 일시적…목표가 하향\"",
+            "url": "https://www.jasm.co.kr/news/view/326398/?sc=Naver"
+          },
+          {
+            "title": "하나證 \"한화생명, 대규모 투자손실 일회성…목표가 17.8%↓\"",
+            "url": "https://www.ajunews.com/view/20261125074937882"
+          },
+          {
+            "title": "[모닝 리포트] \"한화생명, 일회성 투자손실에도 보험 수익성 개선\"",
+            "url": "https://www.newspim.com/news/view/20261125000104"
+          },
+          {
+            "title": "하나증권 \"한화생명, 투자손실 일회성…보험 본업 수익성 개선에 주목\"",
+            "url": "https://www.thepowernews.co.kr/view.php?ud=202611251052402416de3f0aa1be_7"
+          }
+        ]
+      },
+      {
+        "company": "미래에셋생명",
+        "note": "보유 CSM이 2조3000억원을 넘었고 건강보험 신계약 CSM이 2년 만에 두 배로 늘었으나, 계리 가이드라인 반영으로 보험손익이 707억원 감소했다.",
+        "links": [
+          {
+            "title": "미래에셋생명, 보유 CSM 2조3000억원 돌파… 건강보험 신계약 확대",
+            "url": "https://biz.chosun.com/stock/finance/2026/11/25/3BOFYAGAYZE7JBSUYOMV7YHJRQ/?utm_source=naver&utm_medium=original&utm_campaign=biz"
+          },
+          {
+            "title": "미래에셋생명, 건강보험 신계약 CSM 2년 만에 두배로 늘었다",
+            "url": "https://www.hankyung.com/article/202611259279i"
+          }
+        ]
+      },
+      {
+        "company": "삼성생명",
+        "note": "3분기 듀레이션 갭을 줄여 자산과 부채의 만기 간극을 좁혔다.",
+        "links": [
+          {
+            "title": "삼성생명, 3분기 듀레이션 갭 축소... 자산·부채 간극 좁혔다",
+            "url": "http://www.lkp.news/news/articleView.html?idxno=86432"
+          }
+        ]
+      },
+      {
+        "company": "신한라이프",
+        "note": "보험계약마진 8조원을 쌓고 AI 영업혁신과 소비자보호 챌린지를 추진하고 있다.",
+        "links": [
+          {
+            "title": "[K금융 리더] 보험계약마진 8조 쌓고 AI 영업혁신…천상영, 신한라이프...",
+            "url": "https://www.g-enews.com/view.php?ud=202611241534208404e30fcb1ba8_1"
+          }
+        ]
+      },
+      {
+        "company": "카디프생명",
+        "note": "한국투자금융의 인수 후보로 거론되며, 상반기 말 CSM 잔액은 약 258억원이고 6월 말 경과조치 전 K-ICS 비율은 196.5%다.",
+        "links": [
+          {
+            "title": "김남구 한투 회장, KDB생명에서 카디프생명으로 M&A 갈아타나",
+            "url": "https://www.insightkorea.co.kr/news/articleView.html?idxno=259642"
+          },
+          {
+            "title": "[보험사 M&A] 보험업 인수 전략 수정한 한투금융, 시너지 거둘까",
+            "url": "https://www.topdaily.kr/articles/113091"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "우체국금융개발원",
+        "note": "24일 서울 당산역 인근 등 전국 주요 지역에서 보험사기 예방 거리 캠페인을 실시했다.",
+        "links": [
+          {
+            "title": "우체국금융개발원, 전국서 보험사기 예방 캠페인 실시",
+            "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4120652"
+          }
+        ]
+      },
+      {
+        "company": "한국교직원공제회",
+        "note": "교권 보호 공제의 연간 계약금액은 1억7600만원인데 실제 보상은 2700만원 수준에 그쳐 피해 지원 확대 요구가 나왔다.",
+        "links": [
+          {
+            "title": "교권 보호 공제 1억7600만원 내고 보상은 2700만원…이한영 \"피해 지원 ...",
+            "url": "https://www.thepublic.kr/news/articleView.html?idxno=328223"
+          }
+        ]
+      },
+      {
+        "company": "새마을금고",
+        "note": "고양누리새마을금고가 인근 금고와 합병해 자산 1조6천억원 규모가 됐고, 공제상품 등 기존 거래와 권리를 100% 승계한다.",
+        "links": [
+          {
+            "title": "창립 50주년 고양누리새마을금고, 자산 1조6천억 시대 열었다",
+            "url": "http://www.mygoyang.com/news/articleView.html?idxno=91397"
+          }
+        ]
+      },
+      {
+        "company": "군인공제회",
+        "note": "군인공제회C&C가 병무청과 병역의무자 전자도서관 기부 약정식을 열고 2027년 개설을 추진한다.",
+        "links": [
+          {
+            "title": "병무청, 내년 병역의무자 전자도서관 개설…32만 명 이용 대상",
+            "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5087403"
+          }
+        ]
+      },
+      {
+        "company": "신협중앙회",
+        "note": "대구사회가치금융, 동촌신협과 '대구우애금고' 긴급생활자금 대출사업 업무협약을 맺었다.",
+        "links": [
+          {
+            "title": "대구사회가치금융·신협중앙회·동촌신협, '대구우애금고' 대출사업 업...",
+            "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4120751"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "예실차",
+    "explain": "예실차는 계리가정으로 예상한 보험금·사업비와 실제 발생한 금액의 차이를 말합니다. 실제 지급이 예상보다 많으면 불리한 예실차가 되어 보험손익을 깎고, 이 차이가 반복되면 가정 변경과 CSM 조정의 근거가 됩니다."
+  },
+  "kakao_lines": [
+    "손보: 車보험 10월 손해율 80.5%, 10월 기준 최저",
+    "생보: 3분기 누적 순익 19.5%↓, 예실차 부담 확대",
+    "공제: 교권보호 공제 보상 2700만원, 계약 1.76억"
+  ]
+}
