@@ -1,0 +1,355 @@
+{
+  "headline": "보험료는 늘었지만 투자손익 급감으로 순익 7.8% 감소, 금리 인상까지 겹쳐 자본 부담 커져",
+  "issues": [
+    {
+      "title": "3분기 누적 순익 7.8%↓, 생보 부진",
+      "category": "실적·재무",
+      "summary": "금감원이 25일 발표한 1~9월 보험사 52곳의 당기순이익은 10조4087억원으로 전년 동기보다 8823억원(7.8%) 줄었다. 수입보험료는 15.6% 늘었다. 생보사(22곳)는 3조8879억원으로 19.5% 감소했고, 보험손익은 8.4% 줄고 투자손익은 52.4% 급감했다. 손보사는 0.9% 늘었다.",
+      "actuarial_view": "6월 시행된 계리감독 선진화로 신규 담보에는 보수적 손해율 가정을, 사업비 가정에는 미래 물가상승률을 반영하게 되었다. 이 때문에 신계약 CSM 인식과 보험손익이 단기에 줄어들 수 있다. 미래에셋생명은 이 제도변경 영향으로 보험손익이 707억원 감소했다. 생보의 이익 감소는 보험손익 자체보다 투자손익 변동이 더 크게 좌우한 것으로 보인다.",
+      "takeaway": "제도 변경에 따른 일회성 감소분과 경험 악화에 따른 감소분을 구분해서 보지 않으면 내년 가정 설정 때 이익 체력을 잘못 읽을 수 있지 않을까.",
+      "links": [
+        {
+          "title": "보험사 수입보험료 15.6% 늘었지만 순익 7.8% 감소…이익창출력 둔화",
+          "url": "https://www.1conomynews.co.kr/news/articleView.html?idxno=51579"
+        },
+        {
+          "title": "생보사 10곳, 3분기 누적 순익 3.4조원… 투자 부진에 수익성 '급랭'",
+          "url": "http://www.newslock.co.kr/news/articleView.html?idxno=140976"
+        },
+        {
+          "title": "보험사 3분기 누적 순이익 10.4조… 생보 19.5%↓·손보 0.9%↑",
+          "url": "https://www.m-i.kr/news/articleView.html?idxno=2023326"
+        },
+        {
+          "title": "보험료 더 걷고도 웃지 못했다…보험사 수익성 '뒷걸음'",
+          "url": "http://www.newskr.kr/news/articleView.html?idxno=108305"
+        },
+        {
+          "title": "상반기 웃었던 보험사, 3분기 순익 반토막…생보업계는 적자 전환",
+          "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=147466"
+        },
+        {
+          "title": "보험사 순이익 10조4천억원…7.8% 감소",
+          "url": "http://www.kjdaily.com/article.php?aid=1795620327693458276"
+        },
+        {
+          "title": "[위클리오늘] 보험사 1~9월 순익 10조4087억···전년比 7.8% 감소",
+          "url": "http://www.weeklytoday.com/news/articleView.html?idxno=803442"
+        },
+        {
+          "title": "보험료 수입 212조에도 순익 뒷걸음…생보사 실적 '휘청'",
+          "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=131121"
+        },
+        {
+          "title": "보험사, 3분기 누적 순익 10조4087억원…전년比 7.8%↓",
+          "url": "http://www.newsprime.co.kr/news/article.html?no=756481"
+        },
+        {
+          "title": "보험사 순익 10.4조원…생보 3.9조·손보 6.5조원",
+          "url": "https://www.ddaily.co.kr/page/view/2026112514204574517"
+        },
+        {
+          "title": "미래에셋생명 '건강보험 중심' 체질 개선",
+          "url": "https://www.fnnews.com/news/202611251804237210"
+        },
+        {
+          "title": "52개 보험사 순익 8823억원 줄었다…손보·생보 희비",
+          "url": "http://www.seouleconews.com/news/articleView.html?idxno=95253"
+        }
+      ]
+    },
+    {
+      "title": "기준금리 3.25% 인상, 자본 부담 확대",
+      "category": "실적·재무",
+      "summary": "한국은행이 26일 기준금리를 0.25%p 올려 3.25%로 정했다. 올해 들어 세 번째 인상이다. 9월 말 보험사 총자본은 228조9000억원으로 6월 말(254조6000억원)보다 약 25조원 줄었다. 기본자본 K-ICS 비율이 50%에 못 미치는 보험사 4곳은 해약환급금준비금 추가 적립 여력도 거의 바닥난 것으로 나타났다.",
+      "actuarial_view": "금리 상승은 이차역마진 부담을 줄이는 요인이지만, 채권 평가손실과 가용자본 감소를 부를 수 있다. 기사 인용 추정으로는 생보사가 금리 1%p 오르면 가용자본이 7.8조원 줄어든다. 해약환급금준비금 적립이 늘면 회계상 이익이 나도 배당 여력은 줄 수 있다.",
+      "takeaway": "금리 상승이 이원 마진 개선과 K-ICS 비율 하락 중 어느 쪽으로 더 크게 작용할지, 금리 민감도(듀레이션 갭)를 상품군별로 다시 확인해볼 필요가 있다.",
+      "links": [
+        {
+          "title": "[금통위 금리 인상③ 보험업권] 시장금리 상승 경게…4분기 평가손 우려",
+          "url": "https://www.news2day.co.kr/article/20261126500089"
+        },
+        {
+          "title": "보험사 4곳, 기본자본비율 50% 밑돌아…해약환급금준비금 '이중 부담'",
+          "url": "https://www.newspost.kr/news/articleView.html?idxno=227796"
+        },
+        {
+          "title": "보험사 자본 3개월 새 25조 감소…삼성·한화생명 \"추가 자본조달 계획...",
+          "url": "https://www.socialvalue.kr/news/view/1065594335058468"
+        },
+        {
+          "title": "KDB생명 일곱 번째 매각 불발…산은, 출자냐 재매각이냐",
+          "url": "https://www.dailian.co.kr/news/view/1719666/?sc=Naver"
+        },
+        {
+          "title": "기준 금리 0.25%p 인상… 보험·카드·캐피탈, 비용 부담 확대",
+          "url": "https://biz.chosun.com/stock/finance/2026/11/26/A3YBLVXH55AOLNRLCT6VXOFLVE/?utm_source=naver&utm_medium=original&utm_campaign=biz"
+        },
+        {
+          "title": "배당 어렵다고 밸류업도 못하나…한화생명, 당국만 바라보는 이유",
+          "url": "https://dealsite.co.kr/articles/173346"
+        },
+        {
+          "title": "한은, 기준금리 인상…보험업계 '양날의 검'",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110721"
+        },
+        {
+          "title": "[저PBR 기업 점검 ③] 한화생명, 연결 순익 늘었는데 배당은?",
+          "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=55144"
+        }
+      ]
+    },
+    {
+      "title": "10월 자동차보험 손해율 80%대 초반",
+      "category": "손해율·보험금",
+      "summary": "10월 주요 손보사의 자동차보험 손해율은 80.4~80.5%로 2021년 이후 동월 중 가장 낮았다. 주요 5개사 모두 전년보다 개선됐고 평균 7.2%p 낮아졌다. 삼성화재·DB손보·현대해상·KB손보의 1~10월 누적 손해율은 단순 평균 84.3%다. 사고당 지급보험금 증가와 겨울철 손해액 증가로 반등 가능성은 남아 있다.",
+      "actuarial_view": "손해율이 하락하면서 손보사 보험손익이 늘었다. 다만 사고당 지급보험금(심도)이 오르는 추세여서 빈도 감소로 인한 개선이 지속될지는 불확실하다. 내년 요율 검증에서 손해율 가정을 낮출지는 계절성을 제거한 뒤 판단해야 한다.",
+      "takeaway": "개선이 사고 빈도 하락에서 왔는지 요율 인상 효과에서 왔는지 분해해 보지 않고 겨울철을 맞으면 해석이 어긋날 수 있지 않을까.",
+      "links": [
+        {
+          "title": "자동차보험 손해율 5년來 최저치… 한숨 돌린 손보사",
+          "url": "https://www.segye.com/newsView/20261125515441?OutUrl=naver"
+        },
+        {
+          "title": "[업앤다운]보험주 3종목 하락…흥국화재 2.30%↓",
+          "url": "https://www.nspna.com/news/?mode=view&newsid=837762"
+        },
+        {
+          "title": "자동차보험, 수익성 회복 기대감 '꿈틀'...두 달 연속 손해율 개선 흐름...",
+          "url": "https://www.greened.kr/news/articleView.html?idxno=355618"
+        },
+        {
+          "title": "자동차보험 손해율 개선세⋯손보사 보험손익도 ‘훈풍’ [종합]",
+          "url": "https://www.etoday.co.kr/news/view/2652831"
+        },
+        {
+          "title": "10월 자동차보험 손해율 80.4%… 주요 5개사 전년보다 7.2%p 개선",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=94054"
+        },
+        {
+          "title": "10월 자동차보험 손해율 80.5%…2021년 이후 동월 최저",
+          "url": "https://www.dailian.co.kr/news/view/1719683/?sc=Naver"
+        }
+      ]
+    },
+    {
+      "title": "판매수수료 한도 설정·GA 책임 강화",
+      "category": "제도·감독",
+      "summary": "금융위와 금감원은 내년 1월 판매수수료 분급제도 시행에 맞춰 수수료 지급한도를 설정하고 계약체결비용 공시를 확대하는 행정지도를 시행한다. GA에 대해서는 수수료 다음 단계로 책임 강화 논의가 이어지고 있다. 금감원은 초대형 GA의 내부통제 요건 충족 여부에 의문을 제기했다. 보험판매전문회사 도입은 업무 범위와 사업비 협상권을 두고 이견이 이어진다.",
+      "actuarial_view": "수수료 지급한도와 분급 시행은 신계약비 이연·상각 방식과 사업비 가정에 영향을 줄 수 있다. IFRS17 도입 이후 늘어난 사업비 비용처리 부담도 줄어들 수 있다. 다만 한도 적용 방식에 따라 보장성보험 신계약 성장이 둔화되고 신계약 CSM이 줄 가능성도 있다.",
+      "takeaway": "수수료 한도가 상품별 사업비 가정과 판매 믹스를 바꾸면, 가격 산출에 쓰는 예정사업비율 재검토가 필요한 상품은 어디일까.",
+      "links": [
+        {
+          "title": "[기획] 달라진 금융주 3色 투자…내년 키워드는 '이익 방어력과 주주환...",
+          "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=820120"
+        },
+        {
+          "title": "[GA 수수료 대전환③] 수수료 다음은 책임…GA 권한 확대에 당국 제동",
+          "url": "https://www.news2day.co.kr/article/20261125500326"
+        },
+        {
+          "title": "보험판매전문회사 도입 '제자리'…책임 강화 방식에 이견",
+          "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=211992"
+        },
+        {
+          "title": "보험 판매수수료 과당경쟁 제동⋯내년부터 지급한도 규제 강화",
+          "url": "https://www.etoday.co.kr/news/view/2653354"
+        },
+        {
+          "title": "\"인카금융 3708명 위반해도 영업정지 피할 수 있나\"…금융위 GA 과징금 ...",
+          "url": "https://www.greened.kr/news/articleView.html?idxno=355569"
+        },
+        {
+          "title": "보험사 '수수료 출혈경쟁' 제동…내년부터 상한 설정",
+          "url": "https://www.asiatime.co.kr/article/20261126500080"
+        }
+      ]
+    },
+    {
+      "title": "고령자 치매·간병보험금 신탁 확대 논의",
+      "category": "신위험",
+      "summary": "25일 국회 정책토론회에서 일반사망보험금에 한정된 보험금청구권신탁을 치매·장기간병보험금까지 넓히자는 제안이 나왔다. 요양법인 등 전문기관과 연계한 재산관리 체계와 상속세 특례 도입 검토도 거론됐다. 보험업권 상생기금 등 105억원으로 노인맞춤돌봄서비스 대상 57만명을 지원하는 사업도 내년부터 2년간 추진된다.",
+      "actuarial_view": "초고령화로 치매·간병 지급이 늘면 기존 경험통계만으로는 유병률과 지속기간 가정을 잡기 어렵고, 장수위험이 커질 수 있다. 보험금이 신탁으로 연계되면 일시금 지급이 분할·목적 지출로 바뀔 수 있어 청구 행태와 지급 패턴 가정을 따로 점검해야 한다. 아직 제도 논의 단계이므로 가격 반영은 데이터가 쌓인 뒤에야 가능하다.",
+      "takeaway": "치매·간병 담보에서 보험금 사용 목적이 관리되면 청구·지급 패턴 가정이 달라질까, 그 영향을 볼 데이터는 무엇일까.",
+      "links": [
+        {
+          "title": "보험금청구권신탁, 치매·간병보험금까지 확대 논의",
+          "url": "http://www.fins.co.kr/news/articleView.html?idxno=110709"
+        },
+        {
+          "title": "보험금청구권신탁 개선 논의… 치매·간병보험금까지 넓혀 초고령사회 대응",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=94068"
+        },
+        {
+          "title": "\"부모님 병원 모셔다드려요\"…자식보다 나은 보험 서비스",
+          "url": "https://www.sidae.com/article/2026112515114949724"
+        },
+        {
+          "title": "고령자 보험금 신탁제도 개선 논의...치매보험금 신탁 허용 등 제도개선...",
+          "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=508231"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "메리츠화재",
+        "note": "3분기 별도 순이익이 3285억원으로 전년 동기 대비 29% 줄어, 투자 부진 속에 업계 3위로 밀렸다는 보도가 나왔다.",
+        "links": [
+          {
+            "title": "[삐딱경제] 투자 '죽 쑨' 메리츠화재...DB손보에 밀려 업계 3위로",
+            "url": "http://www.nongaek.com/news/articleView.html?idxno=97625"
+          },
+          {
+            "title": "메리츠화재, 보험 손익 개선…내년 실적 반등 주목 - 이코리아",
+            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBTSjNjTzNOVTU3SHhNUENfUzd4OFBZc2xLRERXS2xQNks3S2NZMHk0bEpQQmtreHJJM2Jja0NIYnpKVVN4SHl4TlVJWHhlTjNxSXBrcmlfYVdGWFhTazNDTEhxMkFVTUJMaE9pR3pkdw?oc=5"
+          }
+        ]
+      },
+      {
+        "company": "삼성화재",
+        "note": "건강정보통합플랫폼을 활용해 분석한 결과 녹내장 실손보험 지급고객이 연평균 17.5% 늘어 2025년 1만8340명에 달했고, 40대 이하 비중이 31.6%였다.",
+        "links": [
+          {
+            "title": "[금융소식] 우리금융·NH농협금융·교보생명·삼성화재·KB손보·KB라이프...",
+            "url": "https://www.newscj.com/news/articleView.html?idxno=3452170"
+          }
+        ]
+      },
+      {
+        "company": "현대해상·KB손해보험",
+        "note": "기업성보험 시장에서 현대해상과 KB손보가 질주하고 삼성화재는 숨고르기를 하며 판도가 바뀌고 있다.",
+        "links": [
+          {
+            "title": "현대해상·KB손보 ‘질주’ vs 삼성화재 ‘숨고르기’…기업성보험 시장 판도 변화 - CEO스코어데일리",
+            "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJbGpuM09wOGhnUUtCUG1LRFNvQlNZemJtbnNWV0FFeUNYbzJvNmw2WFNlWmRCWDNpbjVBWUx6T09pWHoyVlk0Vi0zbWNBdWpidlZxNHdHNWFOZDZ3MElSdzZkUmZhSUww?oc=5"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "한화생명",
+        "note": "K-ICS 비율이 170%대로 회복됐고 3분기 누적 신계약 CSM은 2조860억원으로 40% 늘었으나, 3분기 별도 순손실 2174억원 속에 배당 재개 시점이 관심이다.",
+        "links": [
+          {
+            "title": "한화생명, K-ICS 170%대 회복…'배당 재개' 시점에 주목",
+            "url": "https://www.bloter.net/news/articleView.html?idxno=679665"
+          },
+          {
+            "title": "배당 어렵다고 밸류업도 못하나…한화생명, 당국만 바라보는 이유",
+            "url": "https://dealsite.co.kr/articles/173346"
+          },
+          {
+            "title": "하나증권 “한화생명, 투자손실 속 신계약 수익성 개선..목표가 6000원으...",
+            "url": "https://kpenews.com/View.aspx?No=4330116"
+          }
+        ]
+      },
+      {
+        "company": "미래에셋생명",
+        "note": "3분기 누적 별도 보험손익이 545억원으로 53.8% 감소했고 K-ICS가 150%를 하회했다. 신규 담보 손해율 가이드라인 적용 영향이 707억원이다.",
+        "links": [
+          {
+            "title": "미래에셋생명, 3분기 적자·K-ICS 150% 하회…수익·건전성 동반 악화",
+            "url": "https://news.tf.co.kr/read/economy/2393645.htm"
+          },
+          {
+            "title": "미래에셋생명 '건강보험 중심' 체질 개선",
+            "url": "https://www.fnnews.com/news/202611251804237210"
+          }
+        ]
+      },
+      {
+        "company": "삼성생명",
+        "note": "실적 한파 속에서도 성장세를 이어갔고 홍원학 대표가 내년 M&A와 밸류업에 기대감을 보였다.",
+        "links": [
+          {
+            "title": "삼성생명, '실적 한파' 속 성장세...홍원학 '내년 M&A·밸류업' 기대감 - 파이낸셜포스트",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9obmpteHNtcngzT05ZcjZCV1ExZXdIaUxZMExaS25ncjZXQmhZallQVGp3T25DVy1CODlmVVRSQ3RWMnBJT3FBV2h3WWlqUHlneENCTFJWSklta1czVzIzNHAwRUZ4R2FrNDRvcHVucmZyYU10?oc=5"
+          }
+        ]
+      },
+      {
+        "company": "신한라이프",
+        "note": "뒤늦게 예실차 손실이 급증해 연말 조정폭이 커질 수 있다는 분석이 나왔다.",
+        "links": [
+          {
+            "title": "뒤늦게 예실차 손실 급증···신한라이프, 연말 조정폭 커지나 - 시사저널e",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBtbURzRi1GQ0hyU0FkVm1WME0tOTlZNWxVR3p5VkdzZXZCV1BPVjVVbWt5d2tuald2aHlMQnZuY0ZGeFRiNG5kMlVNNFBVWEFpMDBhNlBYM0t5Mktwd3lOX0FWVjIzQ1pWeWVnd3dDZHBHblJGMFHSAXZBVV95cUxQbW1Ec0YtRkNIclNBZFZtVjBNLTk5WTVsVUd6eVZHc2V2QldQT1Y1VW1reXdrbmpXdmh5TEJ2bmNGRnhUYjRuZDJVTTRQVVhBaTAwYTZQWDNLeTJLcHd5Tl9BVlYyM0NaVnllZ3d3Q2RwR25SRjBR?oc=5"
+          }
+        ]
+      },
+      {
+        "company": "DB생명",
+        "note": "신계약 보장성보험 비중이 업계 최고 수준으로 본업 이익 체력 강화가 기대된다는 평가를 받았다.",
+        "links": [
+          {
+            "title": "DB생명, 신계약 보장성보험 비중 '업계 최고'...본업 이익 체력 강화 '가...",
+            "url": "https://www.greened.kr/news/articleView.html?idxno=355631"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "농협중앙회",
+        "note": "재공제이익수수료 관련 약 5000억원 추징 위기에 처했으며, 불복해도 승산 가능성이 희박하다는 단독 보도가 나왔다.",
+        "links": [
+          {
+            "title": "[단독] '5000억 추징 위기' 농협중앙회, 불복해도 승산 가능성 희박…4년...",
+            "url": "http://www.fieldnews.kr/news/articleView.html?idxno=33428"
+          }
+        ]
+      },
+      {
+        "company": "한국교직원공제회",
+        "note": "한국표준협회 주관 '2026 대한민국 지속가능성대회'에서 금융 부문 지속가능성보고서상을 수상했다.",
+        "links": [
+          {
+            "title": "한국교직원공제회, 2026 대한민국 지속가능성보고서상 수상",
+            "url": "https://www.kyosu.net/news/articleView.html?idxno=212919"
+          },
+          {
+            "title": "한국교직원공제회, 대한민국 지속가능성보고서상 수상…ESG 경영 투명성...",
+            "url": "https://www.job-post.co.kr/news/articleView.html?idxno=241062"
+          }
+        ]
+      },
+      {
+        "company": "행정공제회",
+        "note": "교직원공제회에 이어 내년 대기업집단 지정 가능성에 대비해 일부 리츠 투자 지분 정리를 추진하고 있다.",
+        "links": [
+          {
+            "title": "[Invest]교공 이어 행공도 '대기업집단' 지정 가능성…달라지는 리츠 투...",
+            "url": "https://www.investchosun.com/site/data/html_dir/2026/11/26/2026112680005.html"
+          }
+        ]
+      },
+      {
+        "company": "우체국금융개발원",
+        "note": "언론재단과 함께 전주대 학생을 초청해 공공기관 설명회를 열고 금융·보험 인재 양성 협력을 밝혔다.",
+        "links": [
+          {
+            "title": "우체국금융개발원-언론재단, 전주대 학생 초청 RISE 공공기관 설명회",
+            "url": "http://www.jeollailbo.com/news/articleView.html?idxno=817881"
+          },
+          {
+            "title": "언론재단‧우체국금융개발원‧건보공단‧소비자원, 전주대 학생 대상 공...",
+            "url": "https://www.jjan.kr/article/20261125500364"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "해약환급금준비금",
+    "explain": "계약자가 중도 해약할 때 돌려받을 금액이 현재 가정과 할인율로 평가한 보험부채보다 클 때, 그 차이에 대비해 보험사가 별도로 쌓아두는 준비금입니다. 금리가 오르면 적립 부담이 이익보다 빨리 커질 수 있어 배당 여력과 자본비율에 영향을 줍니다."
+  },
+  "kakao_lines": [
+    "손보: 10월 자동차보험 손해율 80%대 초반 개선",
+    "생보: 3분기 누적 순익 19.5%↓, 투자손익 52%↓",
+    "공제: 농협중앙회 5000억 추징 위기, 불복 승산 희박"
+  ]
+}
