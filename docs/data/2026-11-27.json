@@ -1,0 +1,375 @@
+{
+  "headline": "판매수수료 상한 강화와 금리 인상이 보험사 사업비·자본 가정을 동시에 흔든다",
+  "issues": [
+    {
+      "title": "판매수수료 지급한도·공시 규제 강화",
+      "category": "제도·감독",
+      "summary": "금융위와 금감원은 26일 판매수수료 지급한도 설정과 계약체결비용 공시 강화를 담은 행정지도를 시행한다고 밝혔고, 보험업감독규정 개정도 함께 추진한다. 내년 1월 판매수수료 개편제도 시행에 맞춘 조치로, 한도 산정에는 계약체결비용과 해약공제액 중 낮은 금액이 적용된다는 보도가 있다. 보험 판매수수료는 연 27조원 규모로 보도됐고, 7월부터 GA 초년도 수수료에 1200%룰이 적용됐다. 금융당국은 수수료 지급기준의 기초서류 반영 여부와 사업비 집행 현황도 계속 점검하겠다고 했다.",
+      "actuarial_view": "초년도 수수료 한도가 낮아지고 분급이 확대되면 신계약비 현금흐름이 이연되거나 줄어 신계약 CSM 산출과 사업비 가정에 영향을 줄 수 있다. 한도가 해약공제액 기준으로 묶이면 해약환급금 설계와 수수료 체계가 직접 연동되므로 상품별 사업비율 재검토가 필요할 수 있다.",
+      "takeaway": "수수료가 줄어드는 만큼 보험료 사업비율이 실제로 내려가는지, 아니면 다른 사업비 항목으로 이동하는지 기초서류 단계에서 확인해볼 필요가 있다.",
+      "links": [
+        {
+          "title": "[보험家] 年 27조원 보험 판매수수료 제동… 금융당국, 1월 상한 축소·...",
+          "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065561240732126"
+        },
+        {
+          "title": "“보험설계사 수수료 과다 지급 막는다”…비용 공시 확대해 보험료 부...",
+          "url": "https://www.ddaily.co.kr/page/view/2026112617225421099"
+        },
+        {
+          "title": "보험 판매수수료 경쟁에 추가 안전장치 마련…분급제 실효성 높인다",
+          "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=303482"
+        },
+        {
+          "title": "보험 판매수수료 한도 강화…계약체결비용·해약공제액 중 낮은 금액 적...",
+          "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=68548"
+        },
+        {
+          "title": "금융당국, 보험 판매수수료 과당경쟁에 제동 … 내년부터 지급한도 제한",
+          "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/26/2026112650308.html"
+        },
+        {
+          "title": "보험 판매수수료 '불리기' 제동…내년 1월 상한 강화",
+          "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=508409"
+        },
+        {
+          "title": "보험 판매수수료 과당경쟁 막는다…지급한도 규제 강화",
+          "url": "http://www.newsfc.co.kr/news/articleView.html?idxno=82762"
+        },
+        {
+          "title": "우리금융그룹 동양생명, 방카슈랑스 보험료 1.3조원... 3분기 석 달간 상...",
+          "url": "http://www.lkp.news/news/articleView.html?idxno=86543"
+        },
+        {
+          "title": "정부가 왜 GA 단속 강화하나 했더니…설계사 불완전판매·계약관리 피해...",
+          "url": "http://www.consumernews.co.kr/news/articleView.html?idxno=769182"
+        },
+        {
+          "title": "[격변의 보험대리점]금감원, 6000명 넘는 초대형 GA 등록 취소…관리·감...",
+          "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611251218366420556"
+        },
+        {
+          "title": "GA 몸집 키우자 판매전문회사 논의 재점화…책임·배상능력 시험대 - 한스경제",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAxaF8ya0pqS3pYZndNWV90QWgxN00tWGFZR25IbldJem5KY25VdTBwSnJZdkRFS3FTRkxUczlFMGY2YVBuWnZFNHRsOG16Um5HeHQtdlJqclR5ZThsejZvcTZBYlkyM2Y1OUlnSlhNRdIBb0FVX3lxTFAxaF8ya0pqS3pYZndNWV90QWgxN00tWGFZR25IbldJem5KY25VdTBwSnJZdkRFS3FTRkxUczlFMGY2YVBuWnZFNHRsOG16Um5HeHQtdlJqclR5ZThsejZvcTZBYlkyM2Y1OUlnSlhNRQ?oc=5"
+        }
+      ]
+    },
+    {
+      "title": "기준금리 3.25% 인상, 건전성은 갈림길",
+      "category": "실적·재무",
+      "summary": "한국은행이 기준금리를 연 3.00%에서 3.25%로 0.25%포인트 올렸다. 신규 보험료와 만기 자금의 운용수익은 개선될 수 있지만 보유 채권 평가손실과 자본 확충 부담이 있다. 금리 인상에도 장기채 금리는 하락세라는 보도가 있고, 하나증권은 내년 기본자본 K-ICS 규제를 앞두고 CSM이 늘어도 기본자본 확충으로 바로 이어지지는 않는다고 짚었다. 보험사들은 연말 K-ICS비율 관리를 위해 후순위채를 발행하고 있다(KB손보 12월 4일 3000억원).",
+      "actuarial_view": "단기금리만 오르고 장기금리가 내려가면 자산과 부채 듀레이션 차이 때문에 금리 인상에도 부채 할인 효과가 제한되어 K-ICS 금리위험액과 가용자본이 기대와 다르게 움직일 수 있다. 하나증권 분석처럼 금리 상승에 따른 자본비율 개선 효과가 예전보다 줄었다면 후순위채 같은 보완자본 의존도가 커질 수 있다.",
+      "takeaway": "금리 인상이 보험료 인하나 고금리 저축성 상품 출시로 이어지려면 예정이율 가정과 자산 듀레이션 재조정을 먼저 어떻게 볼지 정해야 하지 않을까.",
+      "links": [
+        {
+          "title": "금리 인상에 보험사 운용수익 개선 기대…당장은 부담",
+          "url": "https://www.kukinews.com/article/view/kuk202611260222"
+        },
+        {
+          "title": "기준금리 인상, 보험사에 호재일까…건전성 지표는 '갈림길'",
+          "url": "https://www.topdaily.kr/articles/113147"
+        },
+        {
+          "title": "금리 인상에도 장기채 금리 하락세···보험사, 건전성 악화 ‘우려’ - 시사저널e",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9XbVhNNGwyM0NsVnExZTFqWDlLWFRFRC1BSngxMlVrb1B2Sk13Q0ZDYXhseUVXNWlUVGhFRm9LSVZpNFFZVlRRekUxeFNwN29SWUdxTW9yR3JoNk1YNFc1SlllTkxMVk5VTXlfemhWMk55NHhHY3fSAXZBVV95cUxPV21YTTRsMjNDbFZxMWUxalg5S1hURUQtQUp4MTJVa29QdkpNd0NGQ2F4bHlFVzVpVFRoRUZvS0lWaTRRWVZUUXpFMXhTcDdvUllHcU1vckdyaDZNWDRXNUpZZU5MTFZOVU15X3poVjJOeTR4R2N3?oc=5"
+        },
+        {
+          "title": "금리 인상에 엇갈리는 보험사 셈법…운용수익 개선 불구 자본 변동성 변수 - 한스경제",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBTYTZhazhhLVFLX3Y2WXVvZVotbTVrS0d5a2lXNlVSUV94QmZQclpycGRTeTR5UWI0cy1OX2ktSDE1dmdzLVdOOEZCZ1U2TU9hU1l0U05lRjFUM29JOS1XbUdZMTc0Ym14T3kyVNIBb0FVX3lxTE1nQ1dNU0FYSnlpbEN0ekppb2xGQ29GLVBwMS1mbndocXhMXzd0VHpsUFF6dzMzOVJqRFZXOWFQd0pBVER2ei1MbmVKOGtRa2NiMHhWZ2VVbHdVWk02d29sdmVTZWVSVzZBQ2lrZ0tjNA?oc=5"
+        },
+        {
+          "title": "\"내년 보험사 기본자본 K-ICS 규제…'자본의 질' 관건\"<하나證>",
+          "url": "https://www.news2day.co.kr/article/20261127500168"
+        },
+        {
+          "title": "하나증권 \"보험업, 기본자본 확충이 주주환원 가른다…삼성화재 최선호...",
+          "url": "http://www.popcornnews.net/news/articleView.html?idxno=141771"
+        },
+        {
+          "title": "K-ICS비율 높여라…보험업계, 연말 릴레이 채권 발행",
+          "url": "https://www.fetv.co.kr/news/articleView.html?idxno=314337"
+        },
+        {
+          "title": "오늘의 프리미엄9 콘텐츠 다이제스트(11월 26일)",
+          "url": "https://www.hankyung.com/article/202611262769i"
+        },
+        {
+          "title": "금리 상승에… 보험사 대출잔액 줄어도 연체율은 급등",
+          "url": "https://www.munhwa.com/article/11634625?ref=naver"
+        }
+      ]
+    },
+    {
+      "title": "실손 환급 논란·건보 정산 개선",
+      "category": "손해율·보험금",
+      "summary": "금융위가 다음 달 메리츠화재, 현대해상, DB손보의 대체납입형 실손 특약 약관 위반 여부를 판단할 예정이며, 100만명에게 더 걷은 보험료가 3000억원에 이른다는 보도가 나왔다. 본인부담상한제 관련 실손 지급보류액은 2022년 1089억원에서 지난해 2842억원으로 2.6배 늘어, 건보와의 정산체계 개선이 논의되고 있다. 지난해 실손 적자는 1조8700억원으로 전년(1조6200억원)보다 커졌다.",
+      "actuarial_view": "대체납입 구조에서 보험료 인상률이 오를수록 사업비 격차가 벌어진다는 지적은 갱신형 실손의 사업비 가정과 요율 산출 방식이 감독 대상이 될 수 있음을 뜻한다. 건보 정산이 정상화되면 상한제 해당분의 지급보류 부담이 줄어 지급 시차와 손해율 가정이 달라질 수 있다.",
+      "takeaway": "환급 규모가 확정되면 해당 특약의 보험료 산출 근거와 사업비 배분 기준을 다른 갱신형 상품에도 적용해 점검해볼 필요가 있다.",
+      "links": [
+        {
+          "title": "[단독] 100만명에 더 걷은 실손보험료 3000억…첫 환급사태 오나",
+          "url": "https://www.hankyung.com/article/2026112632391"
+        },
+        {
+          "title": "실손보험금 중복 지급에 제동…건강보험과 정산 문제 풀릴까",
+          "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=303562"
+        },
+        {
+          "title": "연 2000억 줄줄…실손, 건보 정산체계 개선 논의 속 정상화 기대",
+          "url": "https://www.dailian.co.kr/news/view/1720198/?sc=Naver"
+        },
+        {
+          "title": "[줄줄 새는 보험금] 391회 주사에 25일 렌트…과잉진료·과다 청구 여전",
+          "url": "https://www.ajunews.com/view/20261126150040657"
+        },
+        {
+          "title": "보험은 아직 병실에 머물러 있다",
+          "url": "https://www.bosa.co.kr/news/articleView.html?idxno=3017504"
+        }
+      ]
+    },
+    {
+      "title": "AI 활용 해킹, 금융권 사이버 위험 확산",
+      "category": "신위험",
+      "summary": "금융위에 따르면 9월 30일부터 이달 3일까지 금융회사 등 37곳에서 총 40건의 해킹 사고가 있었고 보험사도 3곳 포함됐다. 새마을금고 공제보험 부문 홈페이지는 10월 AI 활용 해킹으로 추정되는 공격으로 공제회원 400여 명의 정보가 유출됐다. 동양생명은 AI 기반 사이버 공격이 고도화되자 정보보호 체계 대응에 나섰다.",
+      "actuarial_view": "AI 활용 공격은 과거 사고 통계가 거의 없어 빈도와 심도를 경험요율로 추정하기 어렵고, 같은 취약점이 여러 회사에 동시에 터지는 누적위험 때문에 기초위험(basis risk)과 재보험 출재 한도를 따로 봐야 한다. 정보유출 사고는 피해 규모가 사후에 커지는 사례도 있어 사고 건수 중심 통계로는 손실 규모를 과소평가할 수 있다.",
+      "takeaway": "사이버 담보를 설계한다면 공격 기법 변화에 따라 요율 가정을 얼마나 자주 갱신할 수 있는지, 재보험으로 넘길 수 있는 누적 한도는 얼마인지를 먼저 물어볼 필요가 있다.",
+      "links": [
+        {
+          "title": "[N2 포커스] 은행도 정부기관도 해킹당하는 시대… 내 돈 맡겨도 될까",
+          "url": "https://www.news2day.co.kr/article/20261127500059"
+        },
+        {
+          "title": "[주목 e-AI] \"상호금융권 AX 선두주자\"…MG새마을금고…\"생성형 AI 내재화...",
+          "url": "https://www.economytalk.kr/news/articleView.html?idxno=425581"
+        },
+        {
+          "title": "성대규 동양생명 대표, 세대·직급별 소통 강화…업무 개선 연결",
+          "url": "https://www.newsis.com/view/NISX20261127_0003885752"
+        },
+        {
+          "title": "[이재근호 KB 인사②] 국민은행장 인선… '이환주 연임'과 '서강·재무 ...",
+          "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=732251"
+        }
+      ]
+    },
+    {
+      "title": "계리가정 강화 속 생보 실적 부진",
+      "category": "실적·재무",
+      "summary": "생보사 실적이 보험손익과 투자손익 모두 뒷걸음질 쳤고, 교보생명은 CSM이 올해 9월 말 7조587억원으로 10.5% 개선됐음에도 순익은 반토막 났다. 미래에셋생명도 계리가정 가이드라인 변경과 투자부문 일회성 손실을 원인으로 설명했다. 연중 계리가정을 변경하면 위험관리위원회 보고와 금감원 계리가정보고서 제출이 필요해지는 등 감독이 내부 관리체계까지 넓어졌고, 일부 보험사는 희망퇴직에 나섰다.",
+      "actuarial_view": "CSM 잔액이 늘어도 해지율·손해율 가정이 보수적으로 바뀌면 보험손익과 당기순이익이 줄 수 있어, CSM 증가와 이익 개선을 따로 해석해야 한다. 가정 변경 절차가 내부통제와 연결되면서 가정 산출 근거를 문서로 남겨야 하는 실무 부담도 커질 수 있다.",
+      "takeaway": "CSM이 늘어나는데도 이익이 줄어드는 회사의 차이가 신계약 수익성 때문인지 가정 변경 때문인지를 분해해서 보면 어떤 지표를 더 확인해야 할지 보일 것이다.",
+      "links": [
+        {
+          "title": "생보사 실적 뒷걸음질…보험손익·투자손익 ‘이중고’ - 이코노미스트",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA0Z1ZlWnhESkFPcFp3YnlpUnNzTkFCUnlPLVNKNGthdVFBaDBPb2xRSDlSa3BBLW9DbXY5ekVUVXY1cnM5Z0FNenBzRGdpSEo5Q0lJQ09XSWJPc0NmaVROT2NR?oc=5"
+        },
+        {
+          "title": "한화생명·손보, 나란히 '보험가치' 전면에…조직부터 바꿨다",
+          "url": "https://dealsite.co.kr/articles/173529"
+        },
+        {
+          "title": "[MD포커스] 몸집 키운 교보생명, 순익은 반토막…신창재 ‘지주사 전환...",
+          "url": "https://www.mydaily.co.kr/page/view/2026112614334850504"
+        },
+        {
+          "title": "엇갈린 보험사 연말 인력 전략···NH·교보 '희망퇴직' vs 삼성·현대 ...",
+          "url": "https://www.smartbizn.com/news/articleView.html?idxno=160705"
+        },
+        {
+          "title": "[핀포인트] [미래에셋생명] 외형 확대 첨병 건강보험…사업비 급증에 내...",
+          "url": "https://news.dealsitetv.com/articles/178970"
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "손해보험": [
+      {
+        "company": "삼성화재",
+        "note": "정기 임원인사를 단행했으며, 2조3000억원 규모의 영국 로이즈 캐노피우스 인수를 추진하는 가운데 신계약 CSM 반등과 해외 시너지 입증이 과제로 꼽혔다.",
+        "links": [
+          {
+            "title": "삼성화재 정기 임원인사 단행…\"글로벌 수익·자본건전성 잡는다\"",
+            "url": "https://www.ziksir.com/news/articleView.html?idxno=154887"
+          },
+          {
+            "title": "2조 클럽·해외 빅딜 키 쥔 이문화…삼성화재 2기 체제 힘 실리나",
+            "url": "https://www.bloter.net/news/articleView.html?idxno=679755"
+          }
+        ]
+      },
+      {
+        "company": "KB손해보험",
+        "note": "K-ICS비율 관리를 위해 12월 4일 3000억원 규모의 후순위채를 발행한다.",
+        "links": [
+          {
+            "title": "K-ICS비율 높여라…보험업계, 연말 릴레이 채권 발행",
+            "url": "https://www.fetv.co.kr/news/articleView.html?idxno=314337"
+          }
+        ]
+      },
+      {
+        "company": "메리츠화재",
+        "note": "신계약 독주에 따라 CSM이 쌓이는 동시에 요구자본 부담도 커질 수 있다는 분석이 나왔다.",
+        "links": [
+          {
+            "title": "김중현 메리츠화재 신계약 '독주'에 따라오는 재무 부담 : 이익 기반 넓...",
+            "url": "https://www.huffingtonpost.kr/article/262450"
+          }
+        ]
+      },
+      {
+        "company": "하나손해보험",
+        "note": "장기보험 경쟁력을 강화해 2027년 흑자전환 기반을 다지겠다고 밝혔다.",
+        "links": [
+          {
+            "title": "하나손해보험, 장기보험 경쟁력 강화…2027년 흑자전환 기반 다진다",
+            "url": "http://www.financialreview.co.kr/news/articleView.html?idxno=46644"
+          }
+        ]
+      },
+      {
+        "company": "DB손해보험",
+        "note": "AI 기반 불완전판매 모니터링과 보상 AI 에이전트 등으로 국가품질경영대회 대통령 표창을 받았고 금융소비자보호지수 4년 연속 우수기업에 선정됐다.",
+        "links": [
+          {
+            "title": "[보험사 풍향계] DB손해보험, 고객 신뢰도 향상 노력 인정 받아 外",
+            "url": "https://www.ekn.kr/web/view.php?key=20261126022545363"
+          },
+          {
+            "title": "[보험업계 동향] 삼성생명ㆍ삼성화재ㆍDB손해보험ㆍDB생명(11.26)",
+            "url": "http://www.weeklytoday.com/news/articleView.html?idxno=803623"
+          },
+          {
+            "title": "DB손해보험, 금융소비자보호지수 4년 연속 우수기업 선정",
+            "url": "https://www.delighti.co.kr/news/articleView.html?idxno=125719"
+          }
+        ]
+      }
+    ],
+    "생명보험": [
+      {
+        "company": "삼성생명",
+        "note": "해외시장 공략을 위해 자본확충 등 실탄을 마련하고 있으며, 9월 말 CSM 잔액은 14조3000억원으로 지난해 말보다 1조1000억원 늘었다.",
+        "links": [
+          {
+            "title": "삼성생명, 해외시장 공략 잰걸음…자본확충 등 실탄 마련",
+            "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=206414"
+          },
+          {
+            "title": "홍원학·이문화 다시 택한 삼성…보험사업 '해외 승부'",
+            "url": "https://dealsite.co.kr/articles/173588"
+          }
+        ]
+      },
+      {
+        "company": "교보생명",
+        "note": "9월 말 CSM이 7조587억원으로 10.5% 개선됐지만 순익은 반토막 났다.",
+        "links": [
+          {
+            "title": "[MD포커스] 몸집 키운 교보생명, 순익은 반토막…신창재 ‘지주사 전환...",
+            "url": "https://www.mydaily.co.kr/page/view/2026112614334850504"
+          }
+        ]
+      },
+      {
+        "company": "동양생명·ABL생명",
+        "note": "우리금융 계열 편입 후 내년 하반기 통합을 앞두고 AI 네이티브 전환에 속도를 내며, 통합 시 총자산 55조원 규모의 업계 5위권 생보사가 된다.",
+        "links": [
+          {
+            "title": "'우리' 편입 앞둔 '동양·ABL생명'… 체질개선으로 지주 눈도장 안간힘",
+            "url": "https://it.chosun.com/news/articleView.html?idxno=3000000001929"
+          },
+          {
+            "title": "동양생명 웃고 ABL생명 울고…우리금융 보험사 통합 '험로' 예고",
+            "url": "https://www.newsway.co.kr/news/view?ud=2026112613535941042"
+          },
+          {
+            "title": "동양·ABL생명, 내년 하반기 통합 앞두고 'AI 네이티브' 전환 속도",
+            "url": "https://www.smartbizn.com/news/articleView.html?idxno=160717"
+          }
+        ]
+      },
+      {
+        "company": "미래에셋생명",
+        "note": "보유 CSM이 2조3205억원으로 지난해 말보다 12.7% 증가했다.",
+        "links": [
+          {
+            "title": "미래에셋생명, 보유 CSM 2조3205억원…지난해 말보다 12.7% 증가",
+            "url": "https://www.econovill.com/news/articleView.html?idxno=758647"
+          },
+          {
+            "title": "[핀포인트] [미래에셋생명] 외형 확대 첨병 건강보험…사업비 급증에 내...",
+            "url": "https://news.dealsitetv.com/articles/178970"
+          }
+        ]
+      },
+      {
+        "company": "하나생명",
+        "note": "보장성 중심으로 체질을 개선하며 올해 6월 말 보유 CSM이 8087억원으로 늘었다.",
+        "links": [
+          {
+            "title": "남궁원 하나생명 대표, 보장성 중심 체질 개선·매출 확대…올해 실적 ...",
+            "url": "https://www.fntimes.com/html/view.php?ud=202611261549405883ed56b8e1f8_18"
+          }
+        ]
+      }
+    ],
+    "공제": [
+      {
+        "company": "군인공제회",
+        "note": "내년 퇴직급여 지급률을 6.00%로 올리고 29년간 동결됐던 재해위로금도 인상한다.",
+        "links": [
+          {
+            "title": "군인공제회, 퇴직급여 지급률 6.00%로 올린다…재해위로금 29년 만에 2배",
+            "url": "https://www.news2day.co.kr/article/20261126500338"
+          },
+          {
+            "title": "군인공제회, 내년 퇴직급여 지급률 6%로 인상…400억 추가 환원",
+            "url": "https://www.newsis.com/view/NISX20261126_0003884883"
+          }
+        ]
+      },
+      {
+        "company": "새마을금고",
+        "note": "10월 AI 활용 해킹으로 추정되는 공격으로 공제보험 부문 홈페이지가 뚫려 공제회원 400여 명의 정보가 유출됐다.",
+        "links": [
+          {
+            "title": "[주목 e-AI] \"상호금융권 AX 선두주자\"…MG새마을금고…\"생성형 AI 내재화...",
+            "url": "https://www.economytalk.kr/news/articleView.html?idxno=425581"
+          }
+        ]
+      },
+      {
+        "company": "우체국보험",
+        "note": "저소득층 대상 '만원의 행복보험' 업무협약을 지역 자활센터와 장애인 단체 등으로 확대하고 있다.",
+        "links": [
+          {
+            "title": "우체국, 저소득층 '만원의 행복보험' 업무협약 확대",
+            "url": "http://www.jmbc.co.kr/news/view/70089"
+          }
+        ]
+      },
+      {
+        "company": "한국교직원공제회",
+        "note": "경기도사립학교행정실장협의회와 MOU를 맺고 학교 계약업무 지원 협력체계를 구축한다.",
+        "links": [
+          {
+            "title": "한국교직원공제회, 경기도사립학교행정실장협의회와 MOU…학교 계약업무...",
+            "url": "https://www.job-post.co.kr/news/articleView.html?idxno=241381"
+          }
+        ]
+      }
+    ]
+  },
+  "term": {
+    "word": "기본자본(K-ICS)",
+    "explain": "K-ICS 가용자본 중 손실 흡수력이 높은 자본으로, 후순위채 같은 보완자본과 구분됩니다. 오늘 기사처럼 CSM이 늘어 가용자본이 커져도 기본자본 확충으로 바로 이어지지 않을 수 있어 '자본의 질'이 주목받고 있습니다."
+  },
+  "kakao_lines": [
+    "손보: 판매수수료 한도 1월 강화, 실손 환급 논란",
+    "생보: 금리 인상에도 건전성·실적 부담 지속",
+    "공제: 군인공제회 퇴직급여 지급률 6%로 인상"
+  ]
+}
